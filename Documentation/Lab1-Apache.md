@@ -67,7 +67,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
         - Voeg nu de module autoindex toe.
         - Maak onder DocumenRoot een Directory `test` aan en definieer deze als volgt in je `httpd.conf`.
         ```html
-        <Directory C:/apache24/web/kdg/test>
+        <Directory c:/apache24/web/kdg/test>
             Options Indexes
         </Directory>
         ```
@@ -95,26 +95,23 @@ This is a lab for Apache server. The goal of this lab is to install and configur
         - Beveilig je 2de website zodat enkel docenten hierop kunnen (hiervoor moet je de juiste authenticatieinstellingen doorvoeren in de virtual host). Laad de juiste modules voor authenticatie in.
 
     9. .htaccess:
-        Maak onder DocumenRoot een Directory "test2" aan en plaats hierin een index.html bestand.
-        Laat in deze directory enkel een override van authenticatie toe.
-        Bekijk de directory op `http://localhost/test2/`
-        Plaats nu in deze directory een .htaccess en zorg ervoor dat enkel studenten toegang hebben.
-        Test opnieuw met `http://localhost/test2/`
-        Heb je hiervoor de webserver moeten herstarten? Waarom wel/niet?
+        - Maak onder `DocumenRoot` een Directory `test2` aan en plaats hierin een `index.html` bestand.
+        - Laat in deze directory enkel een override van authenticatie toe.
+        - Bekijk de directory op `http://localhost/test2/`
+        - Plaats nu in deze directory een `.htaccess` en zorg ervoor dat enkel studenten toegang hebben. Test opnieuw met `http://localhost/test2/`. Heb je hiervoor de webserver moeten herstarten? Waarom wel/niet?
 
     10. UserDir:
-        Voorzie de nodige modules voor gebruikersdirectories.
-        Zorg ervoor dat alle Windows gebruikers die gedefinieerd zijn op jou PC een eigen website kunnen aanmaken.
-        Hiervoor moeten ze een directory "www" aanmaken in hun home directory `c:/Users/<username>/www`. 
+        - Voorzie de nodige modules voor gebruikersdirectories.
+        - Zorg ervoor dat alle Windows gebruikers die gedefinieerd zijn op jou PC een eigen website kunnen aanmaken. Hiervoor moeten ze een directory `www` aanmaken in hun home directory `c:/Users/<username>/www`. 
 
     11. Redirect:
-        Zoek op internet hoe je een redirect kan implementeren in apache. 
-        Gebruikers die surfen naar `http://jouw_server/google` moeten automatisch doorgestuurd worden naar `http://google.com` 
+        - Zoek op internet hoe je een redirect kan implementeren in apache. 
+        - Gebruikers die surfen naar `http://jouw_server/google` moeten automatisch doorgestuurd worden naar `http://google.com` 
 
     12. Op IP filteren:
-        Laat enkel de locale machine toe om de server info te bekijken.
-        Start een virtuele machine op (Kies in Virtual Box een Host-only netwerk adapter)
-        Test of deze virtuele guest machine toegang heeft.
+        - Laat enkel de locale machine toe om de server info te bekijken.
+        - Start een virtuele machine op (Kies in Virtual Box een Host-only netwerk adapter)
+        - Test of deze virtuele guest machine toegang heeft.
 
 ## ✨Steps
 
@@ -153,7 +150,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Hello World Page</title>
+            <title>Apache Test \web\kdg</title>
             <style>
                 body {
                     font-family: Arial, sans-serif;
@@ -185,7 +182,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
         </head>
         <body>
             <div class="container">
-                <h1>Hello World!</h1>
+                <h1>Apache Test \web\kdg</h1>
                 <p>Welcome to my cool web page!</p>
                 <p>Design by Elias De Hondt
                 <br>Copyright &copy; <a class="eliasdh" target="_blank" href="https://eliasdh.com">EliasDH</a>
@@ -305,10 +302,325 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     </Directory>
     ```
 
+### 👉 Step 9: .htaccess
+- Create a directory `test2` under `DocumentRoot` and place an `index.html` file in it. (`c:\apache24\web\kdg\test2\index.html`):
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Apache Test \web\kdg\test2</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+                .container {
+                    width: 50%;
+                    margin: 0 auto;
+                    background-color: #4F94F0;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                }
+                h1 {
+                    color: #333;
+                }
+                .eliasdh {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                .eliasdh:hover {
+                    color: #357ac0; 
+                    text-decoration: none;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Apache Test \web\kdg\test2</h1>
+                <p>Welcome to my cool web page!</p>
+                <p>Design by Elias De Hondt
+                <br>Copyright &copy; <a class="eliasdh" target="_blank" href="https://eliasdh.com">EliasDH</a>
+                <br>All rights Reserved</p>
+            </div>
+        </body>
+    </html>
+    ```
+- Add the following lines to the `httpd.conf` file:
+    ```html
+    <Directory "c:/apache24/web/kdg/test2">
+        Options Indexes FollowSymLinks
+        AllowOverride AuthConfig
+        Require all granted
+    </Directory>
+    ```
+- Place a `.htaccess` file in the `test2` directory and add the following lines:
+    ```html
+    AuthType Basic
+    AuthName "Restricted Access"
+    AuthUserFile "c:/apache24/web/users"
+    AuthGroupFile "c:/apache24/web/group"
+    Require group studenten
+    ```
 
+### 👉 Step 10: UserDir
+- Add the following modules to the `httpd.conf` file:
+    ```html
+    LoadModule userdir_module modules/mod_userdir.so
+    LoadModule authz_user_module modules/mod_authz_user.so
+    ```
+- Add the following lines to the `httpd.conf` file:
+    ```html
+    UserDir "c:/Users/*/www"
+    <Directory "c:/Users/*/www">
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+    ```
+- Add in `c:/users/username/www` a file `index.html`:
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Apache Test \users\username\www</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f0f0f0;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+                .container {
+                    width: 50%;
+                    margin: 0 auto;
+                    background-color: #4F94F0;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                }
+                h1 {
+                    color: #333;
+                }
+                .eliasdh {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                .eliasdh:hover {
+                    color: #357ac0; 
+                    text-decoration: none;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Apache Test \users\username\www</h1>
+                <p>Welcome to my cool web page!</p>
+                <p>Design by Elias De Hondt
+                <br>Copyright &copy; <a class="eliasdh" target="_blank" href="https://eliasdh.com">EliasDH</a>
+                <br>All rights Reserved</p>
+            </div>
+        </body>
+    </html>
+    ```
+- Restart the web server.
 
+### 👉 Step 11: Redirect
+- Add the following lines to the `httpd.conf` file -> `<VirtualHost *:80>` section:
+    ```html
+    Redirect /google http://google.com
+    ```
+- Restart the web server.
 
+### 👉 Step 12: Filtering on IP
+- Add `LoadModule authz_host_module modules/mod_authz_host.so` to the `httpd.conf` file.
+- Add the following lines to the `httpd.conf` file:
+    ```html
+    <Location "/server-info">
+        SetHandler server-info
+        Require ip 127.0.0.1
+        Require ip ::1
+    </Location>
+    ```
+- Restart the web server.
 
+## 📦Extra
+
+- `httpd.conf` without comment:
+```html
+LoadModule authz_core_module modules/mod_authz_core.so
+LoadModule dir_module modules/mod_dir.so
+LoadModule autoindex_module modules/mod_autoindex.so
+LoadModule info_module modules/mod_info.so
+LoadModule authn_core_module modules/mod_authn_core.so
+LoadModule authn_file_module modules/mod_authn_file.so
+LoadModule authz_user_module modules/mod_authz_user.so
+LoadModule authz_groupfile_module modules/mod_authz_groupfile.so
+LoadModule auth_basic_module modules/mod_auth_basic.so
+LoadModule userdir_module modules/mod_userdir.so
+LoadModule alias_module modules/mod_alias.so
+LoadModule authz_host_module modules/mod_authz_host.so
+
+Listen 80
+Listen 8080
+
+<VirtualHost *:80>
+        ServerName LAPTOP
+        ServerRoot c:/apache24
+        DocumentRoot c:/apache24/web/kdg
+        DirectoryIndex index.html
+
+        Redirect /google http://www.google.com
+
+        <Directory "c:/apache24/web/kdg/test">
+                Options Indexes FollowSymLinks
+                Require all granted
+        </Directory>
+
+        <Directory "c:/apache24/web/kdg/test2">
+                Options Indexes FollowSymLinks
+                AllowOverride AuthConfig
+                Require all granted
+        </Directory>
+
+        UserDir "c:/Users/*/www"
+        <Directory "c:/Users/*/www">
+                Options Indexes FollowSymLinks
+                AllowOverride None
+                Require all granted
+        </Directory>
+
+        <Location "/server-info">
+                SetHandler server-info
+                Require ip 127.0.0.1
+                Require ip ::1
+	</Location>
+</VirtualHost>
+
+<VirtualHost *:8080>
+        ServerName LAPTOP
+        DocumentRoot c:/apache24/htdocs
+        <Directory "c:/apache24/htdocs">
+                Options Indexes FollowSymLinks
+                Require all granted
+        </Directory>
+
+        <Location "/">
+                AuthType Basic
+                AuthName "Restricted Access"
+                AuthUserFile "c:/apache24/web/users"
+                AuthGroupFile "c:/apache24/web/group"
+                Require group docenten
+        </Location>
+</VirtualHost>
+```
+
+- `httpd.conf` with comment:
+```html
+# Load necessary modules for basic server functionality
+LoadModule authz_core_module modules/mod_authz_core.so
+LoadModule dir_module modules/mod_dir.so
+LoadModule autoindex_module modules/mod_autoindex.so
+LoadModule info_module modules/mod_info.so
+
+# Authentication & .htaccess modules
+LoadModule authn_core_module modules/mod_authn_core.so
+LoadModule authn_file_module modules/mod_authn_file.so
+LoadModule authz_user_module modules/mod_authz_user.so
+LoadModule authz_groupfile_module modules/mod_authz_groupfile.so
+LoadModule auth_basic_module modules/mod_auth_basic.so
+
+# User directory module
+LoadModule userdir_module modules/mod_userdir.so
+
+# Alias module for URL redirection
+LoadModule alias_module modules/mod_alias.so
+
+# Filtering based on IP addresses
+LoadModule authz_host_module modules/mod_authz_host.so
+
+# Define the ports to listen on
+Listen 80
+Listen 8080
+
+# Configuration for the main virtual host on port 80
+<VirtualHost *:80>
+    ServerName LAPTOP
+    ServerRoot c:/apache24
+    DocumentRoot c:/apache24/web/kdg
+    DirectoryIndex index.html
+
+    # Redirect /google to http://www.google.com
+    Redirect /google http://www.google.com
+
+    # Configuration for the directory "c:/apache24/web/kdg/test"
+    <Directory "c:/apache24/web/kdg/test">
+        Options Indexes FollowSymLinks
+        Require all granted
+    </Directory>
+
+    # Configuration for the directory "c:/apache24/web/kdg/test2"
+    <Directory "c:/apache24/web/kdg/test2">
+        Options Indexes FollowSymLinks
+        AllowOverride AuthConfig
+        Require all granted
+    </Directory>
+
+    # User directory configuration for "c:/Users/*/www"
+    UserDir "c:/Users/*/www"
+    <Directory "c:/Users/*/www">
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    # Configuration for accessing server information at "/server-info"
+    <Location "/server-info">
+        SetHandler server-info
+        Require ip 127.0.0.1
+        Require ip ::1
+    </Location>
+</VirtualHost>
+
+# Configuration for an additional virtual host on port 8080
+<VirtualHost *:8080>
+    ServerName LAPTOP
+    DocumentRoot c:/apache24/htdocs
+
+    # Configuration for the directory "c:/apache24/htdocs"
+    <Directory "c:/apache24/htdocs">
+        Options Indexes FollowSymLinks
+        Require all granted
+    </Directory>
+
+    # Authentication configuration for the root location "/"
+    <Location "/">
+        AuthType Basic
+        AuthName "Restricted Access"
+        AuthUserFile "c:/apache24/web/users"
+        AuthGroupFile "c:/apache24/web/group"
+        Require group docenten
+    </Location>
+</VirtualHost>
+```
+
+- Start Apache as a service:
+    ```cmd
+    c:\apache24\bin\httpd -f c:/apache24/conf/httpd.conf
+    ```
+
+- Start Apache as a app:
+    ```cmd
+    net start apache2.4
+    ```
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
