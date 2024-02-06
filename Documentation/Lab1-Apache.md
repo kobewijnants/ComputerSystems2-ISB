@@ -10,6 +10,20 @@ This is a lab for Apache server. The goal of this lab is to install and configur
 1. [Introduction](#introduction)
 2. [Assignment](#assignment)
 3. [Steps](#steps)
+    - [Step 1: Installation of Apache Webserver on Windows 2.4](#step-1-installation-of-apache-webserver-on-windows-24)
+    - [Step 2: Backup original httpd.conf and clean up configuration](#step-2-backup-original-httpdconf-and-clean-up-configuration)
+    - [Step 3: To resolve startup errors](#step-3-to-resolve-startup-errors)
+    - [Step 4: View website](#step-4-view-website)
+    - [Step 5: Directory Auto Index](#step-5-directory-auto-index)
+    - [Step 6: Symbolic link and server info](#step-6-symbolic-link-and-server-info)
+    - [Step 7: Port based Virtual hosts](#step-7-port-based-virtual-hosts)
+    - [Step 8: Authentication](#step-8-authentication)
+    - [Step 9: .htaccess](#step-9-htaccess)
+    - [Step 10: UserDir](#step-10-userdir)
+    - [Step 11: Redirect](#step-11-redirect)
+    - [Step 12: Filtering on IP](#step-12-filtering-on-ip)
+4. [Extra](#extra)
+5. [Links](#links)
 
 
 ---
