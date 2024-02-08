@@ -635,6 +635,15 @@ Listen 8080
     ```cmd
     net start apache2.4
     ```
+    - If it doesn't work, you can check the error log at `c:\apache24\logs\error.log`.
+    - Or
+    ```cmd
+    c:\apache24\bin\httpd.exe -k uninstall
+    c:\apache24\bin\httpd.exe -k install
+    net start Apache2.4
+    net stop Apache2.4
+    ```
+
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
