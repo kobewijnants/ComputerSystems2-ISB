@@ -1,7 +1,7 @@
 ![logo](/Images/logo.png)
 # 💙🤍Lab1 Windows Server🤍💙
 
-
+This is a lab for Windows Server. The goal of this lab is to create a basic configuration of a Windows 2022 server.
 
 ---
 
@@ -10,14 +10,21 @@
 1. [Introduction](#introduction)
 2. [Assignment](#assignment)
 3. [Steps](#steps)
-
-
+    - [Step 0: Requirements](#step-0-requirements)
+    - [Step 1: General Configuration](#step-1-general-configuration)
+    - [Step 2: AD & DNS Installation](#step-2-ad--dns-installation)
+    - [Step 3: Start-Up Console & AD](#step-3-start-up-console--ad)
+    - [Step 4: Create OU & Users](#step-4-create-ou--users)
+    - [Step 5: Create Shares](#step-5-create-shares)
+    - [Step 6: Remote Desktop](#step-6-remote-desktop)
+4. [Extra](#extra)
+5. [Links](#links)
 
 ---
 
 ## 🖖Introduction
 
-
+This is a lab for Windows Server. The goal of this lab is to create a basic configuration of a Windows 2022 server. This lab will help you to understand the basic configuration of a Windows Server. You will learn how to install and configure the Active Directory and DNS server. You will also learn how to create OU's, users, groups, and shares. You will also learn how to configure the remote desktop.
 
 ### 📝Assignment 
 > NOTE This is in Dutch
