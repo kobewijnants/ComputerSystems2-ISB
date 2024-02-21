@@ -1,4 +1,8 @@
-######################################################################################
+############################
+# @author Elias De Hondt   #
+# @see https://eliasdh.com #
+# @since 01/02/2024        #
+############################
 # This will display the version (PSVersion)
 $PSVersionTable
 
@@ -38,7 +42,7 @@ Get-Command Get-*
 # This will display list of all cmdlets that have the word "time" in their name
 Get-Help time
 
-######################################################################################
+############################
 
 # Toon alle cmdlets die eindigen op "-object"
 Get-Command *-object
@@ -60,7 +64,7 @@ Get-Command sleep
 Get-Command mkdir
 Get-Command more
 
-######################################################################################
+############################
 
 # This will multiply 2 by 45
 2 * 45
@@ -82,14 +86,14 @@ Get-ChildItem ($home + "\Documents")
 # This will display the current date and time
 $datum = Get-Date; Write-Output $datum
 
-######################################################################################
+############################
 # Rekenkundig: +, -, *, /, --, ++
 # Assignment: =, +=, -=, *=, /=
 # Vergelijken: -eq, -ne, -lt, -le, -gt, -ge
 # String: +, -like, -replace
 # Redirection: >, >>, 2>, 2>>
 # Boolean: $true, $false, -not, !, -and, -or
-######################################################################################
+############################
 
 # Schrijf "Dag wereld" in file "output.txt"
 "Dag wereld" > output.txt
@@ -112,7 +116,7 @@ Invoke-Expression $varCalc
 # This will replace the string "Dag" with "Daaag"
 "Dag wereld" -replace "Dag", "Daaag"
 
-######################################################################################
+############################
 
 # Imlpiciet declaration
 $a = 5
@@ -141,7 +145,7 @@ $arr2[0]
 # Add an element to the array
 $arr1 += "Goodbye"
 
-######################################################################################
+############################
 
 # This will display the value of the $Env:Path variable
 # $Env:Path is a system environment variable
@@ -160,7 +164,7 @@ Set-Alias -Name "vi" -Value "notepad"
 # Or
 Set-Alias vi notepad
 
-######################################################################################
+############################
 # Exercise 1
 
 # Stop alle processen waarvan de naam met een "m" begint in de variabele "$proc"
@@ -201,4 +205,4 @@ Get-Content out.txt
 $som = [string] ($fibo[4] + $fibo[5])
 $fibo += [int] $som
 
-######################################################################################
+############################
