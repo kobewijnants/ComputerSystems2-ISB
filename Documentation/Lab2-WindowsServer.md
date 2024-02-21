@@ -189,7 +189,7 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
     - `C:\shares\home\student2`:
         - Permission: `student2` -> `Modify`.
     - `C:\shares\examens`:
-        - Permission: `DocentenGroep` -> `Read & Execut`.
+        - Permission: `DocentenGroep` -> `Read & Execute`.
         - Permission: `StudentenGroep`:
             - Type: `Allow`.
             - Applies to: `This folder, subfolders and files`.
