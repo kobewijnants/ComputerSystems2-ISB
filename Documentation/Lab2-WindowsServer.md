@@ -189,7 +189,7 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
     - `C:\shares\home\student2`:
         - Primission: `student2` -> `Modify`.
     - `C:\shares\examens`:
-        - Primission: `DocentenGroep` -> `Read & Execut`.
+        - Primission: `DocentenGroep` -> `Read & Execute`.
         - Primission: `StudentenGroep`:
             - Type: `Allow`.
             - Applies to: `This folder, subfolders and files`.
