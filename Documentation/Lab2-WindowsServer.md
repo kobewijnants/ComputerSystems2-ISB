@@ -182,15 +182,15 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
 
 - Create the directorys: (Give Domain Administrators Full Control)
     - `C:\shares\throughput`:
-        - Primission: `StudentenGroep` -> `Read & Execute`.
-        - Primission: `DocentenGroep` -> `Modify`.
+        - Permission: `StudentenGroep` -> `Read & Execute`.
+        - Permission: `DocentenGroep` -> `Modify`.
     - `C:\shares\home\student1`:
-         - Primission: `student1` -> `Modify`.
+         - Permission: `student1` -> `Modify`.
     - `C:\shares\home\student2`:
-        - Primission: `student2` -> `Modify`.
+        - Permission: `student2` -> `Modify`.
     - `C:\shares\examens`:
-        - Primission: `DocentenGroep` -> `Read & Execut`.
-        - Primission: `StudentenGroep`:
+        - Permission: `DocentenGroep` -> `Read & Execut`.
+        - Permission: `StudentenGroep`:
             - Type: `Allow`.
             - Applies to: `This folder, subfolders and files`.
             - Basic permissions: `Create files / write data`, `Create folders / append data`.
