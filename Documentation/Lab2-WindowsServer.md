@@ -193,7 +193,7 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
         - Permission: `StudentenGroep`:
             - Type: `Allow`.
             - Applies to: `This folder, subfolders and files`.
-            - Basic permissions: `Create files / write data`, `Create folders / append data`.
+            - Basic permissions: `Traverse folder/execute file`, `List folder/read data`, `Read attributes`, `Read extended attributes`, `Create files/write data`, `Write attributes`, `Write extended attributes`.
 
 ![logo](/Images/Lab2-WindowsServer-16.png)
 
