@@ -208,9 +208,9 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
 - Create the following shares on the server. (Give Domain Administrators Full Control):
     - `\\WINSERVER\throughput`:
         - Name the share `throughput`.
-    - `\\WINSERVER\home\student1`:
+    - `\\WINSERVER\student1`:
         - Name the share `homestudent1`.
-    - `\\WINSERVER\home\student2`:
+    - `\\WINSERVER\student2`:
         - Name the share `homestudent2`.
     - `\\WINSERVER\examens`:
         - Name the share `examens`.
@@ -220,11 +220,9 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
 
 ![logo](/Images/Lab2-WindowsServer-21.png)
 
-![logo](/Images/Lab2-WindowsServer-22.png)
-
 - Make sure that all user accounts can log in into the domain controller for testing purposes.
 
-![logo](/Images/Lab2-WindowsServer-23.png)
+![logo](/Images/Lab2-WindowsServer-22.png)
 
 - Test if you can access the shares from your local machine.
     - Make sure that all permissions are properly configured.
@@ -234,9 +232,9 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
 - Make sure that you can make a remote desktop RDP connection from your laptop. With the user `cisco`.
 - Go to `Server Manager` -> `Local Server` -> `Remote Desktop` -> `Enable Remote Desktop`.
 
-![logo](/Images/Lab2-WindowsServer-24.png)
+![logo](/Images/Lab2-WindowsServer-23.png)
 
-![logo](/Images/Lab2-WindowsServer-25.png)
+![logo](/Images/Lab2-WindowsServer-24.png)
 
 ## 📦Extra
 
