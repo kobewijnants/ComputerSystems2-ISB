@@ -209,9 +209,9 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
     - `\\WINSERVER\throughput`:
         - Name the share `throughput`.
     - `\\WINSERVER\student1`:
-        - Name the share `homestudent1`.
+        - Name the share `student1`.
     - `\\WINSERVER\student2`:
-        - Name the share `homestudent2`.
+        - Name the share `student2`.
     - `\\WINSERVER\examens`:
         - Name the share `examens`.
         
