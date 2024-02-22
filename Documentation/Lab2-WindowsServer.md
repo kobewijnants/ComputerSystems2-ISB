@@ -206,13 +206,13 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
 ![logo](/Images/Lab2-WindowsServer-19.png)
 
 - Create the following shares on the server. (Give Domain Administrators Full Control):
-    - `\\WINSERVER\shares\throughput`:
+    - `\\WINSERVER\throughput`:
         - Name the share `throughput`.
-    - `\\WINSERVER\shares\home\student1`:
+    - `\\WINSERVER\home\student1`:
         - Name the share `homestudent1`.
-    - `\\WINSERVER\shares\home\student2`:
+    - `\\WINSERVER\home\student2`:
         - Name the share `homestudent2`.
-    - `\\WINSERVER\shares\examens`:
+    - `\\WINSERVER\examens`:
         - Name the share `examens`.
         
 
