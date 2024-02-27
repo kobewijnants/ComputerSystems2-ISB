@@ -70,7 +70,7 @@ This lab is about Auditing, DFS, Login script. We will see how to configure the 
 
 ## ✨Steps
 
-### 👉 Step 0: 
+### 👉 Step 1: 
 
 ## 📦Extra
 
