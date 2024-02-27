@@ -10,7 +10,10 @@ This is a lab for Windows Server. We will discuss the following items in this la
 1. [Introduction](#introduction)
 2. [Assignment](#assignment)
 3. [Steps](#steps)
-
+    - [Step 1: NIC Teaming](#step-1-nic-teaming)
+    - [Step 2: Storage Spaces](#step-2-storage-spaces)
+    - [Step 3: Recycle Bin in Active Directory](#step-3-recycle-bin-in-active-directory)
+    - [Step 4: Group Policies](#step-4-group-policies)
 4. [Extra](#extra)
 5. [Links](#links)
 
