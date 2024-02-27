@@ -1,7 +1,7 @@
 ![logo](/Images/logo.png)
-# 💙🤍Lab1 Windows Server🤍💙
+# 💙🤍Lab2 Windows Server 1🤍💙
 
-This is a lab for Windows Server. The goal of this lab is to create a basic configuration of a Windows 2022 server.
+This is a lab for Windows Server. We will discuss the following items in this lab: Basic Configuration of a Windows 2022 server.
 
 ---
 
@@ -24,7 +24,7 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
 
 ## 🖖Introduction
 
-This is a lab for Windows Server. The goal of this lab is to create a basic configuration of a Windows 2022 server. This lab will help you to understand the basic configuration of a Windows Server. You will learn how to install and configure the Active Directory and DNS server. You will also learn how to create OU's, users, groups, and shares. You will also learn how to configure the remote desktop.
+This lab is about the basic configuration of a Windows 2022 server. We will see how to configure the basics of these items. After this lab you will have a basic understanding of these items. And you will be able to configure them in a basic way.
 
 ### 📝Assignment 
 > NOTE This is in Dutch
@@ -106,12 +106,12 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
     - NAT: `NAT`
     - Host-Only: `Host-Only`
 
-![logo](/Images/Lab2-WindowsServer-1.png)
+![logo](/Images/Lab2-WindowsServer1-1.png)
 
 - Give the `Host-Only` adapter a static IP address. in my case `192.168.19.10`.
 - Change the Folder settings so you can see all extensions.
 
-![logo](/Images/Lab2-WindowsServer-2.png)
+![logo](/Images/Lab2-WindowsServer1-2.png)
 
 ### 👉 Step 2: AD & DNS Installation
 
@@ -120,65 +120,65 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
     - Active Directory Domain Services
     - DNS server
 
-![logo](/Images/Lab2-WindowsServer-3.png)
+![logo](/Images/Lab2-WindowsServer1-3.png)
 
 - Follow the post-deployment configuration: Promote server to domain controller (`new forest`).
 
-![logo](/Images/Lab2-WindowsServer-4.png)
+![logo](/Images/Lab2-WindowsServer1-4.png)
 
 - Choose the domain name `lastname.local`. In my case `dehondt.local`.
 
-![logo](/Images/Lab2-WindowsServer-5.png)
+![logo](/Images/Lab2-WindowsServer1-5.png)
 
 ### 👉 Step 3: Start-Up Console & AD
 
 - Press `Windows + R` and type `gpmc.msc` to open the Group Policy Management.
 - Click on the `Default Domain Policy` -> `Forest` -> `Domains` -> `lastname.local` -> `Default Domain Policy` -> `Edit`.
 
-![logo](/Images/Lab2-WindowsServer-6.png)
+![logo](/Images/Lab2-WindowsServer1-6.png)
 
 - Go to `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Account Policies` -> `Password Policy`.
 - Change the password policy to `Password must meet complexity requirements: Disabled`.
 
-![logo](/Images/Lab2-WindowsServer-7.png)
+![logo](/Images/Lab2-WindowsServer1-7.png)
 
 - Change the password policy to `Minimum password length: 0`.
 
-![logo](/Images/Lab2-WindowsServer-8.png)
+![logo](/Images/Lab2-WindowsServer1-8.png)
 
 - Press `Windows + R` and type `dsa.msc` to open the Active Directory Users and Computers.
 - Create a copy of the administrator account and name it `cisco`.
 
-![logo](/Images/Lab2-WindowsServer-9.png)
+![logo](/Images/Lab2-WindowsServer1-9.png)
 
 - If the system gives a notification open the command prompt and type `gpupdate /force` to update the group policy.
 
-![logo](/Images/Lab2-WindowsServer-10.png)
+![logo](/Images/Lab2-WindowsServer1-10.png)
 
 ### 👉 Step 4: Create OU & Users
 
 - Press `Windows + R` and type `dsa.msc` to open the Active Directory Users and Computers.
 - Right-click on the domain name `lastname.local` and choose `New` -> `Organizational Unit`.
 
-![logo](/Images/Lab2-WindowsServer-11.png)
+![logo](/Images/Lab2-WindowsServer1-11.png)
 
 - Create the following structure:
     - OU `Admins` with user `cisco`.
     - OU `Docenten` with user `docent1`.
     - OU `Studenten` with sub OU's `INF1` and `INF2` with users `student1` and `student2` respectively.
 
-![logo](/Images/Lab2-WindowsServer-12.png)
+![logo](/Images/Lab2-WindowsServer1-12.png)
 
 ### 👉 Step 5: Create Shares
 
 - Press `Windows + R` and type `dsa.msc` to open the Active Directory Users and Computers.
 - Create a group `StudentenGroep` and `DocentenGroep` (Global, Security) in the resp. OU's, where all `studenten/docenten` are in.
 
-![logo](/Images/Lab2-WindowsServer-13.png)
+![logo](/Images/Lab2-WindowsServer1-13.png)
 
-![logo](/Images/Lab2-WindowsServer-14.png)
+![logo](/Images/Lab2-WindowsServer1-14.png)
 
-![logo](/Images/Lab2-WindowsServer-15.png)
+![logo](/Images/Lab2-WindowsServer1-15.png)
 
 - Create the directorys: (Give Domain Administrators Full Control)
     - `C:\shares\throughput`:
@@ -195,15 +195,15 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
             - Applies to: `This folder, subfolders and files`.
             - Basic permissions: `Traverse folder/execute file`, `List folder/read data`, `Read attributes`, `Read extended attributes`, `Create files/write data`, `Write attributes`, `Write extended attributes`.
 
-![logo](/Images/Lab2-WindowsServer-16.png)
+![logo](/Images/Lab2-WindowsServer1-16.png)
 
 - e.g: for `C:\shares\throughput`:
 
-![logo](/Images/Lab2-WindowsServer-17.png)
+![logo](/Images/Lab2-WindowsServer1-17.png)
 
-![logo](/Images/Lab2-WindowsServer-18.png)
+![logo](/Images/Lab2-WindowsServer1-18.png)
 
-![logo](/Images/Lab2-WindowsServer-19.png)
+![logo](/Images/Lab2-WindowsServer1-19.png)
 
 - Create the following shares on the server. (Give Domain Administrators Full Control):
     - `\\WINSERVER\throughput`:
@@ -216,13 +216,13 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
         - Name the share `examens`.
         
 
-![logo](/Images/Lab2-WindowsServer-20.png)
+![logo](/Images/Lab2-WindowsServer1-20.png)
 
-![logo](/Images/Lab2-WindowsServer-21.png)
+![logo](/Images/Lab2-WindowsServer1-21.png)
 
 - Make sure that all user accounts can log in into the domain controller for testing purposes.
 
-![logo](/Images/Lab2-WindowsServer-22.png)
+![logo](/Images/Lab2-WindowsServer1-22.png)
 
 - Test if you can access the shares from your local machine.
     - Make sure that all permissions are properly configured.
@@ -232,9 +232,9 @@ This is a lab for Windows Server. The goal of this lab is to create a basic conf
 - Make sure that you can make a remote desktop RDP connection from your laptop. With the user `cisco`.
 - Go to `Server Manager` -> `Local Server` -> `Remote Desktop` -> `Enable Remote Desktop`.
 
-![logo](/Images/Lab2-WindowsServer-23.png)
+![logo](/Images/Lab2-WindowsServer1-23.png)
 
-![logo](/Images/Lab2-WindowsServer-24.png)
+![logo](/Images/Lab2-WindowsServer1-24.png)
 
 ## 📦Extra
 
