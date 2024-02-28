@@ -42,9 +42,9 @@ This lab is about Auditing, DFS, Login script. We will see how to configure the 
 
     - Maak in de Server Manager de share `pictures` aan.
     - Activeer Auditing op de share `pictures` met volgende opties (voor alle `Users`):
-        - List folder/read data Failed
-        - Create files/write data Successful en Failed
-        - Create folders/append data Successful en Failed
+        - List `folder/read` data Failed
+        - Create `files/write` data Successful en Failed
+        - Create `folders/append` data Successful en Failed
 
     - Maak nu via de Event Viewer je Windows Security log leeg.
         - Test uit of het aanmaken van een nieuwe user gelogd wordt.
@@ -55,17 +55,17 @@ This lab is about Auditing, DFS, Login script. We will see how to configure the 
     - Maak een DFS `Public` aan (zoek zelf op hoe je dit moet doen).
 
 3. Login script (zoek op het Internet)
-    - Maak een login.bat bestand aan, dat automatisch de drive `T:` mapt naar de DFS bij het inloggen van een gebruiker.
-    - Welk commando plaats je in de login.bat?
-    - Zoek op waar je dit login.bat bestand moet plaatsen zodat het werkt.
-    - Wat moet je doen om deze login.bat te activeren voor alle gebruikers in het domein (2 mogelijkheden)?
+    - Maak een `login.bat` bestand aan, dat automatisch de drive `T:` mapt naar de DFS bij het inloggen van een gebruiker.
+    - Welk commando plaats je in de `login.bat`?
+    - Zoek op waar je dit `login.bat` bestand moet plaatsen zodat het werkt.
+    - Wat moet je doen om deze `login.bat` te activeren voor alle gebruikers in het domein (2 mogelijkheden)?
 
 4. Windows 10
     - Installeer Windows 10 in een virtuele machine.
     - Stel de netwerk settings in zodat deze kan communiceren met de Windows Server en ook toegang heeft tot het Internet.
-    - Stel de Windows Server in als de DNS server voor de Windows 10 (voor welke adapter moet je dit doen?)
-    - Voeg de Windows 10 machine toe aan jou domain (Zoek op hoe).
-    - Log in met user "student1" op Windows 10 en check of de login.bat werkt.
+    - Stel de Windows Server in als de DNS server voor de `Windows 10` (voor welke adapter moet je dit doen?)
+    - Voeg de Windows 10 machine toe aan jou domain.
+    - Log in met user `student1` op Windows 10 en check of de login.bat werkt.
     - Check of de policy instellingen van vorige week werken.
 
 ## ✨Steps
