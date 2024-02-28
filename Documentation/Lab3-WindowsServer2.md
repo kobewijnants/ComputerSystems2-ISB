@@ -68,13 +68,13 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 - Add a new network cards VMWare.
 
-![logo](/Images/Lab3-WindowsServer2-1.png)
+![x](/Images/Lab3-WindowsServer2-1.png)
 
-![logo](/Images/Lab3-WindowsServer2-2.png)
+![x](/Images/Lab3-WindowsServer2-2.png)
 
 > This should be the result.
 
-![logo](/Images/Lab3-WindowsServer2-3.png)
+![x](/Images/Lab3-WindowsServer2-3.png)
 
 - Combine the two network cards in Windows Server.
     - Go to `Server Manager`.
@@ -88,7 +88,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 > This should be the result.
 
-![logo](/Images/Lab3-WindowsServer2-4.png)
+![x](/Images/Lab3-WindowsServer2-4.png)
 
 - Remove the team, the network cards and the network.
     - Go to `Server Manager`.
@@ -106,11 +106,11 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 - Add 3 extra IDE drives in VMWare. (5GB each).
 
-![logo](/Images/Lab3-WindowsServer2-5.png)
+![x](/Images/Lab3-WindowsServer2-5.png)
 
-![logo](/Images/Lab3-WindowsServer2-6.png)
+![x](/Images/Lab3-WindowsServer2-6.png)
 
-![logo](/Images/Lab3-WindowsServer2-7.png)
+![x](/Images/Lab3-WindowsServer2-7.png)
 
 - Create a storage pool with these 3 drives. The last drive is used as a hot spare.
     - Go to `Server Manager`.
@@ -126,7 +126,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 > This should be the result.
 
-![logo](/Images/Lab3-WindowsServer2-8.png)
+![x](/Images/Lab3-WindowsServer2-8.png)
 
 - Create a virtual disk on this storage pool (mirrored).
     - Go to `Server Manager`.
@@ -144,7 +144,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 > This should be the result.
 
-![logo](/Images/Lab3-WindowsServer2-9.png)
+![x](/Images/Lab3-WindowsServer2-9.png)
 
 - Create a new Volume with this virtual disk.
     - Go to `Server Manager`.
@@ -160,7 +160,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 > This should be the result.
 
-![logo](/Images/Lab3-WindowsServer2-10.png)
+![x](/Images/Lab3-WindowsServer2-10.png)
 
 - To undo the steps we did above, simply do it in reverse.
 
@@ -181,7 +181,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
         - Click on `Deleted Objects`.
         - Right click on the `cisco` account and click `Restore`.
 
-![logo](/Images/Lab3-WindowsServer2-11.png)
+![x](/Images/Lab3-WindowsServer2-11.png)
 
 ### 👉 Step 4: Group Policies
 
