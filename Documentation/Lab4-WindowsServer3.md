@@ -10,7 +10,10 @@ This is a lab for Windows Server. We will discuss the following items in this la
 1. [Introduction](#introduction)
 2. [Assignment](#assignment)
 3. [Steps](#steps)
-
+    - [Step 1: Auditing](#step-1-auditing)
+    - [Step 2: DFS](#step-2-dfs)
+    - [Step 3: Login script](#step-3-login-script)
+    - [Step 4: Windows 10 client](#step-4-windows-10-client)
 4. [Extra](#extra)
 5. [Links](#links)
 
