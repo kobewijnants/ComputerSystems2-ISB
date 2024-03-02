@@ -1,21 +1,18 @@
 ![logo](/Images/logo.png)
 # 💙🤍Lab3 Windows Server 2🤍💙
 
-This is a lab for Windows Server. We will discuss the following items in this lab: NIC Teaming, Storage Spaces and Group Policies.
-
----
-
 ## 📘Table of Contents
 
-1. [Introduction](#introduction)
-2. [Assignment](#assignment)
-3. [Steps](#steps)
-    - [Step 1: NIC Teaming](#step-1-nic-teaming)
-    - [Step 2: Storage Spaces](#step-2-storage-spaces)
-    - [Step 3: Recycle Bin in Active Directory](#step-3-recycle-bin-in-active-directory)
-    - [Step 4: Group Policies](#step-4-group-policies)
-4. [Extra](#extra)
-5. [Links](#links)
+1. [📘Table of Contents](#📘table-of-contents)
+2. [🖖Introduction](#🖖introduction)
+3. [📝Assignment](#📝assignment)
+4. [✨Steps](#✨steps)
+    1. [👉Step 1: NIC Teaming](#👉step-1-nic-teaming)
+    2. [👉Step 2: Storage Spaces](#👉step-2-storage-spaces)
+    3. [👉Step 3: Recycle Bin in Active Directory](#👉step-3-recycle-bin-in-active-directory)
+    4. [👉Step 4: Group Policies](#👉step-4-group-policies)
+5. [📦Extra](#📦extra)
+6. [🔗Links](#🔗links)
 
 ---
 
@@ -64,7 +61,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 ## ✨Steps
 
-### 👉 Step 1: NIC Teaming
+### 👉Step 1: NIC Teaming
 
 - Add a new network cards VMWare.
 
@@ -102,7 +99,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
     - Click on `Local Server`.
     - Click on `Disabled` next to `NIC Teaming`.
 
-### 👉 Step 2: Storage Spaces
+### 👉Step 2: Storage Spaces
 
 - Add 3 extra IDE drives in VMWare. (5GB each).
 
@@ -164,7 +161,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 - To undo the steps we did above, simply do it in reverse.
 
-### 👉 Step 3: Recycle Bin in Active Directory
+### 👉Step 3: Recycle Bin in Active Directory
 
 - Enable the Recycle Bin in Active Directory.
     - Open `Active Directory Administrative Center`.
@@ -183,7 +180,7 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 ![x](/Images/Lab3-WindowsServer2-11.png)
 
-### 👉 Step 4: Group Policies
+### 👉Step 4: Group Policies
 
 - Create group policy object.
     - Go to `Group Policy Management`.

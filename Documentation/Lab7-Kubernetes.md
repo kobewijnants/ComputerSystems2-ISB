@@ -1,18 +1,11 @@
 ![logo](/Images/logo.png)
 # 💙🤍Lab7 Kubernetes🤍💙
 
-
-
----
-
 ## 📘Table of Contents
 
-1. [Introduction](#introduction)
-2. [Assignment](#assignment)
-3. [Steps](#steps)
-
-4. [Extra](#extra)
-5. [Links](#links)
+1. [📘Table of Contents](#📘table-of-contents)
+2. [🖖Introduction](#🖖introduction)
+3. [📝Assignment](#📝assignment)
 
 ---
 

@@ -1,21 +1,18 @@
 ![logo](/Images/logo.png)
 # 💙🤍Lab4 Windows Server 3🤍💙
 
-This is a lab for Windows Server. We will discuss the following items in this lab: Auditing, DFS, Login script.
-
----
-
 ## 📘Table of Contents
 
-1. [Introduction](#introduction)
-2. [Assignment](#assignment)
-3. [Steps](#steps)
-    - [Step 1: Auditing](#step-1-auditing)
-    - [Step 2: DFS](#step-2-dfs)
-    - [Step 3: Login script](#step-3-login-script)
-    - [Step 4: Windows 10 client](#step-4-windows-10-client)
-4. [Extra](#extra)
-5. [Links](#links)
+1. [📘Table of Contents](#📘table-of-contents)
+2. [🖖Introduction](#🖖introduction)
+3. [📝Assignment](#📝assignment)
+4. [✨Steps](#✨steps)
+    1. [👉Step 1: Auditing](#👉step-1-auditing)
+    2. [👉Step 2: DFS](#👉step-2-dfs)
+    3. [👉Step 3: Login script](#👉step-3-login-script)
+    4. [👉Step 4: Windows 10 client](#👉step-4-windows-10-client)
+5. [📦Extra](#📦extra)
+6. [🔗Links](#🔗links)
 
 ---
 
@@ -73,7 +70,7 @@ This lab is about Auditing, DFS, Login script. We will see how to configure the 
 
 ## ✨Steps
 
-### 👉 Step 1: Auditing
+### 👉Step 1: Auditing
 
 > Auditing = The process of tracking changes to an IT environment. This includes changes to hardware, software, and data. Auditing is a critical component of security and compliance.
 
@@ -145,7 +142,7 @@ This lab is about Auditing, DFS, Login script. We will see how to configure the 
         ```
         > Event 5145 should be logged.
 
-### 👉 Step 2: DFS
+### 👉Step 2: DFS
 
 > DFS = Distributed File System. DFS is a set of client and server services that allow an organization using Microsoft Windows servers to organize many distributed SMB file shares into a distributed file system.
 
@@ -177,7 +174,7 @@ This lab is about Auditing, DFS, Login script. We will see how to configure the 
 
 ![x](/Images/Lab4-WindowsServer3-2.png)
 
-### 👉 Step 3: Login script
+### 👉Step 3: Login script
 
 - Create a `login.bat` file that automatically maps the drive `T:` to the DFS when a user logs in.
     - Open `Notepad`. (`C:\Users\Administrator\Desktop`)
@@ -201,7 +198,7 @@ This lab is about Auditing, DFS, Login script. We will see how to configure the 
 
 ![x](/Images/Lab4-WindowsServer3-3.png)
 
-### 👉 Step 4: Windows 10 client
+### 👉Step 4: Windows 10 client
 
 - Install `Windows 11` in a virtual machine.
 - Set the network settings so that it can communicate with the Windows Server and also has access to the Internet.

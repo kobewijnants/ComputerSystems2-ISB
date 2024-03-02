@@ -1,24 +1,21 @@
 ![logo](/Images/logo.png)
 # 💙🤍Lab2 Windows Server 1🤍💙
 
-This is a lab for Windows Server. We will discuss the following items in this lab: Basic Configuration of a Windows 2022 server.
-
----
-
 ## 📘Table of Contents
 
-1. [Introduction](#introduction)
-2. [Assignment](#assignment)
-3. [Steps](#steps)
-    - [Step 0: Requirements](#step-0-requirements)
-    - [Step 1: General Configuration](#step-1-general-configuration)
-    - [Step 2: AD & DNS Installation](#step-2-ad--dns-installation)
-    - [Step 3: Start-Up Console & AD](#step-3-start-up-console--ad)
-    - [Step 4: Create OU & Users](#step-4-create-ou--users)
-    - [Step 5: Create Shares](#step-5-create-shares)
-    - [Step 6: Remote Desktop](#step-6-remote-desktop)
-4. [Extra](#extra)
-5. [Links](#links)
+1. [📘Table of Contents](#📘table-of-contents)
+2. [🖖Introduction](#🖖introduction)
+3. [📝Assignment](#📝assignment)
+4. [✨Steps](#✨steps)
+    1. [👉Step 0: Requirements](#👉step-0-requirements)
+    2. [👉Step 1: General Configuration](#👉step-1-general-configuration)
+    3. [👉Step 2: AD & DNS Installation](#👉step-2-ad--dns-installation)
+    4. [👉Step 3: Start-Up Console & AD](#👉step-3-start-up-console--ad)
+    5. [👉Step 4: Create OU & Users](#👉step-4-create-ou--users)
+    6. [👉Step 5: Create Shares](#👉step-5-create-shares)
+    7. [👉Step 6: Remote Desktop](#👉step-6-remote-desktop)
+5. [📦Extra](#📦extra)
+6. [🔗Links](#🔗links)
 
 ---
 
@@ -92,7 +89,7 @@ This lab is about the basic configuration of a Windows 2022 server. We will see 
 
 ## ✨Steps
 
-### 👉 Step 0: Requirements
+### 👉Step 0: Requirements
 - Install VirtualBox/VMware
 - Download Windows Server 2022 64-bit (English) from Microsoft DreamSpark.
 - Install Windows Server 2022 in VirtualBox (with Dekstop Experience).
@@ -100,7 +97,7 @@ This lab is about the basic configuration of a Windows 2022 server. We will see 
     - 1 NAT (External network **internet**)
     - 1 Host-Only (Internal network **local**)
 
-### 👉 Step 1: General Configuration
+### 👉Step 1: General Configuration
 - Change the name of the server to `WINSERVER` via Sever Manager -> Local Server.
 - Rename the network adapters.
     - NAT: `NAT`
@@ -113,7 +110,7 @@ This lab is about the basic configuration of a Windows 2022 server. We will see 
 
 ![x](/Images/Lab2-WindowsServer1-2.png)
 
-### 👉 Step 2: AD & DNS Installation
+### 👉Step 2: AD & DNS Installation
 
 - Start the server manager.
 - Install the following Roles:
@@ -130,7 +127,7 @@ This lab is about the basic configuration of a Windows 2022 server. We will see 
 
 ![x](/Images/Lab2-WindowsServer1-5.png)
 
-### 👉 Step 3: Start-Up Console & AD
+### 👉Step 3: Start-Up Console & AD
 
 - Press `Windows + R` and type `gpmc.msc` to open the Group Policy Management.
 - Click on the `Default Domain Policy` -> `Forest` -> `Domains` -> `lastname.local` -> `Default Domain Policy` -> `Edit`.
@@ -155,7 +152,7 @@ This lab is about the basic configuration of a Windows 2022 server. We will see 
 
 ![x](/Images/Lab2-WindowsServer1-10.png)
 
-### 👉 Step 4: Create OU & Users
+### 👉Step 4: Create OU & Users
 
 - Press `Windows + R` and type `dsa.msc` to open the Active Directory Users and Computers.
 - Right-click on the domain name `lastname.local` and choose `New` -> `Organizational Unit`.
@@ -169,7 +166,7 @@ This lab is about the basic configuration of a Windows 2022 server. We will see 
 
 ![x](/Images/Lab2-WindowsServer1-12.png)
 
-### 👉 Step 5: Create Shares
+### 👉Step 5: Create Shares
 
 - Press `Windows + R` and type `dsa.msc` to open the Active Directory Users and Computers.
 - Create a group `StudentenGroep` and `DocentenGroep` (Global, Security) in the resp. OU's, where all `studenten/docenten` are in.
@@ -227,7 +224,7 @@ This lab is about the basic configuration of a Windows 2022 server. We will see 
 - Test if you can access the shares from your local machine.
     - Make sure that all permissions are properly configured.
 
-### 👉 Step 6: Remote Desktop
+### 👉Step 6: Remote Desktop
 
 - Make sure that you can make a remote desktop RDP connection from your laptop. With the user `cisco`.
 - Go to `Server Manager` -> `Local Server` -> `Remote Desktop` -> `Enable Remote Desktop`.

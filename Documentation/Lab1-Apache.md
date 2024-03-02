@@ -1,30 +1,26 @@
 ![logo](/Images/logo.png)
 # 💙🤍Lab1 Apache🤍💙
 
-This is a lab for Apache server. The goal of this lab is to install and configure an Apache server on a Windows system with a minimal number of activated modules (so as efficiently as possible), and to understand the options of Apache.
-
----
-
 ## 📘Table of Contents
 
-1. [Introduction](#introduction)
-2. [Assignment](#assignment)
-3. [Steps](#steps)
-    - [Step 1: Installation of Apache Webserver on Windows 2.4](#step-1-installation-of-apache-webserver-on-windows-24)
-    - [Step 2: Backup original httpd.conf and clean up configuration](#step-2-backup-original-httpdconf-and-clean-up-configuration)
-    - [Step 3: To resolve startup errors](#step-3-to-resolve-startup-errors)
-    - [Step 4: View website](#step-4-view-website)
-    - [Step 5: Directory Auto Index](#step-5-directory-auto-index)
-    - [Step 6: Symbolic link and server info](#step-6-symbolic-link-and-server-info)
-    - [Step 7: Port based Virtual hosts](#step-7-port-based-virtual-hosts)
-    - [Step 8: Authentication](#step-8-authentication)
-    - [Step 9: .htaccess](#step-9-htaccess)
-    - [Step 10: UserDir](#step-10-userdir)
-    - [Step 11: Redirect](#step-11-redirect)
-    - [Step 12: Filtering on IP](#step-12-filtering-on-ip)
-4. [Extra](#extra)
-5. [Links](#links)
-
+1. [📘Table of Contents](#📘table-of-contents)
+2. [🖖Introduction](#🖖introduction)
+3. [📝Assignment](#📝assignment)
+4. [✨Steps](#✨steps)
+    1. [👉Step 1: Installation of Apache Webserver on Windows 2.4](#👉step-1-installation-of-apache-webserver-on-windows-24)
+    2. [👉Step 2: Backup original httpd.conf and clean up configuration](#👉step-2-backup-original-httpdconf-and-clean-up-configuration)
+    3. [👉Step 3: To resolve startup errors](#👉step-3-to-resolve-startup-errors)
+    4. [👉Step 4: View website](#👉step-4-view-website)
+    5. [👉Step 5: Directory Auto Index](#👉step-5-directory-auto-index)
+    6. [👉Step 6: Symbolic link and server info](#👉step-6-symbolic-link-and-server-info)
+    7. [👉Step 7: Port based Virtual hosts](#👉step-7-port-based-virtual-hosts)
+    8. [👉Step 8: Authentication](#👉step-8-authentication)
+    9. [👉Step 9: .htaccess](#👉step-9-htaccess)
+    10. [👉Step 10: UserDir](#👉step-10-userdir)
+    11. [👉Step 11: Redirect](#👉step-11-redirect)
+    12. [👉Step 12: Filtering on IP](#👉step-12-filtering-on-ip)
+5. [📦Extra](#📦extra)
+6. [🔗Links](#🔗links)
 
 ---
 
@@ -129,7 +125,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
 
 ## ✨Steps
 
-### 👉 Step 1: Installation of Apache Webserver on Windows 2.4
+### 👉Step 1: Installation of Apache Webserver on Windows 2.4
 
 - Download from this URL: [httpd.apache.org](https://httpd.apache.org/docs/2.4/platform/windows.html).
 - Unzip all in `c:\apache24`.
@@ -138,7 +134,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
 - Prevent Apache from starting automatically by running `sc config "Apache2.4" start= demand`.
 - Start the service by running `net start apache2.4`.
 
-### 👉 Step 2: Backup original httpd.conf and clean up configuration
+### 👉Step 2: Backup original httpd.conf and clean up configuration
 - Stop the service by running `net stop apache2.4`.
 - Go to the directory `cd ../conf/`.
 - Rename `httpd.conf` to `httpd.conf.backup` (`ren httpd.conf httpd.conf.backup`).
@@ -151,12 +147,12 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     - `cd web`
     - `mkdir kdg`
 
-### 👉 Step 3: To resolve startup errors
+### 👉Step 3: To resolve startup errors
 - In the configuration file we need to open a port for the server to listen on. We do this by adding `Listen 80` to the `httpd.conf` file.
 - Add `LoadModule authz_core_module modules/mod_authz_core.so` to the `httpd.conf` file.
 - Start the server by running `c:\apache24\bin\httpd -f c:/apache24/conf/httpd.conf`.
 
-### 👉 Step 4: View website
+### 👉Step 4: View website
 - Create a simple html file `web/kdg/index.html` with a personal text.
     ```html
     <!DOCTYPE html>
@@ -208,7 +204,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
 - Add `LoadModule dir_module modules/mod_dir.so` to the `httpd.conf` file.
 - Add `DirectoryIndex index.html` to your config file. Restart the web server.
 
-### 👉 Step 5: Directory Auto Index
+### 👉Step 5: Directory Auto Index
 - Add `LoadModule autoindex_module modules/mod_autoindex.so` to the `httpd.conf` file.
 - Create a directory `test` under `DocumentRoot` and define it as follows in your `httpd.conf`.
     ```html
@@ -218,7 +214,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     ```
 - View the directory at `http://127.0.0.1/test/`
 
-### 👉 Step 6: Symbolic link and server info
+### 👉Step 6: Symbolic link and server info
 - Create a new directory `link` in `c:\apache24\web\kdg\test`.
 - Create a link from `c:\apache24\web\kdg\test\link` to the logs directory in `ServerRoot`. You can do this in Powershell: 
     ```powershell
@@ -244,7 +240,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
 - Restart the web server.
 - If this module is running, you can request all apache settings at `http://127.0.0.1/server-info`.
 
-### 👉 Step 7: Port based Virtual hosts
+### 👉Step 7: Port based Virtual hosts
 - We are going to convert our entire configuration file `httpd.conf` as follows.
     ```html
     LoadModule authz_core_module modules/mod_authz_core.so
@@ -284,7 +280,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     > NOTE: You can also keep the original configuration and simply add the part of port 8080.
 - Restart the web server.
 
-### 👉 Step 8: Authentication
+### 👉Step 8: Authentication
 - Create the file `c:/apache24/web/users` and add the following lines:
     ```test
     student1:student1
@@ -316,7 +312,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     </Directory>
     ```
 
-### 👉 Step 9: .htaccess
+### 👉Step 9: .htaccess
 - Create a directory `test2` under `DocumentRoot` and place an `index.html` file in it. (`c:\apache24\web\kdg\test2\index.html`):
     ```html
     <!DOCTYPE html>
@@ -382,7 +378,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     Require group studenten
     ```
 
-### 👉 Step 10: UserDir
+### 👉Step 10: UserDir
 - Add the following modules to the `httpd.conf` file:
     ```html
     LoadModule userdir_module modules/mod_userdir.so
@@ -447,14 +443,14 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     ```
 - Restart the web server.
 
-### 👉 Step 11: Redirect
+### 👉Step 11: Redirect
 - Add the following lines to the `httpd.conf` file -> `<VirtualHost *:80>` section:
     ```html
     Redirect /google http://google.com
     ```
 - Restart the web server.
 
-### 👉 Step 12: Filtering on IP
+### 👉Step 12: Filtering on IP
 - Add `LoadModule authz_host_module modules/mod_authz_host.so` to the `httpd.conf` file.
 - Add the following lines to the `httpd.conf` file:
     ```html
