@@ -7,11 +7,11 @@
 2. [🖖Introduction](#🖖introduction)
 3. [📝Assignment](#📝assignment)
 4. [✨Steps](#✨steps)
-    1. [👉 Step 0: Install and configure new VM](#👉-step-0-install-and-configure-new-vm)
-    2. [👉 Step 1: Basic configuration with sconfig](#👉-step-1-basic-configuration-with-sconfig)
-    3. [👉 Step 2: Apache installation](#👉-step-2-apache-installation)
-    4. [👉 Step 3: HTTPS](#👉-step-3-https)
-    5. [👉 Step 4: PowerShell remoting](#👉-step-4-powershell-remoting)
+    1. [👉 Step 0: Install and configure new VM](#👉step-0-install-and-configure-new-vm)
+    2. [👉 Step 1: Basic configuration with sconfig](#👉step-1-basic-configuration-with-sconfig)
+    3. [👉 Step 2: Apache installation](#👉step-2-apache-installation)
+    4. [👉 Step 3: HTTPS](#👉step-3-https)
+    5. [👉 Step 4: PowerShell remoting](#👉step-4-powershell-remoting)
 5. [📦Extra](#📦extra)
 6. [🔗Links](#🔗links)
 
@@ -69,7 +69,7 @@ In this lab, we will be installing a Windows Server Core and configure it to hos
 
 ## ✨Steps
 
-### 👉 Step 0: Install and configure new VM
+### 👉Step 0: Install and configure new VM
 
 - Download `Windows Server 2022 Datacenter (updated July 2023)`.
     - From [Microsoft Portal Azure](https://portal.azure.com/).
@@ -84,7 +84,7 @@ In this lab, we will be installing a Windows Server Core and configure it to hos
 
 ![x](/Images/Lab5-WindowsServerCore-1.png)
 
-### 👉 Step 1: Basic configuration with sconfig
+### 👉Step 1: Basic configuration with sconfig
 
 - Start the Windows Core server and log in.
 - Give the server a readable computer name: `WINCORE`.
@@ -112,7 +112,7 @@ In this lab, we will be installing a Windows Server Core and configure it to hos
 
 ![x](/Images/Lab5-WindowsServerCore-2.png)
 
-### 👉 Step 2: Apache installation
+### 👉Step 2: Apache installation
 
 - Make a `Shared Folder` in VMware so you can exchange files between host and guest.
     - Go to `VM` -> `Settings` -> `Options` -> `Shared Folders`.
@@ -182,7 +182,7 @@ In this lab, we will be installing a Windows Server Core and configure it to hos
 
 ![x](/Images/Lab5-WindowsServerCore-3.png)
     
-### 👉 Step 3: HTTPS
+### 👉Step 3: HTTPS
 
 - Make self-signed certificates (see REF 3) and place them in the `conf` directory of Apache.
     - Open PowerShell pressing `15` and then `Enter`.
@@ -220,7 +220,7 @@ In this lab, we will be installing a Windows Server Core and configure it to hos
     </VirtualHost>
     ```
 
-### 👉 Step 4: PowerShell remoting
+### 👉Step 4: PowerShell remoting
 
 - Run `Enable-PSRemoting` on your host and guest machine (ev. with optie `-SkipNetworkProfileCheck`). **SERVER CORE**
     - Open PowerShell pressing `15` and then `Enter`.
