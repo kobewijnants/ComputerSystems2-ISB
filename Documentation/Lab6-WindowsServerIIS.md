@@ -66,7 +66,119 @@ Kan je nu het paswoord ook decoderen?
 
 ## ✨Steps
 
-### 👉 Step 1: 
+### 👉 Step 0: Installation IIS
+
+- Open `Server Manager` and click on `Manage` and then `Add Role and Features`. (`WIN + R` and type `ServerManager`).
+- Click on `Next` until you reach the `Server Roles` tab.
+- Check `Web Server (IIS)` and click on `Next`.
+- Click on `Next` until you reach the `Role Services` tab.
+- Check `FTP Server`, `Basic Authentication`, `Windows Authentication`, `HTTP Redirection` and `IP and Domain Restrictions`.
+- Click on `Next` and then `Install`.
+
+### 👉 Step 1: IIS Manager
+
+- Create a directory `C:\shares\defaultweb`.
+    ```powershell
+    mkdir C:\shares\defaultweb
+    ```
+- Open `IIS Manager`. (`WIN + R` and type `inetmgr`).
+- Click on `WINSERVER` and then `Sites`.
+- Right click on `Default Web Site` and click on `Manage Website` and then `Advanced Settings`.
+- Change the `Physical Path` to `C:\shares\defaultweb`.
+- Create a file `start.htm` in the `C:\shares\defaultweb` directory.
+    ```powershell
+    echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Windows Server IIS Default Web Site</title><style>body {font-family: Arial, sans-serif;background-color: #f0f0f0;text-align: center;margin-top: 50px;}.container {width: 50%;margin: 0 auto;background-color: #4F94F0;padding: 20px;border-radius: 10px;box-shadow: 0 0 10px rgba(0,0,0,0.1);}h1 {olor: #333;}.eliasdh {color: #ffffff;text-decoration: none;font-weight: bold;}.eliasdh:hover {color: #357ac0; text-decoration: none;}</style></head><body><div class="container"><h1>Windows Server IIS Default Web Site</h1><a class="eliasdh" target="_blank" href="/test">Test Folder</a><p>Welcome to my cool web page!</p><p>Design by Elias De Hondt<br>Copyright &copy; <a class="eliasdh" target="_blank" href="https://eliasdh.com">EliasDH</a><br>All rights Reserved</p></div></body></html>' > C:\shares\defaultweb\start.htm
+    ```
+- Click on `Default Web Site` and then `Directory Browsing`.
+    - Click on `Add...` and then type `start.htm` and click on `OK`.
+- Create a subdirectory `test` in the `C:\shares\defaultweb` directory.
+    ```powershell
+    mkdir C:\shares\defaultweb\test
+    ```
+- Click on `Default Web Site` and then `Add Application`.
+    - Type `test` in the `Alias` field and select the `C:\shares\defaultweb\test` directory.
+- Test this out from your host machine.
+
+> This should be the result.
+
+![x](/Images/Lab6-WindowsServerIIS-1.png)
+![x](/Images/Lab6-WindowsServerIIS-2.png)
+
+### 👉 Step 2: Additional Website.
+
+- Create a directory `C:\shares\web2`.
+    ```powershell
+    mkdir C:\shares\web2
+    ```
+- Add an additional IP address. (Current IP adres: `192.168.19.10`).
+    - Go to `Network and Sharing Center` and then `Change adapter settings`.
+    - Right click on `Host-Only-Team` and click on `Properties`.
+    - Select `Internet Protocol Version 4 (TCP/IPv4)` and click on `Properties`.
+    - Click on `Advanced...` and then `Add...`.
+    - Type `192.168.19.11` and `255.255.255.0` and click on `Add`.
+    - Click on `OK` and then `Close`.
+- Open `IIS Manager`. (`WIN + R` and type `inetmgr`).
+- Click on `WINSERVER` and then `Sites`.
+- Right click on `Sites` and click on `Add Website`.
+    - Site name: `Web2`.
+    - Physical path: `C:\shares\web2`.
+    - IP address: `192.168.19.11`.
+    - Port: `8080`.
+- Create a file `start.htm` in the `C:\shares\defaultweb` directory.
+    ```powershell
+    echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Windows Server IIS Web 2</title><style>body {font-family: Arial, sans-serif;background-color: #f0f0f0;text-align: center;margin-top: 50px;}.container {width: 50%;margin: 0 auto;background-color: #4F94F0;padding: 20px;border-radius: 10px;box-shadow: 0 0 10px rgba(0,0,0,0.1);}h1 {olor: #333;}.eliasdh {color: #ffffff;text-decoration: none;font-weight: bold;}.eliasdh:hover {color: #357ac0; text-decoration: none;}</style></head><body><div class="container"><h1>Windows Server IIS Web 2</h1><p>Welcome to my cool web page!</p><p>Design by Elias De Hondt<br>Copyright &copy; <a class="eliasdh" target="_blank" href="https://eliasdh.com">EliasDH</a><br>All rights Reserved</p></div></body></html>' > C:\shares\web2\index.html
+    ```
+- Set the firewall rule to allow port `8080`.
+    ```powershell
+    New-NetFirewallRule -DisplayName "Allow Port 80" -Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow
+    New-NetFirewallRule -DisplayName "Allow Port 8080" -Direction Inbound -LocalPort 8080 -Protocol TCP -Action Allow
+    ```
+- Test this out from your host machine.
+
+> This should be the result.
+
+![x](/Images/Lab6-WindowsServerIIS-3.png)
+![x](/Images/Lab6-WindowsServerIIS-4.png)
+
+### 👉 Step 3: DNS
+
+- Create a directory `C:\shares\web3`.
+    ```powershell
+    mkdir C:\shares\web3
+    ```
+- Open `IIS Manager`. (`WIN + R` and type `inetmgr`).
+- Click on `WINSERVER` and then `Sites`.
+- Right click on `Sites` and click on `Add Website`.
+    - Site name: `Web3`.
+    - Physical path: `C:\shares\web3`.
+    - Host name: `www.elias.org`.
+- Create a file `start.htm` in the `C:\shares\web3` directory.
+    ```powershell
+    echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Windows Server IIS Web 3</title><style>body {font-family: Arial, sans-serif;background-color: #f0f0f0;text-align: center;margin-top: 50px;}.container {width: 50%;margin: 0 auto;background-color: #4F94F0;padding: 20px;border-radius: 10px;box-shadow: 0 0 10px rgba(0,0,0,0.1);}h1 {olor: #333;}.eliasdh {color: #ffffff;text-decoration: none;font-weight: bold;}.eliasdh:hover {color: #357ac0; text-decoration: none;}</style></head><body><div class="container"><h1>Windows Server IIS Web 3</h1><p>Welcome to my cool web page!</p><p>Design by Elias De Hondt<br>Copyright &copy; <a class="eliasdh" target="_blank" href="https://eliasdh.com">EliasDH</a><br>All rights Reserved</p></div></body></html>' > C:\shares\web3\index.html
+    ```
+- Open `DNS Manager`. (`WIN + R` and type `dnsmgmt`).
+- Right click on `WINSERVER` and click on `Forward Lookup Zones`.
+- Right click `New Zone...` and click on `Next`.
+- Click on `Next` until you reach the `Zone Name` tab.
+    - Zone name: `elias.org`.
+    - Click on `Next` and then `Finish`.
+- Right click on `elias.org` and click on `New Host (A or AAAA)`.
+    - Name: `www`.
+    - IP address: `192.168.19.10`.
+- Test this out from the Windows server. (`WIN + R` and type `iexplore www.elias.org`).
+
+> This should be the result.
+
+![x](/Images/Lab6-WindowsServerIIS-5.png)
+![x](/Images/Lab6-WindowsServerIIS-6.png)
+![x](/Images/Lab6-WindowsServerIIS-7.png)
+
+
+
+
+
+
+
 
 ## 📦Extra
 
