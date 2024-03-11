@@ -6,6 +6,7 @@
 1. [📘Table of Contents](#📘table-of-contents)
 2. [🖖Introduction](#🖖introduction)
 3. [📝Assignment](#📝assignment)
+4. [✨Steps](#✨steps)
 
 ---
 
