@@ -2,6 +2,6 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
-# Test.ps1
+# HelloWorld.ps1
 
-Write-Host "Test"
+Write-Host "Hello World"
