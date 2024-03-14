@@ -1,0 +1,2 @@
+c:\windows\win.ini
+c:\windows\system.ini
