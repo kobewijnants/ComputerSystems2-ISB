@@ -1,0 +1,8 @@
+#TYPE System.Management.Automation.PSCustomObject
+"date","computername","adaptername","mac"
+"20/12/2017 15:27:48","AKDGPORT9000","Intel(R) Ethernet Connection I219-LM","F5:30:B9:0F:B2:28"
+"20/12/2017 15:27:48","AKDGPORT9000","Bluetooth Device (Personal Area Network)","89:78:73:CB:43:0E"
+"20/12/2017 15:27:48","AKDGPORT9000","Intel(R) Dual Band Wireless-AC 7265","89:78:73:CB:43:0A"
+"16/11/2018 9:48:56","AKDGPORT9004","Intel(R) Dual Band Wireless-AC 7265","88:78:73:CB:43:0A"
+"16/11/2018 9:48:57","AKDGPORT9004","Intel(R) Ethernet Connection I219-LM","F4:30:B9:0F:B2:28"
+"16/11/2018 9:48:57","AKDGPORT9004","Bluetooth Device (Personal Area Network)","88:78:73:CB:43:0E"
