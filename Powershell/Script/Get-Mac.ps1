@@ -5,30 +5,31 @@
 ############################
 # Get-Mac.ps1
 
-$filename = "C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica 2 Jaar\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\MacTable.csv"
+# Import the csv file
+$csvfile = "C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica 2 Jaar\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\MacTable.csv"
 
-function Delete-LinesCsv($property, $value, $filename) {
-    Import-Csv $filename | ? { $_.$property -ne $value } | Export-Csv ($filename + ".new") -force
-    Move-Item ($filename + ".new") $filename -Force
+function Delete-LinesCsv($property, $value, $csvfile) {
+    Import-Csv $csvfile | ? { $_.$property -ne $value } | Export-Csv ($csvfile + ".new") -force
+    Move-Item ($csvfile + ".new") $csvfile -Force
 }
 
 function Write-Mac() {
     $adapters = Get-CimInstance Win32_NetworkAdapter | ? { $_.AdapterType -eq "Ethernet 802.3" -and $_.PhysicalAdapter -eq $true }
     foreach ($adapter in $adapters) {
         $date = (Get-Date).ToString() 
-        Delete-LinesCsv mac $adapter.MacAddress $filename
+        Delete-LinesCsv mac $adapter.MacAddress $csvfile
         Write-Host ("Schrijf: " + $date + "," + $adapter.SystemName + "," + $adapter.Name + "," + $adapter.MacAddress)
-        Add-Content $filename ($date + "," + $adapter.SystemName + "," + $adapter.Name + "," + $adapter.MacAddress)
+        Add-Content $csvfile ($date + "," + $adapter.SystemName + "," + $adapter.Name + "," + $adapter.MacAddress)
     }
 }
 
 function Get-Mac($computername) {
-    Import-Csv $filename | ? {$_.computername -like $computername}
+    Import-Csv $csvfile | ? {$_.computername -like $computername}
 }
 
 function Clean-Mac([int]$maxtimespan) {
-    Import-Csv $filename | ? { ((Get-Date) - (Get-Date $_.date)).days -le $maxtimespan } | Export-Csv ($filename + ".new")
-    Move-Item ($filename + ".new") $filename -Force
+    Import-Csv $csvfile | ? { ((Get-Date) - (Get-Date $_.date)).days -le $maxtimespan } | Export-Csv ($csvfile + ".new")
+    Move-Item ($csvfile + ".new") $csvfile -Force
 }
 
 if ( $args.count -eq 0 ) { Write-Mac }
