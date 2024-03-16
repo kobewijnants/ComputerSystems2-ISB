@@ -4,6 +4,8 @@
 # @since 01/02/2024        #
 ############################
 
+# (-eq is =) (-ne is !=) (-lt is <) (-le is <=) (-gt is >) (-ge is >=)
+
 # Set powershell execution policy to unrestricted
 set-executionpolicy unrestricted
 
