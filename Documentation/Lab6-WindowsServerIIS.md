@@ -108,6 +108,7 @@ Kan je nu het paswoord ook decoderen?
     ```
 - Click on `Default Web Site` and then `Add Application`.
     - Type `test` in the `Alias` field and select the `C:\shares\defaultweb\test` directory.
+    - Enable `Directory Browsing` in test
 - Test this out from your host machine. In my case `http://192.168.19.10:80` and `http://192.168.19.10:80/test`.
 
 > This should be the result.
