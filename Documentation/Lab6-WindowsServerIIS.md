@@ -169,7 +169,7 @@ Kan je nu het paswoord ook decoderen?
     ```powershell
     echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Windows Server IIS Web 3</title><style>body {font-family: Arial, sans-serif;background-color: #f0f0f0;text-align: center;margin-top: 50px;}.container {width: 50%;margin: 0 auto;background-color: #4F94F0;padding: 20px;border-radius: 10px;box-shadow: 0 0 10px rgba(0,0,0,0.1);}h1 {olor: #333;}.eliasdh {color: #ffffff;text-decoration: none;font-weight: bold;}.eliasdh:hover {color: #357ac0; text-decoration: none;}</style></head><body><div class="container"><h1>Windows Server IIS Web 3</h1><p>Welcome to my cool web page!</p><p>Design by Elias De Hondt<br>Copyright &copy; <a class="eliasdh" target="_blank" href="https://eliasdh.com">EliasDH</a><br>All rights Reserved</p></div></body></html>' > C:\shares\web3\index.html
     ```
-- Open `DNS Manager`. (`WIN + R` and type `dnsmgmt`).
+- Open `DNS Manager`. (`WIN + R` and type `dnsmgmt.msc`).
 - Right click on `WINSERVER` and click on `Forward Lookup Zones`.
 - Right click `New Zone...` and click on `Next`.
 - Click on `Next` until you reach the `Zone Name` tab.
