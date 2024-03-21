@@ -30,7 +30,7 @@ function ProcessRunning {
         [string]$process
     )
 
-    Get-Process $process -ErrorAction SilentlyContinue
+    Get-Process $process -ErrorAction SilentlyContinue | Out-null
 
     if ($? -eq $false) {
         Invoke-Expression $process

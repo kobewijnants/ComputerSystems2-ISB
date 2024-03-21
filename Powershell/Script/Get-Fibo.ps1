@@ -36,6 +36,12 @@ function Get-Fibo {
 }
 
 $n = Read-Host "Please select a number"
+if (-not ($n -match '^\d+$')) { # Check if n is a number
+    Write-Host "Please enter a valid number"
+    Start-Sleep -Seconds 10
+    exit 1
+}
+
 $fibonacci = Get-Fibo -n $n # Get the Fibonacci numbers up to n
 Write-Host "The Fibonacci numbers up to $n are:"
 $fibonacci | ForEach-Object { Write-Host $_ } # Show the Fibonacci numbers from 0 to n from the array $fibonacci
