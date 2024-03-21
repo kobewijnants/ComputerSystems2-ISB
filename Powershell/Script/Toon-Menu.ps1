@@ -31,7 +31,7 @@ do {
                 $end = $true
             }
             else {
-                Invoke-Expression $menuItem.Name
+                Invoke-Expression $menuItem.Name # Invoke-Expression = &
                 $end = $true
             }
         }
