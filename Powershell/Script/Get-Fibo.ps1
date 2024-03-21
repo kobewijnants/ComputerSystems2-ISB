@@ -4,3 +4,12 @@
 # @since 01/02/2024        #
 ############################
 # Get-Fibo.ps1
+
+<#
+.SYNOPSIS
+
+.DESCRIPTION
+
+.EXAMPLE
+
+#>

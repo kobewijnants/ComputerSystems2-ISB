@@ -5,6 +5,15 @@
 ############################
 # Toon-Menu.ps1
 
+<#
+.SYNOPSIS
+    This script displays a menu with options.
+.DESCRIPTION
+    This script displays a menu with options.
+.EXAMPLE
+    Toon-Menu.ps1
+#>
+
 # Import the csv file
 $csvfile = 'C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica Jaar 2\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\menu.csv'
 

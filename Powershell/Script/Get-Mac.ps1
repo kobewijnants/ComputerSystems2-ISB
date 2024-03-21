@@ -5,6 +5,16 @@
 ############################
 # Get-Mac.ps1
 
+<#
+.SYNOPSIS
+    This script reads the MAC address of the network adapters and writes them to a CSV file.
+.DESCRIPTION
+    This script reads the MAC address of the network adapters and writes them to a CSV file.
+    The script can also show the MAC address of a specific computer and clean up the CSV file.
+.EXAMPLE
+    Get-Mac.ps1
+#>
+
 # Import the csv file
 $csvfile = "C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica 2 Jaar\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\MacTable.csv"
 

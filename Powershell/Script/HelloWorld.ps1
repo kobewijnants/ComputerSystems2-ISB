@@ -4,4 +4,13 @@
 ############################
 # HelloWorld.ps1
 
+<#
+.SYNOPSIS
+    This script writes "Hello World" to the console.
+.DESCRIPTION
+    This script writes "Hello World" to the console.
+.EXAMPLE
+    HelloWorld.ps1
+#>
+
 Write-Host "Hello World"

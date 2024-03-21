@@ -5,6 +5,15 @@
 ############################
 # Get-FileContent.ps1
 
+<#
+.SYNOPSIS
+    This script reads the content of a text file and displays the content of each file listed in the text file.
+.DESCRIPTION
+    This script reads the content of a text file and displays the content of each file listed in the text file.
+.EXAMPLE
+    Get-FileContent.ps1
+#>
+
 # Import the text file
 $txtfile = 'C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica Jaar 2\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\filelist.txt'
 

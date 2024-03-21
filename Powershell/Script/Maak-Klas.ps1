@@ -5,6 +5,17 @@
 ############################
 # Maak-Klas.ps1
 
+<#
+.SYNOPSIS
+    This script creates class files and folders from a csv file.
+.DESCRIPTION
+    This script creates class files and folders from a csv file.
+    The script can also remove the class files and folders.
+.EXAMPLE
+    Maak-Klas.ps1
+    Maak-Klas.ps1 -Remove
+#>
+
 # Functie: Create Class files and folders from a csv file
 function CreateClass($class) {
     $splitClass = $class.Split(",")
