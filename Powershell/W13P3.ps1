@@ -7,7 +7,7 @@
 $PSVersionTable
 
 # This will display the processes running on the system
-Get-ProcessGet
+Get-Process
 
 # This will display the services running on the system
 Get-Service
