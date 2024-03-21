@@ -18,15 +18,22 @@
 $csvfile = 'C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica Jaar 2\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\menu.csv'
 
 $menu = Import-Csv -header "Nbr","Name" -Path $csvfile
+$end = $false
 
 do {
     Clear-Host
     $menu | Format-Table
     $choice = Read-Host "Please select a number"
 
-    switch ($choice) {
-        1 { Invoke-Expression $menu[0].Name }
-        2 { Invoke-Expression $menu[1].Name }
-        3 { Invoke-Expression $menu[2].Name }
+    foreach ($menuItem in $menu) {
+        if ($menuItem.Nbr -eq $choice) {
+            if ($menuItem.Name -eq "Stoppen") {
+                $end = $true
+            }
+            else {
+                Invoke-Expression $menuItem.Name
+                $end = $true
+            }
+        }
     }
-} until ($choice -eq 4)
+} until ($end)
