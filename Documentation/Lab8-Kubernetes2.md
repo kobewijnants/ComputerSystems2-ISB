@@ -1,5 +1,5 @@
 ![logo](/Images/logo.png)
-# 💙🤍Lab7 Kubernetes🤍💙
+# 💙🤍Lab8 Kubernetes2🤍💙
 
 ## 📘Table of Contents
 
