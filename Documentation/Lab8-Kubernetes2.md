@@ -72,4 +72,4 @@ Maak 2 powershell scripts om je cluster te starten (met ev. applicatie erop) en 
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
-- 📫 How to reach us eliasdehondt@outlook.com.
+- 📫 How to reach us elias.dehondt@outlook.com

@@ -259,4 +259,4 @@ This lab is about NIC Teaming, Storage Spaces and Group Policies. We will see ho
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
-- 📫 How to reach us eliasdehondt@outlook.com.
+- 📫 How to reach us elias.dehondt@outlook.com
