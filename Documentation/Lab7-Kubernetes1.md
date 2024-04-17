@@ -76,6 +76,9 @@
 ```bash
 gcloud projects create cs2-isb-elias-de-hondt
 gcloud config set project cs2-isb-elias-de-hondt
+
+# Or
+gcloud init
 ```
 
 ### 👉 Step 1:
