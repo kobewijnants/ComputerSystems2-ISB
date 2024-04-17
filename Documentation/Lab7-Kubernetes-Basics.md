@@ -1,5 +1,5 @@
 ![logo](/Images/logo.png)
-# 💙🤍Kubernetes Basics🤍💙
+# 💙🤍Lab7 Kubernetes Basics🤍💙
 
 ## 📘Table of Contents
 
