@@ -20,7 +20,7 @@
 - NODIG: Google Cloud SDK, Docker
 - DOEL: Deploy Windows Container in Kubernetes
 - REF:
-    1. https://cloud.google.com/kubernetes-engine/docs/quickstart
+  1. https://cloud.google.com/kubernetes-engine/docs/quickstart
 	2. https://cloud.google.com/blog/products/containers-kubernetes/how-to-deploy-a-windows-container-on-google-kubernetes-engine
 
 1. Maak een K8s cluster aan in de Google Cloud (zie REF 1, tot "Deploying an application to the cluster")

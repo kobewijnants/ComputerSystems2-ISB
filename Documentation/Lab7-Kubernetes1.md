@@ -22,7 +22,7 @@
 - DOEL: Deploy Windows Container in Google Cloud
 
 - REF:
-    1. https://cloud.google.com/sdk/
+  1. https://cloud.google.com/sdk/
 	2. https://cloud.google.com/compute/docs/quickstart-windows
 	3. https://cloud.google.com/blog/products/containers-kubernetes/how-to-deploy-a-windows-container-on-google-compute-engine
 
@@ -59,7 +59,31 @@
 
 ## ✨Steps
 
-### 👉 Step 1: 
+### 👉 Step 0: Basic Setup
+
+- Create a Google Cloud account and link it to a billing account.
+- Install the Google Cloud SDK on your computer.
+- Configure the SDK with your account.
+- Test the configuration with `gcloud config list`.
+- Create a Docker Hub account if you don't have one yet.
+
+- Install the Google Cloud SDK in PowerShell with the following command:
+```powershell
+(New-Object Net.WebClient).DownloadFile("https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe", "$env:Temp\GoogleCloudSDKInstaller.exe") & $env:Temp\GoogleCloudSDKInstaller.exe
+```
+
+- Create/set a Google Cloud Project with the following command:
+```bash
+gcloud projects create cs2-isb-elias-de-hondt
+gcloud config set project cs2-isb-elias-de-hondt
+```
+
+### 👉 Step 1:
+
+
+
+
+
 
 ## 📦Extra
 
