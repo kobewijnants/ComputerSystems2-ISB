@@ -65,7 +65,7 @@ Maak 2 powershell scripts om je cluster te starten (met ev. applicatie erop) en 
 
 ## ✨Steps
 
-### 👉 Step 1: 
+### 👉Step 1: 
 
 ## 📦Extra
 

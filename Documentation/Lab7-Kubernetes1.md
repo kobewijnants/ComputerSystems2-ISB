@@ -81,7 +81,7 @@ gcloud config set project cs2-isb-elias-de-hondt
 gcloud init
 ```
 
-### 👉 Step 1:
+### 👉Step 1:
 
 
 
