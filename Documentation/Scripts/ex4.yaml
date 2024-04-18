@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ex4
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ex4
+  template:
+    metadata:
+      labels:
+        app: ex4
+    spec:
+      containers:
+      - name: ex4
+        image: gcr.io/google-samples/kubernetes-bootcamp:v1
+        ports:
+        - containerPort: 8080

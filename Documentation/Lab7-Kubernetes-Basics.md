@@ -13,6 +13,7 @@
     4. [👉Expose Your App Publicly](#👉expose-your-app-publicly)
     5. [👉Scale Your App](#👉scale-your-app)
     6. [👉Update Your App](#👉update-your-app)
+    7. [👉Create a YAML file](#👉create-a-yaml-file)
 5. [🔗Links](#🔗links)
 
 ---
@@ -312,6 +313,8 @@ spec:
             - containerPort: 8080
 ```
 
+[Ex4.yaml](/Documentation/Scripts/ex4.yaml)
+
 ```powershell
 kubectl apply -f ex4.yaml
 ```
@@ -330,6 +333,76 @@ kubectl delete deployment "ex4"
 kubectl get pods
 ```
 
+- Create a YAML file `ex5.yaml` for:
+    - A deployment with name `ex5`
+    - `3` pod with `1` container
+    - Container with image `gcr.io/google-samples/kubernetes-bootcamp:v1` and port `8080`
+    - A service with name `ex5` and type `LoadBalancer` on port `80` for this deployment
+
+```yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ex5
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ex5
+  template:
+    metadata:
+      labels:
+        app: ex5
+    spec:
+      containers:
+      - name: ex5
+        image: gcr.io/google-samples/kubernetes-bootcamp:v1
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ex5
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: ex5
+```
+
+[Ex5.yaml](/Documentation/Scripts/ex5.yaml)
+
+- Create the deployment and service from the YAML file
+```powershell
+kubectl apply -f ex5.yaml
+```
+
+- Find out the IP address of the loadbalancer and Browse to the application
+```powershell
+kubectl get services ex5
+```
+
+- Go to the website and refresh a few times. What do you see?
+```powershell
+curl "http://35.239.30.154:80" # External IP address of the load balancer (:80 is not necessary)
+```
+
+![Kubernetes Basics](/Images/Kubernetes-Basics-6.png)
+
+- Delete the service. Delete the deployment.
+```powershell
+kubectl delete service "ex5"
+kubectl delete deployment "ex5"
+```
+
+- Delete the cluster
+```powershell
+gcloud container clusters delete "cluster-2" --region=us-central1-c -q
+```
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
