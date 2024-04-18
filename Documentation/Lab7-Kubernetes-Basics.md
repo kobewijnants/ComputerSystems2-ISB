@@ -24,6 +24,7 @@ This is a tutorial to get started with Kubernetes. Kubernetes is an open-source 
 ## ✨Steps
 
 [Kubernetes Basics](https://kubernetes.io/docs/tutorials/kubernetes-basics)
+[Kubernetes YAML](https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment)
 
 ### 👉Cluster Nodes
 
@@ -215,6 +216,120 @@ kubectl delete deployment "ex3"
 ```powershell
 gcloud container clusters delete "cluster-1" --region=europe-west1-b -q
 ```
+
+## 👉Create a YAML file
+
+- Create a Kubernetes cluster
+```powershell
+gcloud container clusters create "cluster-2" --location=us-central1-c --num-nodes=2
+```
+
+- Get authentication credentials for the cluster
+```powershell
+gcloud container clusters get-credentials "cluster-2" --region=us-central1-c
+```
+
+- Create a YAML file `ex4.yaml` for:
+    - A deployment with name `ex4`
+    - `1 pod` with `1 container`
+    - Container with image `gcr.io/google-samples/kubernetes-bootcamp:v1` and port `8080`
+```yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ex4
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ex4
+  template:
+    metadata:
+      labels:
+        app: ex4
+    spec:
+      containers:
+      - name: ex4
+        image: gcr.io/google-samples/kubernetes-bootcamp:v1
+        ports:
+        - containerPort: 8080
+```
+
+- Create the deployment from the YAML file
+```powershell
+kubectl apply -f ex4.yaml # kubectl delete -f ex4.yaml
+```
+
+- Look at your nodes, pods and deployments
+```powershell
+kubectl get nodes
+kubectl get pods
+kubectl get deployments
+```
+
+![Kubernetes Basics](/Images/Kubernetes-Basics-3.png)
+
+- Execute an interactive bash shell on your container in the pod
+```powershell
+kubectl exec -ti "ex4-868f8ff686-fk8pq" -- bash
+```
+
+- Look at all processes in the container, which application is running?
+```bash
+ps aux # Is node server.js
+```
+
+- Check whether the application is responding with curl on localhost (find the port!)
+```bash
+curl localhost:8080
+exit
+```
+
+![Kubernetes Basics](/Images/Kubernetes-Basics-4.png)
+
+- Change the replica's to `2` and update the deployment
+```yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ex4s
+spec:
+    replicas: 2
+    selector:
+        matchLabels:
+        app: ex4
+    template:
+        metadata:
+        labels:
+            app: ex4
+        spec:
+        containers:
+        - name: ex4
+            image: gcr.io/google-samples/kubernetes-bootcamp:v1
+            ports:
+            - containerPort: 8080
+```
+
+```powershell
+kubectl apply -f ex4.yaml
+```
+
+- Check the nbr of pods
+```powershell
+kubectl get pods
+```
+> **Note:** You should see 2 pods running
+
+![Kubernetes Basics](/Images/Kubernetes-Basics-5.png)
+
+- Delete the deployment and check that the pods are deleted
+```powershell
+kubectl delete deployment "ex4"
+kubectl get pods
+```
+
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
