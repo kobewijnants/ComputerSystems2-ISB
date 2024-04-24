@@ -173,7 +173,7 @@ curl http://104.197.44.86
 ```powershell
 kubectl delete deployment --all
 kubectl delete service --all
-gcloud container clusters delete "cs2-cluster" --zone=us-central1-c
+gcloud container clusters delete "cs2-cluster" --zone=us-central1-c --quiet
 ```
 
 
