@@ -147,7 +147,7 @@ kubectl get pods
 
 - Start a K8S service of the type LoadBalancer, so that the deployment is accessible to the outside world:
 ```powershell
-kubectl expose deployment iis-site-windows --type=LoadBalancer --port=80 --target-port=80
+kubectl expose deployment iis-site-windows --type="LoadBalancer"
 # Delete the LoadBalancer service -> kubectl delete service iis-site-windows
 ```
 
@@ -159,7 +159,7 @@ kubectl get services
 
 - Test the service
 ```bash
-curl http://34.42.201.138
+curl http://104.197.44.86
 ```
 
 
