@@ -249,13 +249,20 @@ param (
 )
 
 if ($action -eq "-deploy") {
-    gcloud compute instances create win-docker-server-new --project=cs2-isb-elias-de-hondt --image=win-docker-server --zone=us-central1-c --metadata windows-startup-script-cmd="docker run -d -p 80:80 eliasdh/iis-site-windows:v1.0"
+    gcloud compute instances create win-docker-server-new `
+    --project=cs2-isb-elias-de-hondt `
+    --source-machine-image=win-docker-server `
+    --zone=us-central1-c `
+    --metadata windows-startup-script-cmd="docker run -d -p 80:80 eliasdh/iis-site-windows:v1.0"
 } elseif ($action -eq "-delete") {
-    gcloud compute instances delete win-docker-server-new --zone=us-central1-c --quiet
+    gcloud compute instances delete win-docker-server-new `
+    --zone=us-central1-c `
+    --quiet
 } else {
     Write-Host "Invalid option"
 }
 ```
+[Deploy.ps1](/Documentation/Scripts/deploy.ps1)
 
 - Run the script to deploy the container in Google Cloud (**Local Host**)
 ```powershell
