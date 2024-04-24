@@ -49,7 +49,7 @@ gcloud container clusters get-credentials "cluster-1" --region=europe-west1-b
 kubectl get nodes
 ```
 
-![Kubernetes Basics](/Images/Kubernetes-Basics-1.png)
+![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-1.png)
 
 ### 👉Deploy Your App
 
@@ -187,7 +187,7 @@ kubectl get services ex3
 curl "http://external-ip:8000"
 ```
 
-![Kubernetes Basics](/Images/Kubernetes-Basics-2.png)
+![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-2.png)
 
 ### 👉Update Your App
 
@@ -269,7 +269,7 @@ kubectl get pods
 kubectl get deployments
 ```
 
-![Kubernetes Basics](/Images/Kubernetes-Basics-3.png)
+![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-3.png)
 
 - Execute an interactive bash shell on your container in the pod
 ```powershell
@@ -287,7 +287,7 @@ curl localhost:8080
 exit
 ```
 
-![Kubernetes Basics](/Images/Kubernetes-Basics-4.png)
+![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-4.png)
 
 - Change the replica's to `2` and update the deployment
 ```yaml
@@ -325,7 +325,7 @@ kubectl get pods
 ```
 > **Note:** You should see 2 pods running
 
-![Kubernetes Basics](/Images/Kubernetes-Basics-5.png)
+![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-5.png)
 
 - Delete the deployment and check that the pods are deleted
 ```powershell
@@ -391,7 +391,7 @@ kubectl get services ex5
 curl "http://35.239.30.154:80" # External IP address of the load balancer (:80 is not necessary)
 ```
 
-![Kubernetes Basics](/Images/Kubernetes-Basics-6.png)
+![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-6.png)
 
 - Delete the service. Delete the deployment.
 ```powershell

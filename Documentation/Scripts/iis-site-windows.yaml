@@ -7,19 +7,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ex4
+  name: iis-site-windows
+  labels:
+    app: iis-site-windows
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: ex4
+      app: iis-site-windows
   template:
     metadata:
       labels:
-        app: ex4
+        app: iis-site-windows
     spec:
+      nodeSelector:
+        kubernetes.io/os: windows
       containers:
-      - name: ex4
-        image: gcr.io/google-samples/kubernetes-bootcamp:v1
+      - name: iis-site-windows
+        image: eliasdh/iis-site-windows:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
