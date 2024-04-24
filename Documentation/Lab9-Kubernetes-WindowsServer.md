@@ -167,8 +167,14 @@ curl http://104.197.44.86
 
 
 
-
 ## 📦Extra
+
+- Delete all deployment? services, nodes and clusters
+```powershell
+kubectl delete deployment --all
+kubectl delete service --all
+gcloud container clusters delete "cs2-cluster" --zone=us-central1-c
+```
 
 
 ## 🔗Links
