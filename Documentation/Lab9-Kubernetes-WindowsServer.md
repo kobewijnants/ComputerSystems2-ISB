@@ -25,17 +25,17 @@
 
 1. Maak een K8s cluster aan in de Google Cloud (zie REF 1, tot "Deploying an application to the cluster")
     - Installeer kubectl op je laptop
-    - Maak een K8s cluster aan met 1 node, voeg opties "--release-channel=rapid --enable-ip-alias" toe (nodig voor punt 2.)
+    - Maak een K8s cluster aan met 1 node, voeg opties `--release-channel=rapid --enable-ip-alias` toe (nodig voor punt 2.)
     - Authenticeer met je cluster (ev. moet je de omgevingvariabele KUBECONFIG definiëren)
     - Check of de cluster node aangemaakt is met het kubectl commando
 
 2. Voeg een Windows node toe aan de K8s cluster (zie REF 2.)
     - Je hebt reeds een cluster met de master node
-    - Voeg een Windows node toe (gebruik de WINDOWS_LTSC_CONTAINERD image i.p.v. de WINDOWS_SAC iamage)
+    - Voeg een Windows node toe (gebruik de `WINDOWS_LTSC_CONTAINERD` image i.p.v. de WINDOWS_SAC iamage)
     - Check terug of de cluster node aangemaakt is met het kubectl commando
 
 3. Run Windows Container in Pod (zie REF 2.)
-    - Copieer de iis-site-windows.yaml uit REF 2
+    - Copieer de `iis-site-windows.yaml` uit REF 2
     - Pas deze aan zodat de container image uit het vorig lab gebruikt wordt
     - We gebruiken dus de Docker Hub i.p.v. de Google Container Registry
     - Maak de YAML deployment aan met het kubectl commando
