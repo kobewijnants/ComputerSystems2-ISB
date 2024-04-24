@@ -13,7 +13,7 @@ if ($action -eq "-deploy") {
     --project=cs2-isb-elias-de-hondt `
     --source-machine-image=win-docker-server `
     --zone=us-central1-c `
-    --metadata windows-startup-script-cmd="docker run -d -p 80:80 eliasdh/iis-site-windows:v1.0"
+    --metadata windows-startup-script-ps1="docker pull eliasdh/iis-site-windows:v1.0; docker run eliasdh/iis-site-windows:v1.0; echo 'Docker OK'"
 } elseif ($action -eq "-delete") {
     gcloud compute instances delete win-docker-server-new `
     --zone=us-central1-c `

@@ -183,12 +183,13 @@ notepad C:\my-windows-app\Dockerfile
 FROM mcr.microsoft.com/windows/servercore/iis
 
 LABEL author="Elias De Hondt <elias.dehondt@student.kdg.be>" \
-      description="This is a Dockerfile to create a RabbitMQ server" \
+      description="This is a Dockerfile to create a ISS server" \
       version="1.0"
 
 # Make a Hello World page
 RUN echo "Hello World - Windows IIS" > C:\inetpub\wwwroot\index.html
 ```
+[Dockerfile](/Documentation/Scripts/Dockerfile)
 
 - Build the Dockerfile (**Gcloud Instance**)
 ```powershell
@@ -253,7 +254,7 @@ if ($action -eq "-deploy") {
     --project=cs2-isb-elias-de-hondt `
     --source-machine-image=win-docker-server `
     --zone=us-central1-c `
-    --metadata windows-startup-script-cmd="docker run -d -p 80:80 eliasdh/iis-site-windows:v1.0"
+    --metadata windows-startup-script-ps1="pull eliasdh/iis-site-windows:v1.0; run -d -p 80:80 eliasdh/iis-site-windows:v1.0"
 } elseif ($action -eq "-delete") {
     gcloud compute instances delete win-docker-server-new `
     --zone=us-central1-c `
