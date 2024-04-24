@@ -1,5 +1,5 @@
 ![logo](/Images/logo.png)
-# 💙🤍Lab10 SQL Server🤍💙
+# 💙🤍Lab10 Git🤍💙
 
 ## 📘Table of Contents
 
