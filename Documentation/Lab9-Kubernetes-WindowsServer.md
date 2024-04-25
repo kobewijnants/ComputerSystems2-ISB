@@ -13,6 +13,9 @@
     4. [👉Step 4: Kubernetes service](#👉step-4-kubernetes-service)
     5. [👉Step 5: Service in YAML](#👉step-5-service-in-yaml)
     6. [👉Step 6: Ingress in YAML](#👉step-6-ingress-in-yaml)
+    7. [👉Step 7: Create PowerShell Scripts](#👉step-7-create-powershell-scripts)
+5. [📦Extra](#📦extra)
+6. [🔗Links](#🔗links)
 
 ---
 
@@ -136,6 +139,8 @@ spec:
         - containerPort: 80
 ```
 
+[iis-site-windows-v1.yaml](/Documentation/Scripts/iis-site-windows-v1.yaml)
+
 - Change the image to the Docker Hub image:
 ```yaml
 image: eliasdh/iis-site-windows:v1.0
@@ -245,6 +250,8 @@ spec:
   type: LoadBalancer
 ```
 
+[iis-site-windows-v2.yaml](/Documentation/Scripts/iis-site-windows-v2.yaml)
+
 - Create the deployment with the following command:
 ```powershell
 kubectl apply -f iis-site-windows-v2.yaml
@@ -334,6 +341,8 @@ spec:
               number: 80
 ```
 
+[iis-site-windows-v3.yaml](/Documentation/Scripts/iis-site-windows-v3.yaml)
+
 - Create the deployment with the following command:
 ```powershell
 kubectl apply -f iis-site-windows-v3.yaml
@@ -418,13 +427,26 @@ if ($Yaml -ne "") {
 }
 ```
 
+[New-Cluster.ps1](/Documentation/Scripts/New-Cluster.ps1)
 
+- Create a new PowerShell script `Remove-Cluster.ps1` with the following content:
+```powershell
+############################
+# @author Elias De Hondt   #
+# @see https://eliasdh.com #
+# @since 25/04/2024        #
+############################
 
+param (
+  [string]$ClusterName = "cs2-cluster"
+)
 
+gcloud container clusters delete $ClusterName `
+    --zone=us-central1-c `
+    --quiet
+```
 
-
-
-
+[Remove-Cluster.ps1](/Documentation/Scripts/Remove-Cluster.ps1)
 
 ## 📦Extra
 
@@ -434,6 +456,123 @@ kubectl delete deployment --all
 kubectl delete service --all
 gcloud container clusters delete "cs2-cluster" --zone=us-central1-c --quiet
 ```
+
+- This is a advanced YAML file -> 2 Database pods, 5 Webserver pods and 2 LoadBalancer one for the Database and one for the Webserver pods + 2 Ingress:
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db
+  labels:
+    app: db
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: db
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      containers:
+      - name: db
+        image: eliasdh/db:v1.0
+        ports:
+        - containerPort: 3306
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    app: web
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: web
+        image: eliasdh/web:v1.0
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: db
+spec:
+  selector:
+    app: db
+  ports:
+    - protocol: TCP
+      port: 3306
+      targetPort: 3306
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web
+spec:
+  selector:
+    app: web
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: web
+spec:
+  rules:
+  - host: demo-cs2.eliasdh.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: web
+            port:
+              number: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: db
+spec:
+  rules:
+  - host: db.demo-cs2.eliasdh.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: db
+            port:
+              number: 3306
+```
+
+
+
+
+
+
+
+
+
+
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
