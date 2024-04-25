@@ -24,6 +24,6 @@ spec:
         kubernetes.io/os: windows
       containers:
       - name: iis-site-windows
-        image: eliasdh/iis-site-windows:latest
+        image: eliasdh/iis-site-windows:v1.0
         ports:
         - containerPort: 80

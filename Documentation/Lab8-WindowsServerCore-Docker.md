@@ -33,7 +33,7 @@ In this lab we will deploy a Windows container in Google Cloud. We will start by
 0. Google cloud en Docker
   - Haal je Google Cloud credits en koppel deze aan je KdG account (zie Canvas). 
   - Installeer de gcloud SDK op je laptop en voor de configuratie uit.
-  - Test met: gcloud config list
+  - Test met: gcloud config list.
   - Als je nog geen account hebt op de Docker Hub [Hub Docker](https://hub.docker.com), maak deze aan.
   
 1. Windows Server 2019 Datacenter for Containers
@@ -43,7 +43,7 @@ In this lab we will deploy a Windows container in Google Cloud. We will start by
   - Maak een RDP verbinding vanop je laptop naar deze instance.
   - Installeer Docker met de volgende 2 commando's:
     - `Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/microsoft/Windows-Containers/Main/helpful_tools/Install-DockerCE/install-docker-ce.ps1" -o install-docker-ce.ps1 .\install-docker-ce.ps1`
-  - Test de Docker installatie bv. met: `docker images`
+  - Test de Docker installatie bv. met: `docker images`.
   - Maak nu een `machine image` van deze virtuele machine aan via de Google Cloud console (noem deze bv. "win-docker-server")
   - Deze image bewaar je en ga je dus niet deleten.
   - De Windows Server Core VM mag je nu deleten.
@@ -52,24 +52,24 @@ In this lab we will deploy a Windows container in Google Cloud. We will start by
   - Start nu een compute instance op met jouw `win-docker-server` machine image.
   - Maak een RDP verbinding vanop je laptop naar deze instance.
   - Voer het docker login commando uit.
-  - Maak een directory `C:\my-windows-app` met de Docker file uit REF 3 en een content subdirectory
+  - Maak een directory `C:\my-windows-app` met de Docker file uit REF 3 en een content subdirectory.
   - Build de Dockerfile check de image.
   - **LET OP**: we gebruiken een andere tag: `<docker_hub_username>/iis-site-windows:v1.0`
   - Run de container en check.
   - Surf met de browser van je laptop naar de IIS site.
 
 3. Image uploaden naar de Docker registry
-  - Push je zojuist aangemaakte container image naar de Docker registry
-  - Check of je deze terugvindt op de Docker Hub site
-  - Als dit gelukt is, delete de Windows server instance in Google Cloud
+  - Push je zojuist aangemaakte container image naar de Docker registry.
+  - Check of je deze terugvindt op de Docker Hub site.
+  - Als dit gelukt is, delete de Windows server instance in Google Cloud.
   
-4. Schrijf een Powershell script om je container te deployen in de Google Cloud
+4. Schrijf een Powershell script om je container te deployen in de Google Cloud.
   - Het script `deploy.ps1` start een compute instance op met jouw `win-docker-server` machine image.
-  - Maak hiervoor gebruik van de `gcloud instances create` commando
-  - In deze server wordt je container uit de Docker registry opgestart
-  - Maak hiervoor gebruik van de `--metadata windows-startup-script-cmd key`
-  - Wanneer de optie `-delete` wordt meegegeven, wordt de server instance terug verwijderd
-  - Indien een foute optie wordt meegegeven, schrijf een boodschap
+  - Maak hiervoor gebruik van de `gcloud instances create` commando.
+  - In deze server wordt je container uit de Docker registry opgestart.
+  - Maak hiervoor gebruik van de `--metadata windows-startup-script-cmd key`.
+  - Wanneer de optie `-delete` wordt meegegeven, wordt de server instance terug verwijderd.
+  - Indien een foute optie wordt meegegeven, schrijf een boodschap.
 
 ## ✨Steps
 
