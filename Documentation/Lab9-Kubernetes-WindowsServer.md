@@ -427,6 +427,11 @@ if ($Yaml -ne "") {
 }
 ```
 
+- Execute the script with the following command:
+```powershell
+.\New-Cluster.ps1 -LinuxNodes 3 -WindowsNodes 2 -ClusterName "cs2-cluster" -Yaml "iis-site-windows-v3.yaml"
+```
+
 [New-Cluster.ps1](/Documentation/Scripts/New-Cluster.ps1)
 
 - Create a new PowerShell script `Remove-Cluster.ps1` with the following content:
@@ -444,6 +449,11 @@ param (
 gcloud container clusters delete $ClusterName `
     --zone=us-central1-c `
     --quiet
+```
+
+- Execute the script with the following command:
+```powershell
+.\Remove-Cluster.ps1 -ClusterName "cs2-cluster"
 ```
 
 [Remove-Cluster.ps1](/Documentation/Scripts/Remove-Cluster.ps1)
@@ -563,16 +573,6 @@ spec:
             port:
               number: 3306
 ```
-
-
-
-
-
-
-
-
-
-
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
