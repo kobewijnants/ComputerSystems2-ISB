@@ -104,7 +104,7 @@ mstsc
 
 - Open Powershell in cmd (**Gcloud Instance**)
 ```cmd
-Start-Process powershell -Verb RunAs
+powershell
 ```
 
 - Install Docker (**Gcloud Instance**)
@@ -154,7 +154,7 @@ mstsc
 
 - Open Powershell in cmd (**Gcloud Instance**)
 ```cmd
-Start-Process powershell -Verb RunAs
+powershell
 ```
 
 - Login to Docker (**Gcloud Instance**)

@@ -14,6 +14,7 @@
     5. [👉Scale Your App](#👉scale-your-app)
     6. [👉Update Your App](#👉update-your-app)
     7. [👉Create a YAML file](#👉create-a-yaml-file)
+    8. [👉Kubernetes ClusterIP vs NodePort vs LoadBalancer vs Ingress](#👉kubernetes-clusterip-vs-nodeport-vs-loadbalancer-vs-ingress)
 5. [🔗Links](#🔗links)
 
 ---
@@ -402,6 +403,127 @@ kubectl delete deployment "ex5"
 - Delete the cluster
 ```powershell
 gcloud container clusters delete "cluster-2" --region=us-central1-c -q
+```
+
+### 👉Kubernetes ClusterIP vs NodePort vs LoadBalancer vs Ingress
+
+- Create a Kubernetes cluster
+```powershell
+gcloud container clusters create "cluster-3" --location=us-central1-c --num-nodes=2 --machine-type=n1-standard-4
+```
+
+- Get authentication credentials for the cluster
+```powershell
+gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
+```
+
+- When should I use what?
+
+[Kubernetes ClusterIP vs NodePort vs LoadBalancer vs Ingress](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
+
+1. ClusterIP:
+  - Yaml file example [clusterip-demo.yaml](/Documentation/Scripts/clusterip-demo.yaml)
+  ```yaml
+  apiVersion: v1
+  kind: Service
+  metadata:  
+    name: my-internal-service
+  spec:
+    selector:    
+      app: my-app
+    type: ClusterIP
+    ports:  
+    - name: http
+      port: 80
+      targetPort: 80
+      protocol: TCP
+  ```
+  - Run the service
+  ```powershell
+  kubectl apply -f clusterip-demo.yaml
+  ```
+  - Image for the deployment
+  ![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-7.png)
+
+2. NodePort:
+  - Yaml file example [nodeport-demo.yaml](/Documentation/Scripts/nodeport-demo.yaml)
+  ```yaml
+  apiVersion: v1
+  kind: Service
+  metadata:  
+    name: my-nodeport-service
+  spec:
+    selector:    
+      app: my-app
+    type: NodePort
+    ports:  
+    - name: http
+      port: 80
+      targetPort: 80
+      nodePort: 30036
+      protocol: TCP
+  ```
+  - Run the service
+  ```powershell
+  kubectl apply -f nodeport-demo.yaml
+  ```
+
+3. LoadBalancer:
+  - Yaml file example [loadbalancer-demo.yaml](/Documentation/Scripts/loadbalancer-demo.yaml)
+  ```yaml
+  apiVersion: v1
+  kind: Service
+  metadata:  
+    name: my-loadbalancer-service
+  spec:
+    selector:    
+      app: my-app
+    type: LoadBalancer
+    ports:  
+    - name: http
+      port: 80
+      targetPort: 80
+      protocol: TCP
+  ```
+  - Run the service
+  ```powershell
+  kubectl apply -f loadbalancer-demo.yaml
+  ```
+
+4. Ingress
+  - Yaml file example [ingress-demo.yaml](/Documentation/Scripts/ingress-demo.yaml)
+  ```yaml
+  apiVersion: extensions/v1beta1
+  kind: Ingress
+  metadata:
+    name: my-ingress
+  spec:
+    backend:
+      serviceName: other
+      servicePort: 8080
+    rules:
+    - host: foo.mydomain.com
+      http:
+        paths:
+        - backend:
+            serviceName: foo
+            servicePort: 8080
+    - host: mydomain.com
+      http:
+        paths:
+        - path: /bar/*
+          backend:
+            serviceName: bar
+            servicePort: 8080
+  ```
+  - Run the service
+  ```powershell
+  kubectl apply -f ingress-demo.yaml
+  ```
+
+- Delete the cluster
+```powershell
+gcloud container clusters delete "cluster-3" --region=us-central1-c -q
 ```
 
 ## 🔗Links
