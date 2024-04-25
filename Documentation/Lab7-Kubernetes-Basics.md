@@ -467,6 +467,8 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   ```powershell
   kubectl apply -f nodeport-demo.yaml
   ```
+  - Image for the deployment
+  ![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-8.png)
 
 3. LoadBalancer:
   - Yaml file example [loadbalancer-demo.yaml](/Documentation/Scripts/loadbalancer-demo.yaml)
@@ -489,6 +491,8 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   ```powershell
   kubectl apply -f loadbalancer-demo.yaml
   ```
+  - Image for the deployment
+  ![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-9.png)
 
 4. Ingress
   - Yaml file example [ingress-demo.yaml](/Documentation/Scripts/ingress-demo.yaml)
@@ -520,6 +524,8 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   ```powershell
   kubectl apply -f ingress-demo.yaml
   ```
+  - Image for the deployment
+  ![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-10.png)
 
 - Delete the cluster
 ```powershell
