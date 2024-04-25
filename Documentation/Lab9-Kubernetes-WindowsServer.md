@@ -10,6 +10,9 @@
     1. [👉Step 1: Create demo cluster](#👉step-1-create-demo-cluster)
     2. [👉Step 2: Add Windows node to the cluster](#👉step-2-add-windows-node-to-the-cluster)
     3. [👉Step 3: Run Windows Container in Pod](#👉step-3-run-windows-container-in-pod)
+    4. [👉Step 4: Kubernetes service](#👉step-4-kubernetes-service)
+    5. [👉Step 5: Service in YAML](#👉step-5-service-in-yaml)
+    6. [👉Step 6: Ingress in YAML](#👉step-6-ingress-in-yaml)
 
 ---
 
@@ -44,7 +47,7 @@ In this lab we will deploy a Windows Container in Kubernetes. We will create a K
     - Check of de pod aangemaakt is.
 
 4. Kubernetes service
-    - Start een K8S service van het type LoadBalancer, zodat de deployment toegankelijk is voor de buitenwereld.
+    - Start een K8S service van het type `LoadBalancer`, zodat de deployment toegankelijk is voor de buitenwereld.
     - Surf met de browser van je laptop naar deze service.
 
 5. Service in YAML
@@ -53,12 +56,12 @@ In this lab we will deploy a Windows Container in Kubernetes. We will create a K
     - Surf terug met de browser van je laptop naar de iis site.
 
 6. Ingress in YAML
-    - Maak een versie 2 van de YAML file, waarin je een Ingress gebruikt om de IIS site toegankelijk voor de buitenwereld te maken.
+    - Maak een versie 3 van de YAML file, waarin je een Ingress gebruikt om de IIS site toegankelijk voor de buitenwereld te maken.
 
 7. Start/stop K8s cluster met Powershell
     - Maak 2 powershell scripts om je cluster te starten (met ev. applicatie erop) en te stoppen.
-        `New-Cluster.ps1 [-LinuxNodes COUNT] [-WindowsNodes COUNT] [-ClusterNameNAME] [-Yaml YAML_FILE]`
-        `Remove-Cluster.ps1 [-ClusterName NAME]`.
+      - `New-Cluster.ps1 [-LinuxNodes COUNT] [-WindowsNodes COUNT] [-ClusterNameNAME] [-Yaml YAML_FILE]`
+      - `Remove-Cluster.ps1 [-ClusterName NAME]`.
     - LinuxNodes is het aantal Linux nodes, default is 1.
     - WindowsNodes is het aantal Windows nodes, default is 1.
     - ClusterName is de naam van de cluster, default is `cs2-cluster` Yaml is de naam van een K8s YAML file, default is lege string (dus geen applicatie).
@@ -89,7 +92,12 @@ kubectl get nodes
 
 - Add a Windows node to the cluster:
 ```powershell
-gcloud container node-pools create "windows-pool" --cluster="cs2-cluster" --image-type=WINDOWS_LTSC_CONTAINERD --num-nodes=1 --machine-type=n1-standard-4 --zone=us-central1-c
+gcloud container node-pools create "windows-pool" --cluster="cs2-cluster" --image-type=WINDOWS_LTSC_CONTAINERD --num-nodes=1 --no-enable-autoupgrade --machine-type=n1-standard-4 --zone=us-central1-c
+```
+
+> **NOTE** To delete the Windows node pool:
+```powershell
+gcloud container node-pools delete "windows-pool" --cluster="cs2-cluster" --zone=us-central1-c --quiet
 ```
 
 - Check if the cluster node is created with the following command:
@@ -101,7 +109,7 @@ kubectl get nodes
 
 ### 👉Step 3: Run Windows Container in Pod
 
-- Copy the `iis-site-windows.yaml` file from the reference 2.
+- Copy the `iis-site-windows-v1.yaml` file from the reference 2.
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -133,11 +141,11 @@ spec:
 image: eliasdh/iis-site-windows:v1.0
 ```
 
-[iis-site-windows.yaml](/Documentation/Scripts/iis-site-windows.yaml)
+[iis-site-windows-v1.yaml](/Documentation/Scripts/iis-site-windows-v1.yaml)
 
 - Create the YAML deployment with the following command:
 ```powershell
-kubectl apply -f iis-site-windows.yaml
+kubectl apply -f iis-site-windows-v1.yaml
 ```
 
 - Check if the pod is created with the following command:
@@ -145,12 +153,14 @@ kubectl apply -f iis-site-windows.yaml
 kubectl get nodes,deployments,pods
 ```
 
+![Lab9-Kubernetes-WindowsServer-3](/Images/Lab9-Kubernetes-WindowsServer-3.png)
+
 > **NOTE** Delete the deployment with the following command:
 ```powershell
 kubectl delete deployment iis-site-windows
 ```
 
-> **NOTE** If it doesn't work, you can try to set a firewall rule to allow traffic on port 80,443,22
+> **NOTE** If it doesn't work, you can try to set a firewall rule to allow traffic on port 80,443,22:
 ```powershell
 # To Create the firewall rules
 gcloud compute firewall-rules create allow-http --allow tcp:80
@@ -161,6 +171,256 @@ gcloud compute firewall-rules delete allow-http --quiet
 gcloud compute firewall-rules delete allow-https --quiet
 gcloud compute firewall-rules delete allow-ssh --quiet
 ```
+
+### 👉Step 4: Kubernetes service
+
+- Start a K8S service of type `LoadBalancer`, so the deployment is accessible to the outside world:
+```powershell
+kubectl expose deployment iis-site-windows --type=LoadBalancer
+```
+
+- Surf with the browser of your laptop to this service:
+```powershell
+kubectl get services
+```
+
+![Lab9-Kubernetes-WindowsServer-4](/Images/Lab9-Kubernetes-WindowsServer-4.png)
+
+
+- Go to the external IP address in your browser:
+
+![Lab9-Kubernetes-WindowsServer-5](/Images/Lab9-Kubernetes-WindowsServer-5.png)
+
+
+### 👉Step 5: Service in YAML
+
+- Delete the service and deployment:
+```powershell
+kubectl delete service iis-site-windows
+kubectl delete deployment iis-site-windows
+```
+
+- Get all the services and deployments:
+```powershell
+kubectl get services,deployments
+```
+
+- Create a version 2 of the YAML file, where you add the service `LoadBalancer`:
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iis-site-windows
+  labels:
+    app: iis-site-windows
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: iis-site-windows
+  template:
+    metadata:
+      labels:
+        app: iis-site-windows
+    spec:
+      nodeSelector:
+        kubernetes.io/os: windows
+      containers:
+      - name: iis-site-windows
+        image: eliasdh/iis-site-windows:v1.0
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: iis-site-windows
+spec:
+  selector:
+    app: iis-site-windows
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+```
+
+- Create the deployment with the following command:
+```powershell
+kubectl apply -f iis-site-windows-v2.yaml
+```
+
+> **NOTE** This will go much faster than the first time because the image is already downloaded on the Windows node.
+
+- Check if the pod is created with the following command:
+```powershell
+kubectl get nodes,deployments,pods,services
+```
+
+![Lab9-Kubernetes-WindowsServer-6](/Images/Lab9-Kubernetes-WindowsServer-6.png)
+
+- Go to the external IP address in your browser:
+
+![Lab9-Kubernetes-WindowsServer-7](/Images/Lab9-Kubernetes-WindowsServer-7.png)
+
+### 👉Step 6: Ingress in YAML
+
+- Delete the service and deployment:
+```powershell
+kubectl delete service iis-site-windows
+kubectl delete deployment iis-site-windows
+```
+
+- Get all the services and deployments:
+```powershell
+kubectl get services,deployments
+```
+
+- Create a version 3 of the YAML file, where you use an Ingress to make the IIS site accessible to the outside world:
+```yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iis-site-windows
+  labels:
+    app: iis-site-windows
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: iis-site-windows
+  template:
+    metadata:
+      labels:
+        app: iis-site-windows
+    spec:
+      nodeSelector:
+        kubernetes.io/os: windows
+      containers:
+      - name: iis-site-windows
+        image: eliasdh/iis-site-windows:v1.0
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: iis-site-windows
+spec:
+  selector:
+    app: iis-site-windows
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: iis-site-windows
+spec:
+  rules:
+  - host: demo-cs2.eliasdh.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: iis-site-windows
+            port:
+              number: 80
+```
+
+- Create the deployment with the following command:
+```powershell
+kubectl apply -f iis-site-windows-v3.yaml
+```
+
+- Check if the pod is created with the following command:
+```powershell
+kubectl get ingress # Remember the IP address
+```
+
+![Lab9-Kubernetes-WindowsServer-8](/Images/Lab9-Kubernetes-WindowsServer-8.png)
+
+> **NOTE** For Windows users, you can add the domain to the `C:\Windows\System32\drivers\etc\hosts` with the following command:
+```powershell
+Add-Content C:\Windows\System32\drivers\etc\hosts "`n35.201.120.103 demo-cs2.eliasdh.com"
+```
+
+- Go to the domain in your browser:
+
+![Lab9-Kubernetes-WindowsServer-9](/Images/Lab9-Kubernetes-WindowsServer-9.png)
+
+- Delete the service, deployment and ingress:
+```powershell
+kubectl delete service iis-site-windows
+kubectl delete deployment iis-site-windows
+kubectl delete ingress iis-site-windows
+```
+
+- Get all the services, deployments and ingress:
+```powershell
+kubectl get services,deployments,ingress
+```
+
+- Delete de demo cluster:
+```powershell
+gcloud container clusters delete "cs2-cluster" --zone=us-central1-c --quiet
+```
+
+## 👉Step 7: Create PowerShell Scripts
+
+- Start by creating a new PowerShell script `New-Cluster.ps1` with the following content:
+```powershell
+############################
+# @author Elias De Hondt   #
+# @see https://eliasdh.com #
+# @since 25/04/2024        #
+############################
+
+param (
+  [int]$LinuxNodes = 1,
+  [int]$WindowsNodes = 1,
+  [string]$ClusterName = "cs2-cluster",
+  [string]$Yaml = ""
+)
+
+if ($LinuxNodes -lt 1) {
+  Write-Host "LinuxNodes must be greater than or equal to 1 (This is for the master node)"
+  exit
+}
+
+gcloud container clusters create $ClusterName `
+    --num-nodes=$LinuxNodes `
+    --release-channel=rapid `
+    --enable-ip-alias `
+    --location=us-central1-c `
+    --machine-type=n1-standard-4
+
+gcloud container node-pools create "windows-pool" `
+    --cluster=$ClusterName `
+    --image-type=WINDOWS_LTSC_CONTAINERD `
+    --num-nodes=$WindowsNodes `
+    --no-enable-autoupgrade `
+    --machine-type=n1-standard-4 `
+    --zone=us-central1-c
+
+gcloud container clusters get-credentials $ClusterName `
+    --zone=us-central1-c
+
+if ($Yaml -ne "") {
+  Write-Host "Running YAML file: $Yaml"
+  kubectl apply -f $Yaml
+}
+```
+
+
+
+
 
 
 
@@ -174,7 +434,6 @@ kubectl delete deployment --all
 kubectl delete service --all
 gcloud container clusters delete "cs2-cluster" --zone=us-central1-c --quiet
 ```
-
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).

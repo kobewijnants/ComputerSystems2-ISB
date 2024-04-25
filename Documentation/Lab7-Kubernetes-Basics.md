@@ -506,13 +506,13 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
       serviceName: other
       servicePort: 8080
     rules:
-    - host: foo.mydomain.com
+    - host: foo.demo-cs2.eliasdh.com
       http:
         paths:
         - backend:
             serviceName: foo
             servicePort: 8080
-    - host: mydomain.com
+    - host: demo-cs2.eliasdh.com
       http:
         paths:
         - path: /bar/*

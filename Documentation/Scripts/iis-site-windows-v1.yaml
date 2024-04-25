@@ -1,0 +1,29 @@
+############################
+# @author Elias De Hondt   #
+# @see https://eliasdh.com #
+# @since 25/04/2024        #
+############################
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iis-site-windows
+  labels:
+    app: iis-site-windows
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: iis-site-windows
+  template:
+    metadata:
+      labels:
+        app: iis-site-windows
+    spec:
+      nodeSelector:
+        kubernetes.io/os: windows
+      containers:
+      - name: iis-site-windows
+        image: eliasdh/iis-site-windows:v1.0
+        ports:
+        - containerPort: 80
