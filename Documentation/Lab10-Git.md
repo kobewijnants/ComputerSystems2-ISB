@@ -12,7 +12,7 @@
 
 ## 🖖Introduction
 
-
+In this lab we are going to setup a Git server on a Windows Server 2019 machine. We are going to use Gitea as our Git server. We are going to connect Gitea to Active Directory and we are going to create a repository and push some code to it. We are also going to clone the repository on a Windows 10 machine and push some code to it. We are going to merge the repositories and see what happens when we try to push the same file with different changes to the remote repository.
 
 ### 📝Assignment 
 > NOTE This is in Dutch
@@ -98,14 +98,19 @@
     - Hoe krijg je nu de wijzigingen in de remote repository?
     - Wat zou er gebeuren indien we dezelfde lijn aangepast hadden?
 
-
-
-
-
-
 ## ✨Steps
 
 ### 👉Step 1: 
+
+
+
+
+
+
+
+
+
+
 
 ## 📦Extra
 
