@@ -50,7 +50,7 @@ gcloud container clusters get-credentials "cluster-1" --region=europe-west1-b
 kubectl get nodes
 ```
 
-![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-1.png)
+![x](/Images/Lab7-Kubernetes-Basics-1.png)
 
 ### 👉Deploy Your App
 
@@ -188,7 +188,7 @@ kubectl get services ex3
 curl "http://external-ip:8000"
 ```
 
-![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-2.png)
+![x](/Images/Lab7-Kubernetes-Basics-2.png)
 
 ### 👉Update Your App
 
@@ -270,7 +270,7 @@ kubectl get pods
 kubectl get deployments
 ```
 
-![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-3.png)
+![x](/Images/Lab7-Kubernetes-Basics-3.png)
 
 - Execute an interactive bash shell on your container in the pod
 ```powershell
@@ -288,7 +288,7 @@ curl localhost:8080
 exit
 ```
 
-![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-4.png)
+![x](/Images/Lab7-Kubernetes-Basics-4.png)
 
 - Change the replica's to `2` and update the deployment
 ```yaml
@@ -326,7 +326,7 @@ kubectl get pods
 ```
 > **Note:** You should see 2 pods running
 
-![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-5.png)
+![x](/Images/Lab7-Kubernetes-Basics-5.png)
 
 - Delete the deployment and check that the pods are deleted
 ```powershell
@@ -392,7 +392,7 @@ kubectl get services ex5
 curl "http://35.239.30.154:80" # External IP address of the load balancer (:80 is not necessary)
 ```
 
-![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-6.png)
+![x](/Images/Lab7-Kubernetes-Basics-6.png)
 
 - Delete the service. Delete the deployment.
 ```powershell
@@ -443,7 +443,7 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   kubectl apply -f clusterip-demo.yaml
   ```
   - Image for the deployment
-  ![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-7.png)
+  ![x](/Images/Lab7-Kubernetes-Basics-7.png)
 
 2. NodePort:
   - Yaml file example [nodeport-demo.yaml](/Documentation/Scripts/nodeport-demo.yaml)
@@ -468,7 +468,7 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   kubectl apply -f nodeport-demo.yaml
   ```
   - Image for the deployment
-  ![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-8.png)
+  ![xs](/Images/Lab7-Kubernetes-Basics-8.png)
 
 3. LoadBalancer:
   - Yaml file example [loadbalancer-demo.yaml](/Documentation/Scripts/loadbalancer-demo.yaml)
@@ -492,7 +492,7 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   kubectl apply -f loadbalancer-demo.yaml
   ```
   - Image for the deployment
-  ![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-9.png)
+  ![x](/Images/Lab7-Kubernetes-Basics-9.png)
 
 4. Ingress
   - Yaml file example [ingress-demo.yaml](/Documentation/Scripts/ingress-demo.yaml)
@@ -525,7 +525,7 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   kubectl apply -f ingress-demo.yaml
   ```
   - Image for the deployment
-  ![Kubernetes Basics](/Images/Lab7-Kubernetes-Basics-10.png)
+  ![x](/Images/Lab7-Kubernetes-Basics-10.png)
 
 - Delete the cluster
 ```powershell
