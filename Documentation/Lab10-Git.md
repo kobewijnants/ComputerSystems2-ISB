@@ -11,6 +11,12 @@
     2. [👉Step 2: Install Gitea on the windows AD server](#👉step-2-install-gitea-on-the-windows-ad-server)
     3. [👉Step 3: Install Gitea as a Windows service](#👉step-3-install-gitea-as-a-windows-service)
     4. [👉Step 4: Connect Gitea with Active Directory](#👉step-4-connect-gitea-with-active-directory)
+    5. [👉Step 5: Install Git on the host machine](#👉step-5-install-git-on-the-host-machine)
+    6. [👉Step 6: Working with remote repositories](#👉step-6-working-with-remote-repositories)
+    7. [👉Step 7: Second local repository](#👉step-7-second-local-repository)
+    8. [👉Step 8: Merge repositories](#👉step-8-merge-repositories)
+5. [📦Extra](#📦extra)
+6. [🔗Links](#🔗links)
 
 ---
 
