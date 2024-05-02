@@ -236,6 +236,11 @@ gcloud compute instances delete win-docker-server-new --zone=us-central1-c --qui
 
 ### 👉Step 4: Create a script for full deployment
 
+- Check if the machine image is still available (**Local Host**)
+```powershell
+gcloud compute machine-images list
+```
+
 - Create a script to deploy the container in Google Cloud (**Local Host**)
 ```powershell
 New-Item -Path C:\deploy.ps1 -ItemType File
@@ -252,16 +257,20 @@ notepad C:\deploy.ps1
 ############################
 
 param (
-    [string]$action = "-deploy"
+    [string]$action = "deploy"
 )
 
-if ($action -eq "-deploy") {
+if ($action -eq "deploy" -or $action -eq "c") {
+    Write-Host "Creating instance"
+
     gcloud compute instances create win-docker-server-new `
     --project=cs2-isb-elias-de-hondt `
     --source-machine-image=win-docker-server `
     --zone=us-central1-c `
     --metadata="windows-startup-script-ps1=docker run eliasdh/iis-site-windows:v1.0"
-} elseif ($action -eq "-delete") {
+} elseif ($action -eq "delete" -or $action -eq "r") {
+    Write-Host "Deleting instance"
+
     gcloud compute instances delete win-docker-server-new `
     --zone=us-central1-c `
     --quiet
@@ -273,12 +282,17 @@ if ($action -eq "-deploy") {
 
 - Run the script to deploy the container in Google Cloud (**Local Host**)
 ```powershell
-.\deploy.ps1 -deploy
+.\deploy.ps1 deploy
 ```
 
 - Run the script to delete the container in Google Cloud (**Local Host**)
 ```powershell
-.\deploy.ps1 -delete
+.\deploy.ps1 delete
+```
+
+- Log in to the Google Cloud Console and check if the instance is deleted (**Local Host**)
+```powershell
+gcloud compute instances list
 ```
 
 ## 🔗Links
