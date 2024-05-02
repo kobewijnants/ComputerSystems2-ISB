@@ -114,6 +114,12 @@ kubectl get nodes
 
 - Copy the `iis-site-windows-v1.yaml` file from the reference 2.
 ```yaml
+############################
+# @author Elias De Hondt   #
+# @see https://eliasdh.com #
+# @since 25/04/2024        #
+############################
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -212,6 +218,12 @@ kubectl get services,deployments
 
 - Create a version 2 of the YAML file, where you add the service `LoadBalancer`:
 ```yaml
+############################
+# @author Elias De Hondt   #
+# @see https://eliasdh.com #
+# @since 25/04/2024        #
+############################
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -285,6 +297,11 @@ kubectl get services,deployments
 
 - Create a version 3 of the YAML file, where you use an Ingress to make the IIS site accessible to the outside world:
 ```yaml
+############################
+# @author Elias De Hondt   #
+# @see https://eliasdh.com #
+# @since 25/04/2024        #
+############################
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -469,6 +486,12 @@ gcloud container clusters delete "cs2-cluster" --zone=us-central1-c --quiet
 
 - This is a advanced YAML file -> 2 Database pods, 5 Webserver pods and 2 LoadBalancer one for the Database and one for the Webserver pods + 2 Ingress:
 ```yaml
+############################
+# @author Elias De Hondt   #
+# @see https://eliasdh.com #
+# @since 25/04/2024        #
+############################
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
