@@ -138,9 +138,15 @@ gcloud compute instances delete win-docker-server --zone=us-central1-c --quiet
 
 ### 👉Step 2: Deploy Windows container in Google Cloud
 
+- Start a compute instance with the image (**Local Host**)
+```powershell
+gcloud compute instances create win-docker-server-new --image=projects/cs2-isb-elias-de-hondt/global/images/win-docker-server --zone=us-central1-c
+```
+
 - Start a compute instance with the machine image (**Local Host**)
 ```powershell
-gcloud compute instances create win-docker-server-new --image=projects/cs2-isb-elias-de-hondt/global/images/win-docker-server --zone=us
+gcloud compute instances create win-docker-server-new --source-machine-image=win-docker-server --zone=us-central1-c
+# For 
 ```
 
 - Connect with RDP (**Local Host**)
