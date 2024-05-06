@@ -320,6 +320,19 @@ This lab is about Auditing, DFS, Login script. We will see how to configure the 
     }
     ```
 
+- Disable ctrl+alt+del in UI.
+    - Open `Group Policy Management Editor`.
+    - Go to `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Local Policies` -> `Security Options`.
+    - Set `Interactive logon: Do not require CTRL+ALT+DEL` to `Enabled`.
+    - Restart the `Client` machine.
+    
+- Disable ctrl+alt+del in PowerShell.
+    ```powershell
+    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" -Name "DisableCAD" -Value 1
+    Restart-Computer
+    ```
+    
+
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
 - 📫 How to reach us elias.dehondt@outlook.com
