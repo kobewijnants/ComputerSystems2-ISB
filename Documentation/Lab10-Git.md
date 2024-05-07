@@ -537,7 +537,6 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
     New-NetFirewallRule -DisplayName "Allow Gitea Port 3000" -Direction Inbound -Protocol TCP -LocalPort 3000 -Action Allow
     ```
 
-
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
 - 📫 How to reach us elias.dehondt@outlook.com
