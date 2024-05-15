@@ -7,9 +7,11 @@
 
 <#
 .SYNOPSIS
-    
+    This script reads the scores of students for multiple courses and calculates the average score for each course.
 .DESCRIPTION
-    
+    This script reads the scores of students for multiple courses and calculates the average score for each course.
+    The scores are saved to a CSV file and then read from the file to calculate the average score for each course.
+    The average score for each course is then displayed.
 .EXAMPLE
     Gemiddelde.ps1
 #>
