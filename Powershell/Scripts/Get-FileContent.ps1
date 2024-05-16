@@ -15,7 +15,7 @@
 #>
 
 # Import the text file
-$txtfile = 'C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica Jaar 2\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\filelist.txt'
+$txtfile = '..\Data\FileList.txt'
 
 # Read the file and display the content
 foreach ($file in Get-Content $txtfile) {

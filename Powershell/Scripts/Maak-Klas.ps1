@@ -39,7 +39,7 @@ function DeleteClass($class) {
 }
 
 # Import the csv file
-$csvfile = 'C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica Jaar 2\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\klassen.csv'
+$csvfile = '..\Data\Classes.csv'
 
 $classes = Get-Content $csvfile
 foreach ($class in $classes) {

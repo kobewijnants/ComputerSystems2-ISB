@@ -3,7 +3,7 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
-# Overtredingen.ps1
+# Violations.ps1
 
 <#
 .SYNOPSIS
@@ -11,19 +11,19 @@
 .DESCRIPTION
     The script imports traffic violations data, processes it, and provides various functions to analyze the data.
 .EXAMPLE
-    Overtredingen.ps1
+    Violations.ps1
 #>
 
 # Import the csv file 
-$csvfile = 'C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica Jaar 2\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\a_overtredingen.csv'
+$csvfile = '..\data\Violations.csv'
 
 # Check if the csv file exists/Import the csv file
 if (Test-Path $csvfile) {
-    $overtredingenTemp = Import-Csv $csvfile -Delimiter ","
-    $overtredingen = @()  # Initialize the array
+    $violationsTemp = Import-Csv $csvfile -Delimiter ","
+    $violations = @()  # Initialize the array
 
-    foreach ($item in $overtredingenTemp) {
-        $overtredingen += [pscustomobject]@{
+    foreach ($item in $violationsTemp) {
+        $violations += [pscustomobject]@{
             id = [int]$item.id;
             datum_vaststelling_jaar = [int]$item.datum_vaststelling_jaar;
             datum_vaststelling_maand = [int]$item.datum_vaststelling_maand;
@@ -40,8 +40,8 @@ else {
     exit 1
 }
 
-function More-Overtredingen($overtredingen, $aantal) {
-    $overtredingen | Where-Object { $_.aantal_overtredingen_roodlicht -ge $aantal } | ForEach-Object {
+function More-Violations($violations, $aantal) {
+    $violations | Where-Object { $_.aantal_overtredingen_roodlicht -ge $aantal } | ForEach-Object {
         [pscustomobject]@{
             datum_vaststelling = $_.datum_vaststelling;
             opnameplaats_straat = $_.opnameplaats_straat;
@@ -51,25 +51,25 @@ function More-Overtredingen($overtredingen, $aantal) {
     }
 }
 
-function Get-Streets($overtredingen) {
-    $overtredingen | Select-Object -Property opnameplaats_straat -Unique | Sort-Object -Property opnameplaats_straat
+function Get-Streets($violations) {
+    $violations | Select-Object -Property opnameplaats_straat -Unique | Sort-Object -Property opnameplaats_straat
 }
 
-function Sum-Overtredingen ($overtredingen, $street) {
-    $result = $overtredingen | Where-Object { 
+function Sum-Violations($violations, $street) {
+    $result = $violations | Where-Object { 
         $_.opnameplaats_straat -eq $street 
     } | Measure-Object -Property aantal_overtredingen_roodlicht -Sum
 
     return [int]$result.Sum
 }
 
-function All-Overtredingen($overtredingen) {
-    $streets = Get-Streets $overtredingen
+function All-Violations($violations) {
+    $streets = Get-Streets $violations
     $result = @()
 
     foreach ($streetObj in $streets) {
         $street = $streetObj.opnameplaats_straat
-        $sum = Sum-Overtredingen $overtredingen $street
+        $sum = Sum-Violations $violations $street
         $result += [pscustomobject]@{
             opnameplaats_straat = $street
             aantal_overtredingen = $sum
@@ -80,8 +80,8 @@ function All-Overtredingen($overtredingen) {
 }
 
 # Example usage of the functions
-$allOvertredingen = All-Overtredingen $overtredingen
-$allOvertredingen | Format-Table -AutoSize
+$allViolations = All-Violations $Violations
+$allViolations | Format-Table -AutoSize
 
-$significantOvertredingen = More-Overtredingen $overtredingen 5
-$significantOvertredingen | Format-Table -AutoSize
+$significantViolations = More-Violations $Violations 5
+$significantViolations | Format-Table -AutoSize

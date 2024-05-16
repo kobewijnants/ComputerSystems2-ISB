@@ -16,7 +16,7 @@
     Gemiddelde.ps1
 #>
 
-$file_path = "../data/students_scores.csv"
+$file_path = "..\Data\StudentsScores.csv"
 
 function Lees-Punten {
     while ($true) {

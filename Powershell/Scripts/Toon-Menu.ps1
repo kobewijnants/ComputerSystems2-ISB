@@ -15,7 +15,7 @@
 #>
 
 # Import the csv file
-$csvfile = 'C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica Jaar 2\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\menu.csv'
+$csvfile = '..\data\menu.csv'
 
 $menu = Import-Csv -header "Nbr","Name" -Path $csvfile
 $end = $false

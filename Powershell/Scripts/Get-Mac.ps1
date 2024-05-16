@@ -16,7 +16,7 @@
 #>
 
 # Import the csv file
-$csvfile = "C:\Users\elias\OneDrive\Data Core\Documents\School Documents\(5) KdG\Toegepaste Informatica\Toegepaste Informatica 2 Jaar\(2) Computersystemen - ISB\ComputerSystems2-ISB\Powershell\data\MacTable.csv"
+$csvfile = "..\Data\MacTable.csv"
 
 function Delete-LinesCsv($property, $value, $csvfile) {
     Import-Csv $csvfile | ? { $_.$property -ne $value } | Export-Csv ($csvfile + ".new") -force
