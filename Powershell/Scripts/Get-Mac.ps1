@@ -3,7 +3,6 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
-# Get-Mac.ps1
 
 <#
 .SYNOPSIS

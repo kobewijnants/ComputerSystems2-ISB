@@ -3,13 +3,15 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
-# Show-ADItems.ps1
 
 <#
 .SYNOPSIS
-    
+    Show items from Active Directory.
 .DESCRIPTION
-
+    This script shows items from Active Directory.
+    It uses a CSV file to define the items to show.
+    The user can select an item from the list.
+    The script then shows the items from Active Directory.
 .EXAMPLE
     Show-ADItems.ps1
 

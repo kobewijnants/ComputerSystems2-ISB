@@ -2,7 +2,6 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
-# HelloWorld.ps1
 
 <#
 .SYNOPSIS
