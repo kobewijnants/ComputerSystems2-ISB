@@ -3,7 +3,7 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
-# Files en directories
+# Powershell File system
 
 pwd # Print working directory
 # Or

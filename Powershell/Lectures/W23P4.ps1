@@ -3,6 +3,7 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
+# Powershell Custom Objects
 
 # Hash table
 $person = @{Name="Bob"; Age=22}

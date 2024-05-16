@@ -3,6 +3,7 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
+# Powershell Scripts
 
 # (-eq is =) (-ne is !=) (-lt is <) (-le is <=) (-gt is >) (-ge is >=)
 

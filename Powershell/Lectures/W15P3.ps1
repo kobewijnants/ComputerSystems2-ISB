@@ -3,6 +3,7 @@
 # @see https://eliasdh.com #
 # @since 01/02/2024        #
 ############################
+# Powershell Pipeline
 
 # Get all processes.
 Get-Process
