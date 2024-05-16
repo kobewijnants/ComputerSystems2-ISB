@@ -65,3 +65,9 @@ Disable-ADAccount -Identity student1 # Disable a user
 
 Set-ADAccountPassword -Identity student1 -NewPassword (ConvertTo-SecureString -AsPlainText "123" -Force) # Change the password of a user
 # Set-ADAccountPassword -Identity student1 -NewPassword (ConvertTo-SecureString -AsPlainText "student1" -Force)
+
+############################
+# Exercise 1
+
+# Get-ADUser -Filter { name -like "Doc*"}
+Get-ADUser -Filter * | Where-Object {$_.name -like "Doc*"}

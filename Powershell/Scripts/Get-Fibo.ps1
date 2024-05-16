@@ -12,6 +12,10 @@
     This script calculates the n-th Fibonacci number.
 .EXAMPLE
     Get-Fibo.ps1
+.NOTES
+File: Get-Fibo.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 function Get-Fibo {

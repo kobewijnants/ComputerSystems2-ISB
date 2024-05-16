@@ -1,0 +1,6 @@
+Item
+Get-ADUser
+Get-ADComputer
+Get-ADGroup
+Get-ADOrganizationalUnit
+Stop

@@ -14,6 +14,10 @@
     The average score for each course is then displayed.
 .EXAMPLE
     Gemiddelde.ps1
+.NOTES
+File: Gemiddelde.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 $file_path = "..\Data\StudentsScores.csv"

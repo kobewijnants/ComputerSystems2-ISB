@@ -13,6 +13,10 @@
 .EXAMPLE
     Watch-Dog.ps1
     Watch-Dog.ps1 -h or Watch-Dog.ps1 -help
+.NOTES
+File: Watch-Dog.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 Param (

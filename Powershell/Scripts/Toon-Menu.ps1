@@ -12,6 +12,10 @@
     This script displays a menu with options.
 .EXAMPLE
     Toon-Menu.ps1
+.NOTES
+File: Toon-Menu.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 # Import the csv file

@@ -12,6 +12,10 @@
     This script reads the content of a text file and displays the content of each file listed in the text file.
 .EXAMPLE
     Get-FileContent.ps1
+.NOTES
+File: Get-FileContent.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 # Import the text file

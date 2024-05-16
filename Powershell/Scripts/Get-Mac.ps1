@@ -13,6 +13,10 @@
     The script can also show the MAC address of a specific computer and clean up the CSV file.
 .EXAMPLE
     Get-Mac.ps1
+.NOTES
+File: Get-Mac.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 # Import the csv file

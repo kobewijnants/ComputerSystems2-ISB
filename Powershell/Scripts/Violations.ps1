@@ -12,10 +12,14 @@
     The script imports traffic violations data, processes it, and provides various functions to analyze the data.
 .EXAMPLE
     Violations.ps1
+.NOTES
+File: Violations.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 # Import the csv file 
-$csvfile = '..\data\Violations.csv'
+$csvfile = '..\Data\Violations.csv'
 
 # Check if the csv file exists/Import the csv file
 if (Test-Path $csvfile) {

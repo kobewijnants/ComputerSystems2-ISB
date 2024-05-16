@@ -14,6 +14,10 @@
 .EXAMPLE
     Maak-Klas.ps1
     Maak-Klas.ps1 -Remove
+.NOTES
+File: Maak-Klas.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 # Functie: Create Class files and folders from a csv file

@@ -13,6 +13,10 @@
     It logs the results in a log file.
 .EXAMPLE
     Check-Site.ps1
+.NOTES
+File: Check-Site.ps1
+Author: Elias De Hondt
+Version: 1.0
 #>
 
 $logFile = "../Data/Check-Site.log"
