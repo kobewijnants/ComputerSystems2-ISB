@@ -1,5 +1,5 @@
-![logo](/Images/logo.png)
-# 💙🤍Lab9 Kubernetes Windows Server🤍💙
+![logo](https://eliasdh.com/assets/media/images/logo-github.png)
+# 💙🤍Lab8 Kubernetes Windows Server🤍💙
 
 ## 📘Table of Contents
 
@@ -89,7 +89,7 @@ gcloud container clusters get-credentials "cs2-cluster" --zone=us-central1-c
 kubectl get nodes
 ```
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-1.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-1.png)
 
 ### 👉Step 2: Add Windows node to the cluster
 
@@ -108,7 +108,7 @@ gcloud container node-pools delete "windows-pool" --cluster="cs2-cluster" --zone
 kubectl get nodes
 ```
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-2.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-2.png)
 
 ### 👉Step 3: Run Windows Container in Pod
 
@@ -164,7 +164,7 @@ kubectl apply -f iis-site-windows-v1.yaml
 kubectl get nodes,deployments,pods
 ```
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-3.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-3.png)
 
 > **NOTE** Delete the deployment with the following command:
 ```powershell
@@ -195,12 +195,12 @@ kubectl expose deployment iis-site-windows --type=LoadBalancer
 kubectl get services
 ```
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-4.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-4.png)
 
 
 - Go to the external IP address in your browser:
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-5.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-5.png)
 
 
 ### 👉Step 5: Service in YAML
@@ -276,11 +276,11 @@ kubectl apply -f iis-site-windows-v2.yaml
 kubectl get nodes,deployments,pods,services
 ```
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-6.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-6.png)
 
 - Go to the external IP address in your browser:
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-7.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-7.png)
 
 ### 👉Step 6: Ingress in YAML
 
@@ -370,7 +370,7 @@ kubectl apply -f iis-site-windows-v3.yaml
 kubectl get ingress # Remember the IP address
 ```
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-8.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-8.png)
 
 > **NOTE** For Windows users, you can add the domain to the `C:\Windows\System32\drivers\etc\hosts` with the following command:
 ```powershell
@@ -379,7 +379,7 @@ Add-Content C:\Windows\System32\drivers\etc\hosts "`n35.201.120.103 demo-cs2.eli
 
 - Go to the domain in your browser:
 
-![x](/Images/Lab9-Kubernetes-WindowsServer-9.png)
+![x](/Images/Lab8-Kubernetes-WindowsServer-9.png)
 
 - Delete the service, deployment and ingress:
 ```powershell

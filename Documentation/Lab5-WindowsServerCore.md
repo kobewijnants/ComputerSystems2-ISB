@@ -1,4 +1,4 @@
-![logo](/Images/logo.png)
+![logo](https://eliasdh.com/assets/media/images/logo-github.png)
 # 💙🤍Lab5 Windows Server Core🤍💙
 
 ## 📘Table of Contents

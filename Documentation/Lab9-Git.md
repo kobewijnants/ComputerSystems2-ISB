@@ -1,5 +1,5 @@
-![logo](/Images/logo.png)
-# 💙🤍Lab10 Git🤍💙
+![logo](https://eliasdh.com/assets/media/images/logo-github.png)
+# 💙🤍Lab9 Git🤍💙
 
 ## 📘Table of Contents
 
@@ -308,12 +308,12 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
 
 - Go to the Gitea server and log in with your initial user. In my case [Gitea Server](http://192.168.70.136:3000).
 
-![x](/Images/Lab10-Git-1.png)
+![x](/Images/Lab9-Git-1.png)
     
 - Create a repository `Project1`.
 > The only thing you need to fill out in the form is the name of the repository, the rest is default.
 
-![x](/Images/Lab10-Git-2.png)
+![x](/Images/Lab9-Git-2.png)
 
 - Go to the `Project1` directory in the local repository.
     ```powershell
@@ -357,19 +357,19 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
     git push -u origin master
     ```
 
-[x](/Images/Lab10-Git-3.png)
+[x](/Images/Lab9-Git-3.png)
 > If you get this prompt, just sign in with the `root` user.
 
 - Go to the remote repository and make sure that the push was successful.
 
-![x](/Images/Lab10-Git-4.png)
+![x](/Images/Lab9-Git-4.png)
 
 - Add the `giteauser` to the repository so that it can write to it.
     - Go to the repository settings.
     - Click on the `Collaboration` tab.
     - Add the `giteauser` to the repository.
 
-![x](/Images/Lab10-Git-5.png)
+![x](/Images/Lab9-Git-5.png)
 
 ### 👉Step 7: Second local repository
 
@@ -473,7 +473,7 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
     git push
     ```
 
-![x](/Images/Lab10-Git-6.png)
+![x](/Images/Lab9-Git-6.png)
 
 - Options:
     1. Merge the changes locally and then push the changes to the remote repository. (Recommended)

@@ -1,5 +1,5 @@
-![logo](/Images/logo.png)
-# 💙🤍Lab8 Windows Server Core Docker🤍💙
+![logo](https://eliasdh.com/assets/media/images/logo-github.png)
+# 💙🤍Lab7 Windows Server Core Docker🤍💙
 
 ## 📘Table of Contents
 
