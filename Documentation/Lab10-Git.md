@@ -537,6 +537,8 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
     New-NetFirewallRule -DisplayName "Allow Gitea Port 3000" -Direction Inbound -Protocol TCP -LocalPort 3000 -Action Allow
     ```
 
+- [PowerShell script to Start/Stop/Restart/Remove the Gitea service](/Documentation/Scripts/GiteaServiceManager.ps1).
+
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
 - 📫 How to reach us elias.dehondt@outlook.com

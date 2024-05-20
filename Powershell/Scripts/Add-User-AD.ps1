@@ -6,7 +6,7 @@
 
 <#
 .SYNOPSIS
-
+    This script adds users to Active Directory.
 .DESCRIPTION
     This script adds users to Active Directory.
     It uses a CSV file to define the users to add.

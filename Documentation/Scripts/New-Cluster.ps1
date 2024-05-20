@@ -4,6 +4,21 @@
 # @since 25/04/2024        #
 ############################
 
+<#
+.SYNOPSIS
+    Create a new Kubernetes cluster.
+.DESCRIPTION
+    This script creates a new Kubernetes cluster on Google Cloud.
+    It creates a cluster with a master node and a Windows node pool.
+    The script also applies a YAML file to the cluster.
+.EXAMPLE
+    New-Cluster.ps1 -LinuxNodes 1 -WindowsNodes 1 -ClusterName cs2-cluster -Yaml "my-yaml.yaml"
+.NOTES
+File: New-Cluster.ps1
+Author: Elias De Hondt
+Version: 1.0
+#>
+
 param (
   [int]$LinuxNodes = 1,
   [int]$WindowsNodes = 1,
