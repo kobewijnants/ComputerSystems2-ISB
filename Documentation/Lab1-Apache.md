@@ -7,7 +7,7 @@
 2. [🖖Introduction](#🖖introduction)
 3. [📝Assignment](#📝assignment)
 4. [✨Steps](#✨steps)
-    1. [👉Step 1: Installation of Apache Webserver on Windows 2.4](#👉step-1-installation-of-apache-webserver-on-windows-24)
+    1. [👉Step 1: Installation of Apache 2.4 Webserver on Windows](#👉step-1-installation-of-apache-24-webserver-on-windows)
     2. [👉Step 2: Backup original httpd.conf and clean up configuration](#👉step-2-backup-original-httpdconf-and-clean-up-configuration)
     3. [👉Step 3: To resolve startup errors](#👉step-3-to-resolve-startup-errors)
     4. [👉Step 4: View website](#👉step-4-view-website)
@@ -125,7 +125,7 @@ This is a lab for Apache server. The goal of this lab is to install and configur
 
 ## ✨Steps
 
-### 👉Step 1: Installation of Apache Webserver on Windows 2.4
+### 👉Step 1: Installation of Apache 2.4 Webserver on Windows
 
 - Download from this URL: [httpd.apache.org](https://httpd.apache.org/docs/2.4/platform/windows.html).
 - Unzip all in `c:\apache24`.
@@ -378,6 +378,8 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     Require group studenten
     ```
 
+> **NOTE** htaccess stands for: Hypertext Access.
+
 ### 👉Step 10: UserDir
 - Add the following modules to the `httpd.conf` file:
     ```html
@@ -442,6 +444,8 @@ This is a lab for Apache server. The goal of this lab is to install and configur
     </html>
     ```
 - Restart the web server.
+
+- Test the user directory by going to `http://localhost/~username/`.
 
 ### 👉Step 11: Redirect
 - Add the following lines to the `httpd.conf` file -> `<VirtualHost *:80>` section:
@@ -535,90 +539,85 @@ Listen 8080
 
 - `httpd.conf` with comment:
 ```html
-# Load necessary modules for basic server functionality
 LoadModule authz_core_module modules/mod_authz_core.so
 LoadModule dir_module modules/mod_dir.so
 LoadModule autoindex_module modules/mod_autoindex.so
 LoadModule info_module modules/mod_info.so
 
-# Authentication & .htaccess modules
+# Authenticatie & .htaccess
 LoadModule authn_core_module modules/mod_authn_core.so
 LoadModule authn_file_module modules/mod_authn_file.so
 LoadModule authz_user_module modules/mod_authz_user.so
 LoadModule authz_groupfile_module modules/mod_authz_groupfile.so
 LoadModule auth_basic_module modules/mod_auth_basic.so
 
-# User directory module
+# Userdir
 LoadModule userdir_module modules/mod_userdir.so
+# LoadModule authz_user_module modules/mod_authz_user.so
 
-# Alias module for URL redirection
+# Redirect
 LoadModule alias_module modules/mod_alias.so
 
-# Filtering based on IP addresses
+# Filtering on IP
 LoadModule authz_host_module modules/mod_authz_host.so
 
-# Define the ports to listen on
 Listen 80
 Listen 8080
 
-# Configuration for the main virtual host on port 80
 <VirtualHost *:80>
-    ServerName LAPTOP
-    ServerRoot c:/apache24
-    DocumentRoot c:/apache24/web/kdg
-    DirectoryIndex index.html
+        ServerName LAPTOP
+        ServerRoot c:/apache24
+        DocumentRoot c:/apache24/web/kdg
+        DirectoryIndex index.html
 
-    # Redirect /google to http://www.google.com
-    Redirect /google http://www.google.com
+        Redirect /google http://www.google.com
 
-    # Configuration for the directory "c:/apache24/web/kdg/test"
-    <Directory "c:/apache24/web/kdg/test">
-        Options Indexes FollowSymLinks
-        Require all granted
-    </Directory>
+        # If you go to http://localhost/test you will see the directory listing
+        <Directory "c:/apache24/web/kdg/test">
+                Options Indexes FollowSymLinks
+                Require all granted
+        </Directory>
 
-    # Configuration for the directory "c:/apache24/web/kdg/test2"
-    <Directory "c:/apache24/web/kdg/test2">
-        Options Indexes FollowSymLinks
-        AllowOverride AuthConfig
-        Require all granted
-    </Directory>
+        # If you go to http://localhost/test2 you will see the directory listing and you will be asked for a username and password
+        <Directory "c:/apache24/web/kdg/test2">
+                Options Indexes FollowSymLinks
+                AllowOverride AuthConfig
+                Require all granted
+        </Directory>
 
-    # User directory configuration for "c:/Users/*/www"
-    UserDir "c:/Users/*/www"
-    <Directory "c:/Users/*/www">
-        Options Indexes FollowSymLinks
-        AllowOverride None
-        Require all granted
-    </Directory>
+        # If you go to http://localhost/~username/ you will go to the www directory of the user
+        UserDir "c:/Users/*/www"
+        <Directory "c:/Users/*/www">
+                Options Indexes FollowSymLinks
+                AllowOverride None
+                Require all granted
+        </Directory>
 
-    # Configuration for accessing server information at "/server-info"
-    <Location "/server-info">
-        SetHandler server-info
-        Require ip 127.0.0.1
-        Require ip ::1
-    </Location>
+        # If you go to http://localhost/server-info you will see the server information
+        <Location "/server-info">
+                SetHandler server-info
+                Require ip 127.0.0.1
+                Require ip ::1
+	</Location>
 </VirtualHost>
 
-# Configuration for an additional virtual host on port 8080
 <VirtualHost *:8080>
-    ServerName LAPTOP
-    DocumentRoot c:/apache24/htdocs
+        ServerName LAPTOP
+        DocumentRoot c:/apache24/htdocs
+        
+        <Directory "c:/apache24/htdocs">
+                Options Indexes FollowSymLinks
+                Require all granted
+        </Directory>
 
-    # Configuration for the directory "c:/apache24/htdocs"
-    <Directory "c:/apache24/htdocs">
-        Options Indexes FollowSymLinks
-        Require all granted
-    </Directory>
-
-    # Authentication configuration for the root location "/"
-    <Location "/">
-        AuthType Basic
-        AuthName "Restricted Access"
-        AuthUserFile "c:/apache24/web/users"
-        AuthGroupFile "c:/apache24/web/group"
-        Require group docenten
-    </Location>
+        # If you go to http://localhost:8080 log in with the username and password (docentx / docentx)
+        <Location "/">
+                AuthType Basic
+                AuthName "Restricted Access"
+                AuthUserFile "c:/apache24/web/users"
+                AuthGroupFile "c:/apache24/web/group"
+                Require group docenten
+        </Location>
 </VirtualHost>
 ```
 
@@ -629,7 +628,7 @@ Listen 8080
 
 - Start Apache as a app:
     ```cmd
-    net start apache2.4
+    net start Apache2.4
     ```
     - If it doesn't work, you can check the error log at `c:\apache24\logs\error.log`.
     - Or
@@ -639,6 +638,30 @@ Listen 8080
     net start Apache2.4
     net stop Apache2.4
     ```
+
+- This PowerShell script will check all the different URLs on our Apache server we configured:
+```powershell
+$urls = @(
+    "http://localhost",                     # Main website
+    "http://localhost:8080",                # Second website (Authentication)
+    "http://localhost/google",              # Redirect to Google
+    "http://localhost/test",                # Directory Auto Index
+    "http://localhost/test2",               # .htaccess
+    "http://localhost/test2/index.html",    # .htaccess
+    "http://localhost/server-info"          # Server Info
+)
+
+foreach ($url in $urls) {
+    Write-Host "Checking $url"
+    try {
+        $response = Invoke-WebRequest -Uri $url -UseBasicParsing
+        Write-Host "Failed with status code: $($response.StatusCode)"
+    } catch {
+        Write-Host "Failed to connect: $($_.Exception.Message)"
+    }
+    Write-Host ""
+}
+```
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
