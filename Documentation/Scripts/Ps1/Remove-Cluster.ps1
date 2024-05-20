@@ -19,7 +19,7 @@ Version: 1.0
 #>
 
 param (
-  [string]$ClusterName = "cs2-cluster"
+    [string]$ClusterName = "cs2-cluster"
 )
 
 gcloud container clusters delete $ClusterName `

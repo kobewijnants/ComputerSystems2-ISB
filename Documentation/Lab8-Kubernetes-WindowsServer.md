@@ -112,47 +112,7 @@ kubectl get nodes
 
 ### 👉Step 3: Run Windows Container in Pod
 
-- Copy the `iis-site-windows-v1.yaml` file from the reference 2.
-```yaml
-############################
-# @author Elias De Hondt   #
-# @see https://eliasdh.com #
-# @since 25/04/2024        #
-############################
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: iis-site-windows
-  labels:
-    app: iis-site-windows
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: iis-site-windows
-  template:
-    metadata:
-      labels:
-        app: iis-site-windows
-    spec:
-      nodeSelector:
-        kubernetes.io/os: windows
-      containers:
-      - name: iis-site-windows
-        image: eliasdh/iis-site-windows:v1.0
-        ports:
-        - containerPort: 80
-```
-
-[iis-site-windows-v1.yaml](/Documentation/Scripts/iis-site-windows-v1.yaml)
-
-- Change the image to the Docker Hub image:
-```yaml
-image: eliasdh/iis-site-windows:v1.0
-```
-
-[iis-site-windows-v1.yaml](/Documentation/Scripts/iis-site-windows-v1.yaml)
+- Copy the [Iis-site-windows-v1.yaml](/Documentation/Scripts/Yaml/iis-site-windows-v1.yaml) file.
 
 - Create the YAML deployment with the following command:
 ```powershell
@@ -216,53 +176,7 @@ kubectl delete deployment iis-site-windows
 kubectl get services,deployments
 ```
 
-- Create a version 2 of the YAML file, where you add the service `LoadBalancer`:
-```yaml
-############################
-# @author Elias De Hondt   #
-# @see https://eliasdh.com #
-# @since 25/04/2024        #
-############################
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: iis-site-windows
-  labels:
-    app: iis-site-windows
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: iis-site-windows
-  template:
-    metadata:
-      labels:
-        app: iis-site-windows
-    spec:
-      nodeSelector:
-        kubernetes.io/os: windows
-      containers:
-      - name: iis-site-windows
-        image: eliasdh/iis-site-windows:v1.0
-        ports:
-        - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: iis-site-windows
-spec:
-  selector:
-    app: iis-site-windows
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-  type: LoadBalancer
-```
-
-[iis-site-windows-v2.yaml](/Documentation/Scripts/iis-site-windows-v2.yaml)
+- Create a version 2 ([Iis-site-windows-v2.yaml](/Documentation/Scripts/Yaml/iis-site-windows-v2.yaml)) of the YAML file, where you add the service `LoadBalancer`.
 
 - Create the deployment with the following command:
 ```powershell
@@ -295,70 +209,7 @@ kubectl delete deployment iis-site-windows
 kubectl get services,deployments
 ```
 
-- Create a version 3 of the YAML file, where you use an Ingress to make the IIS site accessible to the outside world:
-```yaml
-############################
-# @author Elias De Hondt   #
-# @see https://eliasdh.com #
-# @since 25/04/2024        #
-############################
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: iis-site-windows
-  labels:
-    app: iis-site-windows
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: iis-site-windows
-  template:
-    metadata:
-      labels:
-        app: iis-site-windows
-    spec:
-      nodeSelector:
-        kubernetes.io/os: windows
-      containers:
-      - name: iis-site-windows
-        image: eliasdh/iis-site-windows:v1.0
-        ports:
-        - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: iis-site-windows
-spec:
-  selector:
-    app: iis-site-windows
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-  type: LoadBalancer
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: iis-site-windows
-spec:
-  rules:
-  - host: demo-cs2.eliasdh.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: iis-site-windows
-            port:
-              number: 80
-```
-
-[iis-site-windows-v3.yaml](/Documentation/Scripts/iis-site-windows-v3.yaml)
+- Create a version 3 ([Iis-site-windows-v3.yaml](/Documentation/Scripts/Yaml/iis-site-windows-v3.yaml)) of the YAML file, where you use an Ingress to make the IIS site accessible to the outside world.
 
 - Create the deployment with the following command:
 ```powershell
@@ -400,80 +251,19 @@ gcloud container clusters delete "cs2-cluster" --zone=us-central1-c --quiet
 
 ## 👉Step 7: Create PowerShell Scripts
 
-- Start by creating a new PowerShell script `New-Cluster.ps1` with the following content:
-```powershell
-############################
-# @author Elias De Hondt   #
-# @see https://eliasdh.com #
-# @since 25/04/2024        #
-############################
-
-param (
-  [int]$LinuxNodes = 1,
-  [int]$WindowsNodes = 1,
-  [string]$ClusterName = "cs2-cluster",
-  [string]$Yaml = ""
-)
-
-if ($LinuxNodes -lt 1) {
-  Write-Host "LinuxNodes must be greater than or equal to 1 (This is for the master node)"
-  exit
-}
-
-gcloud container clusters create $ClusterName `
-    --num-nodes=$LinuxNodes `
-    --release-channel=rapid `
-    --enable-ip-alias `
-    --location=us-central1-c `
-    --machine-type=n1-standard-4
-
-gcloud container node-pools create "windows-pool" `
-    --cluster=$ClusterName `
-    --image-type=WINDOWS_LTSC_CONTAINERD `
-    --num-nodes=$WindowsNodes `
-    --no-enable-autoupgrade `
-    --machine-type=n1-standard-4 `
-    --zone=us-central1-c
-
-gcloud container clusters get-credentials $ClusterName `
-    --zone=us-central1-c
-
-if ($Yaml -ne "") {
-  Write-Host "Running YAML file: $Yaml"
-  kubectl apply -f $Yaml
-}
-```
+- Start by creating a new PowerShell script [New-Cluster.ps1](/Documentation/Scripts/Ps1/New-Cluster.ps1).
 
 - Execute the script with the following command:
 ```powershell
 .\New-Cluster.ps1 -LinuxNodes 3 -WindowsNodes 2 -ClusterName "cs2-cluster" -Yaml "iis-site-windows-v3.yaml"
 ```
 
-[New-Cluster.ps1](/Documentation/Scripts/New-Cluster.ps1)
-
-- Create a new PowerShell script `Remove-Cluster.ps1` with the following content:
-```powershell
-############################
-# @author Elias De Hondt   #
-# @see https://eliasdh.com #
-# @since 25/04/2024        #
-############################
-
-param (
-  [string]$ClusterName = "cs2-cluster"
-)
-
-gcloud container clusters delete $ClusterName `
-    --zone=us-central1-c `
-    --quiet
-```
+- Create a new PowerShell script [Remove-Cluster.ps1](/Documentation/Scripts/Ps1/Remove-Cluster.ps1).
 
 - Execute the script with the following command:
 ```powershell
 .\Remove-Cluster.ps1 -ClusterName "cs2-cluster"
 ```
-
-[Remove-Cluster.ps1](/Documentation/Scripts/Remove-Cluster.ps1)
 
 ## 📦Extra
 
@@ -484,118 +274,7 @@ kubectl delete service --all
 gcloud container clusters delete "cs2-cluster" --zone=us-central1-c --quiet
 ```
 
-- This is a advanced YAML file -> 2 Database pods, 5 Webserver pods and 2 LoadBalancer one for the Database and one for the Webserver pods + 2 Ingress:
-```yaml
-############################
-# @author Elias De Hondt   #
-# @see https://eliasdh.com #
-# @since 25/04/2024        #
-############################
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: db
-  labels:
-    app: db
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: db
-  template:
-    metadata:
-      labels:
-        app: db
-    spec:
-      containers:
-      - name: db
-        image: eliasdh/db:v1.0
-        ports:
-        - containerPort: 3306
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: web
-  labels:
-    app: web
-spec:
-  replicas: 5
-  selector:
-    matchLabels:
-      app: web
-  template:
-    metadata:
-      labels:
-        app: web
-    spec:
-      containers:
-      - name: web
-        image: eliasdh/web:v1.0
-        ports:
-        - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: db
-spec:
-  selector:
-    app: db
-  ports:
-    - protocol: TCP
-      port: 3306
-      targetPort: 3306
-  type: LoadBalancer
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: web
-spec:
-  selector:
-    app: web
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-  type: LoadBalancer
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: web
-spec:
-  rules:
-  - host: demo-cs2.eliasdh.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: web
-            port:
-              number: 80
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: db
-spec:
-  rules:
-  - host: db.demo-cs2.eliasdh.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: db
-            port:
-              number: 3306
-```
+- This is a advanced YAML file -> 2 Database pods, 5 Webserver pods and 2 LoadBalancer one for the Database and one for the Webserver pods + 2 Ingresses [Advanced-K8s-Yaml.yaml](/Documentation/Scripts/Yaml/Advanced-K8s-Yaml.yaml).
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).

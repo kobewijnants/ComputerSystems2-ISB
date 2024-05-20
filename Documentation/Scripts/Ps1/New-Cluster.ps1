@@ -20,15 +20,15 @@ Version: 1.0
 #>
 
 param (
-  [int]$LinuxNodes = 1,
-  [int]$WindowsNodes = 1,
-  [string]$ClusterName = "cs2-cluster",
-  [string]$Yaml = ""
+    [int]$LinuxNodes = 1,
+    [int]$WindowsNodes = 1,
+    [string]$ClusterName = "cs2-cluster",
+    [string]$Yaml = ""
 )
 
 if ($LinuxNodes -lt 1) {
-  Write-Host "LinuxNodes must be greater than or equal to 1 (This is for the master node)"
-  exit
+    Write-Host "LinuxNodes must be greater than or equal to 1 (This is for the master node)"
+    exit
 }
 
 gcloud container clusters create $ClusterName `
@@ -50,6 +50,6 @@ gcloud container clusters get-credentials $ClusterName `
     --zone=us-central1-c
 
 if ($Yaml -ne "") {
-  Write-Host "Running YAML file: $Yaml"
-  kubectl apply -f $Yaml
+    Write-Host "Running YAML file: $Yaml"
+    kubectl apply -f $Yaml
 }

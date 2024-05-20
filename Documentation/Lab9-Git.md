@@ -324,24 +324,7 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
     git remote add origin http://192.168.70.136:3000/root/Project1.git
     git remote -v
     ```
-- Add code to the [HelloWorld.java](/Documentation/Scripts/HelloWorld.java) file.
-    ```java
-    /*
-    * @author Elias De Hondt
-    * @see https://eliasdh.com
-    * @since 01/05/2024
-    */
-
-    // Package
-    package Documentation.Scripts;
-
-    // Class
-    public class HelloWorld {
-        public static void main(String[] args) {
-            System.out.println("Hello world, Elias De hondt.");
-        }
-    }
-    ```
+- Add code to the [HelloWorld.java](/Documentation/Scripts/Java/HelloWorld.java) file.
 - Add the file to the staging area.
     ```powershell
     git add HelloWorld.java
@@ -396,21 +379,7 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
     ```
 - Change the `HelloWorld.java` file.
     ```java
-    /*
-    * @author Elias De Hondt
-    * @see https://eliasdh.com
-    * @since 01/05/2024
-    */
-
-    // Package
-    package Documentation.Scripts;
-
-    // Class
-    public class HelloWorld {
-        public static void main(String[] args) {
-            System.out.println("Hello world, Elias De hondt. This is the second local repository.");
-        }
-    }
+    System.out.println("Hello world, Elias De hondt. This is the second local repository.");
     ```
 - Add the file to the staging area.
     ```powershell
@@ -430,32 +399,17 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
 
 ### 👉Step 8: Merge repositories
 
-- Open the `HelloWorld.java` file in notepad and change the text.
+- Open the [HelloWorld.java](/Documentation/Scripts/Java/HelloWorld.java) file in notepad and change the text.
     ```powershell
     notepad "$env:USERPROFILE\LocalRepos\Project1\HelloWorld.java"
     ```
-- Change the `HelloWorld.java` file in the `LocalRepos\Project1` directory.
+- Change the [HelloWorld.java](/Documentation/Scripts/Java/HelloWorld.java) file in the `LocalRepos\Project1` directory.
     ```java
-    /*
-    * @author Elias De Hondt
-    * @see https://eliasdh.com
-    * @since 01/05/2024
-    */
-
-    // Package
-    package Documentation.Scripts;
-
-    // Class
-    public class HelloWorld {
-        public static void main(String[] args) {
-            System.out.println("Hello world, Elias De hondt. This is the second local repository.");
-        }
-        public void frustra() {
-            a = 1;
-            b = 2;
-            c = a + b;
-            System.out.println("The sum of a and b is: " + c);
-        }
+    public void frustra() {
+        a = 1;
+        b = 2;
+        c = a + b;
+        System.out.println("The sum of a and b is: " + c);
     }
     ```
 - Add the file to the staging area.
@@ -537,7 +491,7 @@ In this lab we are going to setup a Git server on a Windows Server 2019 machine.
     New-NetFirewallRule -DisplayName "Allow Gitea Port 3000" -Direction Inbound -Protocol TCP -LocalPort 3000 -Action Allow
     ```
 
-- [PowerShell script to Start/Stop/Restart/Remove the Gitea service](/Documentation/Scripts/GiteaServiceManager.ps1).
+- [PowerShell script to Start/Stop/Restart/Remove the Gitea service](/Documentation/Scripts/Ps1/GiteaServiceManager.ps1).
 
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).

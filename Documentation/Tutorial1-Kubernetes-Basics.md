@@ -231,32 +231,10 @@ gcloud container clusters create "cluster-2" --location=us-central1-c --num-node
 gcloud container clusters get-credentials "cluster-2" --region=us-central1-c
 ```
 
-- Create a YAML file `ex4.yaml` for:
+- Create a YAML file [Ex4.yaml](/Documentation/Scripts/Yaml/Ex4.yaml) for:
     - A deployment with name `ex4`
     - `1 pod` with `1 container`
     - Container with image `gcr.io/google-samples/kubernetes-bootcamp:v1` and port `8080`
-```yaml
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ex4
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: ex4
-  template:
-    metadata:
-      labels:
-        app: ex4
-    spec:
-      containers:
-      - name: ex4
-        image: gcr.io/google-samples/kubernetes-bootcamp:v1
-        ports:
-        - containerPort: 8080
-```
 
 - Create the deployment from the YAML file
 ```powershell
@@ -290,31 +268,7 @@ exit
 
 ![x](/Images/Tutorial1-Kubernetes-Basics-4.png)
 
-- Change the replica's to `2` and update the deployment
-```yaml
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ex4s
-spec:
-    replicas: 2
-    selector:
-        matchLabels:
-        app: ex4
-    template:
-        metadata:
-        labels:
-            app: ex4
-        spec:
-        containers:
-        - name: ex4
-            image: gcr.io/google-samples/kubernetes-bootcamp:v1
-            ports:
-            - containerPort: 8080
-```
-
-[Ex4.yaml](/Documentation/Scripts/ex4.yaml)
+- Change the replica's in [Ex4.yaml](/Documentation/Scripts/Yaml/Ex4.yaml) to `2` and update the deployment
 
 ```powershell
 kubectl apply -f ex4.yaml
@@ -334,48 +288,11 @@ kubectl delete deployment "ex4"
 kubectl get pods
 ```
 
-- Create a YAML file `ex5.yaml` for:
+- Create a YAML file [Ex5.yaml](/Documentation/Scripts/Yaml/Ex5.yaml) for:
     - A deployment with name `ex5`
     - `3` pod with `1` container
     - Container with image `gcr.io/google-samples/kubernetes-bootcamp:v1` and port `8080`
     - A service with name `ex5` and type `LoadBalancer` on port `80` for this deployment
-
-```yaml
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ex5
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: ex5
-  template:
-    metadata:
-      labels:
-        app: ex5
-    spec:
-      containers:
-      - name: ex5
-        image: gcr.io/google-samples/kubernetes-bootcamp:v1
-        ports:
-        - containerPort: 8080
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: ex5
-spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
-    targetPort: 8080
-  selector:
-    app: ex5
-```
-
-[Ex5.yaml](/Documentation/Scripts/ex5.yaml)
 
 - Create the deployment and service from the YAML file
 ```powershell
@@ -422,22 +339,7 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
 [Kubernetes ClusterIP vs NodePort vs LoadBalancer vs Ingress](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
 
 1. ClusterIP:
-  - Yaml file example [clusterip-demo.yaml](/Documentation/Scripts/clusterip-demo.yaml)
-  ```yaml
-  apiVersion: v1
-  kind: Service
-  metadata:  
-    name: my-internal-service
-  spec:
-    selector:    
-      app: my-app
-    type: ClusterIP
-    ports:  
-    - name: http
-      port: 80
-      targetPort: 80
-      protocol: TCP
-  ```
+  - Yaml file example [Clusterip-demo.yaml](/Documentation/Scripts/Yaml/Clusterip-demo.yaml)
   - Run the service
   ```powershell
   kubectl apply -f clusterip-demo.yaml
@@ -446,23 +348,7 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   ![x](/Images/Tutorial1-Kubernetes-Basics-7.png)
 
 2. NodePort:
-  - Yaml file example [nodeport-demo.yaml](/Documentation/Scripts/nodeport-demo.yaml)
-  ```yaml
-  apiVersion: v1
-  kind: Service
-  metadata:  
-    name: my-nodeport-service
-  spec:
-    selector:    
-      app: my-app
-    type: NodePort
-    ports:  
-    - name: http
-      port: 80
-      targetPort: 80
-      nodePort: 30036
-      protocol: TCP
-  ```
+  - Yaml file example [Nodeport-demo.yaml](/Documentation/Scripts/Yaml/Nodeport-demo.yaml)
   - Run the service
   ```powershell
   kubectl apply -f nodeport-demo.yaml
@@ -471,22 +357,7 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   ![xs](/Images/Tutorial1-Kubernetes-Basics-8.png)
 
 3. LoadBalancer:
-  - Yaml file example [loadbalancer-demo.yaml](/Documentation/Scripts/loadbalancer-demo.yaml)
-  ```yaml
-  apiVersion: v1
-  kind: Service
-  metadata:  
-    name: my-loadbalancer-service
-  spec:
-    selector:    
-      app: my-app
-    type: LoadBalancer
-    ports:  
-    - name: http
-      port: 80
-      targetPort: 80
-      protocol: TCP
-  ```
+  - Yaml file example [Loadbalancer-demo.yaml](/Documentation/Scripts/Yaml/Loadbalancer-demo.yaml)
   - Run the service
   ```powershell
   kubectl apply -f loadbalancer-demo.yaml
@@ -495,31 +366,7 @@ gcloud container clusters get-credentials "cluster-3" --region=us-central1-c
   ![x](/Images/Tutorial1-Kubernetes-Basics-9.png)
 
 4. Ingress
-  - Yaml file example [ingress-demo.yaml](/Documentation/Scripts/ingress-demo.yaml)
-  ```yaml
-  apiVersion: extensions/v1beta1
-  kind: Ingress
-  metadata:
-    name: my-ingress
-  spec:
-    backend:
-      serviceName: other
-      servicePort: 8080
-    rules:
-    - host: foo.demo-cs2.eliasdh.com
-      http:
-        paths:
-        - backend:
-            serviceName: foo
-            servicePort: 8080
-    - host: demo-cs2.eliasdh.com
-      http:
-        paths:
-        - path: /bar/*
-          backend:
-            serviceName: bar
-            servicePort: 8080
-  ```
+  - Yaml file example [Ingress-demo.yaml](/Documentation/Scripts/Yaml/Ingress-demo.yaml)
   - Run the service
   ```powershell
   kubectl apply -f ingress-demo.yaml
