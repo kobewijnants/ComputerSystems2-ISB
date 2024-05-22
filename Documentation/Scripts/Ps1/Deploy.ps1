@@ -37,7 +37,7 @@ if ($action -eq "deploy" -or $action -eq "c") {
     --project=$project `
     --source-machine-image=$nameImage `
     --zone=$zone `
-    --metadata="windows-startup-script-ps1=docker run eliasdh/iis-site-windows:v1.0"
+    --metadata="windows-startup-script-ps1=docker run -d -p 80:80 eliasdh/iis-site-windows:v1.0"
 
     gcloud compute firewall-rules create $nameFirewallRule `
     --project=$project `

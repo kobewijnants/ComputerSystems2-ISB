@@ -249,6 +249,25 @@ notepad C:\Deploy.ps1
 gcloud compute instances list
 ```
 
+- Static deployment:
+    ```powershell
+    "FROM mcr.microsoft.com/windows/servercore/iis
+    EXPOSE 80
+    RUN echo 'Hello World - Windows IIS' > C:\inetpub\wwwroot\index.html" | Out-File -FilePath Dockerfile -Encoding ascii
+    docker build -t my-iis-site .
+    docker run -d -p 80:80 my-iis-site
+    ```
+
+- Test the deployment website:
+    ```powershell
+    curl http://$(gcloud compute instances describe win-docker-server-new --zone=us-central1-c --format='value(networkInterfaces[0].accessConfigs[0].natIP)')/index.html
+    ```
+
+- Check the deployment:
+    ```powershell
+    docker ps
+    ```
+
 ## 🔗Links
 - 👯 Web hosting company [EliasDH.com](https://eliasdh.com).
 - 📫 How to reach us elias.dehondt@outlook.com
