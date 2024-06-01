@@ -17,31 +17,36 @@ Author: Elias De Hondt
 Version: 1.0
 #>
 
-param (
-    $NoColor
-    $RunNewWindow
-    [string]$RunInOtherDirectory="C:\"
-    $RunAsAdministrator
-    $RunInDebugMode
+param ( # Parameters for the script
+    [bool]$RunNewWindow=$False,
+    [string]$RunInOtherDirectory="C:\",
+    [bool]$RunAsAdministrator=$False,
+    [bool]$RunInDebugMode=$False
 )
 
-function Exit {
-    param (
-        [string]$Message="No Message"
-        [init]$Code=0
-    )
-
-    if ($Code == 0) {
-        Write-Host $Message -ForegroundColor Green
-    } elseif ($Code == 1) {
-        Write-Host $Message -ForegroundColor Red
+# Function to exit the script
+function Exit-Script([string]$Message="No Message", [int]$Code=0, [bool]$NoColor=$False) {
+    # 1 = Error
+    # 0 = Success
+    if ($NoColor) {
+        if ($Code -eq 0) {
+            Write-Host $Message
+        } elseif ($Code -eq 1) {
+            Write-Host $Message
+        }
+    } else {
+        if ($Code -eq 0) {
+            Write-Host $Message -ForegroundColor Green
+        } elseif ($Code -eq 1) {
+            Write-Host $Message -ForegroundColor Red
+        }
     }
     exit $Code
 }
 
-
+# Function to start the script
 function Main {
-    
+    Exit-Script "Hallo" 1 $False
 }
 
 
