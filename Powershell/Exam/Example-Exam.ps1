@@ -277,9 +277,5 @@ function Main {
     Show-DataForASpecificDate $violations
 }
 
-############################
-# ../Data/ViolationsElias.csv
-############################
-
 
 Main # Start the script
