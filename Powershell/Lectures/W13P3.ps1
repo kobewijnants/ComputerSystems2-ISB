@@ -5,6 +5,9 @@
 ############################
 # Powershell Introduction
 
+# Get the current date
+$CurrentDate = Get-Date -Format "dd/MM/yyyy"
+
 # This will display the version (PSVersion)
 $PSVersionTable
 
@@ -95,6 +98,9 @@ $datum = Get-Date; Write-Output $datum
 # String: +, -like, -replace
 # Redirection: >, >>, 2>, 2>>
 # Boolean: $true, $false, -not, !, -and, -or
+# Arrays: @(), +=, []
+# Environment: $Env:Path
+# Aliases: Get-Alias, Set-Alias
 ############################
 
 # Schrijf "Dag wereld" in file "output.txt"
@@ -171,9 +177,7 @@ Set-Alias vi notepad
 
 # Stop alle processen waarvan de naam met een "m" begint in de variabele "$proc"
     # Toon de inhoud van $proc.
-
     # Welk soort variabele is $proc?
-    
     # Toon het 4de element van $proc.
 
 $proc = Get-Process m*

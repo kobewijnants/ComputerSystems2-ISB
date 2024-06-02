@@ -12,7 +12,10 @@ $person["Age"]
 
 # Custom object
 [array] $personlist = $null
-$person1 = [pscustomobject]@{Name="Bob"; Age=22}
+$person1 = [pscustomobject]@{
+    Name="Bob";
+    Age=22
+}
 
 $person1 | Get-Member
 $person1.Name
@@ -40,7 +43,12 @@ $fruit | Get-Member
 
 # Copy the fruit array
 [array] $CopiedFruit = $null
-$fruit | ForEach-Object { $CopiedFruit += [pscustomobject]@{Fruit=$_.Fruit; Aantal=[int]$_.Aantal} }
+$fruit | ForEach-Object { 
+        $CopiedFruit += [pscustomobject]@{
+        Fruit=$_.Fruit;
+        Aantal=[int]$_.Aantal
+    } 
+}
 
 # Display the CopiedFruit row
 $CopiedFruit | Get-Member

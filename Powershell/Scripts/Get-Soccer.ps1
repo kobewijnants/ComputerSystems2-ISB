@@ -29,14 +29,12 @@ try {
     exit
 }
 
-
-
 function Get-DateMatchen ($matchen, $date, $land) {
   [Array]$MatchesOnDay = $null
   foreach ($match in $matchen) {
     if ($match.date -eq $date) {
       if ($match.country -like $land) {
-        $MatchesOnDay+=$match
+        $MatchesOnDay += $match
         }
     }
   }
@@ -48,14 +46,14 @@ function Get-TeamMatchen ($matchen, $seizoen, $land, $ploeg, $type) {
   if($type -like "home*") {
     foreach ($match in $matchen) {
       if ($match.hometeam -like $ploeg -and $match.season -eq $seizoen -and $match.country -like $land) {
-        $matchesFromTeam+=$match
+        $matchesFromTeam += $match
       }
     }
   }
   if($type -like "*away") {
     foreach ($match in $matchen) {
       if ($match.awayteam -like $ploeg -and $match.season -eq $seizoen -and $match.country -like $land) {
-        $matchesFromTeam+=$match
+        $matchesFromTeam += $match
       }
     }
   }
@@ -102,11 +100,11 @@ function Count-Win ($matchen, $seizoen, $land, $ploeg) {
 
 function Score-Team ($matchen, $seizoen, $land, $ploeg) {
   return (((Count-Win $matchen $seizoen $land $ploeg) * 3) + (Count-Gelijk $matchen $seizoen $land $ploeg))
-  }
+}
 
 function Get-Teams ($matchen, $seizoen, $land) {
   return $matchen | ? {$_.season -eq $seizoen -and $_.country -like $land} | Select-Object -Property hometeam -Unique | % {$_.hometeam}
-  }
+}
 
 function Get-Classement ($matchen, $seizoen, $land) {
   $teams = Get-teams $matchen $seizoen $land
