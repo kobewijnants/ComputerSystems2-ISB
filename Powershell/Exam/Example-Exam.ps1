@@ -18,13 +18,15 @@ Version: 1.0
 #>
 
 param ( # Parameters for the script
-    [string]$csvfile="../Data/ViolationsElias.csv"
+    [string]$csvfile1="../Data/ViolationsElias.csv",
+    [string]$csvfile2="../Data/StudyResult.csv"
 )
 
 [string]$global:PrimaryColor = "#4f94f0"
 
 try {
-    $Violations = Import-Csv -Path $csvfile -Delimiter ","
+    $Violations = Import-Csv -Path $csvfile1 -Delimiter ","
+    $StudyResult = Import-Csv -Path $csvfile2 -Delimiter ";"
 } catch {
     ExitScript "Error: No CSV file" 1 $False
 }
@@ -235,7 +237,7 @@ function PopupWindowObject {
 
 # Function to get a list of unique street names
 function Get-ListOfUniqueStreetNames([object]$Table) {
-    $Local:UniqueStreetNames = $Table | Select-Object -Property office_location -Unique | Sort-Object -Property office_location
+    [array]$Local:UniqueStreetNames = $Table | Select-Object -Property office_location -Unique | Sort-Object -Property office_location
 
     [array]$Local:UniqueStreetNamesTable = @()
     [int]$Local:i = 0
@@ -320,14 +322,110 @@ function Show-DataForASpecificDate {
         [string]$Local:Title = "Data for " + $SelectedDay + "/" + $SelectedMonth + "/" + $SelectedYear
         PopupWindowObject $SelectedRows $Title $ColumnNames
     } else {
-        ExitScript "No records were found." 1
+        WriteColoredLine -text "* No records were found." -colorHex "#ff0000"
     }
+}
+
+# Function to get all unique degrees
+function Get-UniqueDegrees([object]$Table, [array]$EducationLevels) {
+    [array]$Local:UniqueDegreeNames = $Table | Select-Object -Property education_mother -Unique
+
+    
+    [array]$Local:UniqueDegreeNames = $UniqueDegreeNames | Sort-Object -Property {
+        $EducationLevels.IndexOf($_.education_mother)
+    }
+
+    [array]$Local:UniqueDegrees = @()
+    [int]$Local:i = 1
+
+    foreach ($Item in $UniqueDegreeNames) {
+        $UniqueDegrees += [pscustomobject]@{
+            Id = [int]$i;
+            DegreeName = [string]$Item.education_mother
+        }
+        $i++
+    }
+
+    return $UniqueDegrees
+}
+
+function Get-TopGendereDegrees([object]$Table, [object]$UniqueDegrees, [array]$EducationLevels) {
+    [array]$Local:GendereScoreF = @(0, 0, 0, 0, 0)
+    [array]$Local:GendereScoreM = @(0, 0, 0, 0, 0)
+
+    foreach ($Row in $Table) {
+        switch ($Row.education_mother) {
+            $EducationLevels[0] { # Master
+                if ($Row.gender -eq "F") {
+                    $GendereScoreF[0] += 1
+                } elseif ($Row.gender -eq "M") {
+                    $GendereScoreM[0] += 1
+                }
+            }
+            $EducationLevels[1] { # Bachelor
+                if ($Row.gender -eq "F") {
+                    $GendereScoreF[1] += 1
+                } elseif ($Row.gender -eq "M") {
+                    $GendereScoreM[1] += 1
+                }
+            }
+            $EducationLevels[2] { # Primary education
+                if ($Row.gender -eq "F") {
+                    $GendereScoreF[2] += 1
+                } elseif ($Row.gender -eq "M") {
+                    $GendereScoreM[2] += 1
+                }
+            }
+            $EducationLevels[3] { # Secondary education
+                if ($Row.gender -eq "F") {
+                    $GendereScoreF[3] += 1
+                } elseif ($Row.gender -eq "M") {
+                    $GendereScoreM[3] += 1
+                }
+            }
+            $EducationLevels[4] { # No
+                if ($Row.gender -eq "F") {
+                    $GendereScoreF[4] += 1
+                } elseif ($Row.gender -eq "M") {
+                    $GendereScoreM[4] += 1
+                }
+            }
+            Default {}
+        }
+    }
+
+    [array]$Local:TopScore = @()
+
+    for ($i = 0; $i -le $GendereScoreF.Length; $i++) {
+        if ($GendereScoreF[$i] -lt $GendereScoreM[$i]) {
+            $TopScore += "M"
+        } elseif ($GendereScoreF[$i] -gt $GendereScoreM[$i]) {
+            $TopScore += "F"
+        } else {
+            $TopScore += "M&F"
+        }
+    }
+
+    [array]$Local:TopGendereDegrees = @()
+    [int]$Local:i = 0
+
+    foreach ($Item in $UniqueDegrees) {
+        $TopGendereDegrees += [pscustomobject]@{
+            Id = [int]$Item.Id;
+            DegreeName = [string]$Item.DegreeName;
+            TopGendere = [string]$TopScore[$i]
+        }
+        $i++
+    }
+
+    return $TopGendereDegrees
 }
 
 # Function to start the script
 function Main {
     BannerMessage "Example Exam" $PrimaryColor
 
+    # Violations
     [array]$Local:UniqueStreetNamesTable = Get-ListOfUniqueStreetNames $violations
     [array]$Local:TotalAmountPerStreet = Get-TotalAmountOfViolationsPerStreet $violations $UniqueStreetNamesTable
 
@@ -336,6 +434,15 @@ function Main {
     PopupWindowObject $TotalAmountPerStreet $Title $ColumnNames
 
     Show-DataForASpecificDate $violations
+
+    # Study Result
+    [array]$Local:EducationLevels = @("Master", "Bachelor", "Primary education", "Secondary education", "No")
+    [array]$Local:UniqueDegrees = Get-UniqueDegrees $StudyResult $EducationLevels
+    [array]$Local:TopGendereDegrees = Get-TopGendereDegrees $StudyResult $UniqueDegrees $EducationLevels
+
+    [array]$Local:ColumnNames = @("Id", "DegreeName", "TopGendere")
+    [string]$Local:Title = "Top gendere per degree"
+    PopupWindowObject $TopGendereDegrees $Title $ColumnNames
 }
 
 Main # Start the script
