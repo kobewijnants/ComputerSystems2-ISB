@@ -26,11 +26,11 @@ param ( # Parameters for the script
 try {
     $Violations = Import-Csv -Path $csvfile -Delimiter ","
 } catch {
-    Exit-Script "Error: No CSV file" 1 $False
+    ExitScript "Error: No CSV file" 1 $False
 }
 
 # Function to write a colored line
-function Write-ColoredLine {
+function WriteColoredLine {
     param (
         [string]$Text,
         [string]$ColorHex
@@ -46,7 +46,7 @@ function Write-ColoredLine {
 }
 
 # Function to read a colored line
-function Read-ColoredLine {
+function ReadColoredLine {
     param (
         [string]$Text,
         [string]$ColorHex
@@ -62,28 +62,24 @@ function Read-ColoredLine {
 }
 
 # Function to exit the script
-function Exit-Script([string]$Message="No Message", [int]$Code=0, [bool]$NoColor=$False) {
+function ExitScript([string]$Message="No Message", [int]$Code=0, [bool]$NoColor=$False) {
     # 1 = Error
     # 0 = Success
     Clear-Host
     if ($NoColor) {
-        if ($Code -eq 0) {
-            Write-Host $Message
-        } elseif ($Code -eq 1) {
-            Write-Host $Message
-        }
+        Write-Host $Message
     } else {
         if ($Code -eq 0) {
-            Write-ColoredLine -text $Message -colorHex "#00ff00"
+            WriteColoredLine -text $Message -colorHex "#00ff00"
         } elseif ($Code -eq 1) {
-            Write-ColoredLine -text $Message -colorHex "#ff0000"
+            WriteColoredLine -text $Message -colorHex "#ff0000"
         }
     }
     exit $Code
 }
 
 # Function to display a banner message
-function Banner-Message([string]$Message="Message...", [string]$Color="#ffffff", [bool]$NoColor=$False) {
+function BannerMessage([string]$Message="Message...", [string]$Color="#ffffff") {
     Clear-Host
     [int]$Local:Length = $Message.Length
     [string]$Local:Line1 = "*****"
@@ -99,65 +95,104 @@ function Banner-Message([string]$Message="Message...", [string]$Color="#ffffff",
         }
     }
     
-    Write-ColoredLine -text $Line1 -colorHex $PrimaryColor
-    Write-ColoredLine -text $Line2 -colorHex $PrimaryColor
-    Write-ColoredLine -text $Text -colorHex $PrimaryColor
-    Write-ColoredLine -text $Line2 -colorHex $PrimaryColor
-    Write-ColoredLine -text $Line1 -colorHex $PrimaryColor
+    WriteColoredLine -text $Line1 -colorHex $Color
+    WriteColoredLine -text $Line2 -colorHex $Color
+    WriteColoredLine -text $Text -colorHex $Color
+    WriteColoredLine -text $Line2 -colorHex $Color
+    WriteColoredLine -text $Line1 -colorHex $Color
 }
 
-# Function to create a popup window
-function Popup-Window-Object {
+# Function to create a popup window object
+function PopupWindowObject {
     param (
         [object]$Table,
         [string]$Title,
         [array]$ColumnNames
     )
-    
-    Write-ColoredLine -text "*`n* Opening popup window:" -colorHex $PrimaryColor
+
+    WriteColoredLine -text "*`n* Opening popup window:" -colorHex $PrimaryColor
 
     Add-Type -AssemblyName System.Windows.Forms
     Add-Type -AssemblyName System.Drawing
 
     $Local:Form = New-Object System.Windows.Forms.Form
     $Local:Form.Text = $Title
-    $Local:Form.Size = New-Object System.Drawing.Size(400, 450)
+    $Local:Form.Size = New-Object System.Drawing.Size(500, 550)
     $Local:Form.StartPosition = "CenterScreen"
     $Local:Form.FormBorderStyle = [System.Windows.Forms.FormBorderStyle]::FixedDialog
     $Local:Form.MaximizeBox = $False
     $Local:Form.MinimizeBox = $False
     $Local:Form.ControlBox = $True
+    $Local:Form.BackColor = [System.Drawing.Color]::FromArgb(245, 245, 245)
 
     $Local:ListView = New-Object System.Windows.Forms.ListView
-    $Local:ListView.Location = New-Object System.Drawing.Point(10, 10)
-    $Local:ListView.Size = New-Object System.Drawing.Size(360, 340)
+    $Local:ListView.Location = New-Object System.Drawing.Point(10, 50)
+    $Local:ListView.Size = New-Object System.Drawing.Size(460, 400)
     $Local:ListView.View = [System.Windows.Forms.View]::Details
     $Local:ListView.FullRowSelect = $True
-    $Local:ListView.GridLines = $True
+    $Local:ListView.GridLines = $False
+    $Local:ListView.BackColor = [System.Drawing.Color]::White
+    $Local:ListView.ForeColor = [System.Drawing.Color]::FromArgb(30, 30, 30)
+    $Local:ListView.Font = New-Object System.Drawing.Font("Arial", 10)
+    $Local:ListView.HeaderStyle = [System.Windows.Forms.ColumnHeaderStyle]::Clickable
 
     for ($i = 0; $i -lt $ColumnNames.Length; $i++) {
-        $Local:ListView.Columns.Add($ColumnNames[$i], 100) | Out-Null
+        $Local:ColumnHeader = New-Object System.Windows.Forms.ColumnHeader
+        $Local:ColumnHeader.Text = $ColumnNames[$i]
+        $Local:ColumnHeader.Width = -2
+        $Local:ListView.Columns.Add($Local:ColumnHeader) | Out-Null
     }
 
-    for ($i = 0; $i -lt $Table.Length; $i++) {
-        $Local:ListViewItem = New-Object System.Windows.Forms.ListViewItem
-        $Local:ListViewItem.Text = $Table[$i].($ColumnNames[0])
+    function Update-ListView {
+        param (
+            [string]$FilterText
+        )
 
-        for ($j = 1; $j -lt $ColumnNames.Length; $j++) {
-            $Local:ListViewItem.SubItems.Add($Table[$i].($ColumnNames[$j])) | Out-Null
+        $ListView.BeginUpdate()
+        $ListView.Items.Clear()
+        $FilteredTable = $Table | Where-Object {
+            $matches = $false
+            foreach ($column in $ColumnNames) {
+                if ($_.($column) -like "*$FilterText*") {
+                    $matches = $true
+                    break
+                }
+            }
+            $matches
         }
 
-        $Local:ListView.Items.Add($Local:ListViewItem) | Out-Null
+        $rowIndex = 0
+        foreach ($row in $FilteredTable) {
+            $ListViewItem = New-Object System.Windows.Forms.ListViewItem
+            $ListViewItem.Text = $row.$($ColumnNames[0])
+            for ($j = 1; $j -lt $ColumnNames.Length; $j++) {
+                $ListViewItem.SubItems.Add($row.$($ColumnNames[$j])) | Out-Null
+            }
+
+            # Alternate row color
+            if ($rowIndex % 2 -eq 0) {
+                $ListViewItem.BackColor = [System.Drawing.Color]::FromArgb(240, 240, 240)
+            } else {
+                $ListViewItem.BackColor = [System.Drawing.Color]::White
+            }
+
+            $ListView.Items.Add($ListViewItem) | Out-Null
+            $rowIndex++
+        }
+        $ListView.EndUpdate()
     }
 
+    Update-ListView ""
+
     $Local:Footer = New-Object System.Windows.Forms.LinkLabel
-    $Local:Footer.Location = New-Object System.Drawing.Point(10, 360)
-    $Local:Footer.Size = New-Object System.Drawing.Size(360, 40)
+    $Local:Footer.Location = New-Object System.Drawing.Point(10, 460)
+    $Local:Footer.Size = New-Object System.Drawing.Size(460, 40)
     [string]$Local:CurrentDate = Get-Date -Format "yyyy"
-    $Local:Footer.Text = "Designed by the EliasDH Team `n" + $Local:CurrentDate + " EliasDH. All rights reserved."
+    $Local:Footer.Text = "Designed by the EliasDH Team `n" + $CurrentDate + " EliasDH. All rights reserved."
     $Local:Footer.TextAlign = [System.Drawing.ContentAlignment]::MiddleCenter
     $Local:Footer.LinkColor = [System.Drawing.ColorTranslator]::FromHtml($PrimaryColor)
     $Local:Footer.Links.Add(35, 7, "https://eliasdh.com") | Out-Null
+    $Local:Footer.Font = New-Object System.Drawing.Font("Arial", 8)
 
     $Local:Footer.add_LinkClicked({
         param (
@@ -167,8 +202,34 @@ function Popup-Window-Object {
         [System.Diagnostics.Process]::Start($element.Link.LinkData.ToString()) | Out-Null
     })
 
-    $Local:Form.Controls.Add($Local:ListView)
-    $Local:Form.Controls.Add($Local:Footer)
+    $Local:SearchBox = New-Object System.Windows.Forms.TextBox
+    $Local:SearchBox.Location = New-Object System.Drawing.Point(10, 10)
+    $Local:SearchBox.Size = New-Object System.Drawing.Size(360, 30)
+    $Local:SearchBox.BackColor = [System.Drawing.Color]::White
+    $Local:SearchBox.ForeColor = [System.Drawing.Color]::FromArgb(30, 30, 30)
+    $Local:SearchBox.Font = New-Object System.Drawing.Font("Arial", 10)
+    $Local:SearchBox.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+    $Local:SearchBox.add_TextChanged({
+        Update-ListView $SearchBox.Text
+    })
+
+    $Local:ExportButton = New-Object System.Windows.Forms.Button
+    $Local:ExportButton.Location = New-Object System.Drawing.Point(380, 10)
+    $Local:ExportButton.Size = New-Object System.Drawing.Size(90, 30)
+    $Local:ExportButton.Text = "Export All"
+    $Local:ExportButton.BackColor = [System.Drawing.ColorTranslator]::FromHtml($PrimaryColor)
+    $Local:ExportButton.ForeColor = [System.Drawing.Color]::White
+    $Local:ExportButton.FlatStyle = [System.Windows.Forms.FlatStyle]::Flat
+    $Local:ExportButton.Font = New-Object System.Drawing.Font("Arial", 10)
+    $Local:ExportButton.add_Click({
+        $CsvContent = $Table | Export-Csv -NoTypeInformation -Force -Path "$env:USERPROFILE\Desktop\export.csv"
+        [System.Windows.Forms.MessageBox]::Show("Data exported to Desktop\export.csv", "Export Complete", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Information)
+    })
+
+    $Local:Form.Controls.Add($ListView)
+    $Local:Form.Controls.Add($Footer)
+    $Local:Form.Controls.Add($SearchBox)
+    $Local:Form.Controls.Add($ExportButton)
     $Local:Form.ShowDialog()
 }
 
@@ -222,10 +283,10 @@ function Show-DataForASpecificDate {
     
     [bool]$Local:Validated = $false
     do {
-        Banner-Message "Get specific data from date"
-        [string]$Local:SelectedDay = Read-ColoredLine -text "* Select a day (dd)" -colorHex $PrimaryColor
-        [string]$Local:SelectedMonth = Read-ColoredLine -text "* Select a month (mm)" -colorHex $PrimaryColor
-        [string]$Local:SelectedYear = Read-ColoredLine -text "* Select a year (yyyy)" -colorHex $PrimaryColor
+        BannerMessage "Get specific data from date" $PrimaryColor
+        [string]$Local:SelectedDay = ReadColoredLine -text "* Select a day (dd)" -colorHex $PrimaryColor
+        [string]$Local:SelectedMonth = ReadColoredLine -text "* Select a month (mm)" -colorHex $PrimaryColor
+        [string]$Local:SelectedYear = ReadColoredLine -text "* Select a year (yyyy)" -colorHex $PrimaryColor
 
         if ($SelectedDay -ne "" -and $SelectedMonth -ne "" -and $SelectedYear -ne "") {
             $Local:Validated = $True
@@ -257,25 +318,24 @@ function Show-DataForASpecificDate {
     if ($Validated -and $SelectedRows.Length -gt 0) {
         [array]$Local:ColumnNames = @("Id", "DateDetermination", "OfficeLocation", "Violations", "PeopleInvolved")
         [string]$Local:Title = "Data for " + $SelectedDay + "/" + $SelectedMonth + "/" + $SelectedYear
-        Popup-Window-Object $SelectedRows $Title $ColumnNames
+        PopupWindowObject $SelectedRows $Title $ColumnNames
     } else {
-        Exit-Script "No records were found." 1
+        ExitScript "No records were found." 1
     }
 }
 
 # Function to start the script
 function Main {
-    Banner-Message "Example Exam"
+    BannerMessage "Example Exam" $PrimaryColor
 
     [array]$Local:UniqueStreetNamesTable = Get-ListOfUniqueStreetNames $violations
     [array]$Local:TotalAmountPerStreet = Get-TotalAmountOfViolationsPerStreet $violations $UniqueStreetNamesTable
 
     [array]$Local:ColumnNames = @("Id", "StreetName", "AmountOfViolations")
     [string]$Local:Title = "Total amount of violations per street"
-    Popup-Window-Object $TotalAmountPerStreet $Title $ColumnNames
+    PopupWindowObject $TotalAmountPerStreet $Title $ColumnNames
 
     Show-DataForASpecificDate $violations
 }
-
 
 Main # Start the script
