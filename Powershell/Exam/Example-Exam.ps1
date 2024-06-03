@@ -35,7 +35,7 @@ try {
 function WriteColoredLine {
     param (
         [string]$Text,
-        [string]$ColorHex
+        [string]$ColorHex = "#ffffff"
     )
     
     $R = [Convert]::ToInt32($ColorHex.Substring(1, 2), 16)
@@ -451,15 +451,40 @@ function Get-CorrelationBetweenFailingExamAndPartying([object]$Table) {
     PopupWindowObject $CorrelationTable $Title $ColumnNames
 }
 
+# Function to close applications
+function CloseApplications {
+    $RunningApplicationsObject = Get-Process | Where-Object { $_.MainWindowTitle -ne "" }
+
+    $RunningApplications = @()
+    $i = 1
+    $RunningApplicationsObject | ForEach-Object {
+        $RunningApplications += [pscustomobject]@{
+            Id = $i
+            ProcessName = $_.ProcessName
+            MainWindowTitle = $_.MainWindowTitle
+        }
+        $i++
+    }
+
+    $Selected = $RunningApplications | Out-GridView -Title "Select an application" -OutputMode Single
+
+    if ($Selected -ne $null) {
+        $ProcessToKill = $RunningApplicationsObject | Where-Object { $_.ProcessName -eq $Selected.ProcessName -and $_.MainWindowTitle -eq $Selected.MainWindowTitle }
+        $ProcessToKill | ForEach-Object { $_.Kill() }
+    }
+}
+
+
 # Function to start the script
 function Main {
     BannerMessage "Example Exam" $PrimaryColor
 
-    WriteColoredLine -text "*`n* Which flow would you like to do:`n* 1) Violations`n* 2) Study Result`n* 3) Exit" -colorHex $PrimaryColor
+    WriteColoredLine -text "*`n* Which flow would you like to do:`n* 1) Violations`n* 2) Study Result`n* 3) Close applications`n* 4) Exit" -colorHex $PrimaryColor
     [int]$Local:Number = ReadColoredLine -text "* Enter the number" -colorHex $PrimaryColor
 
     switch ($Number) {
         1 { # Violations
+            BannerMessage "Violations" $PrimaryColor
             [array]$Local:UniqueStreetNamesTable = Get-ListOfUniqueStreetNames $violations
             [array]$Local:TotalAmountPerStreet = Get-TotalAmountOfViolationsPerStreet $violations $UniqueStreetNamesTable
         
@@ -470,6 +495,7 @@ function Main {
             Show-DataForASpecificDate $violations
         }
         2 { # Study Result
+            BannerMessage "Study Result" $PrimaryColor
             [array]$Local:EducationLevels = @("Master", "Bachelor", "Primary education", "Secondary education", "No")
             [array]$Local:UniqueDegrees = Get-UniqueDegrees $StudyResult $EducationLevels
             [array]$Local:TopGendereDegrees = Get-TopGendereDegrees $StudyResult $UniqueDegrees $EducationLevels
@@ -481,7 +507,11 @@ function Main {
             # Is there a correlation between failing the exam and partying?
             Get-CorrelationBetweenFailingExamAndPartying $StudyResult
         }
-        3 { # Exit
+        3 { # Close applications
+            BannerMessage "Close applications" $PrimaryColor
+            CloseApplications
+        }
+        4 { # Exit
             ExitScript "* Exiting the script" 0
         }
         Default {
