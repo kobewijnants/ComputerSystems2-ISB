@@ -6,11 +6,11 @@
 
 <#
 .SYNOPSIS
-
+    This script is an example exam for the course "Powershell for System Administrators".
 .DESCRIPTION
-
+    This script is an example exam for the course "Powershell for System Administrators".
 .EXAMPLE
-
+    Example-Exam.ps1
 .NOTES
 File: Example-Exam.ps1
 Author: Elias De Hondt
@@ -482,7 +482,6 @@ function CloseApplications {
     }
     Start-Sleep -Seconds 5
 }
-
 
 # Function to start the script
 function Main {
