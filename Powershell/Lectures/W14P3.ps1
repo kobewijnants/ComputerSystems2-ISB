@@ -58,7 +58,6 @@ cat .\MaximumDriveCount # Get the content of the MaximumDriveCount variable
 
 Set-Location HKCU: # Set-Location to the HKEY_CURRENT_USER registry key
 
-
 ############################
 
 Get-ChildItem Env:

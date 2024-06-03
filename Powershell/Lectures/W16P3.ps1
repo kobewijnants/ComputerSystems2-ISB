@@ -94,7 +94,6 @@ Get-ItemProperty -Path HKLM:\Software\gdepaepe
 # 2.4. Now delete these keys using the same method (be careful: don't delete anything incorrectly!)
 Import-Csv -Path C:\Users\elias\Desktop\keys.csv | Remove-Item
 
-
 # 3.1. The following exercises use "cereal.csv" which contains the data of various grains.
 # Find the answer to the following questions by combining a number of Cmdlets via piping.
 $cereal = Import-Csv -Path C:\Users\elias\Desktop\cereal.csv -Delimiter ";"

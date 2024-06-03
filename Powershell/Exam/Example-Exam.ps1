@@ -472,6 +472,15 @@ function CloseApplications {
         $ProcessToKill = $RunningApplicationsObject | Where-Object { $_.ProcessName -eq $Selected.ProcessName -and $_.MainWindowTitle -eq $Selected.MainWindowTitle }
         $ProcessToKill | ForEach-Object { $_.Kill() }
     }
+
+    if ($?) {
+        [string]$Local:Message = "* Application " + $Selected.ProcessName + " closed"
+        WriteColoredLine -text $Message -colorHex "#00ff00"
+    } else {
+        [string]$Local:Message = "* Application " + $Selected.ProcessName + " could not be closed"
+        WriteColoredLine -text $Message -colorHex "#ff0000"
+    }
+    Start-Sleep -Seconds 5
 }
 
 
