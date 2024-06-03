@@ -289,7 +289,7 @@ function Show-DataForASpecificDate {
         [string]$Local:SelectedDay = ReadColoredLine -text "* Select a day (dd)" -colorHex $PrimaryColor
         [string]$Local:SelectedMonth = ReadColoredLine -text "* Select a month (mm)" -colorHex $PrimaryColor
         [string]$Local:SelectedYear = ReadColoredLine -text "* Select a year (yyyy)" -colorHex $PrimaryColor
-
+        WriteColoredLine -text "*" -colorHex $PrimaryColor
         if ($SelectedDay -ne "" -and $SelectedMonth -ne "" -and $SelectedYear -ne "") {
             $Local:Validated = $True
         }
@@ -323,6 +323,7 @@ function Show-DataForASpecificDate {
         PopupWindowObject $SelectedRows $Title $ColumnNames
     } else {
         WriteColoredLine -text "* No records were found." -colorHex "#ff0000"
+        Start-Sleep -Seconds 5
     }
 }
 
@@ -349,6 +350,7 @@ function Get-UniqueDegrees([object]$Table, [array]$EducationLevels) {
     return $UniqueDegrees
 }
 
+# Function to get the correlation between failing the exam and partying
 function Get-TopGendereDegrees([object]$Table, [object]$UniqueDegrees, [array]$EducationLevels) {
     [array]$Local:GendereScoreF = @(0, 0, 0, 0, 0)
     [array]$Local:GendereScoreM = @(0, 0, 0, 0, 0)
@@ -421,28 +423,72 @@ function Get-TopGendereDegrees([object]$Table, [object]$UniqueDegrees, [array]$E
     return $TopGendereDegrees
 }
 
+# Function to get the correlation between failing the exam and partying
+function Get-CorrelationBetweenFailingExamAndPartying([object]$Table) {
+    [array]$Local:Correlation = @(0, 0, 0, 0, 0)
+    [array]$Local:ColumnNamesParty = @("Every day", "Several times a week", "Once a week", "Rarely", "Never")
+
+    foreach ($Row in $Table) {
+        for ($i = 0; $i -le $Correlation.Length; $i++) {
+            if ($Row.partying -eq $ColumnNamesParty[$i] -and $Row.Result -eq "Fail") {
+                $Correlation[$i] += 1
+            }
+        }
+    }
+
+    [array]$Local:CorrelationTable = @()
+
+    for ($i = 0; $i -lt $Correlation.Length; $i++) {
+        $CorrelationTable += [pscustomobject]@{
+            Id = [int]$i+1;
+            AmountOfFails = [int]$Correlation[$i];
+            PartyFrequency = [string]$ColumnNamesParty[$i];
+        }
+    }
+    
+    [array]$Local:ColumnNames = @("Id", "AmountOfFails", "PartyFrequency")
+    [string]$Local:Title = "Correlation between failing the exam and partying"
+    PopupWindowObject $CorrelationTable $Title $ColumnNames
+}
+
 # Function to start the script
 function Main {
     BannerMessage "Example Exam" $PrimaryColor
 
-    # Violations
-    [array]$Local:UniqueStreetNamesTable = Get-ListOfUniqueStreetNames $violations
-    [array]$Local:TotalAmountPerStreet = Get-TotalAmountOfViolationsPerStreet $violations $UniqueStreetNamesTable
+    WriteColoredLine -text "*`n* Which flow would you like to do:`n* 1) Violations`n* 2) Study Result`n* 3) Exit" -colorHex $PrimaryColor
+    [int]$Local:Number = ReadColoredLine -text "* Enter the number" -colorHex $PrimaryColor
 
-    [array]$Local:ColumnNames = @("Id", "StreetName", "AmountOfViolations")
-    [string]$Local:Title = "Total amount of violations per street"
-    PopupWindowObject $TotalAmountPerStreet $Title $ColumnNames
+    switch ($Number) {
+        1 { # Violations
+            [array]$Local:UniqueStreetNamesTable = Get-ListOfUniqueStreetNames $violations
+            [array]$Local:TotalAmountPerStreet = Get-TotalAmountOfViolationsPerStreet $violations $UniqueStreetNamesTable
+        
+            [array]$Local:ColumnNames = @("Id", "StreetName", "AmountOfViolations")
+            [string]$Local:Title = "Total amount of violations per street"
+            PopupWindowObject $TotalAmountPerStreet $Title $ColumnNames
+        
+            Show-DataForASpecificDate $violations
+        }
+        2 { # Study Result
+            [array]$Local:EducationLevels = @("Master", "Bachelor", "Primary education", "Secondary education", "No")
+            [array]$Local:UniqueDegrees = Get-UniqueDegrees $StudyResult $EducationLevels
+            [array]$Local:TopGendereDegrees = Get-TopGendereDegrees $StudyResult $UniqueDegrees $EducationLevels
 
-    Show-DataForASpecificDate $violations
+            [array]$Local:ColumnNames = @("Id", "DegreeName", "TopGendere")
+            [string]$Local:Title = "Top gendere per degree"
+            PopupWindowObject $TopGendereDegrees $Title $ColumnNames
 
-    # Study Result
-    [array]$Local:EducationLevels = @("Master", "Bachelor", "Primary education", "Secondary education", "No")
-    [array]$Local:UniqueDegrees = Get-UniqueDegrees $StudyResult $EducationLevels
-    [array]$Local:TopGendereDegrees = Get-TopGendereDegrees $StudyResult $UniqueDegrees $EducationLevels
-
-    [array]$Local:ColumnNames = @("Id", "DegreeName", "TopGendere")
-    [string]$Local:Title = "Top gendere per degree"
-    PopupWindowObject $TopGendereDegrees $Title $ColumnNames
+            # Is there a correlation between failing the exam and partying?
+            Get-CorrelationBetweenFailingExamAndPartying $StudyResult
+        }
+        3 { # Exit
+            ExitScript "* Exiting the script" 0
+        }
+        Default {
+            ExitScript "* Not a valid input" 1
+        }
+    }
+    ExitScript "* Till next time" 0
 }
 
 Main # Start the script
