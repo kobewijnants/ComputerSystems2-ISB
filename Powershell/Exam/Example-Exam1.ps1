@@ -22,11 +22,11 @@ param ( # Parameters for the script
     [string]$csvfile2="../Data/StudyResult.csv"
 )
 
-[string]$global:PrimaryColor = "#4f94f0"
+[string]$Global:PrimaryColor = "#4f94f0"
 
 try {
-    $Violations = Import-Csv -Path $csvfile1 -Delimiter ","
-    $StudyResult = Import-Csv -Path $csvfile2 -Delimiter ";"
+    $Global:Violations = Import-Csv -Path $csvfile1 -Delimiter ","
+    $Global:StudyResult = Import-Csv -Path $csvfile2 -Delimiter ";"
 } catch {
     ExitScript "Error: No CSV file" 1 $False
 }
@@ -37,11 +37,11 @@ function WriteColoredLine {
         [string]$Text,
         [string]$ColorHex = "#ffffff"
     )
-    
+
     $R = [Convert]::ToInt32($ColorHex.Substring(1, 2), 16)
     $G = [Convert]::ToInt32($ColorHex.Substring(3, 2), 16)
     $B = [Convert]::ToInt32($ColorHex.Substring(5, 2), 16)
-    
+
     [string]$Local:AnsiSequence = [char]27 + "[38;2;" + $R + ";" + $G + ";" + $B + "m"
     [string]$Local:ResetSequence = [char]27 + "[0m"
     Write-Host "${AnsiSequence}${Text}${ResetSequence}"
@@ -53,18 +53,23 @@ function ReadColoredLine {
         [string]$Text,
         [string]$ColorHex
     )
-    
+
     $R = [Convert]::ToInt32($ColorHex.Substring(1, 2), 16)
     $G = [Convert]::ToInt32($ColorHex.Substring(3, 2), 16)
     $B = [Convert]::ToInt32($ColorHex.Substring(5, 2), 16)
-    
+
     [string]$Local:AnsiSequence = [char]27 + "[38;2;" + $R + ";" + $G + ";" + $B + "m"
     [string]$Local:ResetSequence = [char]27 + "[0m"
     Read-Host "${AnsiSequence}${Text}${ResetSequence}"
 }
 
 # Function to exit the script
-function ExitScript([string]$Message="No Message", [int]$Code=0, [bool]$NoColor=$False) {
+function ExitScript {
+    param (
+        [string]$Message="No Message", 
+        [int]$Code=0, 
+        [bool]$NoColor=$False
+    )
     # 1 = Error
     # 0 = Success
     Clear-Host
@@ -81,7 +86,11 @@ function ExitScript([string]$Message="No Message", [int]$Code=0, [bool]$NoColor=
 }
 
 # Function to display a banner message
-function BannerMessage([string]$Message="Message...", [string]$Color="#ffffff") {
+function BannerMessage {
+    param (
+        [string]$Message="Message...", 
+        [string]$Color="#ffffff"
+    )
     Clear-Host
     [int]$Local:Length = $Message.Length
     [string]$Local:Line1 = "*****"
@@ -125,7 +134,7 @@ function PopupWindowObject {
     $Local:Form.MaximizeBox = $False
     $Local:Form.MinimizeBox = $False
     $Local:Form.ControlBox = $True
-    $Local:Form.BackColor = [System.Drawing.Color]::FromArgb(245, 245, 245)
+    $Local:Form.BackColor = [System.Drawing.Color]::White
 
     $Local:ListView = New-Object System.Windows.Forms.ListView
     $Local:ListView.Location = New-Object System.Drawing.Point(10, 50)
