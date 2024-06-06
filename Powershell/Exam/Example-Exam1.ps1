@@ -10,9 +10,9 @@
 .DESCRIPTION
     This script is an example exam for the course "Powershell for System Administrators".
 .EXAMPLE
-    Example-Exam.ps1
+    Example-Exam1.ps1
 .NOTES
-File: Example-Exam.ps1
+File: Example-Exam1.ps1
 Author: Elias De Hondt
 Version: 1.0
 #>
@@ -485,7 +485,7 @@ function CloseApplications {
 
 # Function to start the script
 function Main {
-    BannerMessage "Example Exam" $PrimaryColor
+    BannerMessage "Example Exam 1" $PrimaryColor
 
     WriteColoredLine -text "*`n* Which flow would you like to do:`n* 1) Violations`n* 2) Study Result`n* 3) Close applications`n* 4) Exit" -colorHex $PrimaryColor
     [int]$Local:Number = ReadColoredLine -text "* Enter the number" -colorHex $PrimaryColor
