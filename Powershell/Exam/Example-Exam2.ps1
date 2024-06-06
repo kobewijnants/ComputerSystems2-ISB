@@ -709,7 +709,7 @@ function AnalyzeTeamPerformanceOverTime { # 10)
         [object]$Table
     )
 
-    [string]$Local:Selected = ReadColoredLine -text "*Histogram or PieChart (H/P)" -colorHex $PrimaryColor
+    [string]$Local:Selected = ReadColoredLine -text "* Histogram or PieChart (H/P)" -colorHex $PrimaryColor
 
     [array]$Local:Teams = $Table | Select-Object -Property Tm -Unique
     foreach ($Team in $Teams) {
