@@ -1,0 +1,2211 @@
+tourney;round;winner;loser;winnersets;losersets
+brisbane;Finals;Grigor Dimitrov;Kei Nishikori;2;1
+brisbane;Semi-Finals;Grigor Dimitrov;Milos Raonic;2;0
+brisbane;Semi-Finals;Kei Nishikori;Stan Wawrinka;2;0
+brisbane;Quarter-Finals;Milos Raonic;Rafael Nadal;2;1
+brisbane;Quarter-Finals;Stan Wawrinka;Kyle Edmund;2;1
+brisbane;Quarter-Finals;Kei Nishikori;Jordan Thompson;2;0
+brisbane;Quarter-Finals;Grigor Dimitrov;Dominic Thiem;2;1
+brisbane;Round of 16;Milos Raonic;Diego Schwartzman;2;0
+brisbane;Round of 16;Stan Wawrinka;Viktor Troicki;2;0
+brisbane;Round of 16;Kei Nishikori;Jared Donaldson;2;1
+brisbane;Round of 16;Dominic Thiem;Sam Groth;2;0
+brisbane;Round of 16;Rafael Nadal;Mischa Zverev;2;0
+brisbane;Round of 16;Kyle Edmund;Lucas Pouille;2;0
+brisbane;Round of 16;Grigor Dimitrov;Nicolas Mahut;2;0
+brisbane;Round of 16;Jordan Thompson;David Ferrer;2;1
+brisbane;Round of 32;Rafael Nadal;Alexandr Dolgopolov;2;0
+brisbane;Round of 32;Lucas Pouille;Gilles Simon;2;0
+brisbane;Round of 32;Grigor Dimitrov;Steve Johnson;2;0
+brisbane;Round of 32;David Ferrer;Bernard Tomic;2;0
+brisbane;Round of 32;Jared Donaldson;Gilles Muller;2;0
+brisbane;Round of 32;Kyle Edmund;Ernesto Escobedo;2;0
+brisbane;Round of 32;Sam Groth;Pierre-Hugues Herbert;2;1
+brisbane;Round of 32;Nicolas Mahut;Stephane Robert;2;1
+brisbane;Round of 32;Diego Schwartzman;Sam Querrey;2;0
+brisbane;Round of 32;Jordan Thompson;Elias Ymer;2;0
+brisbane;Round of 32;Viktor Troicki;Yoshihito Nishioka;2;0
+brisbane;Round of 32;Mischa Zverev;Alex de Minaur;2;0
+brisbane;2nd Round Qualifying;Yoshihito Nishioka;Tim Smyczek;2;0
+brisbane;2nd Round Qualifying;Jared Donaldson;John-Patrick Smith;2;1
+brisbane;2nd Round Qualifying;Alex de Minaur;Frances Tiafoe;2;1
+brisbane;2nd Round Qualifying;Ernesto Escobedo;Ivan Dodig;2;1
+brisbane;1st Round Qualifying;Alex de Minaur;Mikhail Kukushkin;2;0
+brisbane;1st Round Qualifying;Ivan Dodig;Ryan Harrison;2;1
+brisbane;1st Round Qualifying;Yoshihito Nishioka;Go Soeda;2;1
+brisbane;1st Round Qualifying;Jared Donaldson;Rajeev Ram;2;0
+brisbane;1st Round Qualifying;Frances Tiafoe;Andrew Whittington;2;0
+brisbane;1st Round Qualifying;Tim Smyczek;Bjorn Fratangelo;2;1
+brisbane;1st Round Qualifying;John-Patrick Smith;Stefan Kozlov;2;0
+brisbane;1st Round Qualifying;Ernesto Escobedo;Tobias Kamke;2;0
+sydney;Finals;Gilles Muller;Daniel Evans;2;0
+sydney;Semi-Finals;Gilles Muller;Viktor Troicki;2;0
+sydney;Semi-Finals;Daniel Evans;Andrey Kuznetsov;2;1
+sydney;Quarter-Finals;Daniel Evans;Dominic Thiem;2;1
+sydney;Quarter-Finals;Gilles Muller;Pablo Cuevas;2;0
+sydney;Quarter-Finals;Viktor Troicki;Philipp Kohlschreiber;0;0
+sydney;Quarter-Finals;Andrey Kuznetsov;Pablo Carreno Busta;2;1
+sydney;Round of 16;Dominic Thiem;Gastao Elias;2;1
+sydney;Round of 16;Pablo Cuevas;Nicolas Mahut;2;1
+sydney;Round of 16;Viktor Troicki;Paolo Lorenzi;2;0
+sydney;Round of 16;Pablo Carreno Busta;Mischa Zverev;2;1
+sydney;Round of 16;Philipp Kohlschreiber;Jordan Thompson;2;0
+sydney;Round of 16;Gilles Muller;Matthew Barton;2;1
+sydney;Round of 16;Daniel Evans;Marcel Granollers;2;1
+sydney;Round of 16;Andrey Kuznetsov;Alex de Minaur;1;0
+sydney;Round of 32;Philipp Kohlschreiber;Fabio Fognini;2;0
+sydney;Round of 32;Gilles Muller;Alexandr Dolgopolov;2;1
+sydney;Round of 32;Andrey Kuznetsov;Martin Klizan;2;1
+sydney;Round of 32;Marcel Granollers;Santiago Giraldo;2;1
+sydney;Round of 32;Matthew Barton;Kyle Edmund;2;0
+sydney;Round of 32;Alex de Minaur;Benoit Paire;2;1
+sydney;Round of 32;Gastao Elias;Christopher O'Connell;2;1
+sydney;Round of 32;Daniel Evans;Thiago Monteiro;2;1
+sydney;Round of 32;Paolo Lorenzi;Florian Mayer;2;1
+sydney;Round of 32;Nicolas Mahut;Thomaz Bellucci;2;0
+sydney;Round of 32;Jordan Thompson;Nikoloz Basilashvili;2;0
+sydney;Round of 32;Mischa Zverev;Nicolas Almagro;2;0
+sydney;2nd Round Qualifying;Gastao Elias;Nikoloz Basilashvili;2;0
+sydney;2nd Round Qualifying;Thiago Monteiro;Santiago Giraldo;2;0
+sydney;2nd Round Qualifying;Matthew Barton;Mathias Bourgue;2;0
+sydney;2nd Round Qualifying;Christopher O'Connell;Enrique Lopez-Perez;2;0
+sydney;1st Round Qualifying;Mathias Bourgue;Paul-Henri Mathieu;0;1
+sydney;1st Round Qualifying;Christopher O'Connell;Illya Marchenko;2;0
+sydney;1st Round Qualifying;Gastao Elias;Luca Vanni;2;1
+sydney;1st Round Qualifying;Thiago Monteiro;Thomas Fabbiano;2;1
+sydney;1st Round Qualifying;Matthew Barton;Mikhail Kukushkin;2;0
+sydney;1st Round Qualifying;Santiago Giraldo;Andrew Whittington;2;0
+sydney;1st Round Qualifying;Enrique Lopez-Perez;Dusan Lajovic;2;0
+sydney;1st Round Qualifying;Nikoloz Basilashvili;Rogerio Dutra Silva;2;0
+auckland;Finals;Jack Sock;Joao Sousa;2;1
+auckland;Semi-Finals;Jack Sock;Steve Johnson;2;0
+auckland;Semi-Finals;Joao Sousa;Marcos Baghdatis;2;0
+auckland;Quarter-Finals;Steve Johnson;John Isner;2;1
+auckland;Quarter-Finals;Jack Sock;Jeremy Chardy;2;1
+auckland;Quarter-Finals;Marcos Baghdatis;Jiri Vesely;2;0
+auckland;Quarter-Finals;Joao Sousa;Robin Haase;2;0
+auckland;Round of 16;John Isner;Malek Jaziri;2;1
+auckland;Round of 16;Robin Haase;David Ferrer;2;1
+auckland;Round of 16;Jack Sock;Ryan Harrison;2;1
+auckland;Round of 16;Jeremy Chardy;Feliciano Lopez;0;0
+auckland;Round of 16;Steve Johnson;Yen-Hsun Lu;2;0
+auckland;Round of 16;Marcos Baghdatis;Dustin Brown;2;1
+auckland;Round of 16;Joao Sousa;Brydan Klein;2;0
+auckland;Round of 16;Jiri Vesely;Rubin Statham;2;1
+auckland;Round of 32;Joao Sousa;Albert Ramos-Vinolas;2;0
+auckland;Round of 32;Feliciano Lopez;Michael Venus;2;1
+auckland;Round of 32;Steve Johnson;Stephane Robert;2;0
+auckland;Round of 32;Marcos Baghdatis;Adrian Mannarino;2;0
+auckland;Round of 32;Dustin Brown;Michael Mmoh;2;1
+auckland;Round of 32;Jeremy Chardy;Artem Sitak;2;0
+auckland;Round of 32;Robin Haase;Finn Tearney;2;0
+auckland;Round of 32;Ryan Harrison;Guillermo Garcia-Lopez;2;0
+auckland;Round of 32;Malek Jaziri;Diego Schwartzman;2;0
+auckland;Round of 32;Brydan Klein;Facundo Bagnis;2;1
+auckland;Round of 32;Yen-Hsun Lu;Karen Khachanov;2;1
+auckland;Round of 32;Jiri Vesely;Horacio Zeballos;2;0
+auckland;2nd Round Qualifying;Ryan Harrison;Rubin Statham;2;0
+auckland;2nd Round Qualifying;Brydan Klein;Steven Diez;2;1
+auckland;2nd Round Qualifying;Michael Mmoh;Jerzy Janowicz;2;0
+auckland;2nd Round Qualifying;Finn Tearney;Cameron Norrie;2;0
+auckland;1st Round Qualifying;Ryan Harrison;Marcin Matkowski;2;0
+auckland;1st Round Qualifying;Steven Diez;Treat Huey;2;0
+auckland;1st Round Qualifying;Michael Mmoh;Greg Jones;2;0
+auckland;1st Round Qualifying;Cameron Norrie;Marcelo Demoliner;2;0
+auckland;1st Round Qualifying;Jerzy Janowicz;Krisjanis Stabins;2;0
+auckland;1st Round Qualifying;Brydan Klein;Masato Shiga;2;0
+auckland;1st Round Qualifying;Rubin Statham;Rhett Purcell;2;0
+auckland;1st Round Qualifying;Finn Tearney;Aisam-Ul-Haq Qureshi;1;1
+australian-open;Finals;Roger Federer;Rafael Nadal;3;2
+australian-open;Semi-Finals;Roger Federer;Stan Wawrinka;3;2
+australian-open;Semi-Finals;Rafael Nadal;Grigor Dimitrov;3;2
+australian-open;Quarter-Finals;Rafael Nadal;Milos Raonic;3;0
+australian-open;Quarter-Finals;Stan Wawrinka;Jo-Wilfried Tsonga;3;0
+australian-open;Quarter-Finals;Grigor Dimitrov;David Goffin;3;0
+australian-open;Quarter-Finals;Roger Federer;Mischa Zverev;3;0
+australian-open;Round of 16;Mischa Zverev;Andy Murray;3;1
+australian-open;Round of 16;Milos Raonic;Roberto Bautista Agut;3;1
+australian-open;Round of 16;Stan Wawrinka;Andreas Seppi;3;0
+australian-open;Round of 16;Roger Federer;Kei Nishikori;3;2
+australian-open;Round of 16;Rafael Nadal;Gael Monfils;3;1
+australian-open;Round of 16;David Goffin;Dominic Thiem;3;1
+australian-open;Round of 16;Jo-Wilfried Tsonga;Daniel Evans;3;1
+australian-open;Round of 16;Grigor Dimitrov;Denis Istomin;3;1
+australian-open;Round of 32;Andy Murray;Sam Querrey;3;0
+australian-open;Round of 32;Milos Raonic;Gilles Simon;3;1
+australian-open;Round of 32;Stan Wawrinka;Viktor Troicki;3;1
+australian-open;Round of 32;Kei Nishikori;Lukas Lacko;3;0
+australian-open;Round of 32;Gael Monfils;Philipp Kohlschreiber;3;0
+australian-open;Round of 32;Dominic Thiem;Benoit Paire;3;1
+australian-open;Round of 32;Rafael Nadal;Alexander Zverev;3;2
+australian-open;Round of 32;Roger Federer;Tomas Berdych;3;0
+australian-open;Round of 32;David Goffin;Ivo Karlovic;3;0
+australian-open;Round of 32;Jo-Wilfried Tsonga;Jack Sock;3;1
+australian-open;Round of 32;Roberto Bautista Agut;David Ferrer;3;1
+australian-open;Round of 32;Grigor Dimitrov;Richard Gasquet;3;0
+australian-open;Round of 32;Daniel Evans;Bernard Tomic;3;0
+australian-open;Round of 32;Denis Istomin;Pablo Carreno Busta;3;2
+australian-open;Round of 32;Andreas Seppi;Steve Darcis;3;1
+australian-open;Round of 32;Mischa Zverev;Malek Jaziri;3;1
+australian-open;Round of 64;Andy Murray;Andrey Rublev;3;0
+australian-open;Round of 64;Denis Istomin;Novak Djokovic;3;2
+australian-open;Round of 64;Milos Raonic;Gilles Muller;3;0
+australian-open;Round of 64;Stan Wawrinka;Steve Johnson;3;0
+australian-open;Round of 64;Kei Nishikori;Jeremy Chardy;3;0
+australian-open;Round of 64;Gael Monfils;Alexandr Dolgopolov;3;1
+australian-open;Round of 64;Daniel Evans;Marin Cilic;3;1
+australian-open;Round of 64;Dominic Thiem;Jordan Thompson;3;1
+australian-open;Round of 64;Rafael Nadal;Marcos Baghdatis;3;0
+australian-open;Round of 64;Tomas Berdych;Ryan Harrison;3;0
+australian-open;Round of 64;David Goffin;Radek Stepanek;3;0
+australian-open;Round of 64;Jo-Wilfried Tsonga;Dusan Lajovic;3;0
+australian-open;Round of 64;Roberto Bautista Agut;Yoshihito Nishioka;3;0
+australian-open;Round of 64;Andreas Seppi;Nick Kyrgios;3;2
+australian-open;Round of 64;Grigor Dimitrov;Hyeon Chung;3;1
+australian-open;Round of 64;Roger Federer;Noah Rubin;3;0
+australian-open;Round of 64;Richard Gasquet;Carlos Berlocq;3;0
+australian-open;Round of 64;Mischa Zverev;John Isner;3;2
+australian-open;Round of 64;Ivo Karlovic;Andrew Whittington;3;0
+australian-open;Round of 64;David Ferrer;Ernesto Escobedo;3;1
+australian-open;Round of 64;Jack Sock;Karen Khachanov;3;0
+australian-open;Round of 64;Alexander Zverev;Frances Tiafoe;3;0
+australian-open;Round of 64;Gilles Simon;Rogerio Dutra Silva;3;0
+australian-open;Round of 64;Bernard Tomic;Victor Estrella Burgos;3;1
+australian-open;Round of 64;Viktor Troicki;Paolo Lorenzi;3;2
+australian-open;Round of 64;Pablo Carreno Busta;Kyle Edmund;3;0
+australian-open;Round of 64;Sam Querrey;Alex de Minaur;3;0
+australian-open;Round of 64;Philipp Kohlschreiber;Donald Young;3;0
+australian-open;Round of 64;Steve Darcis;Diego Schwartzman;3;1
+australian-open;Round of 64;Malek Jaziri;Alexander Bublik;3;0
+australian-open;Round of 64;Lukas Lacko;Dudi Sela;3;1
+australian-open;Round of 64;Benoit Paire;Fabio Fognini;3;2
+australian-open;Round of 128;Andy Murray;Illya Marchenko;3;0
+australian-open;Round of 128;Novak Djokovic;Fernando Verdasco;3;0
+australian-open;Round of 128;Milos Raonic;Dustin Brown;3;0
+australian-open;Round of 128;Stan Wawrinka;Martin Klizan;3;2
+australian-open;Round of 128;Kei Nishikori;Andrey Kuznetsov;3;2
+australian-open;Round of 128;Gael Monfils;Jiri Vesely;3;0
+australian-open;Round of 128;Marin Cilic;Jerzy Janowicz;3;2
+australian-open;Round of 128;Dominic Thiem;Jan-Lennard Struff;3;1
+australian-open;Round of 128;Rafael Nadal;Florian Mayer;3;0
+australian-open;Round of 128;Tomas Berdych;Luca Vanni;1;0
+australian-open;Round of 128;David Goffin;Reilly Opelka;3;2
+australian-open;Round of 128;Jo-Wilfried Tsonga;Thiago Monteiro;3;1
+australian-open;Round of 128;Roberto Bautista Agut;Guido Pella;3;0
+australian-open;Round of 128;Nick Kyrgios;Gastao Elias;3;0
+australian-open;Round of 128;Grigor Dimitrov;Christopher O'Connell;3;0
+australian-open;Round of 128;Alexander Bublik;Lucas Pouille;3;1
+australian-open;Round of 128;Roger Federer;Jurgen Melzer;3;1
+australian-open;Round of 128;Richard Gasquet;Blake Mott;3;0
+australian-open;Round of 128;John Isner;Konstantin Kravchuk;3;1
+australian-open;Round of 128;Ivo Karlovic;Horacio Zeballos;2;2
+australian-open;Round of 128;David Ferrer;Omar Jasika;3;0
+australian-open;Round of 128;Diego Schwartzman;Pablo Cuevas;3;0
+australian-open;Round of 128;Jack Sock;Pierre-Hugues Herbert;3;0
+australian-open;Round of 128;Alexander Zverev;Robin Haase;3;2
+australian-open;Round of 128;Gilles Simon;Michael Mmoh;3;0
+australian-open;Round of 128;Lukas Lacko;Albert Ramos-Vinolas;3;2
+australian-open;Round of 128;Bernard Tomic;Thomaz Bellucci;3;0
+australian-open;Round of 128;Fabio Fognini;Feliciano Lopez;3;0
+australian-open;Round of 128;Viktor Troicki;Damir Dzumhur;3;2
+australian-open;Round of 128;Pablo Carreno Busta;Peter Polansky;3;2
+australian-open;Round of 128;Sam Querrey;Quentin Halys;3;1
+australian-open;Round of 128;Philipp Kohlschreiber;Nikoloz Basilashvili;3;1
+australian-open;Round of 128;Marcos Baghdatis;Mikhail Youzhny;2;0
+australian-open;Round of 128;Carlos Berlocq;Radu Albot;3;1
+australian-open;Round of 128;Jeremy Chardy;Nicolas Almagro;1;0
+australian-open;Round of 128;Hyeon Chung;Renzo Olivo;3;0
+australian-open;Round of 128;Steve Darcis;Sam Groth;3;1
+australian-open;Round of 128;Alex de Minaur;Gerald Melzer;3;2
+australian-open;Round of 128;Alexandr Dolgopolov;Borna Coric;3;1
+australian-open;Round of 128;Rogerio Dutra Silva;Jared Donaldson;3;2
+australian-open;Round of 128;Kyle Edmund;Santiago Giraldo;3;0
+australian-open;Round of 128;Ernesto Escobedo;Daniil Medvedev;3;1
+australian-open;Round of 128;Victor Estrella Burgos;Aljaz Bedene;3;1
+australian-open;Round of 128;Daniel Evans;Facundo Bagnis;3;0
+australian-open;Round of 128;Ryan Harrison;Nicolas Mahut;3;0
+australian-open;Round of 128;Denis Istomin;Ivan Dodig;3;1
+australian-open;Round of 128;Malek Jaziri;Go Soeda;3;0
+australian-open;Round of 128;Steve Johnson;Federico Delbonis;3;0
+australian-open;Round of 128;Karen Khachanov;Adrian Mannarino;3;1
+australian-open;Round of 128;Dusan Lajovic;Stephane Robert;3;0
+australian-open;Round of 128;Paolo Lorenzi;James Duckworth;3;1
+australian-open;Round of 128;Gilles Muller;Taylor Fritz;3;0
+australian-open;Round of 128;Yoshihito Nishioka;Alex Bolt;3;1
+australian-open;Round of 128;Benoit Paire;Tommy Haas;2;0
+australian-open;Round of 128;Noah Rubin;Bjorn Fratangelo;3;2
+australian-open;Round of 128;Andrey Rublev;Yen-Hsun Lu;3;1
+australian-open;Round of 128;Dudi Sela;Marcel Granollers;3;1
+australian-open;Round of 128;Andreas Seppi;Paul-Henri Mathieu;3;1
+australian-open;Round of 128;Radek Stepanek;Dmitry Tursunov;3;0
+australian-open;Round of 128;Jordan Thompson;Joao Sousa;3;2
+australian-open;Round of 128;Frances Tiafoe;Mikhail Kukushkin;3;1
+australian-open;Round of 128;Andrew Whittington;Adam Pavlasek;3;1
+australian-open;Round of 128;Donald Young;Thomas Fabbiano;3;0
+australian-open;Round of 128;Mischa Zverev;Guillermo Garcia-Lopez;3;0
+australian-open;3rd Round Qualifying;Radek Stepanek;John-Patrick Smith;2;0
+australian-open;3rd Round Qualifying;Frances Tiafoe;Tim Smyczek;2;1
+australian-open;3rd Round Qualifying;Bjorn Fratangelo;Hiroki Moriya;2;1
+australian-open;3rd Round Qualifying;Lukas Lacko;Denis Kudla;2;0
+australian-open;3rd Round Qualifying;Noah Rubin;Evgeny Donskoy;2;0
+australian-open;3rd Round Qualifying;Jurgen Melzer;Rajeev Ram;2;1
+australian-open;3rd Round Qualifying;Ernesto Escobedo;Yuki Bhambri;2;1
+australian-open;3rd Round Qualifying;Andrey Rublev;Peter Polansky;2;1
+australian-open;3rd Round Qualifying;Alex Bolt;Julien Benneteau;2;0
+australian-open;3rd Round Qualifying;Go Soeda;Marco Trungelliti;2;1
+australian-open;3rd Round Qualifying;Thomas Fabbiano;Andre Ghem;2;0
+australian-open;3rd Round Qualifying;Alexander Bublik;Duckhee Lee;2;1
+australian-open;3rd Round Qualifying;Ivan Dodig;Di Wu;2;0
+australian-open;3rd Round Qualifying;Blake Mott;James McGee;2;1
+australian-open;3rd Round Qualifying;Reilly Opelka;Casper Ruud;2;0
+australian-open;3rd Round Qualifying;Luca Vanni;Jan Satral;2;1
+australian-open;2nd Round Qualifying;Radek Stepanek;Blaz Kavcic;2;1
+australian-open;2nd Round Qualifying;Frances Tiafoe;Yannik Reuter;2;0
+australian-open;2nd Round Qualifying;Andrey Rublev;Yuichi Sugita;2;0
+australian-open;2nd Round Qualifying;Bjorn Fratangelo;Stefanos Tsitsipas;2;1
+australian-open;2nd Round Qualifying;Lukas Lacko;Maximo Gonzalez;2;1
+australian-open;2nd Round Qualifying;Evgeny Donskoy;Matthew Ebden;2;1
+australian-open;2nd Round Qualifying;Jurgen Melzer;Taro Daniel;2;0
+australian-open;2nd Round Qualifying;Blake Mott;Tobias Kamke;2;0
+australian-open;2nd Round Qualifying;Denis Kudla;Darian King;2;1
+australian-open;2nd Round Qualifying;Rajeev Ram;Marcelo Arevalo;2;1
+australian-open;2nd Round Qualifying;Ernesto Escobedo;Tatsuma Ito;2;0
+australian-open;2nd Round Qualifying;Peter Polansky;Mirza Basic;2;0
+australian-open;2nd Round Qualifying;Tim Smyczek;Mohamed Safwat;2;0
+australian-open;2nd Round Qualifying;Julien Benneteau;Guilherme Clezar;2;0
+australian-open;2nd Round Qualifying;Go Soeda;Adrian Menendez-Maceiras;2;1
+australian-open;2nd Round Qualifying;James McGee;Vincent Millot;2;0
+australian-open;2nd Round Qualifying;Thomas Fabbiano;Akira Santillan;2;1
+australian-open;2nd Round Qualifying;Noah Rubin;Roberto Carballes Baena;2;1
+australian-open;2nd Round Qualifying;Yuki Bhambri;Pedja Krstin;2;0
+australian-open;2nd Round Qualifying;Alex Bolt;Matthias Bachinger;2;0
+australian-open;2nd Round Qualifying;Alexander Bublik;Kimmer Coppejans;2;1
+australian-open;2nd Round Qualifying;Ivan Dodig;Laslo Djere;2;1
+australian-open;2nd Round Qualifying;Andre Ghem;Yuya Kibi;2;1
+australian-open;2nd Round Qualifying;Duckhee Lee;Bradley Mousley;2;1
+australian-open;2nd Round Qualifying;Hiroki Moriya;Uladzimir Ignatik;2;1
+australian-open;2nd Round Qualifying;Reilly Opelka;Mitchell Krueger;2;0
+australian-open;2nd Round Qualifying;Casper Ruud;Jonathan Eysseric;2;1
+australian-open;2nd Round Qualifying;Jan Satral;Yasutaka Uchiyama;2;1
+australian-open;2nd Round Qualifying;John-Patrick Smith;Kenny De Schepper;2;0
+australian-open;2nd Round Qualifying;Marco Trungelliti;Peter Gojowczyk;1;0
+australian-open;2nd Round Qualifying;Luca Vanni;Alexander Sarkissian;2;1
+australian-open;2nd Round Qualifying;Di Wu;Miljan Zekic;2;0
+australian-open;1st Round Qualifying;Radek Stepanek;Sekou Bangoura;2;1
+australian-open;1st Round Qualifying;Frances Tiafoe;Marco Cecchinato;2;1
+australian-open;1st Round Qualifying;Marco Trungelliti;Jozef Kovalik;2;0
+australian-open;1st Round Qualifying;Yuichi Sugita;Marc Polmans;2;0
+australian-open;1st Round Qualifying;Duckhee Lee;Nicolas Kicker;2;1
+australian-open;1st Round Qualifying;Bjorn Fratangelo;Grega Zemlja;2;0
+australian-open;1st Round Qualifying;Yuki Bhambri;Stefan Kozlov;2;0
+australian-open;1st Round Qualifying;Miljan Zekic;Benjamin Becker;2;1
+australian-open;1st Round Qualifying;Andre Ghem;Joao Souza;2;1
+australian-open;1st Round Qualifying;Lukas Lacko;Jeremy Jahn;2;0
+australian-open;1st Round Qualifying;Evgeny Donskoy;Dmitry Popko;2;1
+australian-open;1st Round Qualifying;Jan Satral;Alessandro Giannessi;2;0
+australian-open;1st Round Qualifying;Taro Daniel;Aldin Setkic;2;0
+australian-open;1st Round Qualifying;Tobias Kamke;Dennis Novikov;2;0
+australian-open;1st Round Qualifying;Alex Bolt;Marius Copil;2;1
+australian-open;1st Round Qualifying;Mitchell Krueger;Marco Chiudinelli;2;1
+australian-open;1st Round Qualifying;Alexander Bublik;Arthur De Greef;2;1
+australian-open;1st Round Qualifying;Denis Kudla;Luke Saville;2;0
+australian-open;1st Round Qualifying;Uladzimir Ignatik;Vasek Pospisil;2;1
+australian-open;1st Round Qualifying;Rajeev Ram;Ilya Ivashka;2;0
+australian-open;1st Round Qualifying;Ernesto Escobedo;Maximilian Marterer;2;0
+australian-open;1st Round Qualifying;Peter Polansky;Tristan Lamasine;2;0
+australian-open;1st Round Qualifying;Alexander Sarkissian;Henri Laaksonen;2;0
+australian-open;1st Round Qualifying;Laslo Djere;Andrej Martin;2;0
+australian-open;1st Round Qualifying;Tim Smyczek;Jordi Samper-Montana;2;0
+australian-open;1st Round Qualifying;Julien Benneteau;Nikola Milojevic;2;0
+australian-open;1st Round Qualifying;Kenny De Schepper;Norbert Gombos;2;1
+australian-open;1st Round Qualifying;Casper Ruud;Teymuraz Gabashvili;2;0
+australian-open;1st Round Qualifying;Go Soeda;Ruben Bemelmans;2;0
+australian-open;1st Round Qualifying;Vincent Millot;Riccardo Bellotti;2;0
+australian-open;1st Round Qualifying;Thomas Fabbiano;Bradley Klahn;2;1
+australian-open;1st Round Qualifying;Roberto Carballes Baena;Marinko Matosevic;2;0
+australian-open;1st Round Qualifying;Marcelo Arevalo;Scott Jones;2;0
+australian-open;1st Round Qualifying;Matthias Bachinger;Franko Skugor;2;0
+australian-open;1st Round Qualifying;Mirza Basic;Lorenzo Giustino;2;1
+australian-open;1st Round Qualifying;Guilherme Clezar;Kristijan Mesaros;2;0
+australian-open;1st Round Qualifying;Kimmer Coppejans;Tennys Sandgren;2;0
+australian-open;1st Round Qualifying;Ivan Dodig;Amir Weintraub;2;0
+australian-open;1st Round Qualifying;Matthew Ebden;Andrey Golubev;2;0
+australian-open;1st Round Qualifying;Jonathan Eysseric;Mathias Bourgue;2;1
+australian-open;1st Round Qualifying;Peter Gojowczyk;Saketh Myneni;2;0
+australian-open;1st Round Qualifying;Maximo Gonzalez;Enrique Lopez-Perez;2;0
+australian-open;1st Round Qualifying;Tatsuma Ito;Daniel Masur;2;0
+australian-open;1st Round Qualifying;Blaz Kavcic;Matteo Donati;1;0
+australian-open;1st Round Qualifying;Yuya Kibi;Brian Baker;2;0
+australian-open;1st Round Qualifying;Darian King;Jose Hernandez-Fernandez;2;0
+australian-open;1st Round Qualifying;Pedja Krstin;Zdenek Kolar;2;1
+australian-open;1st Round Qualifying;James McGee;Matija Pecotic;2;0
+australian-open;1st Round Qualifying;Jurgen Melzer;Joris De Loore;2;1
+australian-open;1st Round Qualifying;Adrian Menendez-Maceiras;Daniel Brands;2;1
+australian-open;1st Round Qualifying;Hiroki Moriya;Harry Bourchier;2;0
+australian-open;1st Round Qualifying;Blake Mott;Alexander Kudryavtsev;2;0
+australian-open;1st Round Qualifying;Bradley Mousley;Marton Fucsovics;2;1
+australian-open;1st Round Qualifying;Reilly Opelka;Stefano Napolitano;2;0
+australian-open;1st Round Qualifying;Yannik Reuter;Steven Diez;2;1
+australian-open;1st Round Qualifying;Noah Rubin;Cedrik-Marcel Stebe;2;1
+australian-open;1st Round Qualifying;Andrey Rublev;Max Purcell;2;1
+australian-open;1st Round Qualifying;Mohamed Safwat;Pedro Sousa;2;0
+australian-open;1st Round Qualifying;Akira Santillan;Elias Ymer;2;0
+australian-open;1st Round Qualifying;John-Patrick Smith;Agustin Velotti;2;0
+australian-open;1st Round Qualifying;Stefanos Tsitsipas;Gavin Van Peperzeel;2;0
+australian-open;1st Round Qualifying;Yasutaka Uchiyama;Marko Tepavac;2;0
+australian-open;1st Round Qualifying;Luca Vanni;Federico Gaio;2;1
+australian-open;1st Round Qualifying;Di Wu;Maverick Banes;2;0
+buenos-aires;Finals;Alexandr Dolgopolov;Kei Nishikori;2;0
+buenos-aires;Semi-Finals;Kei Nishikori;Carlos Berlocq;2;1
+buenos-aires;Semi-Finals;Alexandr Dolgopolov;Pablo Carreno Busta;2;0
+buenos-aires;Quarter-Finals;Kei Nishikori;Joao Sousa;2;0
+buenos-aires;Quarter-Finals;Pablo Carreno Busta;Albert Ramos-Vinolas;2;1
+buenos-aires;Quarter-Finals;Carlos Berlocq;Thiago Monteiro;2;1
+buenos-aires;Quarter-Finals;Alexandr Dolgopolov;Gerald Melzer;2;0
+buenos-aires;Round of 16;Kei Nishikori;Diego Schwartzman;2;1
+buenos-aires;Round of 16;Alexandr Dolgopolov;Pablo Cuevas;2;0
+buenos-aires;Round of 16;Carlos Berlocq;David Ferrer;2;0
+buenos-aires;Round of 16;Pablo Carreno Busta;Alessandro Giannessi;2;1
+buenos-aires;Round of 16;Albert Ramos-Vinolas;Leonardo Mayer;2;1
+buenos-aires;Round of 16;Joao Sousa;Federico Delbonis;2;0
+buenos-aires;Round of 16;Gerald Melzer;Guido Andreozzi;2;0
+buenos-aires;Round of 16;Thiago Monteiro;Tommy Robredo;2;0
+buenos-aires;Round of 32;Albert Ramos-Vinolas;Guido Pella;2;1
+buenos-aires;Round of 32;Joao Sousa;Horacio Zeballos;2;0
+buenos-aires;Round of 32;Tommy Robredo;Fabio Fognini;2;0
+buenos-aires;Round of 32;Gerald Melzer;Paolo Lorenzi;2;0
+buenos-aires;Round of 32;Guido Andreozzi;Renzo Olivo;2;1
+buenos-aires;Round of 32;Carlos Berlocq;Jozef Kovalik;2;0
+buenos-aires;Round of 32;Federico Delbonis;Stephane Robert;2;0
+buenos-aires;Round of 32;Alexandr Dolgopolov;Janko Tipsarevic;2;0
+buenos-aires;Round of 32;Alessandro Giannessi;Rogerio Dutra Silva;2;1
+buenos-aires;Round of 32;Leonardo Mayer;Gastao Elias;2;1
+buenos-aires;Round of 32;Thiago Monteiro;Victor Estrella Burgos;2;0
+buenos-aires;Round of 32;Diego Schwartzman;Facundo Bagnis;2;0
+buenos-aires;2nd Round Qualifying;Rogerio Dutra Silva;Joao Souza;2;0
+buenos-aires;2nd Round Qualifying;Alessandro Giannessi;Dusan Lajovic;2;1
+buenos-aires;2nd Round Qualifying;Jozef Kovalik;Ruben Ramirez Hidalgo;2;1
+buenos-aires;2nd Round Qualifying;Guido Andreozzi;Maximo Gonzalez;2;0
+buenos-aires;1st Round Qualifying;Rogerio Dutra Silva;Federico Coria;2;0
+buenos-aires;1st Round Qualifying;Dusan Lajovic;Simone Bolelli;2;0
+buenos-aires;1st Round Qualifying;Jozef Kovalik;Andrej Martin;1;0
+buenos-aires;1st Round Qualifying;Maximo Gonzalez;Nicolas Kicker;2;1
+buenos-aires;1st Round Qualifying;Guido Andreozzi;Manuel Pena Lopez;2;0
+buenos-aires;1st Round Qualifying;Alessandro Giannessi;Roberto Carballes Baena;2;0
+buenos-aires;1st Round Qualifying;Joao Souza;Marco Cecchinato;2;0
+buenos-aires;1st Round Qualifying;Ruben Ramirez Hidalgo;Arthur De Greef;2;0
+rio-de-janeiro;Finals;Dominic Thiem;Pablo Carreno Busta;2;0
+rio-de-janeiro;Semi-Finals;Dominic Thiem;Albert Ramos-Vinolas;2;0
+rio-de-janeiro;Semi-Finals;Pablo Carreno Busta;Casper Ruud;2;1
+rio-de-janeiro;Quarter-Finals;Dominic Thiem;Diego Schwartzman;2;0
+rio-de-janeiro;Quarter-Finals;Pablo Carreno Busta;Alexandr Dolgopolov;2;1
+rio-de-janeiro;Quarter-Finals;Albert Ramos-Vinolas;Nicolas Kicker;2;0
+rio-de-janeiro;Quarter-Finals;Casper Ruud;Thiago Monteiro;2;0
+rio-de-janeiro;Round of 16;Dominic Thiem;Dusan Lajovic;2;0
+rio-de-janeiro;Round of 16;Pablo Carreno Busta;Victor Estrella Burgos;2;1
+rio-de-janeiro;Round of 16;Albert Ramos-Vinolas;Fabio Fognini;2;0
+rio-de-janeiro;Round of 16;Alexandr Dolgopolov;Horacio Zeballos;2;1
+rio-de-janeiro;Round of 16;Nicolas Kicker;Arthur De Greef;2;0
+rio-de-janeiro;Round of 16;Thiago Monteiro;Thomaz Bellucci;2;1
+rio-de-janeiro;Round of 16;Casper Ruud;Roberto Carballes Baena;2;1
+rio-de-janeiro;Round of 16;Diego Schwartzman;Federico Delbonis;2;0
+rio-de-janeiro;Round of 32;Thomaz Bellucci;Kei Nishikori;2;0
+rio-de-janeiro;Round of 32;Dominic Thiem;Janko Tipsarevic;2;0
+rio-de-janeiro;Round of 32;Arthur De Greef;Pablo Cuevas;2;1
+rio-de-janeiro;Round of 32;Pablo Carreno Busta;Joao Souza;2;0
+rio-de-janeiro;Round of 32;Albert Ramos-Vinolas;Stephane Robert;2;0
+rio-de-janeiro;Round of 32;Alexandr Dolgopolov;David Ferrer;2;0
+rio-de-janeiro;Round of 32;Federico Delbonis;Paolo Lorenzi;2;1
+rio-de-janeiro;Round of 32;Roberto Carballes Baena;Joao Sousa;2;0
+rio-de-janeiro;Round of 32;Victor Estrella Burgos;Guido Pella;2;0
+rio-de-janeiro;Round of 32;Fabio Fognini;Tommy Robredo;2;0
+rio-de-janeiro;Round of 32;Nicolas Kicker;Marco Cecchinato;2;0
+rio-de-janeiro;Round of 32;Dusan Lajovic;Facundo Bagnis;2;0
+rio-de-janeiro;Round of 32;Thiago Monteiro;Gastao Elias;2;1
+rio-de-janeiro;Round of 32;Casper Ruud;Rogerio Dutra Silva;2;0
+rio-de-janeiro;Round of 32;Diego Schwartzman;Renzo Olivo;2;1
+rio-de-janeiro;Round of 32;Horacio Zeballos;Carlos Berlocq;2;0
+rio-de-janeiro;2nd Round Qualifying;Arthur De Greef;Victor Estrella Burgos;2;0
+rio-de-janeiro;2nd Round Qualifying;Marco Cecchinato;Taro Daniel;2;0
+rio-de-janeiro;2nd Round Qualifying;Nicolas Kicker;Guido Andreozzi;2;1
+rio-de-janeiro;2nd Round Qualifying;Roberto Carballes Baena;Guilherme Clezar;2;1
+rio-de-janeiro;1st Round Qualifying;Victor Estrella Burgos;Ruben Ramirez Hidalgo;2;0
+rio-de-janeiro;1st Round Qualifying;Taro Daniel;Federico Gaio;2;1
+rio-de-janeiro;1st Round Qualifying;Guilherme Clezar;Jozef Kovalik;1;0
+rio-de-janeiro;1st Round Qualifying;Nicolas Kicker;Christian Garin;2;0
+rio-de-janeiro;1st Round Qualifying;Marco Cecchinato;Alessandro Giannessi;2;1
+rio-de-janeiro;1st Round Qualifying;Roberto Carballes Baena;Felipe Meligeni Rodrigues Alves;2;1
+rio-de-janeiro;1st Round Qualifying;Arthur De Greef;Joao Pedro Sorgi;2;0
+rio-de-janeiro;1st Round Qualifying;Guido Andreozzi;Orlando Luz;2;1
+dubai;Finals;Andy Murray;Fernando Verdasco;2;0
+dubai;Semi-Finals;Andy Murray;Lucas Pouille;2;0
+dubai;Semi-Finals;Fernando Verdasco;Robin Haase;2;1
+dubai;Quarter-Finals;Andy Murray;Philipp Kohlschreiber;2;1
+dubai;Quarter-Finals;Fernando Verdasco;Gael Monfils;2;0
+dubai;Quarter-Finals;Lucas Pouille;Evgeny Donskoy;2;1
+dubai;Quarter-Finals;Robin Haase;Damir Dzumhur;2;1
+dubai;Round of 16;Andy Murray;Guillermo Garcia-Lopez;2;0
+dubai;Round of 16;Evgeny Donskoy;Roger Federer;2;1
+dubai;Round of 16;Gael Monfils;Daniel Evans;2;1
+dubai;Round of 16;Robin Haase;Tomas Berdych;2;1
+dubai;Round of 16;Fernando Verdasco;Roberto Bautista Agut;2;1
+dubai;Round of 16;Lucas Pouille;Marius Copil;2;0
+dubai;Round of 16;Damir Dzumhur;Marcel Granollers;2;0
+dubai;Round of 16;Philipp Kohlschreiber;Daniil Medvedev;2;0
+dubai;Round of 32;Andy Murray;Malek Jaziri;2;0
+dubai;Round of 32;Damir Dzumhur;Stan Wawrinka;2;0
+dubai;Round of 32;Roger Federer;Benoit Paire;2;0
+dubai;Round of 32;Gael Monfils;Mohamed Safwat;2;0
+dubai;Round of 32;Tomas Berdych;Lukas Rosol;2;0
+dubai;Round of 32;Roberto Bautista Agut;Karen Khachanov;2;0
+dubai;Round of 32;Lucas Pouille;Adam Pavlasek;2;0
+dubai;Round of 32;Philipp Kohlschreiber;Gilles Muller;2;0
+dubai;Round of 32;Marius Copil;Jan-Lennard Struff;2;0
+dubai;Round of 32;Evgeny Donskoy;Mikhail Youzhny;2;0
+dubai;Round of 32;Daniel Evans;Dustin Brown;2;0
+dubai;Round of 32;Guillermo Garcia-Lopez;Viktor Troicki;2;0
+dubai;Round of 32;Marcel Granollers;Jiri Vesely;2;0
+dubai;Round of 32;Robin Haase;Denis Istomin;2;0
+dubai;Round of 32;Daniil Medvedev;Omar Alawadhi;2;0
+dubai;Round of 32;Fernando Verdasco;Andreas Seppi;2;0
+dubai;2nd Round Qualifying;Denis Istomin;Marton Fucsovics;2;0
+dubai;2nd Round Qualifying;Marius Copil;Andreas Seppi;2;0
+dubai;2nd Round Qualifying;Evgeny Donskoy;James McGee;2;0
+dubai;2nd Round Qualifying;Lukas Rosol;Vincent Millot;2;0
+dubai;1st Round Qualifying;Denis Istomin;Alexei Popyrin;2;0
+dubai;1st Round Qualifying;Andreas Seppi;Jan Satral;2;0
+dubai;1st Round Qualifying;James McGee;Sergiy Stakhovsky;2;1
+dubai;1st Round Qualifying;Vincent Millot;Andrey Rublev;2;1
+dubai;1st Round Qualifying;Evgeny Donskoy;Peter Gojowczyk;2;0
+dubai;1st Round Qualifying;Marius Copil;Prajnesh Gunneswaran;2;0
+dubai;1st Round Qualifying;Marton Fucsovics;Thomas Fabbiano;2;0
+dubai;1st Round Qualifying;Lukas Rosol;Ivan Dodig;2;1
+sao-paulo;Finals;Pablo Cuevas;Albert Ramos-Vinolas;2;1
+sao-paulo;Semi-Finals;Pablo Cuevas;Pablo Carreno Busta;2;0
+sao-paulo;Semi-Finals;Albert Ramos-Vinolas;Joao Sousa;2;1
+sao-paulo;Quarter-Finals;Pablo Carreno Busta;Fabio Fognini;2;0
+sao-paulo;Quarter-Finals;Albert Ramos-Vinolas;Guido Pella;2;1
+sao-paulo;Quarter-Finals;Pablo Cuevas;Diego Schwartzman;2;1
+sao-paulo;Quarter-Finals;Joao Sousa;Federico Delbonis;2;0
+sao-paulo;Round of 16;Pablo Carreno Busta;Joao Souza;2;0
+sao-paulo;Round of 16;Albert Ramos-Vinolas;Gastao Elias;2;0
+sao-paulo;Round of 16;Pablo Cuevas;Facundo Bagnis;2;0
+sao-paulo;Round of 16;Joao Sousa;Renzo Olivo;2;0
+sao-paulo;Round of 16;Fabio Fognini;Alessandro Giannessi;2;0
+sao-paulo;Round of 16;Diego Schwartzman;Gerald Melzer;2;0
+sao-paulo;Round of 16;Federico Delbonis;Casper Ruud;2;0
+sao-paulo;Round of 16;Guido Pella;Carlos Berlocq;2;0
+sao-paulo;Round of 32;Fabio Fognini;Marco Cecchinato;2;0
+sao-paulo;Round of 32;Diego Schwartzman;Thomaz Bellucci;2;0
+sao-paulo;Round of 32;Federico Delbonis;Jozef Kovalik;2;0
+sao-paulo;Round of 32;Carlos Berlocq;Thiago Monteiro;2;1
+sao-paulo;Round of 32;Facundo Bagnis;Dusan Lajovic;2;0
+sao-paulo;Round of 32;Gastao Elias;Orlando Luz;2;0
+sao-paulo;Round of 32;Alessandro Giannessi;Rogerio Dutra Silva;2;0
+sao-paulo;Round of 32;Gerald Melzer;Victor Estrella Burgos;2;0
+sao-paulo;Round of 32;Renzo Olivo;Inigo Cervantes;2;0
+sao-paulo;Round of 32;Guido Pella;Guilherme Clezar;2;0
+sao-paulo;Round of 32;Casper Ruud;Akira Santillan;2;0
+sao-paulo;Round of 32;Joao Souza;Horacio Zeballos;2;0
+sao-paulo;2nd Round Qualifying;Jozef Kovalik;Roberto Carballes Baena;2;1
+sao-paulo;2nd Round Qualifying;Marco Cecchinato;Nicolas Kicker;2;1
+sao-paulo;2nd Round Qualifying;Alessandro Giannessi;Guido Andreozzi;2;1
+sao-paulo;2nd Round Qualifying;Guilherme Clezar;Arthur De Greef;2;0
+sao-paulo;1st Round Qualifying;Jozef Kovalik;Joao Pedro Sorgi;2;0
+sao-paulo;1st Round Qualifying;Guilherme Clezar;Taro Daniel;2;0
+sao-paulo;1st Round Qualifying;Nicolas Kicker;Gustavo Teisen Pereira;2;0
+sao-paulo;1st Round Qualifying;Alessandro Giannessi;Federico Coria;1;0
+sao-paulo;1st Round Qualifying;Roberto Carballes Baena;Jordi Samper-Montana;2;0
+sao-paulo;1st Round Qualifying;Guido Andreozzi;Maximo Gonzalez;2;0
+sao-paulo;1st Round Qualifying;Arthur De Greef;Caio Zampieri;2;0
+sao-paulo;1st Round Qualifying;Marco Cecchinato;Leonardo Mayer;2;1
+indian-wells;Finals;Roger Federer;Stan Wawrinka;2;0
+indian-wells;Semi-Finals;Stan Wawrinka;Pablo Carreno Busta;2;0
+indian-wells;Semi-Finals;Roger Federer;Jack Sock;2;0
+indian-wells;Quarter-Finals;Stan Wawrinka;Dominic Thiem;2;1
+indian-wells;Quarter-Finals;Jack Sock;Kei Nishikori;2;1
+indian-wells;Quarter-Finals;Roger Federer;Nick Kyrgios;0;0
+indian-wells;Quarter-Finals;Pablo Carreno Busta;Pablo Cuevas;2;1
+indian-wells;Round of 16;Nick Kyrgios;Novak Djokovic;2;0
+indian-wells;Round of 16;Stan Wawrinka;Yoshihito Nishioka;2;1
+indian-wells;Round of 16;Kei Nishikori;Donald Young;2;0
+indian-wells;Round of 16;Roger Federer;Rafael Nadal;2;0
+indian-wells;Round of 16;Dominic Thiem;Gael Monfils;2;0
+indian-wells;Round of 16;Pablo Cuevas;David Goffin;2;1
+indian-wells;Round of 16;Jack Sock;Malek Jaziri;2;1
+indian-wells;Round of 16;Pablo Carreno Busta;Dusan Lajovic;2;0
+indian-wells;Round of 32;Novak Djokovic;Juan Martin del Potro;2;1
+indian-wells;Round of 32;Stan Wawrinka;Philipp Kohlschreiber;2;0
+indian-wells;Round of 32;Kei Nishikori;Gilles Muller;2;0
+indian-wells;Round of 32;Rafael Nadal;Fernando Verdasco;2;0
+indian-wells;Round of 32;Dominic Thiem;Mischa Zverev;2;0
+indian-wells;Round of 32;Roger Federer;Steve Johnson;2;0
+indian-wells;Round of 32;Gael Monfils;John Isner;2;0
+indian-wells;Round of 32;David Goffin;Albert Ramos-Vinolas;2;0
+indian-wells;Round of 32;Jack Sock;Grigor Dimitrov;2;1
+indian-wells;Round of 32;Yoshihito Nishioka;Tomas Berdych;2;1
+indian-wells;Round of 32;Donald Young;Lucas Pouille;2;1
+indian-wells;Round of 32;Nick Kyrgios;Alexander Zverev;2;0
+indian-wells;Round of 32;Pablo Carreno Busta;Roberto Bautista Agut;0;0
+indian-wells;Round of 32;Pablo Cuevas;Fabio Fognini;2;0
+indian-wells;Round of 32;Malek Jaziri;Taylor Fritz;2;1
+indian-wells;Round of 32;Dusan Lajovic;Vasek Pospisil;2;1
+indian-wells;Round of 64;Vasek Pospisil;Andy Murray;2;0
+indian-wells;Round of 64;Novak Djokovic;Kyle Edmund;2;0
+indian-wells;Round of 64;Stan Wawrinka;Paolo Lorenzi;2;0
+indian-wells;Round of 64;Kei Nishikori;Daniel Evans;2;0
+indian-wells;Round of 64;Rafael Nadal;Guido Pella;2;0
+indian-wells;Round of 64;Taylor Fritz;Marin Cilic;2;1
+indian-wells;Round of 64;Fabio Fognini;Jo-Wilfried Tsonga;2;1
+indian-wells;Round of 64;Dominic Thiem;Jeremy Chardy;2;0
+indian-wells;Round of 64;Roger Federer;Stephane Robert;2;0
+indian-wells;Round of 64;Gael Monfils;Darian King;2;1
+indian-wells;Round of 64;David Goffin;Karen Khachanov;2;1
+indian-wells;Round of 64;Grigor Dimitrov;Mikhail Youzhny;2;0
+indian-wells;Round of 64;Tomas Berdych;Bjorn Fratangelo;2;0
+indian-wells;Round of 64;Lucas Pouille;Jan-Lennard Struff;2;0
+indian-wells;Round of 64;Nick Kyrgios;Horacio Zeballos;2;0
+indian-wells;Round of 64;Roberto Bautista Agut;Adrian Mannarino;2;0
+indian-wells;Round of 64;Jack Sock;Henri Laaksonen;2;1
+indian-wells;Round of 64;Alexander Zverev;Facundo Bagnis;2;0
+indian-wells;Round of 64;Yoshihito Nishioka;Ivo Karlovic;2;0
+indian-wells;Round of 64;John Isner;Mikhail Kukushkin;2;0
+indian-wells;Round of 64;Pablo Carreno Busta;Peter Gojowczyk;2;0
+indian-wells;Round of 64;Albert Ramos-Vinolas;Damir Dzumhur;2;1
+indian-wells;Round of 64;Donald Young;Sam Querrey;2;1
+indian-wells;Round of 64;Steve Johnson;Kevin Anderson;2;1
+indian-wells;Round of 64;Gilles Muller;Jiri Vesely;2;0
+indian-wells;Round of 64;Fernando Verdasco;Pierre-Hugues Herbert;2;0
+indian-wells;Round of 64;Pablo Cuevas;Martin Klizan;2;0
+indian-wells;Round of 64;Philipp Kohlschreiber;Alexandr Dolgopolov;0;1
+indian-wells;Round of 64;Mischa Zverev;Joao Sousa;2;0
+indian-wells;Round of 64;Dusan Lajovic;Feliciano Lopez;2;1
+indian-wells;Round of 64;Juan Martin del Potro;Federico Delbonis;2;0
+indian-wells;Round of 64;Malek Jaziri;Marcel Granollers;2;0
+indian-wells;Round of 128;Kevin Anderson;Federico Gaio;2;0
+indian-wells;Round of 128;Facundo Bagnis;Julien Benneteau;2;1
+indian-wells;Round of 128;Jeremy Chardy;Radu Albot;2;0
+indian-wells;Round of 128;Federico Delbonis;Andrey Kuznetsov;2;0
+indian-wells;Round of 128;Alexandr Dolgopolov;Viktor Troicki;2;0
+indian-wells;Round of 128;Damir Dzumhur;Ryan Harrison;2;1
+indian-wells;Round of 128;Kyle Edmund;Gastao Elias;2;0
+indian-wells;Round of 128;Daniel Evans;Dustin Brown;2;0
+indian-wells;Round of 128;Fabio Fognini;Konstantin Kravchuk;2;1
+indian-wells;Round of 128;Bjorn Fratangelo;Bernard Tomic;2;0
+indian-wells;Round of 128;Taylor Fritz;Benoit Paire;2;0
+indian-wells;Round of 128;Peter Gojowczyk;Reilly Opelka;2;1
+indian-wells;Round of 128;Pierre-Hugues Herbert;Thomaz Bellucci;2;1
+indian-wells;Round of 128;Malek Jaziri;Nicolas Mahut;2;0
+indian-wells;Round of 128;Karen Khachanov;Tommy Robredo;2;0
+indian-wells;Round of 128;Darian King;Nikoloz Basilashvili;2;0
+indian-wells;Round of 128;Martin Klizan;Thiago Monteiro;2;0
+indian-wells;Round of 128;Mikhail Kukushkin;Jordan Thompson;2;1
+indian-wells;Round of 128;Henri Laaksonen;Borna Coric;2;1
+indian-wells;Round of 128;Dusan Lajovic;Frances Tiafoe;2;0
+indian-wells;Round of 128;Paolo Lorenzi;Robin Haase;2;0
+indian-wells;Round of 128;Adrian Mannarino;Juan Monaco;2;1
+indian-wells;Round of 128;Yoshihito Nishioka;Elias Ymer;2;0
+indian-wells;Round of 128;Guido Pella;Guillermo Garcia-Lopez;2;1
+indian-wells;Round of 128;Vasek Pospisil;Yen-Hsun Lu;2;1
+indian-wells;Round of 128;Stephane Robert;Dudi Sela;2;0
+indian-wells;Round of 128;Joao Sousa;Diego Schwartzman;2;1
+indian-wells;Round of 128;Jan-Lennard Struff;Santiago Giraldo;2;0
+indian-wells;Round of 128;Jiri Vesely;Renzo Olivo;2;1
+indian-wells;Round of 128;Donald Young;Stefan Kozlov;2;0
+indian-wells;Round of 128;Mikhail Youzhny;Daniil Medvedev;2;0
+indian-wells;Round of 128;Horacio Zeballos;Marius Copil;2;1
+indian-wells;2nd Round Qualifying;Nikoloz Basilashvili;Alexander Bublik;2;0
+indian-wells;2nd Round Qualifying;Elias Ymer;Yoshihito Nishioka;2;0
+indian-wells;2nd Round Qualifying;Radu Albot;Alex de Minaur;2;1
+indian-wells;2nd Round Qualifying;Darian King;Mikhail Kukushkin;2;0
+indian-wells;2nd Round Qualifying;Santiago Giraldo;Norbert Gombos;2;1
+indian-wells;2nd Round Qualifying;Dusan Lajovic;Tobias Kamke;2;0
+indian-wells;2nd Round Qualifying;Julien Benneteau;Illya Marchenko;2;0
+indian-wells;2nd Round Qualifying;Marius Copil;Denis Kudla;2;0
+indian-wells;2nd Round Qualifying;Henri Laaksonen;Dennis Novikov;2;1
+indian-wells;2nd Round Qualifying;Vasek Pospisil;Rajeev Ram;2;1
+indian-wells;2nd Round Qualifying;Federico Gaio;Andrew Whittington;2;0
+indian-wells;2nd Round Qualifying;Peter Gojowczyk;Marco Trungelliti;2;1
+indian-wells;1st Round Qualifying;Nikoloz Basilashvili;Matthew Ebden;2;0
+indian-wells;1st Round Qualifying;Dennis Novikov;Denis Istomin;2;0
+indian-wells;1st Round Qualifying;Yoshihito Nishioka;Marcelo Arevalo;2;0
+indian-wells;1st Round Qualifying;Radu Albot;Vincent Millot;2;0
+indian-wells;1st Round Qualifying;Mikhail Kukushkin;Marcos Giron;2;0
+indian-wells;1st Round Qualifying;Rajeev Ram;Jared Donaldson;2;0
+indian-wells;1st Round Qualifying;Santiago Giraldo;Michael Mmoh;2;0
+indian-wells;1st Round Qualifying;Peter Gojowczyk;Ernesto Escobedo;2;0
+indian-wells;1st Round Qualifying;Dusan Lajovic;Ivan Dodig;2;1
+indian-wells;1st Round Qualifying;Illya Marchenko;Teymuraz Gabashvili;2;1
+indian-wells;1st Round Qualifying;Federico Gaio;Sergiy Stakhovsky;2;0
+indian-wells;1st Round Qualifying;Marius Copil;Lukas Rosol;2;0
+indian-wells;1st Round Qualifying;Norbert Gombos;Ruben Bemelmans;2;1
+indian-wells;1st Round Qualifying;Julien Benneteau;Sam Groth;2;0
+indian-wells;1st Round Qualifying;Marco Trungelliti;Jozef Kovalik;2;0
+indian-wells;1st Round Qualifying;Henri Laaksonen;Tim Smyczek;2;0
+indian-wells;1st Round Qualifying;Elias Ymer;Peter Polansky;2;0
+indian-wells;1st Round Qualifying;Vasek Pospisil;Mitchell Krueger;2;0
+indian-wells;1st Round Qualifying;Denis Kudla;Marton Fucsovics;2;0
+indian-wells;1st Round Qualifying;Darian King;Noah Rubin;2;0
+indian-wells;1st Round Qualifying;Tobias Kamke;Benjamin Becker;2;1
+indian-wells;1st Round Qualifying;Andrew Whittington;Andrey Rublev;2;0
+indian-wells;1st Round Qualifying;Alexander Bublik;Ernests Gulbis;2;0
+indian-wells;1st Round Qualifying;Alex de Minaur;Go Soeda;2;1
+miami;Finals;Roger Federer;Rafael Nadal;2;0
+miami;Semi-Finals;Roger Federer;Nick Kyrgios;2;1
+miami;Semi-Finals;Rafael Nadal;Fabio Fognini;2;0
+miami;Quarter-Finals;Fabio Fognini;Kei Nishikori;2;0
+miami;Quarter-Finals;Roger Federer;Tomas Berdych;2;1
+miami;Quarter-Finals;Rafael Nadal;Jack Sock;2;0
+miami;Quarter-Finals;Nick Kyrgios;Alexander Zverev;2;1
+miami;Round of 16;Alexander Zverev;Stan Wawrinka;2;1
+miami;Round of 16;Kei Nishikori;Federico Delbonis;2;1
+miami;Round of 16;Roger Federer;Roberto Bautista Agut;2;0
+miami;Round of 16;Rafael Nadal;Nicolas Mahut;2;0
+miami;Round of 16;Nick Kyrgios;David Goffin;2;0
+miami;Round of 16;Tomas Berdych;Adrian Mannarino;2;0
+miami;Round of 16;Jack Sock;Jared Donaldson;2;0
+miami;Round of 16;Fabio Fognini;Donald Young;2;0
+miami;Round of 32;Stan Wawrinka;Malek Jaziri;2;0
+miami;Round of 32;Kei Nishikori;Fernando Verdasco;2;1
+miami;Round of 32;Jared Donaldson;Milos Raonic;0;0
+miami;Round of 32;Roger Federer;Juan Martin del Potro;2;0
+miami;Round of 32;Rafael Nadal;Philipp Kohlschreiber;2;1
+miami;Round of 32;David Goffin;Diego Schwartzman;2;1
+miami;Round of 32;Tomas Berdych;Gilles Muller;2;0
+miami;Round of 32;Nick Kyrgios;Ivo Karlovic;2;1
+miami;Round of 32;Jack Sock;Jiri Vesely;2;0
+miami;Round of 32;Roberto Bautista Agut;Sam Querrey;2;1
+miami;Round of 32;Alexander Zverev;John Isner;2;1
+miami;Round of 32;Federico Delbonis;Jan-Lennard Struff;2;0
+miami;Round of 32;Fabio Fognini;Jeremy Chardy;2;1
+miami;Round of 32;Nicolas Mahut;Guido Pella;2;0
+miami;Round of 32;Adrian Mannarino;Borna Coric;2;1
+miami;Round of 32;Donald Young;Benoit Paire;2;0
+miami;Round of 64;Stan Wawrinka;Horacio Zeballos;2;0
+miami;Round of 64;Kei Nishikori;Kevin Anderson;2;0
+miami;Round of 64;Milos Raonic;Viktor Troicki;2;0
+miami;Round of 64;Roger Federer;Frances Tiafoe;2;0
+miami;Round of 64;Rafael Nadal;Dudi Sela;2;0
+miami;Round of 64;Borna Coric;Dominic Thiem;2;0
+miami;Round of 64;Jeremy Chardy;Marin Cilic;2;1
+miami;Round of 64;David Goffin;Darian King;2;0
+miami;Round of 64;Guido Pella;Grigor Dimitrov;2;0
+miami;Round of 64;Tomas Berdych;Andrey Rublev;2;0
+miami;Round of 64;Donald Young;Lucas Pouille;2;0
+miami;Round of 64;Nick Kyrgios;Damir Dzumhur;2;0
+miami;Round of 64;Jack Sock;Yoshihito Nishioka;0;1
+miami;Round of 64;Roberto Bautista Agut;Mikhail Kukushkin;2;0
+miami;Round of 64;Federico Delbonis;Pablo Carreno Busta;2;1
+miami;Round of 64;Alexander Zverev;Yen-Hsun Lu;2;0
+miami;Round of 64;Ivo Karlovic;Andrey Kuznetsov;2;0
+miami;Round of 64;John Isner;Thomaz Bellucci;2;0
+miami;Round of 64;Jiri Vesely;Albert Ramos-Vinolas;2;1
+miami;Round of 64;Jan-Lennard Struff;Gilles Simon;2;0
+miami;Round of 64;Benoit Paire;Pablo Cuevas;2;0
+miami;Round of 64;Sam Querrey;Tommy Robredo;2;0
+miami;Round of 64;Nicolas Mahut;Steve Johnson;2;1
+miami;Round of 64;Gilles Muller;Andreas Seppi;2;0
+miami;Round of 64;Fernando Verdasco;Ernesto Escobedo;2;0
+miami;Round of 64;Philipp Kohlschreiber;Taylor Fritz;2;1
+miami;Round of 64;Diego Schwartzman;David Ferrer;2;0
+miami;Round of 64;Jared Donaldson;Mischa Zverev;2;0
+miami;Round of 64;Juan Martin del Potro;Robin Haase;2;0
+miami;Round of 64;Fabio Fognini;Joao Sousa;2;1
+miami;Round of 64;Malek Jaziri;Feliciano Lopez;2;1
+miami;Round of 64;Adrian Mannarino;Paolo Lorenzi;2;1
+miami;Round of 128;Kevin Anderson;Dusan Lajovic;2;0
+miami;Round of 128;Thomaz Bellucci;Stephane Robert;2;0
+miami;Round of 128;Jeremy Chardy;Facundo Bagnis;2;0
+miami;Round of 128;Borna Coric;Marcel Granollers;2;1
+miami;Round of 128;Federico Delbonis;Juan Monaco;2;0
+miami;Round of 128;Jared Donaldson;Kyle Edmund;2;1
+miami;Round of 128;Damir Dzumhur;Hyeon Chung;2;1
+miami;Round of 128;Ernesto Escobedo;Daniel Evans;2;1
+miami;Round of 128;Fabio Fognini;Ryan Harrison;2;0
+miami;Round of 128;Taylor Fritz;Adam Pavlasek;2;0
+miami;Round of 128;Robin Haase;Mikael Ymer;2;0
+miami;Round of 128;Malek Jaziri;Alexandr Dolgopolov;1;0
+miami;Round of 128;Darian King;Lukas Lacko;2;0
+miami;Round of 128;Mikhail Kukushkin;Mikhail Youzhny;2;0
+miami;Round of 128;Andrey Kuznetsov;Denis Istomin;2;0
+miami;Round of 128;Yen-Hsun Lu;Casper Ruud;2;0
+miami;Round of 128;Nicolas Mahut;Michael Mmoh;2;0
+miami;Round of 128;Adrian Mannarino;Benjamin Becker;2;0
+miami;Round of 128;Yoshihito Nishioka;Jordan Thompson;2;1
+miami;Round of 128;Benoit Paire;Martin Klizan;2;0
+miami;Round of 128;Guido Pella;Tim Smyczek;2;1
+miami;Round of 128;Tommy Robredo;Nikoloz Basilashvili;2;1
+miami;Round of 128;Andrey Rublev;Florian Mayer;2;0
+miami;Round of 128;Diego Schwartzman;Karen Khachanov;2;1
+miami;Round of 128;Dudi Sela;Christian Harrison;2;0
+miami;Round of 128;Andreas Seppi;Radu Albot;2;0
+miami;Round of 128;Jan-Lennard Struff;Aljaz Bedene;2;0
+miami;Round of 128;Frances Tiafoe;Konstantin Kravchuk;2;1
+miami;Round of 128;Viktor Troicki;Thiago Monteiro;2;1
+miami;Round of 128;Jiri Vesely;Tommy Haas;2;1
+miami;Round of 128;Donald Young;Dustin Brown;2;1
+miami;Round of 128;Horacio Zeballos;Gastao Elias;2;1
+miami;2nd Round Qualifying;Benjamin Becker;Mikhail Youzhny;2;1
+miami;2nd Round Qualifying;Christian Harrison;Rogerio Dutra Silva;2;0
+miami;2nd Round Qualifying;Frances Tiafoe;Mathias Bourgue;2;1
+miami;2nd Round Qualifying;Radu Albot;Sergiy Stakhovsky;2;1
+miami;2nd Round Qualifying;Ernesto Escobedo;Renzo Olivo;2;0
+miami;2nd Round Qualifying;Mikhail Kukushkin;Norbert Gombos;2;0
+miami;2nd Round Qualifying;Jared Donaldson;Stefan Kozlov;2;0
+miami;2nd Round Qualifying;Dusan Lajovic;Nicolas Kicker;2;0
+miami;2nd Round Qualifying;Lukas Lacko;Miomir Kecmanovic;2;0
+miami;2nd Round Qualifying;Aljaz Bedene;Tobias Kamke;2;0
+miami;2nd Round Qualifying;Darian King;Reilly Opelka;0;0
+miami;2nd Round Qualifying;Tim Smyczek;Ruben Bemelmans;2;0
+miami;1st Round Qualifying;Tobias Kamke;Pierre-Hugues Herbert;2;1
+miami;1st Round Qualifying;Mikhail Youzhny;Vincent Millot;2;1
+miami;1st Round Qualifying;Rogerio Dutra Silva;Lukas Rosol;2;1
+miami;1st Round Qualifying;Frances Tiafoe;Teymuraz Gabashvili;2;0
+miami;1st Round Qualifying;Radu Albot;Elias Ymer;2;0
+miami;1st Round Qualifying;Renzo Olivo;Alexander Bublik;2;1
+miami;1st Round Qualifying;Mikhail Kukushkin;Peter Gojowczyk;1;0
+miami;1st Round Qualifying;Jared Donaldson;Yibing Wu;2;0
+miami;1st Round Qualifying;Nicolas Kicker;Andrew Whittington;2;0
+miami;1st Round Qualifying;Lukas Lacko;Vasil Kirkov;2;1
+miami;1st Round Qualifying;Tim Smyczek;Santiago Giraldo;2;0
+miami;1st Round Qualifying;Ernesto Escobedo;Denis Kudla;2;0
+miami;1st Round Qualifying;Aljaz Bedene;Federico Gaio;2;0
+miami;1st Round Qualifying;Dusan Lajovic;Grega Zemlja;1;0
+miami;1st Round Qualifying;Sergiy Stakhovsky;Ernests Gulbis;2;1
+miami;1st Round Qualifying;Reilly Opelka;Marius Copil;2;0
+miami;1st Round Qualifying;Mathias Bourgue;Bjorn Fratangelo;2;0
+miami;1st Round Qualifying;Norbert Gombos;Quentin Halys;2;1
+miami;1st Round Qualifying;Stefan Kozlov;Nicola Kuhn;2;1
+miami;1st Round Qualifying;Ruben Bemelmans;Jozef Kovalik;2;1
+miami;1st Round Qualifying;Miomir Kecmanovic;Henri Laaksonen;2;0
+miami;1st Round Qualifying;Christian Harrison;Peter Polansky;2;0
+miami;1st Round Qualifying;Benjamin Becker;Joao Souza;2;1
+miami;1st Round Qualifying;Darian King;Ivan Dodig;2;1
+houston;Finals;Steve Johnson;Thomaz Bellucci;2;1
+houston;Semi-Finals;Steve Johnson;Jack Sock;2;1
+houston;Semi-Finals;Thomaz Bellucci;Ernesto Escobedo;2;1
+houston;Quarter-Finals;Jack Sock;Feliciano Lopez;2;1
+houston;Quarter-Finals;Ernesto Escobedo;John Isner;2;1
+houston;Quarter-Finals;Thomaz Bellucci;Sam Querrey;2;1
+houston;Quarter-Finals;Steve Johnson;Fernando Verdasco;2;0
+houston;Round of 16;Jack Sock;Tommy Haas;2;1
+houston;Round of 16;John Isner;Leonardo Mayer;2;1
+houston;Round of 16;Sam Querrey;Horacio Zeballos;2;0
+houston;Round of 16;Steve Johnson;Dustin Brown;2;0
+houston;Round of 16;Fernando Verdasco;Nicolas Kicker;2;0
+houston;Round of 16;Feliciano Lopez;Hyeon Chung;2;1
+houston;Round of 16;Thomaz Bellucci;Maximo Gonzalez;2;1
+houston;Round of 16;Ernesto Escobedo;Thiago Monteiro;2;1
+houston;Round of 32;Fernando Verdasco;Kevin Anderson;2;0
+houston;Round of 32;Feliciano Lopez;Bjorn Fratangelo;2;0
+houston;Round of 32;Thiago Monteiro;Donald Young;2;0
+houston;Round of 32;Thomaz Bellucci;Frances Tiafoe;2;1
+houston;Round of 32;Dustin Brown;Juan Monaco;2;0
+houston;Round of 32;Hyeon Chung;Victor Estrella Burgos;2;1
+houston;Round of 32;Ernesto Escobedo;Tennys Sandgren;2;0
+houston;Round of 32;Maximo Gonzalez;Jared Donaldson;2;1
+houston;Round of 32;Tommy Haas;Reilly Opelka;2;1
+houston;Round of 32;Nicolas Kicker;Noah Rubin;1;0
+houston;Round of 32;Leonardo Mayer;Adam Pavlasek;2;1
+houston;Round of 32;Horacio Zeballos;Rogerio Dutra Silva;2;0
+houston;2nd Round Qualifying;Leonardo Mayer;Denis Kudla;2;1
+houston;2nd Round Qualifying;Maximo Gonzalez;Benjamin Becker;2;0
+houston;2nd Round Qualifying;Tennys Sandgren;Teymuraz Gabashvili;2;0
+houston;2nd Round Qualifying;Noah Rubin;Bradley Klahn;2;1
+houston;1st Round Qualifying;Bradley Klahn;Renzo Olivo;2;1
+houston;1st Round Qualifying;Benjamin Becker;Guido Andreozzi;2;0
+houston;1st Round Qualifying;Teymuraz Gabashvili;Peter Polansky;2;0
+houston;1st Round Qualifying;Denis Kudla;Brian Baker;0;1
+houston;1st Round Qualifying;Leonardo Mayer;Tim Smyczek;2;1
+houston;1st Round Qualifying;Noah Rubin;Ruben Ramirez Hidalgo;2;0
+houston;1st Round Qualifying;Maximo Gonzalez;Dennis Novikov;2;0
+houston;1st Round Qualifying;Tennys Sandgren;Steven Diez;2;0
+monte-carlo;Finals;Rafael Nadal;Albert Ramos-Vinolas;2;0
+monte-carlo;Semi-Finals;Rafael Nadal;David Goffin;2;0
+monte-carlo;Semi-Finals;Albert Ramos-Vinolas;Lucas Pouille;2;1
+monte-carlo;Quarter-Finals;David Goffin;Novak Djokovic;2;1
+monte-carlo;Quarter-Finals;Rafael Nadal;Diego Schwartzman;2;0
+monte-carlo;Quarter-Finals;Albert Ramos-Vinolas;Marin Cilic;2;1
+monte-carlo;Quarter-Finals;Lucas Pouille;Pablo Cuevas;2;1
+monte-carlo;Round of 16;Albert Ramos-Vinolas;Andy Murray;2;1
+monte-carlo;Round of 16;Novak Djokovic;Pablo Carreno Busta;2;1
+monte-carlo;Round of 16;Pablo Cuevas;Stan Wawrinka;2;0
+monte-carlo;Round of 16;Rafael Nadal;Alexander Zverev;2;0
+monte-carlo;Round of 16;Marin Cilic;Tomas Berdych;2;0
+monte-carlo;Round of 16;David Goffin;Dominic Thiem;2;1
+monte-carlo;Round of 16;Lucas Pouille;Adrian Mannarino;1;0
+monte-carlo;Round of 16;Diego Schwartzman;Jan-Lennard Struff;2;0
+monte-carlo;Round of 32;Andy Murray;Gilles Muller;2;0
+monte-carlo;Round of 32;Novak Djokovic;Gilles Simon;2;1
+monte-carlo;Round of 32;Stan Wawrinka;Jiri Vesely;2;1
+monte-carlo;Round of 32;Rafael Nadal;Kyle Edmund;2;1
+monte-carlo;Round of 32;Marin Cilic;Jeremy Chardy;2;0
+monte-carlo;Round of 32;Dominic Thiem;Robin Haase;2;0
+monte-carlo;Round of 32;Adrian Mannarino;Jo-Wilfried Tsonga;2;1
+monte-carlo;Round of 32;Jan-Lennard Struff;Grigor Dimitrov;2;1
+monte-carlo;Round of 32;Tomas Berdych;Tommy Haas;2;1
+monte-carlo;Round of 32;David Goffin;Nicolas Almagro;2;0
+monte-carlo;Round of 32;Lucas Pouille;Paolo Lorenzi;2;0
+monte-carlo;Round of 32;Diego Schwartzman;Roberto Bautista Agut;2;0
+monte-carlo;Round of 32;Pablo Carreno Busta;Karen Khachanov;2;0
+monte-carlo;Round of 32;Alexander Zverev;Feliciano Lopez;2;0
+monte-carlo;Round of 32;Albert Ramos-Vinolas;Carlos Berlocq;2;0
+monte-carlo;Round of 32;Pablo Cuevas;Joao Sousa;2;0
+monte-carlo;Round of 64;Tomas Berdych;Andrey Kuznetsov;2;1
+monte-carlo;Round of 64;David Goffin;Steve Darcis;2;0
+monte-carlo;Round of 64;Lucas Pouille;Ryan Harrison;2;0
+monte-carlo;Round of 64;Roberto Bautista Agut;Nikoloz Basilashvili;2;1
+monte-carlo;Round of 64;Pablo Carreno Busta;Fabio Fognini;2;1
+monte-carlo;Round of 64;Alexander Zverev;Andreas Seppi;2;0
+monte-carlo;Round of 64;Albert Ramos-Vinolas;Renzo Olivo;2;0
+monte-carlo;Round of 64;Pablo Cuevas;Viktor Troicki;2;0
+monte-carlo;Round of 64;Nicolas Almagro;Martin Klizan;2;1
+monte-carlo;Round of 64;Carlos Berlocq;Pierre-Hugues Herbert;2;1
+monte-carlo;Round of 64;Jeremy Chardy;Borna Coric;2;1
+monte-carlo;Round of 64;Kyle Edmund;Daniel Evans;2;0
+monte-carlo;Round of 64;Tommy Haas;Benoit Paire;2;0
+monte-carlo;Round of 64;Robin Haase;Damir Dzumhur;2;0
+monte-carlo;Round of 64;Karen Khachanov;Nicolas Mahut;2;0
+monte-carlo;Round of 64;Feliciano Lopez;Daniil Medvedev;2;0
+monte-carlo;Round of 64;Paolo Lorenzi;Marcel Granollers;2;0
+monte-carlo;Round of 64;Adrian Mannarino;Guillermo Garcia-Lopez;2;1
+monte-carlo;Round of 64;Gilles Muller;Tommy Robredo;2;0
+monte-carlo;Round of 64;Diego Schwartzman;Bernard Tomic;2;0
+monte-carlo;Round of 64;Gilles Simon;Malek Jaziri;2;0
+monte-carlo;Round of 64;Joao Sousa;Florian Mayer;2;0
+monte-carlo;Round of 64;Jan-Lennard Struff;Casper Ruud;2;0
+monte-carlo;Round of 64;Jiri Vesely;Mischa Zverev;2;0
+monte-carlo;2nd Round Qualifying;Adrian Mannarino;Yuichi Sugita;2;0
+monte-carlo;2nd Round Qualifying;Jan-Lennard Struff;Pierre-Hugues Herbert;2;0
+monte-carlo;2nd Round Qualifying;Martin Klizan;Sergiy Stakhovsky;2;0
+monte-carlo;2nd Round Qualifying;Carlos Berlocq;Roberto Carballes Baena;2;0
+monte-carlo;2nd Round Qualifying;Guillermo Garcia-Lopez;Damir Dzumhur;2;1
+monte-carlo;2nd Round Qualifying;Andrey Kuznetsov;Mikhail Youzhny;2;1
+monte-carlo;2nd Round Qualifying;Renzo Olivo;Simone Bolelli;2;1
+monte-carlo;1st Round Qualifying;Adrian Mannarino;Lucas Catarina;2;0
+monte-carlo;1st Round Qualifying;Jan-Lennard Struff;Paul-Henri Mathieu;2;1
+monte-carlo;1st Round Qualifying;Martin Klizan;Evgeny Donskoy;2;1
+monte-carlo;1st Round Qualifying;Carlos Berlocq;Andrey Rublev;2;0
+monte-carlo;1st Round Qualifying;Damir Dzumhur;Alessandro Giannessi;2;0
+monte-carlo;1st Round Qualifying;Andrey Kuznetsov;Julien Benneteau;2;0
+monte-carlo;1st Round Qualifying;Simone Bolelli;Mikhail Kukushkin;2;0
+monte-carlo;1st Round Qualifying;Pierre-Hugues Herbert;Marius Copil;2;1
+monte-carlo;1st Round Qualifying;Roberto Carballes Baena;Radu Albot;2;0
+monte-carlo;1st Round Qualifying;Sergiy Stakhovsky;Dusan Lajovic;2;1
+monte-carlo;1st Round Qualifying;Mikhail Youzhny;Taro Daniel;2;1
+monte-carlo;1st Round Qualifying;Renzo Olivo;Jozef Kovalik;2;1
+monte-carlo;1st Round Qualifying;Yuichi Sugita;Hugo Nys;2;1
+monte-carlo;1st Round Qualifying;Guillermo Garcia-Lopez;Florent Diep;2;0
+barcelona;Finals;Rafael Nadal;Dominic Thiem;2;0
+barcelona;Semi-Finals;Dominic Thiem;Andy Murray;2;1
+barcelona;Semi-Finals;Rafael Nadal;Horacio Zeballos;2;0
+barcelona;Quarter-Finals;Andy Murray;Albert Ramos-Vinolas;2;1
+barcelona;Quarter-Finals;Rafael Nadal;Hyeon Chung;2;0
+barcelona;Quarter-Finals;Dominic Thiem;Yuichi Sugita;2;0
+barcelona;Quarter-Finals;Horacio Zeballos;Karen Khachanov;2;0
+barcelona;Round of 16;Andy Murray;Feliciano Lopez;2;0
+barcelona;Round of 16;Rafael Nadal;Kevin Anderson;2;0
+barcelona;Round of 16;Dominic Thiem;Daniel Evans;2;0
+barcelona;Round of 16;Karen Khachanov;David Goffin;2;1
+barcelona;Round of 16;Albert Ramos-Vinolas;Roberto Bautista Agut;2;1
+barcelona;Round of 16;Yuichi Sugita;Pablo Carreno Busta;2;0
+barcelona;Round of 16;Hyeon Chung;Alexander Zverev;2;0
+barcelona;Round of 16;Horacio Zeballos;Benoit Paire;2;1
+barcelona;Round of 32;Andy Murray;Bernard Tomic;0;0
+barcelona;Round of 32;Rafael Nadal;Rogerio Dutra Silva;2;0
+barcelona;Round of 32;Dominic Thiem;Kyle Edmund;2;0
+barcelona;Round of 32;David Goffin;Nikoloz Basilashvili;2;0
+barcelona;Round of 32;Roberto Bautista Agut;Jan-Lennard Struff;2;0
+barcelona;Round of 32;Pablo Carreno Busta;Andreas Seppi;2;0
+barcelona;Round of 32;Alexander Zverev;Nicolas Almagro;2;1
+barcelona;Round of 32;Yuichi Sugita;Richard Gasquet;2;1
+barcelona;Round of 32;Albert Ramos-Vinolas;Casper Ruud;2;0
+barcelona;Round of 32;Karen Khachanov;Pablo Cuevas;2;0
+barcelona;Round of 32;Hyeon Chung;Philipp Kohlschreiber;2;0
+barcelona;Round of 32;Kevin Anderson;David Ferrer;2;0
+barcelona;Round of 32;Daniel Evans;Mischa Zverev;2;0
+barcelona;Round of 32;Horacio Zeballos;Joao Sousa;2;0
+barcelona;Round of 32;Feliciano Lopez;Albert Montanes;2;0
+barcelona;Round of 32;Benoit Paire;Marcel Granollers;2;0
+barcelona;Round of 64;Nicolas Almagro;Steven Diez;2;0
+barcelona;Round of 64;Kevin Anderson;Carlos Berlocq;2;1
+barcelona;Round of 64;Nikoloz Basilashvili;Taro Daniel;2;0
+barcelona;Round of 64;Hyeon Chung;Denis Istomin;2;0
+barcelona;Round of 64;Rogerio Dutra Silva;Renzo Olivo;2;0
+barcelona;Round of 64;Kyle Edmund;Jeremy Chardy;2;0
+barcelona;Round of 64;Daniel Evans;Thiago Monteiro;2;1
+barcelona;Round of 64;Marcel Granollers;Malek Jaziri;2;0
+barcelona;Round of 64;Karen Khachanov;Thomaz Bellucci;2;0
+barcelona;Round of 64;Albert Montanes;Guillermo Garcia-Lopez;2;0
+barcelona;Round of 64;Casper Ruud;Radu Albot;2;0
+barcelona;Round of 64;Andreas Seppi;Mikael Ymer;2;0
+barcelona;Round of 64;Jan-Lennard Struff;Pierre-Hugues Herbert;2;0
+barcelona;Round of 64;Yuichi Sugita;Tommy Robredo;2;0
+barcelona;Round of 64;Bernard Tomic;Dustin Brown;2;1
+barcelona;Round of 64;Horacio Zeballos;Santiago Giraldo;2;0
+barcelona;2nd Round Qualifying;Thiago Monteiro;Jordi Samper-Montana;2;1
+barcelona;2nd Round Qualifying;Steven Diez;Yuichi Sugita;2;0
+barcelona;2nd Round Qualifying;Hyeon Chung;Guido Pella;2;0
+barcelona;2nd Round Qualifying;Santiago Giraldo;Alejandro Davidovich Fokina;2;1
+barcelona;2nd Round Qualifying;Taro Daniel;Daniel Brands;2;0
+barcelona;2nd Round Qualifying;Casper Ruud;Daniel Masur;2;0
+barcelona;1st Round Qualifying;Thiago Monteiro;Lukas Rosol;2;1
+barcelona;1st Round Qualifying;Yuichi Sugita;Nicola Kuhn;2;0
+barcelona;1st Round Qualifying;Hyeon Chung;Ernests Gulbis;2;0
+barcelona;1st Round Qualifying;Santiago Giraldo;Enrique Lopez-Perez;2;1
+barcelona;1st Round Qualifying;Taro Daniel;Jaume Munar;2;0
+barcelona;1st Round Qualifying;Daniel Masur;Andrey Rublev;2;1
+barcelona;1st Round Qualifying;Alejandro Davidovich Fokina;Roberto Carballes Baena;2;1
+barcelona;1st Round Qualifying;Casper Ruud;Oriol Roca Batalla;2;0
+barcelona;1st Round Qualifying;Daniel Brands;Inigo Cervantes;2;1
+barcelona;1st Round Qualifying;Jordi Samper-Montana;Kenny De Schepper;0;1
+barcelona;1st Round Qualifying;Guido Pella;Marco Trungelliti;2;0
+barcelona;1st Round Qualifying;Steven Diez;Uladzimir Ignatik;2;0
+madrid;Finals;Rafael Nadal;Dominic Thiem;2;0
+madrid;Semi-Finals;Rafael Nadal;Novak Djokovic;2;0
+madrid;Semi-Finals;Dominic Thiem;Pablo Cuevas;2;0
+madrid;Quarter-Finals;Novak Djokovic;Kei Nishikori;0;0
+madrid;Quarter-Finals;Rafael Nadal;David Goffin;2;0
+madrid;Quarter-Finals;Dominic Thiem;Borna Coric;2;0
+madrid;Quarter-Finals;Pablo Cuevas;Alexander Zverev;2;1
+madrid;Round of 16;Borna Coric;Andy Murray;2;0
+madrid;Round of 16;Novak Djokovic;Feliciano Lopez;2;0
+madrid;Round of 16;Rafael Nadal;Nick Kyrgios;2;0
+madrid;Round of 16;David Goffin;Milos Raonic;2;0
+madrid;Round of 16;Kei Nishikori;David Ferrer;2;0
+madrid;Round of 16;Dominic Thiem;Grigor Dimitrov;2;1
+madrid;Round of 16;Alexander Zverev;Tomas Berdych;2;0
+madrid;Round of 16;Pablo Cuevas;Benoit Paire;2;1
+madrid;Round of 32;Andy Murray;Marius Copil;2;0
+madrid;Round of 32;Novak Djokovic;Nicolas Almagro;2;1
+madrid;Round of 32;Benoit Paire;Stan Wawrinka;2;1
+madrid;Round of 32;Rafael Nadal;Fabio Fognini;2;1
+madrid;Round of 32;Milos Raonic;Gilles Muller;2;0
+madrid;Round of 32;Kei Nishikori;Diego Schwartzman;2;1
+madrid;Round of 32;Alexander Zverev;Marin Cilic;2;1
+madrid;Round of 32;Dominic Thiem;Jared Donaldson;2;0
+madrid;Round of 32;David Goffin;Florian Mayer;2;0
+madrid;Round of 32;David Ferrer;Jo-Wilfried Tsonga;0;0
+madrid;Round of 32;Tomas Berdych;Robin Haase;2;0
+madrid;Round of 32;Grigor Dimitrov;Ivo Karlovic;2;0
+madrid;Round of 32;Nick Kyrgios;Ryan Harrison;2;0
+madrid;Round of 32;Borna Coric;Pierre-Hugues Herbert;2;0
+madrid;Round of 32;Pablo Cuevas;Nicolas Mahut;2;1
+madrid;Round of 32;Feliciano Lopez;Gilles Simon;2;1
+madrid;Round of 64;David Goffin;Karen Khachanov;2;0
+madrid;Round of 64;Jo-Wilfried Tsonga;Andrey Kuznetsov;2;1
+madrid;Round of 64;Tomas Berdych;Denis Istomin;2;0
+madrid;Round of 64;Grigor Dimitrov;Philipp Kohlschreiber;2;0
+madrid;Round of 64;Pierre-Hugues Herbert;Lucas Pouille;2;1
+madrid;Round of 64;Nicolas Mahut;Jack Sock;2;1
+madrid;Round of 64;Gilles Simon;Gael Monfils;2;1
+madrid;Round of 64;Nick Kyrgios;Marcos Baghdatis;2;0
+madrid;Round of 64;Nicolas Almagro;Tommy Robredo;2;1
+madrid;Round of 64;Marius Copil;Guillermo Garcia-Lopez;2;1
+madrid;Round of 64;Borna Coric;Mischa Zverev;2;0
+madrid;Round of 64;Pablo Cuevas;Thomaz Bellucci;2;1
+madrid;Round of 64;Jared Donaldson;Adrian Mannarino;2;0
+madrid;Round of 64;David Ferrer;Mikhail Kukushkin;2;1
+madrid;Round of 64;Fabio Fognini;Joao Sousa;2;0
+madrid;Round of 64;Robin Haase;Daniel Evans;2;0
+madrid;Round of 64;Ryan Harrison;Bernard Tomic;2;1
+madrid;Round of 64;Ivo Karlovic;Roberto Bautista Agut;2;1
+madrid;Round of 64;Feliciano Lopez;Ernesto Escobedo;2;0
+madrid;Round of 64;Florian Mayer;Marcel Granollers;2;0
+madrid;Round of 64;Gilles Muller;Tommy Haas;2;0
+madrid;Round of 64;Benoit Paire;Pablo Carreno Busta;2;0
+madrid;Round of 64;Diego Schwartzman;Albert Ramos-Vinolas;2;0
+madrid;Round of 64;Alexander Zverev;Fernando Verdasco;2;0
+madrid;2nd Round Qualifying;Adrian Mannarino;Santiago Giraldo;2;0
+madrid;2nd Round Qualifying;Mikhail Kukushkin;Borna Coric;2;0
+madrid;2nd Round Qualifying;Thomaz Bellucci;Mikhail Youzhny;2;0
+madrid;2nd Round Qualifying;Pierre-Hugues Herbert;Andreas Seppi;2;0
+madrid;2nd Round Qualifying;Denis Istomin;Jared Donaldson;2;0
+madrid;2nd Round Qualifying;Andrey Kuznetsov;Lukas Lacko;2;0
+madrid;2nd Round Qualifying;Ernesto Escobedo;Nicola Kuhn;2;0
+madrid;1st Round Qualifying;Adrian Mannarino;Jaume Munar;2;1
+madrid;1st Round Qualifying;Borna Coric;Enrique Lopez-Perez;2;1
+madrid;1st Round Qualifying;Thomaz Bellucci;Evgeny Donskoy;2;0
+madrid;1st Round Qualifying;Nicola Kuhn;Nikoloz Basilashvili;2;0
+madrid;1st Round Qualifying;Andreas Seppi;Carlos Taberner;2;0
+madrid;1st Round Qualifying;Denis Istomin;Inigo Cervantes;2;0
+madrid;1st Round Qualifying;Andrey Kuznetsov;Casper Ruud;2;0
+madrid;1st Round Qualifying;Mikhail Kukushkin;Daniel Munoz de la Nava;2;1
+madrid;1st Round Qualifying;Jared Donaldson;Victor Estrella Burgos;2;0
+madrid;1st Round Qualifying;Santiago Giraldo;Thiago Monteiro;2;1
+madrid;1st Round Qualifying;Lukas Lacko;Alexandr Dolgopolov;2;1
+madrid;1st Round Qualifying;Ernesto Escobedo;Ivan Dodig;2;0
+madrid;1st Round Qualifying;Pierre-Hugues Herbert;Jerzy Janowicz;2;0
+madrid;1st Round Qualifying;Mikhail Youzhny;Roberto Carballes Baena;2;1
+rome;Finals;Alexander Zverev;Novak Djokovic;2;0
+rome;Semi-Finals;Novak Djokovic;Dominic Thiem;2;0
+rome;Semi-Finals;Alexander Zverev;John Isner;2;1
+rome;Quarter-Finals;Novak Djokovic;Juan Martin del Potro;2;0
+rome;Quarter-Finals;Dominic Thiem;Rafael Nadal;2;0
+rome;Quarter-Finals;Alexander Zverev;Milos Raonic;2;0
+rome;Quarter-Finals;John Isner;Marin Cilic;2;1
+rome;Round of 16;Novak Djokovic;Roberto Bautista Agut;2;0
+rome;Round of 16;John Isner;Stan Wawrinka;2;0
+rome;Round of 16;Rafael Nadal;Jack Sock;2;0
+rome;Round of 16;Milos Raonic;Tomas Berdych;2;0
+rome;Round of 16;Marin Cilic;David Goffin;2;0
+rome;Round of 16;Juan Martin del Potro;Kei Nishikori;2;0
+rome;Round of 16;Dominic Thiem;Sam Querrey;2;1
+rome;Round of 16;Alexander Zverev;Fabio Fognini;2;0
+rome;Round of 32;Fabio Fognini;Andy Murray;2;0
+rome;Round of 32;Novak Djokovic;Aljaz Bedene;2;0
+rome;Round of 32;Stan Wawrinka;Benoit Paire;2;1
+rome;Round of 32;Rafael Nadal;Nicolas Almagro;1;0
+rome;Round of 32;Milos Raonic;Tommy Haas;2;0
+rome;Round of 32;Marin Cilic;Ryan Harrison;2;0
+rome;Round of 32;Kei Nishikori;David Ferrer;2;0
+rome;Round of 32;Dominic Thiem;Pablo Cuevas;2;0
+rome;Round of 32;David Goffin;Fernando Verdasco;2;1
+rome;Round of 32;Tomas Berdych;Carlos Berlocq;2;0
+rome;Round of 32;Jack Sock;Jiri Vesely;2;1
+rome;Round of 32;Roberto Bautista Agut;Pablo Carreno Busta;2;1
+rome;Round of 32;Alexander Zverev;Viktor Troicki;2;0
+rome;Round of 32;Juan Martin del Potro;Kyle Edmund;2;0
+rome;Round of 32;John Isner;Florian Mayer;2;0
+rome;Round of 32;Sam Querrey;Jan-Lennard Struff;2;0
+rome;Round of 64;David Goffin;Thomaz Bellucci;2;1
+rome;Round of 64;Juan Martin del Potro;Grigor Dimitrov;2;1
+rome;Round of 64;Sam Querrey;Lucas Pouille;2;0
+rome;Round of 64;Tomas Berdych;Mischa Zverev;2;0
+rome;Round of 64;Jack Sock;Diego Schwartzman;2;1
+rome;Round of 64;John Isner;Albert Ramos-Vinolas;2;1
+rome;Round of 64;Pablo Carreno Busta;Gilles Simon;2;0
+rome;Round of 64;Alexander Zverev;Kevin Anderson;2;1
+rome;Round of 64;Nicolas Almagro;Andreas Seppi;2;0
+rome;Round of 64;Roberto Bautista Agut;Alexandr Dolgopolov;2;0
+rome;Round of 64;Aljaz Bedene;Gianluca Mager;2;1
+rome;Round of 64;Carlos Berlocq;Robin Haase;2;0
+rome;Round of 64;Pablo Cuevas;Adrian Mannarino;2;0
+rome;Round of 64;Kyle Edmund;Joao Sousa;2;0
+rome;Round of 64;David Ferrer;Feliciano Lopez;2;1
+rome;Round of 64;Fabio Fognini;Matteo Berrettini;2;0
+rome;Round of 64;Tommy Haas;Ernesto Escobedo;2;1
+rome;Round of 64;Ryan Harrison;Jared Donaldson;2;1
+rome;Round of 64;Florian Mayer;Thiago Monteiro;2;0
+rome;Round of 64;Benoit Paire;Nicolas Mahut;2;0
+rome;Round of 64;Jan-Lennard Struff;Bernard Tomic;2;1
+rome;Round of 64;Viktor Troicki;Stefano Napolitano;2;0
+rome;Round of 64;Fernando Verdasco;Donald Young;2;0
+rome;Round of 64;Jiri Vesely;Daniel Evans;2;0
+rome;2nd Round Qualifying;Jan-Lennard Struff;Denis Istomin;1;0
+rome;2nd Round Qualifying;Adrian Mannarino;Jared Donaldson;2;0
+rome;2nd Round Qualifying;Thiago Monteiro;Thomaz Bellucci;2;0
+rome;2nd Round Qualifying;Aljaz Bedene;Renzo Olivo;2;0
+rome;2nd Round Qualifying;Kevin Anderson;Ernesto Escobedo;2;0
+rome;2nd Round Qualifying;Carlos Berlocq;Andrea Arnaboldi;2;0
+rome;2nd Round Qualifying;Nicolas Almagro;Alexandr Dolgopolov;2;0
+rome;1st Round Qualifying;Jan-Lennard Struff;Taro Daniel;2;0
+rome;1st Round Qualifying;Adrian Mannarino;Salvatore Caruso;2;1
+rome;1st Round Qualifying;Thomaz Bellucci;Damir Dzumhur;2;0
+rome;1st Round Qualifying;Aljaz Bedene;Lukas Lacko;2;0
+rome;1st Round Qualifying;Kevin Anderson;Luca Vanni;2;1
+rome;1st Round Qualifying;Carlos Berlocq;Santiago Giraldo;2;0
+rome;1st Round Qualifying;Nicolas Almagro;Lorenzo Sonego;2;1
+rome;1st Round Qualifying;Jared Donaldson;Marius Copil;2;1
+rome;1st Round Qualifying;Renzo Olivo;Mikhail Kukushkin;2;0
+rome;1st Round Qualifying;Ernesto Escobedo;Alessandro Giannessi;2;0
+rome;1st Round Qualifying;Denis Istomin;Andrea Pellegrino;2;0
+rome;1st Round Qualifying;Andrea Arnaboldi;Victor Estrella Burgos;2;1
+rome;1st Round Qualifying;Alexandr Dolgopolov;Darian King;2;1
+rome;1st Round Qualifying;Thiago Monteiro;Pierre-Hugues Herbert;2;0
+roland-garros;Finals;Rafael Nadal;Stan Wawrinka;3;0
+roland-garros;Semi-Finals;Stan Wawrinka;Andy Murray;3;2
+roland-garros;Semi-Finals;Rafael Nadal;Dominic Thiem;3;0
+roland-garros;Quarter-Finals;Andy Murray;Kei Nishikori;3;1
+roland-garros;Quarter-Finals;Dominic Thiem;Novak Djokovic;3;0
+roland-garros;Quarter-Finals;Stan Wawrinka;Marin Cilic;3;0
+roland-garros;Quarter-Finals;Rafael Nadal;Pablo Carreno Busta;2;0
+roland-garros;Round of 16;Andy Murray;Karen Khachanov;3;0
+roland-garros;Round of 16;Novak Djokovic;Albert Ramos-Vinolas;3;0
+roland-garros;Round of 16;Stan Wawrinka;Gael Monfils;3;0
+roland-garros;Round of 16;Rafael Nadal;Roberto Bautista Agut;3;0
+roland-garros;Round of 16;Pablo Carreno Busta;Milos Raonic;3;2
+roland-garros;Round of 16;Dominic Thiem;Horacio Zeballos;3;0
+roland-garros;Round of 16;Marin Cilic;Kevin Anderson;2;0
+roland-garros;Round of 16;Kei Nishikori;Fernando Verdasco;3;1
+roland-garros;Round of 32;Andy Murray;Juan Martin del Potro;3;0
+roland-garros;Round of 32;Novak Djokovic;Diego Schwartzman;3;2
+roland-garros;Round of 32;Stan Wawrinka;Fabio Fognini;3;0
+roland-garros;Round of 32;Rafael Nadal;Nikoloz Basilashvili;3;0
+roland-garros;Round of 32;Milos Raonic;Guillermo Garcia-Lopez;2;0
+roland-garros;Round of 32;Dominic Thiem;Steve Johnson;3;0
+roland-garros;Round of 32;Marin Cilic;Feliciano Lopez;3;0
+roland-garros;Round of 32;Kei Nishikori;Hyeon Chung;3;2
+roland-garros;Round of 32;Horacio Zeballos;David Goffin;0;1
+roland-garros;Round of 32;Pablo Carreno Busta;Grigor Dimitrov;3;0
+roland-garros;Round of 32;Gael Monfils;Richard Gasquet;2;1
+roland-garros;Round of 32;Albert Ramos-Vinolas;Lucas Pouille;3;2
+roland-garros;Round of 32;Roberto Bautista Agut;Jiri Vesely;3;0
+roland-garros;Round of 32;Karen Khachanov;John Isner;3;1
+roland-garros;Round of 32;Fernando Verdasco;Pablo Cuevas;3;0
+roland-garros;Round of 32;Kevin Anderson;Kyle Edmund;3;2
+roland-garros;Round of 64;Andy Murray;Martin Klizan;3;1
+roland-garros;Round of 64;Novak Djokovic;Joao Sousa;3;0
+roland-garros;Round of 64;Stan Wawrinka;Alexandr Dolgopolov;3;0
+roland-garros;Round of 64;Rafael Nadal;Robin Haase;3;0
+roland-garros;Round of 64;Milos Raonic;Rogerio Dutra Silva;3;1
+roland-garros;Round of 64;Dominic Thiem;Simone Bolelli;3;0
+roland-garros;Round of 64;Marin Cilic;Konstantin Kravchuk;3;0
+roland-garros;Round of 64;Kei Nishikori;Jeremy Chardy;3;0
+roland-garros;Round of 64;David Goffin;Sergiy Stakhovsky;3;1
+roland-garros;Round of 64;Grigor Dimitrov;Tommy Robredo;3;0
+roland-garros;Round of 64;Karen Khachanov;Tomas Berdych;3;0
+roland-garros;Round of 64;Gael Monfils;Thiago Monteiro;3;0
+roland-garros;Round of 64;Lucas Pouille;Thomaz Bellucci;3;0
+roland-garros;Round of 64;Roberto Bautista Agut;Mikhail Kukushkin;3;1
+roland-garros;Round of 64;Kevin Anderson;Nick Kyrgios;3;1
+roland-garros;Round of 64;Albert Ramos-Vinolas;Benjamin Bonzi;3;0
+roland-garros;Round of 64;Pablo Carreno Busta;Taro Daniel;3;1
+roland-garros;Round of 64;John Isner;Paolo Lorenzi;3;0
+roland-garros;Round of 64;Pablo Cuevas;Nicolas Kicker;3;0
+roland-garros;Round of 64;Horacio Zeballos;Ivo Karlovic;3;0
+roland-garros;Round of 64;Richard Gasquet;Victor Estrella Burgos;3;0
+roland-garros;Round of 64;Steve Johnson;Borna Coric;3;1
+roland-garros;Round of 64;Fabio Fognini;Andreas Seppi;3;0
+roland-garros;Round of 64;Juan Martin del Potro;Nicolas Almagro;1;1
+roland-garros;Round of 64;Feliciano Lopez;David Ferrer;3;2
+roland-garros;Round of 64;Nikoloz Basilashvili;Viktor Troicki;3;0
+roland-garros;Round of 64;Hyeon Chung;Denis Istomin;3;0
+roland-garros;Round of 64;Kyle Edmund;Renzo Olivo;3;0
+roland-garros;Round of 64;Guillermo Garcia-Lopez;Marco Trungelliti;3;0
+roland-garros;Round of 64;Diego Schwartzman;Stefano Napolitano;3;0
+roland-garros;Round of 64;Fernando Verdasco;Pierre-Hugues Herbert;3;2
+roland-garros;Round of 64;Jiri Vesely;Aljaz Bedene;3;1
+roland-garros;Round of 128;Andy Murray;Andrey Kuznetsov;3;1
+roland-garros;Round of 128;Novak Djokovic;Marcel Granollers;3;0
+roland-garros;Round of 128;Stan Wawrinka;Jozef Kovalik;3;0
+roland-garros;Round of 128;Rafael Nadal;Benoit Paire;3;0
+roland-garros;Round of 128;Milos Raonic;Steve Darcis;3;0
+roland-garros;Round of 128;Dominic Thiem;Bernard Tomic;3;0
+roland-garros;Round of 128;Marin Cilic;Ernests Gulbis;3;0
+roland-garros;Round of 128;Kei Nishikori;Thanasi Kokkinakis;3;1
+roland-garros;Round of 128;Fernando Verdasco;Alexander Zverev;3;1
+roland-garros;Round of 128;David Goffin;Paul-Henri Mathieu;3;0
+roland-garros;Round of 128;Grigor Dimitrov;Stephane Robert;3;0
+roland-garros;Round of 128;Renzo Olivo;Jo-Wilfried Tsonga;3;1
+roland-garros;Round of 128;Tomas Berdych;Jan-Lennard Struff;3;1
+roland-garros;Round of 128;Jiri Vesely;Jack Sock;3;0
+roland-garros;Round of 128;Gael Monfils;Dustin Brown;3;0
+roland-garros;Round of 128;Lucas Pouille;Julien Benneteau;3;2
+roland-garros;Round of 128;Roberto Bautista Agut;John Millman;3;1
+roland-garros;Round of 128;Nick Kyrgios;Philipp Kohlschreiber;3;0
+roland-garros;Round of 128;Albert Ramos-Vinolas;Marius Copil;3;1
+roland-garros;Round of 128;Pablo Carreno Busta;Florian Mayer;3;0
+roland-garros;Round of 128;John Isner;Jordan Thompson;3;1
+roland-garros;Round of 128;Pablo Cuevas;Maxime Hamou;3;0
+roland-garros;Round of 128;Ivo Karlovic;Stefanos Tsitsipas;3;0
+roland-garros;Round of 128;Richard Gasquet;Arthur De Greef;3;1
+roland-garros;Round of 128;Steve Johnson;Yuichi Sugita;3;2
+roland-garros;Round of 128;Guillermo Garcia-Lopez;Gilles Muller;3;1
+roland-garros;Round of 128;Hyeon Chung;Sam Querrey;3;1
+roland-garros;Round of 128;Fabio Fognini;Frances Tiafoe;3;2
+roland-garros;Round of 128;Juan Martin del Potro;Guido Pella;3;0
+roland-garros;Round of 128;David Ferrer;Donald Young;2;2
+roland-garros;Round of 128;Nikoloz Basilashvili;Gilles Simon;3;1
+roland-garros;Round of 128;Stefano Napolitano;Mischa Zverev;3;1
+roland-garros;Round of 128;Nicolas Almagro;Marcos Baghdatis;3;1
+roland-garros;Round of 128;Kevin Anderson;Malek Jaziri;3;0
+roland-garros;Round of 128;Aljaz Bedene;Ryan Harrison;3;1
+roland-garros;Round of 128;Thomaz Bellucci;Dusan Lajovic;3;1
+roland-garros;Round of 128;Simone Bolelli;Nicolas Mahut;3;0
+roland-garros;Round of 128;Benjamin Bonzi;Daniil Medvedev;3;1
+roland-garros;Round of 128;Jeremy Chardy;Radu Albot;3;0
+roland-garros;Round of 128;Borna Coric;Mathias Bourgue;3;0
+roland-garros;Round of 128;Taro Daniel;Jerzy Janowicz;3;0
+roland-garros;Round of 128;Alexandr Dolgopolov;Carlos Berlocq;3;0
+roland-garros;Round of 128;Rogerio Dutra Silva;Mikhail Youzhny;3;2
+roland-garros;Round of 128;Kyle Edmund;Gastao Elias;3;0
+roland-garros;Round of 128;Victor Estrella Burgos;Teymuraz Gabashvili;3;2
+roland-garros;Round of 128;Robin Haase;Alex de Minaur;3;0
+roland-garros;Round of 128;Pierre-Hugues Herbert;Jared Donaldson;3;0
+roland-garros;Round of 128;Denis Istomin;Ernesto Escobedo;3;0
+roland-garros;Round of 128;Karen Khachanov;Nicolas Jarry;3;1
+roland-garros;Round of 128;Nicolas Kicker;Damir Dzumhur;3;1
+roland-garros;Round of 128;Martin Klizan;Laurent Lokoli;3;2
+roland-garros;Round of 128;Konstantin Kravchuk;Federico Delbonis;3;0
+roland-garros;Round of 128;Mikhail Kukushkin;Tennys Sandgren;3;0
+roland-garros;Round of 128;Feliciano Lopez;Bjorn Fratangelo;3;0
+roland-garros;Round of 128;Paolo Lorenzi;Ricardas Berankis;3;0
+roland-garros;Round of 128;Thiago Monteiro;Alexandre Muller;3;2
+roland-garros;Round of 128;Tommy Robredo;Daniel Evans;3;1
+roland-garros;Round of 128;Diego Schwartzman;Andrey Rublev;3;2
+roland-garros;Round of 128;Andreas Seppi;Santiago Giraldo;3;1
+roland-garros;Round of 128;Joao Sousa;Janko Tipsarevic;3;1
+roland-garros;Round of 128;Sergiy Stakhovsky;Yen-Hsun Lu;3;0
+roland-garros;Round of 128;Viktor Troicki;Evgeny Donskoy;3;0
+roland-garros;Round of 128;Marco Trungelliti;Quentin Halys;3;2
+roland-garros;Round of 128;Horacio Zeballos;Adrian Mannarino;3;0
+roland-garros;3rd Round Qualifying;Marius Copil;Peter Gojowczyk;2;1
+roland-garros;3rd Round Qualifying;Taro Daniel;Andrey Rublev;2;1
+roland-garros;3rd Round Qualifying;Jozef Kovalik;Norbert Gombos;2;1
+roland-garros;3rd Round Qualifying;Simone Bolelli;Marco Cecchinato;2;0
+roland-garros;3rd Round Qualifying;Santiago Giraldo;Guido Andreozzi;2;0
+roland-garros;3rd Round Qualifying;Guido Pella;Maxime Janvier;2;1
+roland-garros;3rd Round Qualifying;Bjorn Fratangelo;Gerald Melzer;2;1
+roland-garros;3rd Round Qualifying;Paul-Henri Mathieu;Denis Kudla;2;0
+roland-garros;3rd Round Qualifying;Sergiy Stakhovsky;Jan Satral;2;1
+roland-garros;3rd Round Qualifying;Arthur De Greef;Daniel Masur;2;0
+roland-garros;3rd Round Qualifying;Teymuraz Gabashvili;Pedro Sousa;2;1
+roland-garros;3rd Round Qualifying;Maxime Hamou;Roberto Quiroz;2;0
+roland-garros;3rd Round Qualifying;Nicolas Jarry;Reilly Opelka;2;1
+roland-garros;3rd Round Qualifying;Stefano Napolitano;Alexander Bublik;2;1
+roland-garros;3rd Round Qualifying;Marco Trungelliti;Matteo Donati;2;0
+roland-garros;3rd Round Qualifying;Stefanos Tsitsipas;Oscar Otte;2;0
+roland-garros;2nd Round Qualifying;Marius Copil;Ilya Ivashka;2;0
+roland-garros;2nd Round Qualifying;Taro Daniel;Matija Pecotic;2;0
+roland-garros;2nd Round Qualifying;Norbert Gombos;Yasutaka Uchiyama;2;0
+roland-garros;2nd Round Qualifying;Marco Cecchinato;Salvatore Caruso;2;0
+roland-garros;2nd Round Qualifying;Santiago Giraldo;Uladzimir Ignatik;2;0
+roland-garros;2nd Round Qualifying;Matteo Donati;Alessandro Giannessi;2;1
+roland-garros;2nd Round Qualifying;Guido Pella;Marc Polmans;2;1
+roland-garros;2nd Round Qualifying;Gerald Melzer;Vincent Millot;2;0
+roland-garros;2nd Round Qualifying;Paul-Henri Mathieu;Alejandro Gonzalez;2;0
+roland-garros;2nd Round Qualifying;Maxime Hamou;Blaz Kavcic;2;0
+roland-garros;2nd Round Qualifying;Andrey Rublev;Mirza Basic;2;1
+roland-garros;2nd Round Qualifying;Maxime Janvier;Casper Ruud;2;0
+roland-garros;2nd Round Qualifying;Jozef Kovalik;Luca Vanni;2;0
+roland-garros;2nd Round Qualifying;Sergiy Stakhovsky;Stefan Kozlov;2;1
+roland-garros;2nd Round Qualifying;Guido Andreozzi;Tim Smyczek;2;1
+roland-garros;2nd Round Qualifying;Simone Bolelli;Maximilian Marterer;2;1
+roland-garros;2nd Round Qualifying;Alexander Bublik;Peter Polansky;2;1
+roland-garros;2nd Round Qualifying;Oscar Otte;Laslo Djere;2;1
+roland-garros;2nd Round Qualifying;Arthur De Greef;Maximo Gonzalez;2;1
+roland-garros;2nd Round Qualifying;Peter Gojowczyk;Joris De Loore;2;0
+roland-garros;2nd Round Qualifying;Bjorn Fratangelo;Bradley Klahn;2;0
+roland-garros;2nd Round Qualifying;Teymuraz Gabashvili;Mackenzie McDonald;2;1
+roland-garros;2nd Round Qualifying;Nicolas Jarry;Dmitry Popko;2;0
+roland-garros;2nd Round Qualifying;Denis Kudla;Ricardo Ojeda Lara;2;0
+roland-garros;2nd Round Qualifying;Daniel Masur;Filip Krajinovic;2;0
+roland-garros;2nd Round Qualifying;Stefano Napolitano;Marton Fucsovics;2;1
+roland-garros;2nd Round Qualifying;Reilly Opelka;Leonardo Mayer;2;1
+roland-garros;2nd Round Qualifying;Roberto Quiroz;Dennis Novikov;2;0
+roland-garros;2nd Round Qualifying;Jan Satral;Elias Ymer;2;1
+roland-garros;2nd Round Qualifying;Pedro Sousa;Steven Diez;2;0
+roland-garros;2nd Round Qualifying;Marco Trungelliti;Tobias Kamke;2;0
+roland-garros;2nd Round Qualifying;Stefanos Tsitsipas;Gleb Sakharov;2;0
+roland-garros;1st Round Qualifying;Marius Copil;Denis Shapovalov;2;1
+roland-garros;1st Round Qualifying;Daniel Masur;Adam Pavlasek;2;1
+roland-garros;1st Round Qualifying;Nicolas Jarry;Facundo Bagnis;1;0
+roland-garros;1st Round Qualifying;Taro Daniel;Hiroki Moriya;2;0
+roland-garros;1st Round Qualifying;Norbert Gombos;Jason Jung;2;0
+roland-garros;1st Round Qualifying;Stefanos Tsitsipas;Thomas Fabbiano;2;1
+roland-garros;1st Round Qualifying;Dennis Novikov;Henri Laaksonen;2;0
+roland-garros;1st Round Qualifying;Marco Cecchinato;Riccardo Bellotti;2;0
+roland-garros;1st Round Qualifying;Santiago Giraldo;Grega Zemlja;2;0
+roland-garros;1st Round Qualifying;Alessandro Giannessi;Calvin Hemery;2;0
+roland-garros;1st Round Qualifying;Steven Diez;Lukas Lacko;2;0
+roland-garros;1st Round Qualifying;Elias Ymer;Andrej Martin;2;1
+roland-garros;1st Round Qualifying;Guido Pella;Ramkumar Ramanathan;2;0
+roland-garros;1st Round Qualifying;Marton Fucsovics;Darian King;2;0
+roland-garros;1st Round Qualifying;Gerald Melzer;Constant Lestienne;2;0
+roland-garros;1st Round Qualifying;Paul-Henri Mathieu;Tatsuma Ito;2;1
+roland-garros;1st Round Qualifying;Blaz Kavcic;Tristan Lamasine;2;1
+roland-garros;1st Round Qualifying;Andrey Rublev;Agustin Velotti;2;0
+roland-garros;1st Round Qualifying;Casper Ruud;Yannik Reuter;2;0
+roland-garros;1st Round Qualifying;Luca Vanni;Marco Chiudinelli;2;0
+roland-garros;1st Round Qualifying;Sergiy Stakhovsky;Kenny De Schepper;2;1
+roland-garros;1st Round Qualifying;Guido Andreozzi;Daniel Brands;2;0
+roland-garros;1st Round Qualifying;Marco Trungelliti;Ruben Bemelmans;2;1
+roland-garros;1st Round Qualifying;Maximilian Marterer;Brydan Klein;2;0
+roland-garros;1st Round Qualifying;Peter Polansky;Yuki Bhambri;2;0
+roland-garros;1st Round Qualifying;Ricardo Ojeda Lara;Duckhee Lee;2;0
+roland-garros;1st Round Qualifying;Teymuraz Gabashvili;Roberto Carballes Baena;2;1
+roland-garros;1st Round Qualifying;Laslo Djere;Benjamin Becker;2;1
+roland-garros;1st Round Qualifying;Arthur De Greef;Enrique Lopez-Perez;2;0
+roland-garros;1st Round Qualifying;Leonardo Mayer;Joao Souza;2;0
+roland-garros;1st Round Qualifying;Peter Gojowczyk;Stefano Travaglia;2;1
+roland-garros;1st Round Qualifying;Bjorn Fratangelo;Matthew Ebden;2;0
+roland-garros;1st Round Qualifying;Mirza Basic;Blaz Rola;2;0
+roland-garros;1st Round Qualifying;Simone Bolelli;Christian Garin;2;1
+roland-garros;1st Round Qualifying;Alexander Bublik;Mohamed Safwat;2;1
+roland-garros;1st Round Qualifying;Salvatore Caruso;Inigo Cervantes;2;0
+roland-garros;1st Round Qualifying;Joris De Loore;Ti Chen;2;0
+roland-garros;1st Round Qualifying;Matteo Donati;Jonathan Eysseric;2;0
+roland-garros;1st Round Qualifying;Maximo Gonzalez;Marcelo Arevalo;2;0
+roland-garros;1st Round Qualifying;Alejandro Gonzalez;Kristijan Mesaros;2;1
+roland-garros;1st Round Qualifying;Maxime Hamou;Adrian Menendez-Maceiras;2;0
+roland-garros;1st Round Qualifying;Uladzimir Ignatik;Di Wu;2;0
+roland-garros;1st Round Qualifying;Ilya Ivashka;Kimmer Coppejans;2;0
+roland-garros;1st Round Qualifying;Maxime Janvier;Geoffrey Blancaneaux;2;0
+roland-garros;1st Round Qualifying;Tobias Kamke;Rajeev Ram;2;1
+roland-garros;1st Round Qualifying;Bradley Klahn;John-Patrick Smith;2;0
+roland-garros;1st Round Qualifying;Jozef Kovalik;Igor Sijsling;1;0
+roland-garros;1st Round Qualifying;Stefan Kozlov;Corentin Moutet;2;1
+roland-garros;1st Round Qualifying;Filip Krajinovic;Sam Groth;2;1
+roland-garros;1st Round Qualifying;Denis Kudla;Vaclav Safranek;2;0
+roland-garros;1st Round Qualifying;Mackenzie McDonald;Akira Santillan;2;0
+roland-garros;1st Round Qualifying;Vincent Millot;Miljan Zekic;2;0
+roland-garros;1st Round Qualifying;Stefano Napolitano;Lorenzo Giustino;2;0
+roland-garros;1st Round Qualifying;Reilly Opelka;Daniel Munoz de la Nava;2;1
+roland-garros;1st Round Qualifying;Oscar Otte;Mitchell Krueger;2;0
+roland-garros;1st Round Qualifying;Matija Pecotic;Gregoire Barrere;2;1
+roland-garros;1st Round Qualifying;Marc Polmans;Michael Mmoh;2;1
+roland-garros;1st Round Qualifying;Dmitry Popko;Ruben Ramirez Hidalgo;2;0
+roland-garros;1st Round Qualifying;Roberto Quiroz;Aldin Setkic;2;1
+roland-garros;1st Round Qualifying;Gleb Sakharov;Federico Gaio;2;1
+roland-garros;1st Round Qualifying;Jan Satral;Lukas Rosol;2;1
+roland-garros;1st Round Qualifying;Tim Smyczek;James McGee;2;0
+roland-garros;1st Round Qualifying;Pedro Sousa;Andrew Whittington;2;0
+roland-garros;1st Round Qualifying;Yasutaka Uchiyama;Daniel Gimeno-Traver;2;0
+london;Finals;Feliciano Lopez;Marin Cilic;2;1
+london;Semi-Finals;Marin Cilic;Gilles Muller;2;1
+london;Semi-Finals;Feliciano Lopez;Grigor Dimitrov;2;1
+london;Quarter-Finals;Marin Cilic;Donald Young;2;0
+london;Quarter-Finals;Grigor Dimitrov;Daniil Medvedev;2;1
+london;Quarter-Finals;Feliciano Lopez;Tomas Berdych;2;1
+london;Quarter-Finals;Gilles Muller;Sam Querrey;2;0
+london;Round of 16;Marin Cilic;Stefan Kozlov;2;0
+london;Round of 16;Gilles Muller;Jo-Wilfried Tsonga;2;0
+london;Round of 16;Grigor Dimitrov;Julien Benneteau;2;1
+london;Round of 16;Tomas Berdych;Denis Shapovalov;2;1
+london;Round of 16;Feliciano Lopez;Jeremy Chardy;2;0
+london;Round of 16;Daniil Medvedev;Thanasi Kokkinakis;2;0
+london;Round of 16;Sam Querrey;Jordan Thompson;2;1
+london;Round of 16;Donald Young;Viktor Troicki;2;0
+london;Round of 32;Jordan Thompson;Andy Murray;2;0
+london;Round of 32;Feliciano Lopez;Stan Wawrinka;2;0
+london;Round of 32;Thanasi Kokkinakis;Milos Raonic;2;0
+london;Round of 32;Marin Cilic;John Isner;2;0
+london;Round of 32;Jo-Wilfried Tsonga;Adrian Mannarino;2;0
+london;Round of 32;Grigor Dimitrov;Ryan Harrison;2;0
+london;Round of 32;Tomas Berdych;Steve Darcis;2;0
+london;Round of 32;Donald Young;Nick Kyrgios;1;0
+london;Round of 32;Julien Benneteau;James Ward;2;0
+london;Round of 32;Jeremy Chardy;Liam Broady;2;0
+london;Round of 32;Stefan Kozlov;Steve Johnson;2;1
+london;Round of 32;Daniil Medvedev;Nicolas Mahut;2;1
+london;Round of 32;Gilles Muller;Nikoloz Basilashvili;2;1
+london;Round of 32;Sam Querrey;Cameron Norrie;2;0
+london;Round of 32;Denis Shapovalov;Kyle Edmund;2;1
+london;Round of 32;Viktor Troicki;Janko Tipsarevic;2;1
+london;2nd Round Qualifying;Stefan Kozlov;Pierre-Hugues Herbert;2;0
+london;2nd Round Qualifying;Jeremy Chardy;Jordan Thompson;2;1
+london;2nd Round Qualifying;Julien Benneteau;Tobias Kamke;2;0
+london;2nd Round Qualifying;Denis Shapovalov;Liam Broady;2;0
+london;1st Round Qualifying;Liam Broady;Frances Tiafoe;2;1
+london;1st Round Qualifying;Tobias Kamke;Jared Donaldson;2;0
+london;1st Round Qualifying;Pierre-Hugues Herbert;Stefano Napolitano;2;0
+london;1st Round Qualifying;Jeremy Chardy;Edward Corrie;2;1
+london;1st Round Qualifying;Jordan Thompson;Denis Kudla;2;1
+london;1st Round Qualifying;Julien Benneteau;Akira Santillan;2;0
+london;1st Round Qualifying;Denis Shapovalov;Reilly Opelka;2;1
+london;1st Round Qualifying;Stefan Kozlov;Kenny De Schepper;2;1
+wimbledon;Finals;Roger Federer;Marin Cilic;3;0
+wimbledon;Semi-Finals;Roger Federer;Tomas Berdych;3;0
+wimbledon;Semi-Finals;Marin Cilic;Sam Querrey;3;1
+wimbledon;Quarter-Finals;Sam Querrey;Andy Murray;3;2
+wimbledon;Quarter-Finals;Tomas Berdych;Novak Djokovic;2;0
+wimbledon;Quarter-Finals;Roger Federer;Milos Raonic;3;0
+wimbledon;Quarter-Finals;Marin Cilic;Gilles Muller;3;2
+wimbledon;Round of 16;Andy Murray;Benoit Paire;3;0
+wimbledon;Round of 16;Novak Djokovic;Adrian Mannarino;3;0
+wimbledon;Round of 16;Roger Federer;Grigor Dimitrov;3;0
+wimbledon;Round of 16;Gilles Muller;Rafael Nadal;2;2
+wimbledon;Round of 16;Milos Raonic;Alexander Zverev;3;2
+wimbledon;Round of 16;Marin Cilic;Roberto Bautista Agut;3;0
+wimbledon;Round of 16;Tomas Berdych;Dominic Thiem;3;2
+wimbledon;Round of 16;Sam Querrey;Kevin Anderson;3;2
+wimbledon;Round of 32;Andy Murray;Fabio Fognini;3;1
+wimbledon;Round of 32;Novak Djokovic;Ernests Gulbis;3;0
+wimbledon;Round of 32;Roger Federer;Mischa Zverev;3;0
+wimbledon;Round of 32;Rafael Nadal;Karen Khachanov;3;0
+wimbledon;Round of 32;Milos Raonic;Albert Ramos-Vinolas;3;0
+wimbledon;Round of 32;Marin Cilic;Steve Johnson;3;0
+wimbledon;Round of 32;Dominic Thiem;Jared Donaldson;3;0
+wimbledon;Round of 32;Roberto Bautista Agut;Kei Nishikori;3;1
+wimbledon;Round of 32;Alexander Zverev;Sebastian Ofner;3;0
+wimbledon;Round of 32;Tomas Berdych;David Ferrer;3;0
+wimbledon;Round of 32;Sam Querrey;Jo-Wilfried Tsonga;3;2
+wimbledon;Round of 32;Grigor Dimitrov;Dudi Sela;2;0
+wimbledon;Round of 32;Adrian Mannarino;Gael Monfils;3;2
+wimbledon;Round of 32;Gilles Muller;Aljaz Bedene;3;0
+wimbledon;Round of 32;Kevin Anderson;Ruben Bemelmans;3;0
+wimbledon;Round of 32;Benoit Paire;Jerzy Janowicz;3;0
+wimbledon;Round of 64;Andy Murray;Dustin Brown;3;0
+wimbledon;Round of 64;Novak Djokovic;Adam Pavlasek;3;0
+wimbledon;Round of 64;Roger Federer;Dusan Lajovic;3;0
+wimbledon;Round of 64;Rafael Nadal;Donald Young;3;0
+wimbledon;Round of 64;Milos Raonic;Mikhail Youzhny;3;1
+wimbledon;Round of 64;Marin Cilic;Florian Mayer;3;0
+wimbledon;Round of 64;Dominic Thiem;Gilles Simon;3;1
+wimbledon;Round of 64;Kei Nishikori;Sergiy Stakhovsky;3;1
+wimbledon;Round of 64;Alexander Zverev;Frances Tiafoe;3;0
+wimbledon;Round of 64;Tomas Berdych;Ryan Harrison;3;1
+wimbledon;Round of 64;Jo-Wilfried Tsonga;Simone Bolelli;3;0
+wimbledon;Round of 64;Grigor Dimitrov;Marcos Baghdatis;3;0
+wimbledon;Round of 64;Jerzy Janowicz;Lucas Pouille;3;1
+wimbledon;Round of 64;Gael Monfils;Kyle Edmund;3;0
+wimbledon;Round of 64;Gilles Muller;Lukas Rosol;3;2
+wimbledon;Round of 64;Sebastian Ofner;Jack Sock;3;2
+wimbledon;Round of 64;Roberto Bautista Agut;Peter Gojowczyk;3;1
+wimbledon;Round of 64;Dudi Sela;John Isner;3;2
+wimbledon;Round of 64;Sam Querrey;Nikoloz Basilashvili;3;1
+wimbledon;Round of 64;Albert Ramos-Vinolas;Andrey Rublev;3;2
+wimbledon;Round of 64;Steve Johnson;Radu Albot;3;1
+wimbledon;Round of 64;Mischa Zverev;Mikhail Kukushkin;3;2
+wimbledon;Round of 64;Fabio Fognini;Jiri Vesely;3;0
+wimbledon;Round of 64;Ernests Gulbis;Juan Martin del Potro;3;0
+wimbledon;Round of 64;Karen Khachanov;Thiago Monteiro;3;1
+wimbledon;Round of 64;Jared Donaldson;Paolo Lorenzi;3;1
+wimbledon;Round of 64;Kevin Anderson;Andreas Seppi;3;0
+wimbledon;Round of 64;Aljaz Bedene;Damir Dzumhur;3;1
+wimbledon;Round of 64;Ruben Bemelmans;Daniil Medvedev;3;2
+wimbledon;Round of 64;David Ferrer;Steve Darcis;1;0
+wimbledon;Round of 64;Adrian Mannarino;Yuichi Sugita;3;2
+wimbledon;Round of 64;Benoit Paire;Pierre-Hugues Herbert;3;0
+wimbledon;Round of 128;Andy Murray;Alexander Bublik;3;0
+wimbledon;Round of 128;Novak Djokovic;Martin Klizan;2;0
+wimbledon;Round of 128;Roger Federer;Alexandr Dolgopolov;2;0
+wimbledon;Round of 128;Rafael Nadal;John Millman;3;0
+wimbledon;Round of 128;Daniil Medvedev;Stan Wawrinka;3;1
+wimbledon;Round of 128;Milos Raonic;Jan-Lennard Struff;3;0
+wimbledon;Round of 128;Marin Cilic;Philipp Kohlschreiber;3;0
+wimbledon;Round of 128;Dominic Thiem;Vasek Pospisil;3;0
+wimbledon;Round of 128;Kei Nishikori;Marco Cecchinato;3;0
+wimbledon;Round of 128;Alexander Zverev;Evgeny Donskoy;3;0
+wimbledon;Round of 128;Tomas Berdych;Jeremy Chardy;3;1
+wimbledon;Round of 128;Jo-Wilfried Tsonga;Cameron Norrie;3;0
+wimbledon;Round of 128;Grigor Dimitrov;Diego Schwartzman;3;0
+wimbledon;Round of 128;Lucas Pouille;Malek Jaziri;3;1
+wimbledon;Round of 128;Gael Monfils;Daniel Brands;3;0
+wimbledon;Round of 128;Gilles Muller;Marton Fucsovics;3;0
+wimbledon;Round of 128;Jack Sock;Christian Garin;3;1
+wimbledon;Round of 128;Roberto Bautista Agut;Andreas Haider-Maurer;3;0
+wimbledon;Round of 128;Adrian Mannarino;Feliciano Lopez;3;1
+wimbledon;Round of 128;Pierre-Hugues Herbert;Nick Kyrgios;2;0
+wimbledon;Round of 128;Aljaz Bedene;Ivo Karlovic;3;2
+wimbledon;Round of 128;David Ferrer;Richard Gasquet;3;1
+wimbledon;Round of 128;John Isner;Taylor Fritz;3;0
+wimbledon;Round of 128;Sam Querrey;Thomas Fabbiano;3;0
+wimbledon;Round of 128;Albert Ramos-Vinolas;Jordan Thompson;3;0
+wimbledon;Round of 128;Steve Johnson;Nicolas Kicker;3;0
+wimbledon;Round of 128;Mischa Zverev;Bernard Tomic;3;0
+wimbledon;Round of 128;Fabio Fognini;Dmitry Tursunov;3;0
+wimbledon;Round of 128;Juan Martin del Potro;Thanasi Kokkinakis;3;1
+wimbledon;Round of 128;Karen Khachanov;Andrey Kuznetsov;3;2
+wimbledon;Round of 128;Kevin Anderson;Fernando Verdasco;3;1
+wimbledon;Round of 128;Paolo Lorenzi;Horacio Zeballos;3;1
+wimbledon;Round of 128;Radu Albot;Facundo Bagnis;3;1
+wimbledon;Round of 128;Marcos Baghdatis;James Ward;3;0
+wimbledon;Round of 128;Nikoloz Basilashvili;Carlos Berlocq;3;0
+wimbledon;Round of 128;Ruben Bemelmans;Tommy Haas;3;1
+wimbledon;Round of 128;Simone Bolelli;Yen-Hsun Lu;3;1
+wimbledon;Round of 128;Dustin Brown;Joao Sousa;3;1
+wimbledon;Round of 128;Steve Darcis;Ricardas Berankis;3;2
+wimbledon;Round of 128;Jared Donaldson;Janko Tipsarevic;1;0
+wimbledon;Round of 128;Damir Dzumhur;Renzo Olivo;3;0
+wimbledon;Round of 128;Kyle Edmund;Alexander Ward;3;1
+wimbledon;Round of 128;Peter Gojowczyk;Marius Copil;3;1
+wimbledon;Round of 128;Ernests Gulbis;Victor Estrella Burgos;3;0
+wimbledon;Round of 128;Ryan Harrison;Borna Coric;3;0
+wimbledon;Round of 128;Jerzy Janowicz;Denis Shapovalov;3;1
+wimbledon;Round of 128;Mikhail Kukushkin;Taro Daniel;3;1
+wimbledon;Round of 128;Dusan Lajovic;Stefanos Tsitsipas;3;0
+wimbledon;Round of 128;Florian Mayer;Viktor Troicki;1;0
+wimbledon;Round of 128;Thiago Monteiro;Andrew Whittington;3;1
+wimbledon;Round of 128;Sebastian Ofner;Thomaz Bellucci;3;0
+wimbledon;Round of 128;Benoit Paire;Rogerio Dutra Silva;3;1
+wimbledon;Round of 128;Adam Pavlasek;Ernesto Escobedo;3;1
+wimbledon;Round of 128;Lukas Rosol;Henri Laaksonen;3;1
+wimbledon;Round of 128;Andrey Rublev;Stefano Travaglia;3;2
+wimbledon;Round of 128;Dudi Sela;Marcel Granollers;3;2
+wimbledon;Round of 128;Andreas Seppi;Norbert Gombos;3;1
+wimbledon;Round of 128;Gilles Simon;Nicolas Jarry;3;0
+wimbledon;Round of 128;Sergiy Stakhovsky;Julien Benneteau;3;1
+wimbledon;Round of 128;Yuichi Sugita;Brydan Klein;3;0
+wimbledon;Round of 128;Frances Tiafoe;Robin Haase;3;1
+wimbledon;Round of 128;Jiri Vesely;Illya Marchenko;3;2
+wimbledon;Round of 128;Donald Young;Denis Istomin;3;1
+wimbledon;Round of 128;Mikhail Youzhny;Nicolas Mahut;3;0
+wimbledon;3rd Round Qualifying;Peter Gojowczyk;Lukas Lacko;3;0
+wimbledon;3rd Round Qualifying;Andrey Rublev;Paul-Henri Mathieu;3;1
+wimbledon;3rd Round Qualifying;Lukas Rosol;Darian King;3;1
+wimbledon;3rd Round Qualifying;Illya Marchenko;Marcus Willis;3;0
+wimbledon;3rd Round Qualifying;Sergiy Stakhovsky;Tatsuma Ito;3;2
+wimbledon;3rd Round Qualifying;Ruben Bemelmans;Gerald Melzer;3;0
+wimbledon;3rd Round Qualifying;Stefano Travaglia;Peter Polansky;3;2
+wimbledon;3rd Round Qualifying;Daniel Brands;Alexander Bublik;2;2
+wimbledon;3rd Round Qualifying;Taylor Fritz;Vincent Millot;3;0
+wimbledon;3rd Round Qualifying;Simone Bolelli;Pedro Sousa;3;0
+wimbledon;3rd Round Qualifying;Christian Garin;John-Patrick Smith;2;2
+wimbledon;3rd Round Qualifying;Nicolas Jarry;Dennis Novikov;3;1
+wimbledon;3rd Round Qualifying;Sebastian Ofner;Jay Clarke;3;2
+wimbledon;3rd Round Qualifying;Stefanos Tsitsipas;Joris De Loore;3;2
+wimbledon;3rd Round Qualifying;Alexander Ward;Teymuraz Gabashvili;3;1
+wimbledon;3rd Round Qualifying;Andrew Whittington;Denis Kudla;3;2
+wimbledon;2nd Round Qualifying;Vincent Millot;Tennys Sandgren;2;0
+wimbledon;2nd Round Qualifying;Lukas Lacko;Andrea Arnaboldi;2;0
+wimbledon;2nd Round Qualifying;Andrey Rublev;James McGee;2;1
+wimbledon;2nd Round Qualifying;Alexander Ward;Go Soeda;2;0
+wimbledon;2nd Round Qualifying;Darian King;Bradley Klahn;2;1
+wimbledon;2nd Round Qualifying;Illya Marchenko;Benjamin Becker;2;1
+wimbledon;2nd Round Qualifying;Sergiy Stakhovsky;Roberto Quiroz;2;0
+wimbledon;2nd Round Qualifying;Ruben Bemelmans;Mathias Bourgue;2;1
+wimbledon;2nd Round Qualifying;Peter Polansky;Aleksandr Nedovyesov;2;0
+wimbledon;2nd Round Qualifying;Nicolas Jarry;Konstantin Kravchuk;2;1
+wimbledon;2nd Round Qualifying;Alexander Bublik;Blake Mott;2;0
+wimbledon;2nd Round Qualifying;Paul-Henri Mathieu;Maximo Gonzalez;2;0
+wimbledon;2nd Round Qualifying;Taylor Fritz;Alejandro Gonzalez;2;0
+wimbledon;2nd Round Qualifying;Christian Garin;Bjorn Fratangelo;2;1
+wimbledon;2nd Round Qualifying;Peter Gojowczyk;Nikola Milojevic;2;0
+wimbledon;2nd Round Qualifying;Stefano Travaglia;Quentin Halys;2;0
+wimbledon;2nd Round Qualifying;Gerald Melzer;Ti Chen;2;0
+wimbledon;2nd Round Qualifying;Simone Bolelli;Adrian Menendez-Maceiras;2;0
+wimbledon;2nd Round Qualifying;Dennis Novikov;Stefan Kozlov;2;0
+wimbledon;2nd Round Qualifying;Daniel Brands;Calvin Hemery;2;0
+wimbledon;2nd Round Qualifying;Jay Clarke;Elias Ymer;2;0
+wimbledon;2nd Round Qualifying;Joris De Loore;Jozef Kovalik;2;1
+wimbledon;2nd Round Qualifying;Teymuraz Gabashvili;Grega Zemlja;2;0
+wimbledon;2nd Round Qualifying;Tatsuma Ito;Alex de Minaur;2;0
+wimbledon;2nd Round Qualifying;Denis Kudla;Riccardo Bellotti;2;0
+wimbledon;2nd Round Qualifying;Sebastian Ofner;Miljan Zekic;2;0
+wimbledon;2nd Round Qualifying;Lukas Rosol;Rajeev Ram;2;1
+wimbledon;2nd Round Qualifying;John-Patrick Smith;Mackenzie McDonald;2;1
+wimbledon;2nd Round Qualifying;Pedro Sousa;Steven Diez;2;1
+wimbledon;2nd Round Qualifying;Stefanos Tsitsipas;Yannick Hanfmann;2;0
+wimbledon;2nd Round Qualifying;Andrew Whittington;Tim Smyczek;2;1
+wimbledon;2nd Round Qualifying;Marcus Willis;Liam Broady;2;1
+wimbledon;1st Round Qualifying;Pedro Sousa;Alessandro Giannessi;2;1
+wimbledon;1st Round Qualifying;Stefanos Tsitsipas;Santiago Giraldo;2;1
+wimbledon;1st Round Qualifying;Tennys Sandgren;Michael Mmoh;2;0
+wimbledon;1st Round Qualifying;Lukas Lacko;Hiroki Moriya;2;0
+wimbledon;1st Round Qualifying;Andrey Rublev;Joao Domingues;2;0
+wimbledon;1st Round Qualifying;Go Soeda;Inigo Cervantes;2;1
+wimbledon;1st Round Qualifying;Riccardo Bellotti;Blaz Kavcic;2;0
+wimbledon;1st Round Qualifying;Darian King;Lorenzo Giustino;2;0
+wimbledon;1st Round Qualifying;Illya Marchenko;Filip Krajinovic;2;0
+wimbledon;1st Round Qualifying;Calvin Hemery;Luca Vanni;1;1
+wimbledon;1st Round Qualifying;Sergiy Stakhovsky;Kenny De Schepper;2;0
+wimbledon;1st Round Qualifying;Ruben Bemelmans;Tristan Lamasine;2;1
+wimbledon;1st Round Qualifying;John-Patrick Smith;Laslo Djere;2;1
+wimbledon;1st Round Qualifying;Miljan Zekic;Maximilian Marterer;2;0
+wimbledon;1st Round Qualifying;Peter Polansky;Marco Trungelliti;2;0
+wimbledon;1st Round Qualifying;Konstantin Kravchuk;Matteo Donati;2;0
+wimbledon;1st Round Qualifying;Rajeev Ram;Reilly Opelka;2;0
+wimbledon;1st Round Qualifying;Alex de Minaur;Jurgen Melzer;2;1
+wimbledon;1st Round Qualifying;Alexander Bublik;Daniel Gimeno-Traver;2;0
+wimbledon;1st Round Qualifying;Paul-Henri Mathieu;Yannik Reuter;2;0
+wimbledon;1st Round Qualifying;Taylor Fritz;Marco Chiudinelli;2;1
+wimbledon;1st Round Qualifying;Bjorn Fratangelo;Daniel Masur;1;0
+wimbledon;1st Round Qualifying;Peter Gojowczyk;Mirza Basic;2;0
+wimbledon;1st Round Qualifying;Andrew Whittington;Stephane Robert;2;1
+wimbledon;1st Round Qualifying;Quentin Halys;Ryan James Storrie;2;0
+wimbledon;1st Round Qualifying;Teymuraz Gabashvili;Jan Satral;2;0
+wimbledon;1st Round Qualifying;Gerald Melzer;Federico Coria;2;0
+wimbledon;1st Round Qualifying;Adrian Menendez-Maceiras;Tobias Kamke;2;1
+wimbledon;1st Round Qualifying;Jozef Kovalik;Roberto Carballes Baena;2;0
+wimbledon;1st Round Qualifying;Elias Ymer;Duckhee Lee;2;0
+wimbledon;1st Round Qualifying;Marcus Willis;Andrej Martin;2;0
+wimbledon;1st Round Qualifying;Stefan Kozlov;Marc Polmans;2;0
+wimbledon;1st Round Qualifying;Andrea Arnaboldi;Aldin Setkic;2;1
+wimbledon;1st Round Qualifying;Benjamin Becker;Yasutaka Uchiyama;2;1
+wimbledon;1st Round Qualifying;Simone Bolelli;Sam Groth;2;1
+wimbledon;1st Round Qualifying;Mathias Bourgue;Mitchell Krueger;2;0
+wimbledon;1st Round Qualifying;Daniel Brands;Oscar Otte;2;0
+wimbledon;1st Round Qualifying;Liam Broady;Frank Dancevic;2;0
+wimbledon;1st Round Qualifying;Ti Chen;Ricardo Ojeda Lara;2;1
+wimbledon;1st Round Qualifying;Jay Clarke;Marcelo Arevalo;2;0
+wimbledon;1st Round Qualifying;Joris De Loore;Attila Balazs;2;0
+wimbledon;1st Round Qualifying;Steven Diez;Gleb Sakharov;2;0
+wimbledon;1st Round Qualifying;Christian Garin;Gianluigi Quinzi;2;0
+wimbledon;1st Round Qualifying;Alejandro Gonzalez;Vaclav Safranek;2;1
+wimbledon;1st Round Qualifying;Maximo Gonzalez;Petr Michnev;2;0
+wimbledon;1st Round Qualifying;Yannick Hanfmann;Federico Gaio;2;0
+wimbledon;1st Round Qualifying;Tatsuma Ito;Matija Pecotic;2;0
+wimbledon;1st Round Qualifying;Nicolas Jarry;Lloyd Glasspool;2;0
+wimbledon;1st Round Qualifying;Bradley Klahn;Soon Woo Kwon;2;0
+wimbledon;1st Round Qualifying;Denis Kudla;Akira Santillan;1;1
+wimbledon;1st Round Qualifying;Mackenzie McDonald;Daniel Cox;2;0
+wimbledon;1st Round Qualifying;James McGee;Ruben Ramirez Hidalgo;2;1
+wimbledon;1st Round Qualifying;Vincent Millot;Stefano Napolitano;2;1
+wimbledon;1st Round Qualifying;Nikola Milojevic;Enrique Lopez-Perez;2;0
+wimbledon;1st Round Qualifying;Blake Mott;Jeremy Jahn;2;0
+wimbledon;1st Round Qualifying;Aleksandr Nedovyesov;Neil Pauffley;1;0
+wimbledon;1st Round Qualifying;Dennis Novikov;Di Wu;2;0
+wimbledon;1st Round Qualifying;Sebastian Ofner;Kimmer Coppejans;2;1
+wimbledon;1st Round Qualifying;Roberto Quiroz;Edward Corrie;2;1
+wimbledon;1st Round Qualifying;Lukas Rosol;Jason Jung;2;0
+wimbledon;1st Round Qualifying;Tim Smyczek;Yannick Maden;2;0
+wimbledon;1st Round Qualifying;Stefano Travaglia;Salvatore Caruso;2;0
+wimbledon;1st Round Qualifying;Alexander Ward;Egor Gerasimov;2;1
+wimbledon;1st Round Qualifying;Grega Zemlja;Ilya Ivashka;2;1
+washington;Finals;Alexander Zverev;Kevin Anderson;2;0
+washington;Semi-Finals;Alexander Zverev;Kei Nishikori;2;0
+washington;Semi-Finals;Kevin Anderson;Jack Sock;2;0
+washington;Quarter-Finals;Kei Nishikori;Tommy Paul;2;1
+washington;Quarter-Finals;Jack Sock;Milos Raonic;2;0
+washington;Quarter-Finals;Alexander Zverev;Daniil Medvedev;2;0
+washington;Quarter-Finals;Kevin Anderson;Yuki Bhambri;2;1
+washington;Round of 16;Kevin Anderson;Dominic Thiem;2;1
+washington;Round of 16;Kei Nishikori;Juan Martin del Potro;2;0
+washington;Round of 16;Milos Raonic;Marcos Baghdatis;2;0
+washington;Round of 16;Daniil Medvedev;Grigor Dimitrov;2;0
+washington;Round of 16;Alexander Zverev;Tennys Sandgren;2;0
+washington;Round of 16;Jack Sock;Jared Donaldson;2;0
+washington;Round of 16;Tommy Paul;Gilles Muller;2;1
+washington;Round of 16;Yuki Bhambri;Guido Pella;2;1
+washington;Round of 32;Dominic Thiem;Henri Laaksonen;2;0
+washington;Round of 32;Kei Nishikori;Donald Young;2;1
+washington;Round of 32;Milos Raonic;Nicolas Mahut;2;0
+washington;Round of 32;Grigor Dimitrov;Kyle Edmund;2;1
+washington;Round of 32;Alexander Zverev;Jordan Thompson;2;1
+washington;Round of 32;Yuki Bhambri;Gael Monfils;2;1
+washington;Round of 32;Tommy Paul;Lucas Pouille;2;0
+washington;Round of 32;Jack Sock;Marius Copil;2;0
+washington;Round of 32;Tennys Sandgren;Nick Kyrgios;2;0
+washington;Round of 32;Gilles Muller;Dmitry Tursunov;2;0
+washington;Round of 32;Guido Pella;Mischa Zverev;2;1
+washington;Round of 32;Juan Martin del Potro;Lukas Lacko;2;0
+washington;Round of 32;Daniil Medvedev;Steve Johnson;2;1
+washington;Round of 32;Kevin Anderson;Malek Jaziri;2;0
+washington;Round of 32;Marcos Baghdatis;Ryan Harrison;2;0
+washington;Round of 32;Jared Donaldson;Marc Polmans;2;0
+washington;Round of 64;Marcos Baghdatis;Edan Leshem;2;0
+washington;Round of 64;Yuki Bhambri;Stefan Kozlov;2;0
+washington;Round of 64;Marius Copil;Sekou Bangoura;2;0
+washington;Round of 64;Jared Donaldson;Dudi Sela;2;1
+washington;Round of 64;Kyle Edmund;Hyeon Chung;2;0
+washington;Round of 64;Malek Jaziri;Alessandro Bega;2;0
+washington;Round of 64;Henri Laaksonen;Vasek Pospisil;2;1
+washington;Round of 64;Lukas Lacko;Alexios Halebian;2;0
+washington;Round of 64;Nicolas Mahut;Thomas Fabbiano;2;0
+washington;Round of 64;Daniil Medvedev;Reilly Opelka;2;1
+washington;Round of 64;Tommy Paul;Casper Ruud;2;1
+washington;Round of 64;Guido Pella;Ramkumar Ramanathan;2;0
+washington;Round of 64;Tennys Sandgren;Go Soeda;2;0
+washington;Round of 64;Jordan Thompson;Ruben Bemelmans;2;0
+washington;Round of 64;Dmitry Tursunov;Mitchell Krueger;2;1
+washington;Round of 64;Donald Young;Tim Smyczek;2;1
+washington;2nd Round Qualifying;Ramkumar Ramanathan;Marinko Matosevic;2;0
+washington;2nd Round Qualifying;Yuki Bhambri;Liam Broady;2;0
+washington;2nd Round Qualifying;Alexios Halebian;Marc Polmans;2;0
+washington;2nd Round Qualifying;Sekou Bangoura;Austin Krajicek;2;1
+washington;2nd Round Qualifying;Edan Leshem;Alejandro Gonzalez;2;0
+washington;2nd Round Qualifying;Alessandro Bega;Joao Pedro Sorgi;2;0
+washington;1st Round Qualifying;Marc Polmans;Nicholas Reyes;2;0
+washington;1st Round Qualifying;Austin Krajicek;Connor Farren;2;0
+washington;1st Round Qualifying;Edan Leshem;Alex Rybakov;2;0
+washington;1st Round Qualifying;Joao Pedro Sorgi;Damon Gooch;2;1
+washington;1st Round Qualifying;Sekou Bangoura;Ryan Goetz;2;1
+washington;1st Round Qualifying;Alessandro Bega;Danny Thomas;2;0
+washington;1st Round Qualifying;Liam Broady;Frank Moser;2;0
+washington;1st Round Qualifying;Alejandro Gonzalez;Ulises Blanch;2;0
+washington;1st Round Qualifying;Marinko Matosevic;Patrick Kypson;2;0
+washington;1st Round Qualifying;Alexios Halebian;Wil Spencer;2;1
+montreal;Finals;Alexander Zverev;Roger Federer;2;0
+montreal;Semi-Finals;Roger Federer;Robin Haase;2;0
+montreal;Semi-Finals;Alexander Zverev;Denis Shapovalov;2;0
+montreal;Quarter-Finals;Roger Federer;Roberto Bautista Agut;2;0
+montreal;Quarter-Finals;Alexander Zverev;Kevin Anderson;2;0
+montreal;Quarter-Finals;Robin Haase;Diego Schwartzman;2;1
+montreal;Quarter-Finals;Denis Shapovalov;Adrian Mannarino;2;1
+montreal;Round of 16;Denis Shapovalov;Rafael Nadal;2;1
+montreal;Round of 16;Roger Federer;David Ferrer;2;1
+montreal;Round of 16;Alexander Zverev;Nick Kyrgios;2;0
+montreal;Round of 16;Robin Haase;Grigor Dimitrov;2;1
+montreal;Round of 16;Roberto Bautista Agut;Gael Monfils;2;1
+montreal;Round of 16;Kevin Anderson;Sam Querrey;2;0
+montreal;Round of 16;Adrian Mannarino;Hyeon Chung;2;0
+montreal;Round of 16;Diego Schwartzman;Jared Donaldson;2;1
+montreal;Round of 32;Rafael Nadal;Borna Coric;2;0
+montreal;Round of 32;Roger Federer;Peter Polansky;2;0
+montreal;Round of 32;Diego Schwartzman;Dominic Thiem;2;1
+montreal;Round of 32;Alexander Zverev;Richard Gasquet;2;1
+montreal;Round of 32;Gael Monfils;Kei Nishikori;2;1
+montreal;Round of 32;Adrian Mannarino;Milos Raonic;2;0
+montreal;Round of 32;Grigor Dimitrov;Mischa Zverev;2;1
+montreal;Round of 32;Sam Querrey;Jo-Wilfried Tsonga;2;1
+montreal;Round of 32;Hyeon Chung;David Goffin;2;0
+montreal;Round of 32;Kevin Anderson;Pablo Carreno Busta;2;0
+montreal;Round of 32;Roberto Bautista Agut;Ryan Harrison;2;0
+montreal;Round of 32;David Ferrer;Jack Sock;2;1
+montreal;Round of 32;Nick Kyrgios;Paolo Lorenzi;2;0
+montreal;Round of 32;Jared Donaldson;Benoit Paire;2;0
+montreal;Round of 32;Robin Haase;Ernesto Escobedo;2;0
+montreal;Round of 32;Denis Shapovalov;Juan Martin del Potro;2;0
+montreal;Round of 64;David Goffin;Yuichi Sugita;2;1
+montreal;Round of 64;Pablo Carreno Busta;Karen Khachanov;2;1
+montreal;Round of 64;Roberto Bautista Agut;Tim Smyczek;2;0
+montreal;Round of 64;Jared Donaldson;Lucas Pouille;2;0
+montreal;Round of 64;Juan Martin del Potro;John Isner;2;0
+montreal;Round of 64;Jack Sock;Pierre-Hugues Herbert;2;0
+montreal;Round of 64;Nick Kyrgios;Viktor Troicki;2;0
+montreal;Round of 64;Kevin Anderson;Dudi Sela;2;0
+montreal;Round of 64;Hyeon Chung;Feliciano Lopez;2;1
+montreal;Round of 64;Borna Coric;Mikhail Youzhny;2;0
+montreal;Round of 64;Ernesto Escobedo;Nikoloz Basilashvili;2;0
+montreal;Round of 64;David Ferrer;Kyle Edmund;2;1
+montreal;Round of 64;Richard Gasquet;Brayden Schnur;2;1
+montreal;Round of 64;Robin Haase;Albert Ramos-Vinolas;2;0
+montreal;Round of 64;Ryan Harrison;Thomas Fabbiano;2;0
+montreal;Round of 64;Paolo Lorenzi;Frances Tiafoe;2;1
+montreal;Round of 64;Adrian Mannarino;Daniil Medvedev;2;0
+montreal;Round of 64;Gael Monfils;Steve Johnson;2;1
+montreal;Round of 64;Benoit Paire;Donald Young;2;1
+montreal;Round of 64;Peter Polansky;Vasek Pospisil;2;0
+montreal;Round of 64;Sam Querrey;Vincent Millot;2;1
+montreal;Round of 64;Diego Schwartzman;Reilly Opelka;2;1
+montreal;Round of 64;Denis Shapovalov;Rogerio Dutra Silva;2;1
+montreal;Round of 64;Mischa Zverev;Norbert Gombos;2;1
+montreal;2nd Round Qualifying;Pierre-Hugues Herbert;Mikhail Youzhny;2;1
+montreal;2nd Round Qualifying;Dudi Sela;Matthew Ebden;2;0
+montreal;2nd Round Qualifying;Reilly Opelka;Ernesto Escobedo;2;0
+montreal;2nd Round Qualifying;Norbert Gombos;James McGee;2;0
+montreal;2nd Round Qualifying;Thomas Fabbiano;Nicolas Mahut;2;0
+montreal;2nd Round Qualifying;Vincent Millot;Brydan Klein;2;0
+montreal;2nd Round Qualifying;Tim Smyczek;Frank Dancevic;2;1
+montreal;1st Round Qualifying;Pierre-Hugues Herbert;Luke Saville;2;0
+montreal;1st Round Qualifying;Dudi Sela;Samuel Monette;2;0
+montreal;1st Round Qualifying;Ernesto Escobedo;Christian Harrison;2;1
+montreal;1st Round Qualifying;Norbert Gombos;Raheel Manji;2;1
+montreal;1st Round Qualifying;Frank Dancevic;Marius Copil;2;0
+montreal;1st Round Qualifying;Thomas Fabbiano;Hubert Hurkacz;2;1
+montreal;1st Round Qualifying;Mikhail Youzhny;Lloyd Harris;2;1
+montreal;1st Round Qualifying;Nicolas Mahut;Andrew Whittington;2;0
+montreal;1st Round Qualifying;Reilly Opelka;Kelsey Stevenson;2;0
+montreal;1st Round Qualifying;Matthew Ebden;Benjamin Sigouin;2;0
+montreal;1st Round Qualifying;Vincent Millot;Filip Peliwo;2;0
+montreal;1st Round Qualifying;Tim Smyczek;Pavel Krainik;2;0
+montreal;1st Round Qualifying;James McGee;Philip Bester;2;0
+montreal;1st Round Qualifying;Brydan Klein;Antoine Leduc;2;0
+us-open;Finals;Rafael Nadal;Kevin Anderson;3;0
+us-open;Semi-Finals;Rafael Nadal;Juan Martin del Potro;3;1
+us-open;Semi-Finals;Kevin Anderson;Pablo Carreno Busta;3;1
+us-open;Quarter-Finals;Rafael Nadal;Andrey Rublev;3;0
+us-open;Quarter-Finals;Juan Martin del Potro;Roger Federer;3;1
+us-open;Quarter-Finals;Pablo Carreno Busta;Diego Schwartzman;3;0
+us-open;Quarter-Finals;Kevin Anderson;Sam Querrey;3;1
+us-open;Round of 16;Rafael Nadal;Alexandr Dolgopolov;3;0
+us-open;Round of 16;Roger Federer;Philipp Kohlschreiber;3;0
+us-open;Round of 16;Juan Martin del Potro;Dominic Thiem;3;2
+us-open;Round of 16;Andrey Rublev;David Goffin;3;0
+us-open;Round of 16;Pablo Carreno Busta;Denis Shapovalov;3;0
+us-open;Round of 16;Diego Schwartzman;Lucas Pouille;3;1
+us-open;Round of 16;Sam Querrey;Mischa Zverev;3;0
+us-open;Round of 16;Kevin Anderson;Paolo Lorenzi;3;1
+us-open;Round of 32;Rafael Nadal;Leonardo Mayer;3;1
+us-open;Round of 32;Roger Federer;Feliciano Lopez;3;0
+us-open;Round of 32;Diego Schwartzman;Marin Cilic;3;1
+us-open;Round of 32;Dominic Thiem;Adrian Mannarino;3;0
+us-open;Round of 32;David Goffin;Gael Monfils;2;0
+us-open;Round of 32;Mischa Zverev;John Isner;3;0
+us-open;Round of 32;Juan Martin del Potro;Roberto Bautista Agut;3;0
+us-open;Round of 32;Pablo Carreno Busta;Nicolas Mahut;3;0
+us-open;Round of 32;Lucas Pouille;Mikhail Kukushkin;3;1
+us-open;Round of 32;Sam Querrey;Radu Albot;3;1
+us-open;Round of 32;Kevin Anderson;Borna Coric;3;0
+us-open;Round of 32;Philipp Kohlschreiber;John Millman;3;0
+us-open;Round of 32;Alexandr Dolgopolov;Viktor Troicki;3;0
+us-open;Round of 32;Paolo Lorenzi;Thomas Fabbiano;3;0
+us-open;Round of 32;Andrey Rublev;Damir Dzumhur;3;1
+us-open;Round of 32;Denis Shapovalov;Kyle Edmund;3;1
+us-open;Round of 64;Rafael Nadal;Taro Daniel;3;1
+us-open;Round of 64;Roger Federer;Mikhail Youzhny;3;2
+us-open;Round of 64;Borna Coric;Alexander Zverev;3;1
+us-open;Round of 64;Marin Cilic;Florian Mayer;3;0
+us-open;Round of 64;Dominic Thiem;Taylor Fritz;3;1
+us-open;Round of 64;Andrey Rublev;Grigor Dimitrov;3;0
+us-open;Round of 64;Denis Shapovalov;Jo-Wilfried Tsonga;3;0
+us-open;Round of 64;David Goffin;Guido Pella;3;2
+us-open;Round of 64;John Isner;Hyeon Chung;3;0
+us-open;Round of 64;Roberto Bautista Agut;Dustin Brown;3;0
+us-open;Round of 64;Pablo Carreno Busta;Cameron Norrie;3;0
+us-open;Round of 64;Alexandr Dolgopolov;Tomas Berdych;3;1
+us-open;Round of 64;Lucas Pouille;Jared Donaldson;3;2
+us-open;Round of 64;Sam Querrey;Dudi Sela;3;0
+us-open;Round of 64;Gael Monfils;Donald Young;3;2
+us-open;Round of 64;Paolo Lorenzi;Gilles Muller;3;1
+us-open;Round of 64;Nicolas Mahut;Albert Ramos-Vinolas;3;2
+us-open;Round of 64;Mischa Zverev;Benoit Paire;3;2
+us-open;Round of 64;Juan Martin del Potro;Adrian Menendez-Maceiras;3;0
+us-open;Round of 64;Kevin Anderson;Ernests Gulbis;3;0
+us-open;Round of 64;Diego Schwartzman;Janko Tipsarevic;3;0
+us-open;Round of 64;Adrian Mannarino;Bjorn Fratangelo;3;1
+us-open;Round of 64;Feliciano Lopez;Fernando Verdasco;3;1
+us-open;Round of 64;Philipp Kohlschreiber;Santiago Giraldo;3;0
+us-open;Round of 64;Radu Albot;Yen-Hsun Lu;3;2
+us-open;Round of 64;Damir Dzumhur;Cedrik-Marcel Stebe;3;1
+us-open;Round of 64;Kyle Edmund;Steve Johnson;3;0
+us-open;Round of 64;Thomas Fabbiano;Jordan Thompson;3;2
+us-open;Round of 64;Mikhail Kukushkin;Evgeny Donskoy;3;0
+us-open;Round of 64;Leonardo Mayer;Yuichi Sugita;3;1
+us-open;Round of 64;John Millman;Malek Jaziri;3;0
+us-open;Round of 64;Viktor Troicki;Stefano Travaglia;3;0
+us-open;Round of 128;Rafael Nadal;Dusan Lajovic;3;0
+us-open;Round of 128;Roger Federer;Frances Tiafoe;3;2
+us-open;Round of 128;Alexander Zverev;Darian King;3;0
+us-open;Round of 128;Marin Cilic;Tennys Sandgren;3;1
+us-open;Round of 128;Dominic Thiem;Alex de Minaur;3;0
+us-open;Round of 128;Grigor Dimitrov;Vaclav Safranek;3;0
+us-open;Round of 128;Jo-Wilfried Tsonga;Marius Copil;3;0
+us-open;Round of 128;David Goffin;Julien Benneteau;3;1
+us-open;Round of 128;John Isner;Pierre-Hugues Herbert;3;1
+us-open;Round of 128;Roberto Bautista Agut;Andreas Seppi;3;1
+us-open;Round of 128;Pablo Carreno Busta;Evan King;3;0
+us-open;Round of 128;Jordan Thompson;Jack Sock;3;2
+us-open;Round of 128;John Millman;Nick Kyrgios;3;1
+us-open;Round of 128;Tomas Berdych;Ryan Harrison;3;0
+us-open;Round of 128;Lucas Pouille;Ruben Bemelmans;3;0
+us-open;Round of 128;Sam Querrey;Gilles Simon;3;0
+us-open;Round of 128;Gael Monfils;Jeremy Chardy;3;0
+us-open;Round of 128;Gilles Muller;Bernard Tomic;3;1
+us-open;Round of 128;Albert Ramos-Vinolas;Denis Istomin;3;2
+us-open;Round of 128;Mikhail Kukushkin;David Ferrer;3;1
+us-open;Round of 128;Stefano Travaglia;Fabio Fognini;3;1
+us-open;Round of 128;Mischa Zverev;Thai-Son Kwiatkowski;3;2
+us-open;Round of 128;Juan Martin del Potro;Henri Laaksonen;3;0
+us-open;Round of 128;Yen-Hsun Lu;Karen Khachanov;3;1
+us-open;Round of 128;Leonardo Mayer;Richard Gasquet;3;1
+us-open;Round of 128;Damir Dzumhur;Pablo Cuevas;3;0
+us-open;Round of 128;Kevin Anderson;JC Aragone;3;0
+us-open;Round of 128;Diego Schwartzman;Carlos Berlocq;3;0
+us-open;Round of 128;Adrian Mannarino;Ricardas Berankis;3;0
+us-open;Round of 128;Feliciano Lopez;Andrey Kuznetsov;3;1
+us-open;Round of 128;Kyle Edmund;Robin Haase;3;0
+us-open;Round of 128;Philipp Kohlschreiber;Tim Smyczek;3;0
+us-open;Round of 128;Radu Albot;Ernesto Escobedo;3;1
+us-open;Round of 128;Dustin Brown;Thomaz Bellucci;3;0
+us-open;Round of 128;Hyeon Chung;Horacio Zeballos;3;1
+us-open;Round of 128;Borna Coric;Jiri Vesely;3;0
+us-open;Round of 128;Taro Daniel;Tommy Paul;3;2
+us-open;Round of 128;Alexandr Dolgopolov;Jan-Lennard Struff;3;2
+us-open;Round of 128;Jared Donaldson;Nikoloz Basilashvili;3;1
+us-open;Round of 128;Evgeny Donskoy;Andreas Haider-Maurer;2;0
+us-open;Round of 128;Thomas Fabbiano;John-Patrick Smith;3;1
+us-open;Round of 128;Bjorn Fratangelo;Ivo Karlovic;3;1
+us-open;Round of 128;Taylor Fritz;Marcos Baghdatis;3;0
+us-open;Round of 128;Santiago Giraldo;Vincent Millot;3;2
+us-open;Round of 128;Ernests Gulbis;Alessandro Giannessi;3;1
+us-open;Round of 128;Malek Jaziri;Thiago Monteiro;3;2
+us-open;Round of 128;Steve Johnson;Nicolas Almagro;3;0
+us-open;Round of 128;Paolo Lorenzi;Joao Sousa;3;1
+us-open;Round of 128;Nicolas Mahut;Marton Fucsovics;3;2
+us-open;Round of 128;Florian Mayer;Rogerio Dutra Silva;3;1
+us-open;Round of 128;Adrian Menendez-Maceiras;Patrick Kypson;3;0
+us-open;Round of 128;Cameron Norrie;Dmitry Tursunov;2;0
+us-open;Round of 128;Benoit Paire;Lukas Lacko;3;0
+us-open;Round of 128;Guido Pella;Steve Darcis;3;0
+us-open;Round of 128;Andrey Rublev;Aljaz Bedene;3;0
+us-open;Round of 128;Dudi Sela;Christopher Eubanks;3;0
+us-open;Round of 128;Denis Shapovalov;Daniil Medvedev;3;0
+us-open;Round of 128;Cedrik-Marcel Stebe;Nicolas Kicker;3;1
+us-open;Round of 128;Yuichi Sugita;Geoffrey Blancaneaux;3;0
+us-open;Round of 128;Janko Tipsarevic;Thanasi Kokkinakis;3;2
+us-open;Round of 128;Viktor Troicki;Norbert Gombos;3;2
+us-open;Round of 128;Fernando Verdasco;Vasek Pospisil;1;0
+us-open;Round of 128;Donald Young;Maximilian Marterer;3;1
+us-open;Round of 128;Mikhail Youzhny;Blaz Kavcic;3;1
+beijing;Finals;Rafael Nadal;Nick Kyrgios;2;0
+beijing;Semi-Finals;Rafael Nadal;Grigor Dimitrov;2;1
+beijing;Semi-Finals;Nick Kyrgios;Alexander Zverev;2;0
+beijing;Quarter-Finals;Rafael Nadal;John Isner;2;0
+beijing;Quarter-Finals;Alexander Zverev;Andrey Rublev;2;0
+beijing;Quarter-Finals;Grigor Dimitrov;Roberto Bautista Agut;2;1
+beijing;Quarter-Finals;Nick Kyrgios;Steve Darcis;2;0
+beijing;Round of 16;Rafael Nadal;Karen Khachanov;2;0
+beijing;Round of 16;Alexander Zverev;Fabio Fognini;2;0
+beijing;Round of 16;Grigor Dimitrov;Juan Martin del Potro;2;0
+beijing;Round of 16;Roberto Bautista Agut;Aljaz Bedene;2;0
+beijing;Round of 16;John Isner;Leonardo Mayer;2;0
+beijing;Round of 16;Andrey Rublev;Tomas Berdych;2;1
+beijing;Round of 16;Nick Kyrgios;Mischa Zverev;2;1
+beijing;Round of 16;Steve Darcis;Dusan Lajovic;2;0
+beijing;Round of 32;Rafael Nadal;Lucas Pouille;2;1
+beijing;Round of 32;Alexander Zverev;Kyle Edmund;2;0
+beijing;Round of 32;Grigor Dimitrov;Damir Dzumhur;2;1
+beijing;Round of 32;Steve Darcis;Pablo Carreno Busta;2;0
+beijing;Round of 32;Roberto Bautista Agut;Ze Zhang;2;0
+beijing;Round of 32;John Isner;Malek Jaziri;2;0
+beijing;Round of 32;Tomas Berdych;Jared Donaldson;2;1
+beijing;Round of 32;Nick Kyrgios;Nikoloz Basilashvili;2;0
+beijing;Round of 32;Aljaz Bedene;Marcel Granollers;2;0
+beijing;Round of 32;Juan Martin del Potro;Pablo Cuevas;2;0
+beijing;Round of 32;Fabio Fognini;Robin Haase;2;0
+beijing;Round of 32;Karen Khachanov;Di Wu;2;0
+beijing;Round of 32;Dusan Lajovic;Fernando Verdasco;2;1
+beijing;Round of 32;Leonardo Mayer;Paolo Lorenzi;2;1
+beijing;Round of 32;Andrey Rublev;Jack Sock;2;1
+beijing;Round of 32;Mischa Zverev;Jan-Lennard Struff;2;1
+beijing;2nd Round Qualifying;Marcel Granollers;Borna Coric;2;0
+beijing;2nd Round Qualifying;Dusan Lajovic;Rogerio Dutra Silva;2;1
+beijing;2nd Round Qualifying;Steve Darcis;Peter Polansky;2;1
+beijing;2nd Round Qualifying;Malek Jaziri;Sergiy Stakhovsky;2;0
+beijing;1st Round Qualifying;Borna Coric;Marcos Giron;2;0
+beijing;1st Round Qualifying;Rogerio Dutra Silva;Rigele Te;2;0
+beijing;1st Round Qualifying;Steve Darcis;Fajing Sun;2;0
+beijing;1st Round Qualifying;Malek Jaziri;Zhizhen Zhang;2;0
+beijing;1st Round Qualifying;Dusan Lajovic;Alessandro Giannessi;2;1
+beijing;1st Round Qualifying;Marcel Granollers;Jeremy Chardy;2;0
+beijing;1st Round Qualifying;Sergiy Stakhovsky;Thiago Monteiro;2;1
+beijing;1st Round Qualifying;Peter Polansky;Ivan Dodig;1;1
+tokyo;Finals;David Goffin;Adrian Mannarino;2;0
+tokyo;Semi-Finals;Adrian Mannarino;Marin Cilic;2;1
+tokyo;Semi-Finals;David Goffin;Diego Schwartzman;2;0
+tokyo;Quarter-Finals;Marin Cilic;Ryan Harrison;2;0
+tokyo;Quarter-Finals;David Goffin;Richard Gasquet;2;0
+tokyo;Quarter-Finals;Diego Schwartzman;Steve Johnson;2;0
+tokyo;Quarter-Finals;Adrian Mannarino;Yuichi Sugita;2;0
+tokyo;Round of 16;Marin Cilic;Yasutaka Uchiyama;2;0
+tokyo;Round of 16;Yuichi Sugita;Milos Raonic;1;0
+tokyo;Round of 16;David Goffin;Matthew Ebden;2;1
+tokyo;Round of 16;Ryan Harrison;Kevin Anderson;2;1
+tokyo;Round of 16;Diego Schwartzman;Bernard Tomic;2;0
+tokyo;Round of 16;Richard Gasquet;Yen-Hsun Lu;2;0
+tokyo;Round of 16;Steve Johnson;Alexandr Dolgopolov;2;0
+tokyo;Round of 16;Adrian Mannarino;Jiri Vesely;2;0
+tokyo;Round of 32;Marin Cilic;Stefanos Tsitsipas;2;0
+tokyo;Round of 32;Steve Johnson;Dominic Thiem;2;1
+tokyo;Round of 32;Milos Raonic;Viktor Troicki;2;0
+tokyo;Round of 32;David Goffin;Feliciano Lopez;2;0
+tokyo;Round of 32;Kevin Anderson;Gilles Simon;2;0
+tokyo;Round of 32;Richard Gasquet;Sam Querrey;2;0
+tokyo;Round of 32;Jiri Vesely;Albert Ramos-Vinolas;2;1
+tokyo;Round of 32;Diego Schwartzman;Donald Young;2;0
+tokyo;Round of 32;Alexandr Dolgopolov;Daniil Medvedev;2;0
+tokyo;Round of 32;Matthew Ebden;Ivo Karlovic;2;0
+tokyo;Round of 32;Ryan Harrison;Yusuke Takahashi;2;1
+tokyo;Round of 32;Yen-Hsun Lu;Taro Daniel;2;0
+tokyo;Round of 32;Adrian Mannarino;Go Soeda;2;0
+tokyo;Round of 32;Yuichi Sugita;Benoit Paire;1;0
+tokyo;Round of 32;Bernard Tomic;Joao Sousa;2;1
+tokyo;Round of 32;Yasutaka Uchiyama;Franko Skugor;2;1
+tokyo;2nd Round Qualifying;Stefanos Tsitsipas;Frances Tiafoe;2;0
+tokyo;2nd Round Qualifying;Yusuke Takahashi;Vasek Pospisil;2;0
+tokyo;2nd Round Qualifying;Franko Skugor;Radu Albot;2;1
+tokyo;2nd Round Qualifying;Matthew Ebden;Yannick Hanfmann;2;0
+tokyo;1st Round Qualifying;Frances Tiafoe;Kaito Uesugi;2;0
+tokyo;1st Round Qualifying;Vasek Pospisil;Yosuke Watanuki;2;0
+tokyo;1st Round Qualifying;Matthew Ebden;Nicolas Kicker;2;0
+tokyo;1st Round Qualifying;Radu Albot;Reilly Opelka;2;1
+tokyo;1st Round Qualifying;Franko Skugor;Nicolas Jarry;2;0
+tokyo;1st Round Qualifying;Stefanos Tsitsipas;Tatsuma Ito;2;1
+tokyo;1st Round Qualifying;Yusuke Takahashi;Adrian Menendez-Maceiras;2;0
+tokyo;1st Round Qualifying;Yannick Hanfmann;Sho Shimabukuro;2;0
+shanghai;Finals;Roger Federer;Rafael Nadal;2;0
+shanghai;Semi-Finals;Rafael Nadal;Marin Cilic;2;0
+shanghai;Semi-Finals;Roger Federer;Juan Martin del Potro;2;1
+shanghai;Quarter-Finals;Rafael Nadal;Grigor Dimitrov;2;1
+shanghai;Quarter-Finals;Roger Federer;Richard Gasquet;2;0
+shanghai;Quarter-Finals;Marin Cilic;Albert Ramos-Vinolas;2;0
+shanghai;Quarter-Finals;Juan Martin del Potro;Viktor Troicki;2;1
+shanghai;Round of 16;Rafael Nadal;Fabio Fognini;2;0
+shanghai;Round of 16;Roger Federer;Alexandr Dolgopolov;2;0
+shanghai;Round of 16;Juan Martin del Potro;Alexander Zverev;2;1
+shanghai;Round of 16;Marin Cilic;Steve Johnson;2;0
+shanghai;Round of 16;Grigor Dimitrov;Sam Querrey;2;0
+shanghai;Round of 16;Viktor Troicki;John Isner;2;0
+shanghai;Round of 16;Richard Gasquet;Gilles Simon;2;1
+shanghai;Round of 16;Albert Ramos-Vinolas;Jan-Lennard Struff;2;0
+shanghai;Round of 32;Rafael Nadal;Jared Donaldson;2;0
+shanghai;Round of 32;Roger Federer;Diego Schwartzman;2;0
+shanghai;Round of 32;Alexander Zverev;Aljaz Bedene;1;0
+shanghai;Round of 32;Marin Cilic;Kyle Edmund;2;0
+shanghai;Round of 32;Viktor Troicki;Dominic Thiem;2;1
+shanghai;Round of 32;Grigor Dimitrov;Ryan Harrison;2;1
+shanghai;Round of 32;Albert Ramos-Vinolas;Pablo Carreno Busta;2;0
+shanghai;Round of 32;Gilles Simon;David Goffin;2;0
+shanghai;Round of 32;Sam Querrey;Frances Tiafoe;2;0
+shanghai;Round of 32;Jan-Lennard Struff;Kevin Anderson;2;0
+shanghai;Round of 32;John Isner;Stefanos Tsitsipas;2;0
+shanghai;Round of 32;Fabio Fognini;Lucas Pouille;2;0
+shanghai;Round of 32;Juan Martin del Potro;Andrey Rublev;2;0
+shanghai;Round of 32;Alexandr Dolgopolov;Feliciano Lopez;2;1
+shanghai;Round of 32;Richard Gasquet;Hyeon Chung;2;1
+shanghai;Round of 32;Steve Johnson;Di Wu;2;0
+shanghai;Round of 64;Hyeon Chung;Roberto Bautista Agut;2;0
+shanghai;Round of 64;Sam Querrey;Yuichi Sugita;2;0
+shanghai;Round of 64;Kevin Anderson;Adrian Mannarino;2;0
+shanghai;Round of 64;John Isner;Dusan Lajovic;2;1
+shanghai;Round of 64;Steve Johnson;Nick Kyrgios;1;0
+shanghai;Round of 64;Alexandr Dolgopolov;Jack Sock;2;1
+shanghai;Round of 64;Lucas Pouille;Daniil Medvedev;2;0
+shanghai;Round of 64;Juan Martin del Potro;Nikoloz Basilashvili;2;1
+shanghai;Round of 64;Aljaz Bedene;Paolo Lorenzi;2;0
+shanghai;Round of 64;Jared Donaldson;Pablo Cuevas;2;1
+shanghai;Round of 64;Kyle Edmund;Jiri Vesely;2;0
+shanghai;Round of 64;Fabio Fognini;Fernando Verdasco;2;1
+shanghai;Round of 64;Richard Gasquet;Robin Haase;2;1
+shanghai;Round of 64;Ryan Harrison;Ze Zhang;2;0
+shanghai;Round of 64;Feliciano Lopez;Ivo Karlovic;2;0
+shanghai;Round of 64;Albert Ramos-Vinolas;Joao Sousa;2;1
+shanghai;Round of 64;Andrey Rublev;Damir Dzumhur;2;1
+shanghai;Round of 64;Diego Schwartzman;Jordan Thompson;2;0
+shanghai;Round of 64;Gilles Simon;Yibing Wu;2;0
+shanghai;Round of 64;Jan-Lennard Struff;Mischa Zverev;1;1
+shanghai;Round of 64;Frances Tiafoe;Benoit Paire;2;0
+shanghai;Round of 64;Viktor Troicki;Denis Shapovalov;2;1
+shanghai;Round of 64;Stefanos Tsitsipas;Karen Khachanov;2;0
+shanghai;Round of 64;Di Wu;Jeremy Chardy;2;0
+shanghai;2nd Round Qualifying;Alexandr Dolgopolov;Malek Jaziri;2;0
+shanghai;2nd Round Qualifying;Frances Tiafoe;Leonardo Mayer;2;1
+shanghai;2nd Round Qualifying;Dusan Lajovic;Donald Young;2;0
+shanghai;2nd Round Qualifying;Nikoloz Basilashvili;Vasek Pospisil;2;1
+shanghai;2nd Round Qualifying;Stefanos Tsitsipas;Yen-Hsun Lu;2;1
+shanghai;2nd Round Qualifying;Jordan Thompson;Henri Laaksonen;2;0
+shanghai;2nd Round Qualifying;Jeremy Chardy;Radu Albot;2;0
+shanghai;1st Round Qualifying;Alexandr Dolgopolov;Nicolas Jarry;2;0
+shanghai;1st Round Qualifying;Leonardo Mayer;Sergiy Stakhovsky;2;1
+shanghai;1st Round Qualifying;Henri Laaksonen;Borna Coric;2;0
+shanghai;1st Round Qualifying;Donald Young;Peter Polansky;2;0
+shanghai;1st Round Qualifying;Nikoloz Basilashvili;Fajing Sun;2;0
+shanghai;1st Round Qualifying;Yen-Hsun Lu;Rigele Te;2;0
+shanghai;1st Round Qualifying;Radu Albot;Florian Mayer;2;0
+shanghai;1st Round Qualifying;Stefanos Tsitsipas;Peter Gojowczyk;2;0
+shanghai;1st Round Qualifying;Jordan Thompson;Yan Bai;2;0
+shanghai;1st Round Qualifying;Frances Tiafoe;Zhizhen Zhang;2;0
+shanghai;1st Round Qualifying;Dusan Lajovic;Taro Daniel;2;1
+shanghai;1st Round Qualifying;Jeremy Chardy;Thiago Monteiro;2;1
+shanghai;1st Round Qualifying;Vasek Pospisil;Taylor Fritz;2;0
+shanghai;1st Round Qualifying;Malek Jaziri;Mikhail Youzhny;2;0
+stockholm;Finals;Juan Martin del Potro;Grigor Dimitrov;2;0
+stockholm;Semi-Finals;Grigor Dimitrov;Fabio Fognini;2;0
+stockholm;Semi-Finals;Juan Martin del Potro;Fernando Verdasco;2;1
+stockholm;Quarter-Finals;Grigor Dimitrov;Mischa Zverev;2;0
+stockholm;Quarter-Finals;Fernando Verdasco;Kevin Anderson;2;0
+stockholm;Quarter-Finals;Fabio Fognini;Jack Sock;2;1
+stockholm;Quarter-Finals;Juan Martin del Potro;Yuichi Sugita;2;0
+stockholm;Round of 16;Grigor Dimitrov;Jerzy Janowicz;2;0
+stockholm;Round of 16;Kevin Anderson;Hyeon Chung;2;0
+stockholm;Round of 16;Jack Sock;Jeremy Chardy;2;0
+stockholm;Round of 16;Juan Martin del Potro;Jan-Lennard Struff;2;0
+stockholm;Round of 16;Mischa Zverev;Viktor Troicki;2;0
+stockholm;Round of 16;Fabio Fognini;Elias Ymer;2;1
+stockholm;Round of 16;Yuichi Sugita;Marcos Baghdatis;2;1
+stockholm;Round of 16;Fernando Verdasco;Jurgen Zopp;2;0
+stockholm;Round of 32;Mischa Zverev;Mikael Ymer;2;1
+stockholm;Round of 32;Fabio Fognini;Malek Jaziri;2;0
+stockholm;Round of 32;Yuichi Sugita;Denis Istomin;2;1
+stockholm;Round of 32;Fernando Verdasco;Robin Haase;2;0
+stockholm;Round of 32;Marcos Baghdatis;Norbert Gombos;2;0
+stockholm;Round of 32;Jeremy Chardy;Alessandro Giannessi;2;0
+stockholm;Round of 32;Hyeon Chung;Marton Fucsovics;2;0
+stockholm;Round of 32;Jerzy Janowicz;Pierre-Hugues Herbert;2;1
+stockholm;Round of 32;Jan-Lennard Struff;Marius Copil;2;1
+stockholm;Round of 32;Viktor Troicki;Simone Bolelli;2;0
+stockholm;Round of 32;Elias Ymer;Leonardo Mayer;2;1
+stockholm;Round of 32;Jurgen Zopp;Lukas Lacko;2;1
+stockholm;2nd Round Qualifying;Marton Fucsovics;Tim Smyczek;2;0
+stockholm;2nd Round Qualifying;Lukas Lacko;Zdenek Kolar;2;1
+stockholm;2nd Round Qualifying;Jerzy Janowicz;Jurgen Zopp;2;1
+stockholm;2nd Round Qualifying;Simone Bolelli;Illya Marchenko;2;1
+stockholm;1st Round Qualifying;Marton Fucsovics;Karl Friberg;2;0
+stockholm;1st Round Qualifying;Lukas Lacko;Viktor Galovic;2;0
+stockholm;1st Round Qualifying;Simone Bolelli;Casper Ruud;2;0
+stockholm;1st Round Qualifying;Jerzy Janowicz;Andrea Arnaboldi;2;1
+stockholm;1st Round Qualifying;Illya Marchenko;Stefano Napolitano;2;0
+stockholm;1st Round Qualifying;Zdenek Kolar;Marco Trungelliti;2;1
+stockholm;1st Round Qualifying;Jurgen Zopp;Fred Simonsson;2;0
+stockholm;1st Round Qualifying;Tim Smyczek;Stephane Robert;2;1
+vienna;Finals;Lucas Pouille;Jo-Wilfried Tsonga;2;0
+vienna;Semi-Finals;Jo-Wilfried Tsonga;Philipp Kohlschreiber;2;0
+vienna;Semi-Finals;Lucas Pouille;Kyle Edmund;2;1
+vienna;Quarter-Finals;Jo-Wilfried Tsonga;Alexander Zverev;2;0
+vienna;Quarter-Finals;Kyle Edmund;Jan-Lennard Struff;2;0
+vienna;Quarter-Finals;Philipp Kohlschreiber;Diego Schwartzman;2;0
+vienna;Quarter-Finals;Lucas Pouille;Richard Gasquet;2;0
+vienna;Round of 16;Alexander Zverev;Gilles Simon;2;0
+vienna;Round of 16;Richard Gasquet;Dominic Thiem;2;1
+vienna;Round of 16;Diego Schwartzman;Pablo Carreno Busta;2;1
+vienna;Round of 16;Jo-Wilfried Tsonga;Damir Dzumhur;2;1
+vienna;Round of 16;Kyle Edmund;Dennis Novak;2;1
+vienna;Round of 16;Philipp Kohlschreiber;Pierre-Hugues Herbert;2;0
+vienna;Round of 16;Lucas Pouille;Guillermo Garcia-Lopez;2;0
+vienna;Round of 16;Jan-Lennard Struff;Albert Ramos-Vinolas;2;1
+vienna;Round of 32;Alexander Zverev;Viktor Troicki;2;1
+vienna;Round of 32;Dominic Thiem;Andrey Rublev;2;0
+vienna;Round of 32;Pablo Carreno Busta;Guido Pella;2;0
+vienna;Round of 32;Philipp Kohlschreiber;John Isner;2;0
+vienna;Round of 32;Albert Ramos-Vinolas;Sam Querrey;2;1
+vienna;Round of 32;Guillermo Garcia-Lopez;Kevin Anderson;2;0
+vienna;Round of 32;Jo-Wilfried Tsonga;Karen Khachanov;2;1
+vienna;Round of 32;Damir Dzumhur;Ricardas Berankis;2;0
+vienna;Round of 32;Kyle Edmund;David Ferrer;2;0
+vienna;Round of 32;Richard Gasquet;Feliciano Lopez;2;0
+vienna;Round of 32;Pierre-Hugues Herbert;Bernard Tomic;2;0
+vienna;Round of 32;Dennis Novak;Thomas Fabbiano;2;0
+vienna;Round of 32;Lucas Pouille;Sebastian Ofner;2;0
+vienna;Round of 32;Diego Schwartzman;Fabio Fognini;2;1
+vienna;Round of 32;Gilles Simon;Ernests Gulbis;2;0
+vienna;Round of 32;Jan-Lennard Struff;Pablo Cuevas;2;0
+vienna;2nd Round Qualifying;Guido Pella;Lukas Lacko;2;0
+vienna;2nd Round Qualifying;Dennis Novak;Thomas Fabbiano;2;1
+vienna;2nd Round Qualifying;Guillermo Garcia-Lopez;Sergiy Stakhovsky;2;1
+vienna;2nd Round Qualifying;Pierre-Hugues Herbert;Simone Bolelli;2;0
+vienna;1st Round Qualifying;Sergiy Stakhovsky;Nikoloz Basilashvili;2;0
+vienna;1st Round Qualifying;Guido Pella;Elias Ymer;2;1
+vienna;1st Round Qualifying;Simone Bolelli;Dusan Lajovic;2;0
+vienna;1st Round Qualifying;Thomas Fabbiano;Andreas Haider-Maurer;2;0
+vienna;1st Round Qualifying;Lukas Lacko;Rogerio Dutra Silva;2;0
+vienna;1st Round Qualifying;Guillermo Garcia-Lopez;Jerzy Janowicz;2;0
+vienna;1st Round Qualifying;Pierre-Hugues Herbert;Quentin Halys;2;1
+vienna;1st Round Qualifying;Dennis Novak;Andreas Seppi;2;0
+paris;Finals;Jack Sock;Filip Krajinovic;2;1
+paris;Semi-Finals;Filip Krajinovic;John Isner;2;1
+paris;Semi-Finals;Jack Sock;Julien Benneteau;2;0
+paris;Quarter-Finals;Filip Krajinovic;Rafael Nadal;0;0
+paris;Quarter-Finals;Julien Benneteau;Marin Cilic;2;0
+paris;Quarter-Finals;John Isner;Juan Martin del Potro;2;1
+paris;Quarter-Finals;Jack Sock;Fernando Verdasco;2;1
+paris;Round of 16;Rafael Nadal;Pablo Cuevas;2;1
+paris;Round of 16;Marin Cilic;Roberto Bautista Agut;2;0
+paris;Round of 16;Fernando Verdasco;Dominic Thiem;2;0
+paris;Round of 16;John Isner;Grigor Dimitrov;2;1
+paris;Round of 16;Julien Benneteau;David Goffin;2;0
+paris;Round of 16;Juan Martin del Potro;Robin Haase;2;0
+paris;Round of 16;Jack Sock;Lucas Pouille;2;0
+paris;Round of 16;Filip Krajinovic;Nicolas Mahut;2;1
+paris;Round of 32;Rafael Nadal;Hyeon Chung;2;0
+paris;Round of 32;Marin Cilic;Borna Coric;2;0
+paris;Round of 32;Robin Haase;Alexander Zverev;2;1
+paris;Round of 32;Dominic Thiem;Peter Gojowczyk;2;1
+paris;Round of 32;Grigor Dimitrov;Richard Gasquet;2;0
+paris;Round of 32;David Goffin;Adrian Mannarino;2;1
+paris;Round of 32;Nicolas Mahut;Pablo Carreno Busta;2;0
+paris;Round of 32;John Isner;Diego Schwartzman;2;1
+paris;Round of 32;Filip Krajinovic;Sam Querrey;2;0
+paris;Round of 32;Julien Benneteau;Jo-Wilfried Tsonga;2;1
+paris;Round of 32;Fernando Verdasco;Kevin Anderson;2;1
+paris;Round of 32;Juan Martin del Potro;Joao Sousa;2;0
+paris;Round of 32;Roberto Bautista Agut;Jeremy Chardy;2;0
+paris;Round of 32;Pablo Cuevas;Albert Ramos-Vinolas;2;1
+paris;Round of 32;Jack Sock;Kyle Edmund;2;1
+paris;Round of 32;Lucas Pouille;Feliciano Lopez;2;0
+paris;Round of 64;Julien Benneteau;Denis Shapovalov;2;0
+paris;Round of 64;Jeremy Chardy;Gilles Simon;2;0
+paris;Round of 64;Hyeon Chung;Mischa Zverev;2;0
+paris;Round of 64;Borna Coric;Jan-Lennard Struff;2;0
+paris;Round of 64;Pablo Cuevas;Karen Khachanov;2;0
+paris;Round of 64;Kyle Edmund;Evgeny Donskoy;2;1
+paris;Round of 64;Richard Gasquet;Benoit Paire;2;1
+paris;Round of 64;Peter Gojowczyk;Ryan Harrison;2;0
+paris;Round of 64;Robin Haase;Steve Johnson;2;0
+paris;Round of 64;Filip Krajinovic;Yuichi Sugita;2;0
+paris;Round of 64;Feliciano Lopez;Pierre-Hugues Herbert;2;0
+paris;Round of 64;Nicolas Mahut;Vasek Pospisil;2;1
+paris;Round of 64;Adrian Mannarino;David Ferrer;2;0
+paris;Round of 64;Diego Schwartzman;Viktor Troicki;2;0
+paris;Round of 64;Joao Sousa;Paolo Lorenzi;2;0
+paris;Round of 64;Fernando Verdasco;Andrey Rublev;2;0
+paris;2nd Round Qualifying;Jan-Lennard Struff;Peter Gojowczyk;2;0
+paris;2nd Round Qualifying;Borna Coric;Evgeny Donskoy;2;0
+paris;2nd Round Qualifying;Joao Sousa;Ugo Humbert;2;0
+paris;2nd Round Qualifying;Jeremy Chardy;Guillermo Garcia-Lopez;2;0
+paris;2nd Round Qualifying;Filip Krajinovic;Laslo Djere;2;1
+paris;2nd Round Qualifying;Vasek Pospisil;Paul-Henri Mathieu;2;0
+paris;1st Round Qualifying;Guillermo Garcia-Lopez;Jared Donaldson;2;1
+paris;1st Round Qualifying;Jan-Lennard Struff;Mikhail Kukushkin;2;0
+paris;1st Round Qualifying;Vasek Pospisil;Nikoloz Basilashvili;2;1
+paris;1st Round Qualifying;Borna Coric;Benjamin Bonzi;2;0
+paris;1st Round Qualifying;Laslo Djere;Denis Istomin;1;0
+paris;1st Round Qualifying;Joao Sousa;Norbert Gombos;2;0
+paris;1st Round Qualifying;Filip Krajinovic;Guido Pella;2;0
+paris;1st Round Qualifying;Paul-Henri Mathieu;Daniil Medvedev;2;0
+paris;1st Round Qualifying;Peter Gojowczyk;Quentin Halys;2;0
+paris;1st Round Qualifying;Jeremy Chardy;Dusan Lajovic;2;1
+paris;1st Round Qualifying;Ugo Humbert;Thomas Fabbiano;2;1
+paris;1st Round Qualifying;Evgeny Donskoy;Andreas Seppi;2;0
