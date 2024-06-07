@@ -81,5 +81,5 @@ Export-ModuleMember -Variable 'EliasTools'
 # Use the instance to call the functions
 # $EliasTools.BannerMessage("Welcome to the script!", $PrimaryColor)
 # $EliasTools.WriteColoredLine("Hello World!", $PrimaryColor)
-# $EliasTools.ReadColoredLine("Enter your name", $PrimaryColor)
+# $Selection = $EliasTools.ReadColoredLine("Enter a value:", $PrimaryColor)
 # $EliasTools.ExitScript("Goodbye!", 0, $False)
