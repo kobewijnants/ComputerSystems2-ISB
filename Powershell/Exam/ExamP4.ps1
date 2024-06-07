@@ -9,6 +9,14 @@
     This script contains the code of the powershell exam period 4.
 .DESCRIPTION
     This script contains the code of the powershell exam period 4.
+    It contains a class called EliasTools that stores useful tools.
+    The class contains the following functions:
+    - BannerMessage: Displays a banner message
+    - WriteColoredLine: Writes a colored line
+    - ReadColoredLine: Reads a colored line
+    - ExitScript: Exits the script
+    The script also contains a try-catch block that imports a CSV file.
+    The script also contains a global variable called PrimaryColor that stores the primary color.
 .PARAMETER csvfile
 .EXAMPLE
     ExamP4.ps1
