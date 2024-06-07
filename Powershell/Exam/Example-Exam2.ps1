@@ -91,8 +91,8 @@ param ( # Parameters for the script
 try {
     $Global:PlayerStatsNBA = Import-Csv -Path $csvfile -Delimiter "," | ForEach-Object {
         [PSCustomObject]@{
-            Player = $_.Player
-            Tm = $_.Tm
+            Player = [string]$_.Player
+            Tm = [string]$_.Tm
             Age = [float]$_.Age
             G = [int]$_.G
             GS = [int]$_.GS
