@@ -29,6 +29,22 @@ try {
     ExitScript "Error: No CSV file" 1 $False
 }
 
+# Function to write a colored line
+function WriteColoredLine {
+    param (
+        [string]$Text = "No Text",
+        [string]$ColorHex = "#ffffff"
+    )
+
+    $Local:R = [Convert]::ToInt32($ColorHex.Substring(1, 2), 16)
+    $Local:G = [Convert]::ToInt32($ColorHex.Substring(3, 2), 16)
+    $Local:B = [Convert]::ToInt32($ColorHex.Substring(5, 2), 16)
+
+    [string]$Local:AnsiSequence = [char]27 + "[38;2;" + $R + ";" + $G + ";" + $B + "m"
+    [string]$Local:ResetSequence = [char]27 + "[0m"
+    Write-Host "${AnsiSequence}${Text}${ResetSequence}"
+}
+
 # Function to exit the script
 function ExitScript {
     param (
@@ -36,8 +52,6 @@ function ExitScript {
         [int]$Code=0, 
         [bool]$NoColor=$False
     )
-    # 1 = Error
-    # 0 = Success
     Clear-Host
     if ($NoColor) {
         Write-Host $Message
