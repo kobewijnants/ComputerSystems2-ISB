@@ -35,12 +35,12 @@ function Get-DateMatchen ($matchen, $date, $land) {
     if ($match.date -eq $date) {
       if ($match.country -like $land) {
         $MatchesOnDay += $match
-        }
+      }
     }
   }
   return $MatchesOnDay | Select-Object -Property "season", "date", "hometeam", "awayteam", "pointhome", "pointaway"
-  }
-  
+}
+
 function Get-TeamMatchen ($matchen, $seizoen, $land, $ploeg, $type) {
   [Array]$matchesFromTeam = $null
   if($type -like "home*") {
@@ -59,7 +59,7 @@ function Get-TeamMatchen ($matchen, $seizoen, $land, $ploeg, $type) {
   }
   
   return $matchesFromTeam | Select-Object -Property "season", "date", "hometeam", "awayteam", "pointhome", "pointaway"
-  }
+}
 
 function Count-Matchen ($matchen, $seizoen, $land, $ploeg) {
   $teamMatchen = Get-TeamMatchen $matchen $seizoen $land $team "homeaway"
@@ -67,17 +67,21 @@ function Count-Matchen ($matchen, $seizoen, $land, $ploeg) {
   $teamMatchen | ForEach-Object {
     $counter++
   }
+  # $counter = ($teamMatchen | Measure-Object).Count
+  # OR
+  # return Get-TeamMatchen $matchen $seizoen $land $team "homeaway" | Measure-Object | Select-Object -ExpandProperty Count
   return $counter
-  }
+}
 
 function Count-Gelijk ($matchen, $seizoen, $land, $ploeg) {
   $teamMatchen = Get-TeamMatchen $matchen $seizoen $land $team "homeaway"
   $counter=0
   $teamMatchen | ForEach-Object {
-    if($_.pointaway-eq$_.pointhome) {
+    if($_.pointaway -eq $_.pointhome) {
       $counter++
     }
   }
+  # return Get-TeamMatchen $matchen $seizoen $land $team "homeaway" | ? {$_.pointaway -eq $_.pointhome} | Measure-Object | Select-Object -ExpandProperty Count
   return $counter
   }
 
@@ -95,6 +99,7 @@ function Count-Win ($matchen, $seizoen, $land, $ploeg) {
       }
     }
   }
+  # return Get-TeamMatchen $matchen $seizoen $land $team "homeaway" | ? {($_.awayteam -like $ploeg -and $_.pointaway -gt $_.pointhome) -or ($_.hometeam -like $ploeg -and $_.pointaway -lt $_.pointhome)} | Measure-Object | Select-Object -ExpandProperty Count
   return $counter
   }
 
