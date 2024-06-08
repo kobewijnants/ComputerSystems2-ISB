@@ -30,7 +30,7 @@ Version: 1.0
 #>
 
 param ( # Parameters for the script
-    [string]$file="../Data/tennis.csv"
+    [string]$file="../Data/Tennis.csv"
 )
 
 [string]$Global:PrimaryColor = "#4f94f0"
